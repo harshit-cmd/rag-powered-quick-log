@@ -1,0 +1,2137 @@
+[
+  {
+    "id": "entry_157_5a8f9b2c",
+    "prompt": "Ate chicken pot pie with flaky crust and mixed vegetables",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken pot pie with flaky crust and mixed vegetables",
+        "calories": 520,
+        "carbsGrams": 48,
+        "proteinGram": 24,
+        "fatGram": 26,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_162_6b9c1d3e",
+    "prompt": "Had spaghetti carbonara with pancetta and parmesan",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti carbonara with pancetta and parmesan",
+        "calories": 650,
+        "carbsGrams": 68,
+        "proteinGram": 22,
+        "fatGram": 32,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "entry_187_7c3f8a2e",
+    "prompt": "Lunch: chicken parmesan with spaghetti",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken parmesan with spaghetti marinara",
+        "calories": 680,
+        "carbsGrams": 62,
+        "proteinGram": 42,
+        "fatGram": 28,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_100_ae988c04",
+    "prompt": "Chicken shawarma with rice",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken shawarma with rice",
+        "calories": 650,
+        "carbsGrams": 58,
+        "proteinGram": 42,
+        "fatGram": 24,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_147_1d2b0900",
+    "prompt": "Miso soup with tofu",
+    "expected_output": {
+      "payload": {
+        "description": "Miso soup with tofu",
+        "calories": 120,
+        "carbsGrams": 10,
+        "proteinGram": 8,
+        "fatGram": 4,
+        "glycemicIndex": 30
+      }
+    }
+  },
+  {
+    "id": "entry_134_64736c08",
+    "prompt": "Feeling hungry",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_034_acb8bfd4",
+    "prompt": "Sushi roll combo - 1 California roll and 1 spicy tuna roll",
+    "expected_output": {
+      "payload": {
+        "description": "Sushi roll combo - 1 California roll and 1 spicy tuna roll",
+        "calories": 520,
+        "carbsGrams": 62,
+        "proteinGram": 24,
+        "fatGram": 18,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_188_9d6b1e5c",
+    "prompt": "Had split pea soup with ham and cornbread",
+    "expected_output": {
+      "payload": {
+        "description": "Split pea soup with ham and piece of cornbread",
+        "calories": 380,
+        "carbsGrams": 52,
+        "proteinGram": 18,
+        "fatGram": 8,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_037_3f678ce9",
+    "prompt": "Fish and chips with tartar sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Fish and chips with tartar sauce",
+        "calories": 820,
+        "carbsGrams": 68,
+        "proteinGram": 32,
+        "fatGram": 45,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_180_3b8d5f9a",
+    "prompt": "Had banana bread with butter and coffee",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices banana bread with butter and coffee",
+        "calories": 420,
+        "carbsGrams": 62,
+        "proteinGram": 8,
+        "fatGram": 16,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "entry_032_e253217b",
+    "prompt": "3 tacos with beef, cheese, lettuce, and salsa",
+    "expected_output": {
+      "payload": {
+        "description": "3 tacos with beef, cheese, lettuce, and salsa",
+        "calories": 540,
+        "carbsGrams": 45,
+        "proteinGram": 32,
+        "fatGram": 24,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_198_9c2f5b8d",
+    "prompt": "Ate pumpkin pie with whipped cream",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of pumpkin pie with whipped cream",
+        "calories": 380,
+        "carbsGrams": 52,
+        "proteinGram": 6,
+        "fatGram": 16,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "entry_173_8a3e7f2b",
+    "prompt": "Ate chicken fried rice with vegetables and egg",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken fried rice with vegetables and egg",
+        "calories": 480,
+        "carbsGrams": 55,
+        "proteinGram": 28,
+        "fatGram": 16,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "entry_212_8b5c1f7d",
+    "prompt": "Had lamb stew with potatoes and carrots",
+    "expected_output": {
+      "payload": {
+        "description": "Lamb stew with potatoes and carrots",
+        "calories": 520,
+        "carbsGrams": 42,
+        "proteinGram": 38,
+        "fatGram": 20,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_129_b73a33ec",
+    "prompt": "Combo meal",
+    "expected_output": {
+      "error": "Could you be more specific? What type of combo meal did you have (e.g., burger combo, chicken combo, etc.)?"
+    }
+  },
+  {
+    "id": "entry_200_2f8b5c9d",
+    "prompt": "Had Caesar salad with grilled shrimp and garlic bread",
+    "expected_output": {
+      "payload": {
+        "description": "Caesar salad with grilled shrimp and garlic bread",
+        "calories": 480,
+        "carbsGrams": 38,
+        "proteinGram": 28,
+        "fatGram": 24,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_068_27bd1250",
+    "prompt": "French toast (3 slices) with syrup",
+    "expected_output": {
+      "payload": {
+        "description": "French toast (3 slices) with syrup",
+        "calories": 480,
+        "carbsGrams": 68,
+        "proteinGram": 14,
+        "fatGram": 16,
+        "glycemicIndex": 75
+      }
+    }
+  },
+  {
+    "id": "entry_181_5c2e7a1d",
+    "prompt": "Breakfast: waffles with maple syrup and bacon",
+    "expected_output": {
+      "payload": {
+        "description": "2 waffles with maple syrup and 2 strips bacon",
+        "calories": 480,
+        "carbsGrams": 52,
+        "proteinGram": 14,
+        "fatGram": 24,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "entry_026_9ed016c3",
+    "prompt": "Meeting at 3pm",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_218_2f8d4b9c",
+    "prompt": "Had mushroom stroganoff with whole grain noodles",
+    "expected_output": {
+      "payload": {
+        "description": "Mushroom stroganoff with whole grain noodles",
+        "calories": 420,
+        "carbsGrams": 58,
+        "proteinGram": 14,
+        "fatGram": 14,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_035_de55a566",
+    "prompt": "Overnight oats with chia seeds, almonds, and honey",
+    "expected_output": {
+      "payload": {
+        "description": "Overnight oats with chia seeds, almonds, and honey",
+        "calories": 380,
+        "carbsGrams": 52,
+        "proteinGram": 12,
+        "fatGram": 14,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_216_7d3b8f2a",
+    "prompt": "Snacked on trail mix with dark chocolate pieces",
+    "expected_output": {
+      "payload": {
+        "description": "Trail mix with nuts, seeds, and dark chocolate",
+        "calories": 320,
+        "carbsGrams": 28,
+        "proteinGram": 10,
+        "fatGram": 20,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_125_f5ea44f9",
+    "prompt": "Restaurant meal",
+    "expected_output": {
+      "error": "Could you please specify what you ordered at the restaurant?"
+    }
+  },
+  {
+    "id": "entry_094_cc9dbb63",
+    "prompt": "Subway footlong turkey sub",
+    "expected_output": {
+      "payload": {
+        "description": "Subway footlong turkey sub",
+        "calories": 560,
+        "carbsGrams": 88,
+        "proteinGram": 38,
+        "fatGram": 9,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_061_d9bda7d2",
+    "prompt": "Vegetable curry with basmati rice",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable curry with basmati rice",
+        "calories": 420,
+        "carbsGrams": 68,
+        "proteinGram": 12,
+        "fatGram": 12,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_153_2c5b8d9e",
+    "prompt": "Had beef stroganoff with egg noodles and sour cream",
+    "expected_output": {
+      "payload": {
+        "description": "Beef stroganoff with egg noodles and sour cream",
+        "calories": 580,
+        "carbsGrams": 45,
+        "proteinGram": 32,
+        "fatGram": 28,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_093_e78bd878",
+    "prompt": "Cheese pizza from Pizza Hut (3 slices)",
+    "expected_output": {
+      "payload": {
+        "description": "Cheese pizza from Pizza Hut (3 slices)",
+        "calories": 690,
+        "carbsGrams": 81,
+        "proteinGram": 33,
+        "fatGram": 24,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_107_82f1b5c8",
+    "prompt": "Same as last time",
+    "expected_output": {
+      "error": "Could you please specify what you ate?"
+    }
+  },
+  {
+    "id": "entry_047_2260c8a7",
+    "prompt": "Baked potato with butter, cheese, and bacon bits",
+    "expected_output": {
+      "payload": {
+        "description": "Baked potato with butter, cheese, and bacon bits",
+        "calories": 480,
+        "carbsGrams": 52,
+        "proteinGram": 14,
+        "fatGram": 24,
+        "glycemicIndex": 75
+      }
+    }
+  },
+  {
+    "id": "entry_048_8a8dc66e",
+    "prompt": "Smoothie bowl",
+    "expected_output": {
+      "error": "Could you be more specific about what was in your smoothie bowl (e.g., fruits, base, toppings)?"
+    }
+  },
+  {
+    "id": "entry_124_b7350390",
+    "prompt": "Home cooked meal",
+    "expected_output": {
+      "error": "Could you please describe what you cooked?"
+    }
+  },
+  {
+    "id": "entry_215_5a7c9e1f",
+    "prompt": "Had beef tacos with lettuce, tomato, and avocado",
+    "expected_output": {
+      "payload": {
+        "description": "2 beef tacos with lettuce, tomato, and avocado",
+        "calories": 420,
+        "carbsGrams": 32,
+        "proteinGram": 28,
+        "fatGram": 20,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_142_fed9e852",
+    "prompt": "Airplane meal",
+    "expected_output": {
+      "error": "Could you please describe what was in your airplane meal?"
+    }
+  },
+  {
+    "id": "entry_116_b31f7208",
+    "prompt": "Asian food",
+    "expected_output": {
+      "error": "Could you please be more specific about what Asian dish you had?"
+    }
+  },
+  {
+    "id": "entry_202_6d9c2e8a",
+    "prompt": "Ate vegetable curry with naan bread",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable curry with piece of naan bread",
+        "calories": 420,
+        "carbsGrams": 58,
+        "proteinGram": 12,
+        "fatGram": 14,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_127_21e9a4a5",
+    "prompt": "All you can eat",
+    "expected_output": {
+      "error": "Could you please specify what foods you had?"
+    }
+  },
+  {
+    "id": "entry_011_564d4bbf",
+    "prompt": "Ate pasta",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta (1 cup cooked, estimated)",
+        "calories": 220,
+        "carbsGrams": 43,
+        "proteinGram": 8,
+        "fatGram": 1,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_210_4c7b1e5a",
+    "prompt": "Snacked on cheese and whole grain crackers",
+    "expected_output": {
+      "payload": {
+        "description": "2 ounces cheese with whole grain crackers",
+        "calories": 340,
+        "carbsGrams": 28,
+        "proteinGram": 16,
+        "fatGram": 18,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_023_d4d45057",
+    "prompt": "Consumed something",
+    "expected_output": {
+      "error": "Could you please be more specific about what you consumed?"
+    }
+  },
+  {
+    "id": "entry_007_a83ebc19",
+    "prompt": "Ate a bowl of spaghetti bolognese, probably around 350g",
+    "expected_output": {
+      "payload": {
+        "description": "Bowl of spaghetti bolognese (350g)",
+        "calories": 520,
+        "carbsGrams": 62,
+        "proteinGram": 24,
+        "fatGram": 18,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_109_137f912d",
+    "prompt": "Something sweet",
+    "expected_output": {
+      "error": "Could you please be more specific about what sweet food you had?"
+    }
+  },
+  {
+    "id": "entry_070_f4df6dec",
+    "prompt": "Power bowl with kale, quinoa, avocado, and grilled chicken",
+    "expected_output": {
+      "payload": {
+        "description": "Power bowl with kale, quinoa, avocado, and grilled chicken",
+        "calories": 520,
+        "carbsGrams": 42,
+        "proteinGram": 38,
+        "fatGram": 22,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_091_290f5ffb",
+    "prompt": "Coconut water (500ml)",
+    "expected_output": {
+      "payload": {
+        "description": "Coconut water (500ml)",
+        "calories": 90,
+        "carbsGrams": 22,
+        "proteinGram": 2,
+        "fatGram": 0,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_106_83d24848",
+    "prompt": "The usual",
+    "expected_output": {
+      "error": "Could you please describe what your usual meal consists of?"
+    }
+  },
+  {
+    "id": "entry_080_bc76ccc4",
+    "prompt": "Took my vitamins",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_133_92763ed9",
+    "prompt": "Worked out today",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_036_9bd2dace",
+    "prompt": "Grilled cheese sandwich with tomato soup",
+    "expected_output": {
+      "payload": {
+        "description": "Grilled cheese sandwich with tomato soup",
+        "calories": 520,
+        "carbsGrams": 56,
+        "proteinGram": 18,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_044_3ca3472e",
+    "prompt": "Handful of mixed nuts",
+    "expected_output": {
+      "payload": {
+        "description": "Handful of mixed nuts (30g estimated)",
+        "calories": 180,
+        "carbsGrams": 6,
+        "proteinGram": 5,
+        "fatGram": 16,
+        "glycemicIndex": 20
+      }
+    }
+  },
+  {
+    "id": "entry_159_9c2b5d8e",
+    "prompt": "Had minestrone soup with pasta and beans",
+    "expected_output": {
+      "payload": {
+        "description": "Large bowl of minestrone soup with pasta and beans",
+        "calories": 280,
+        "carbsGrams": 42,
+        "proteinGram": 12,
+        "fatGram": 6,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_097_25b87bef",
+    "prompt": "Fish tacos (2) with lime",
+    "expected_output": {
+      "payload": {
+        "description": "Fish tacos (2) with lime",
+        "calories": 420,
+        "carbsGrams": 38,
+        "proteinGram": 26,
+        "fatGram": 20,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_154_4f6a7b8c",
+    "prompt": "Snacked on mixed nuts and dried cranberries",
+    "expected_output": {
+      "payload": {
+        "description": "1 ounce mixed nuts and 1 ounce dried cranberries",
+        "calories": 280,
+        "carbsGrams": 24,
+        "proteinGram": 8,
+        "fatGram": 18,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_144_baf8d8d5",
+    "prompt": "School lunch",
+    "expected_output": {
+      "error": "Could you please describe what was in your school lunch?"
+    }
+  },
+  {
+    "id": "entry_104_a920dca5",
+    "prompt": "Chicken noodle soup (bowl)",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken noodle soup (bowl)",
+        "calories": 280,
+        "carbsGrams": 32,
+        "proteinGram": 18,
+        "fatGram": 8,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_054_1131b4db",
+    "prompt": "Dark chocolate (30g)",
+    "expected_output": {
+      "payload": {
+        "description": "Dark chocolate (30g)",
+        "calories": 155,
+        "carbsGrams": 13,
+        "proteinGram": 2,
+        "fatGram": 11,
+        "glycemicIndex": 25
+      }
+    }
+  },
+  {
+    "id": "entry_010_b659eea3",
+    "prompt": "I had steak and veggies",
+    "expected_output": {
+      "payload": {
+        "description": "Steak (200g estimated) and vegetables (80g estimated)",
+        "calories": 480,
+        "carbsGrams": 6,
+        "proteinGram": 52,
+        "fatGram": 28,
+        "glycemicIndex": 25
+      }
+    }
+  },
+  {
+    "id": "entry_110_c74897e5",
+    "prompt": "Something savory",
+    "expected_output": {
+      "error": "Could you please be more specific about what savory food you ate?"
+    }
+  },
+  {
+    "id": "entry_038_a264978f",
+    "prompt": "Cottage cheese (1 cup) with pineapple chunks",
+    "expected_output": {
+      "payload": {
+        "description": "Cottage cheese (1 cup) with pineapple chunks",
+        "calories": 240,
+        "carbsGrams": 22,
+        "proteinGram": 25,
+        "fatGram": 5,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_095_e1218e99",
+    "prompt": "Starbucks caramel frappuccino (grande)",
+    "expected_output": {
+      "payload": {
+        "description": "Starbucks caramel frappuccino (grande)",
+        "calories": 380,
+        "carbsGrams": 54,
+        "proteinGram": 4,
+        "fatGram": 16,
+        "glycemicIndex": 75
+      }
+    }
+  },
+  {
+    "id": "entry_169_5e2a8c4d",
+    "prompt": "Snacked on pretzels and peanut butter",
+    "expected_output": {
+      "payload": {
+        "description": "Pretzels with 2 tablespoons peanut butter",
+        "calories": 340,
+        "carbsGrams": 32,
+        "proteinGram": 12,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "entry_043_2d1114c0",
+    "prompt": "Burrito bowl with rice, beans, chicken, cheese, and guacamole",
+    "expected_output": {
+      "payload": {
+        "description": "Burrito bowl with rice, beans, chicken, cheese, and guacamole",
+        "calories": 780,
+        "carbsGrams": 72,
+        "proteinGram": 45,
+        "fatGram": 33,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_223_3f7b2e8c",
+    "prompt": "Had chicken fajitas with peppers and onions",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken fajitas with peppers, onions, and tortillas",
+        "calories": 460,
+        "carbsGrams": 42,
+        "proteinGram": 35,
+        "fatGram": 16,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_123_065ab3a2",
+    "prompt": "Delivery",
+    "expected_output": {
+      "error": "Could you please specify what food was delivered?"
+    }
+  },
+  {
+    "id": "entry_072_e3149f0e",
+    "prompt": "Beef stew with vegetables and bread",
+    "expected_output": {
+      "payload": {
+        "description": "Beef stew with vegetables and bread",
+        "calories": 480,
+        "carbsGrams": 42,
+        "proteinGram": 32,
+        "fatGram": 18,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_024_c5d97735",
+    "prompt": "I went running for 30 minutes",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_185_3d8a2f6c",
+    "prompt": "Snacked on popcorn and diet soda",
+    "expected_output": {
+      "payload": {
+        "description": "3 cups air-popped popcorn",
+        "calories": 90,
+        "carbsGrams": 18,
+        "proteinGram": 4,
+        "fatGram": 1,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_067_c8413f7a",
+    "prompt": "Tofu stir-fry with vegetables and brown rice",
+    "expected_output": {
+      "payload": {
+        "description": "Tofu stir-fry with vegetables and brown rice",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_073_1267cf1f",
+    "prompt": "Banana bread (1 slice) with butter",
+    "expected_output": {
+      "payload": {
+        "description": "Banana bread (1 slice) with butter",
+        "calories": 240,
+        "carbsGrams": 35,
+        "proteinGram": 3,
+        "fatGram": 10,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_088_68aa290c",
+    "prompt": "3 chocolate chip cookies",
+    "expected_output": {
+      "payload": {
+        "description": "3 chocolate chip cookies",
+        "calories": 480,
+        "carbsGrams": 66,
+        "proteinGram": 6,
+        "fatGram": 24,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_029_3f83ab2b",
+    "prompt": "Green salad with olive oil dressing",
+    "expected_output": {
+      "payload": {
+        "description": "Green salad with olive oil dressing (estimated portions)",
+        "calories": 180,
+        "carbsGrams": 8,
+        "proteinGram": 2,
+        "fatGram": 16,
+        "glycemicIndex": 15
+      }
+    }
+  },
+  {
+    "id": "entry_175_3f2a7c9d",
+    "prompt": "Breakfast: yogurt with granola and strawberries",
+    "expected_output": {
+      "payload": {
+        "description": "Greek yogurt with granola and strawberries",
+        "calories": 280,
+        "carbsGrams": 35,
+        "proteinGram": 18,
+        "fatGram": 8,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_189_1f4a8c3d",
+    "prompt": "Ate brownies and vanilla ice cream",
+    "expected_output": {
+      "payload": {
+        "description": "2 brownies with scoop of vanilla ice cream",
+        "calories": 520,
+        "carbsGrams": 68,
+        "proteinGram": 8,
+        "fatGram": 24,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_126_0dff91bf",
+    "prompt": "Buffet",
+    "expected_output": {
+      "error": "Could you please describe what you ate at the buffet?"
+    }
+  },
+  {
+    "id": "entry_001_9e2a8b7c",
+    "prompt": "Ate 1 cup oatmeal with 1 medium banana",
+    "expected_output": {
+      "payload": {
+        "description": "1 cup oatmeal with 1 medium banana",
+        "calories": 255,
+        "carbsGrams": 54,
+        "proteinGram": 6,
+        "fatGram": 3,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_176_5b8e1d4f",
+    "prompt": "Lunch: eggplant parmesan with marinara sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Eggplant parmesan with marinara sauce and cheese",
+        "calories": 380,
+        "carbsGrams": 35,
+        "proteinGram": 16,
+        "fatGram": 18,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_156_3b7c8d5e",
+    "prompt": "Had vegetable fried rice with egg and soy sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable fried rice with egg and soy sauce",
+        "calories": 340,
+        "carbsGrams": 52,
+        "proteinGram": 12,
+        "fatGram": 8,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_170_9f6b3d8a",
+    "prompt": "Breakfast: croissant with butter and jam",
+    "expected_output": {
+      "payload": {
+        "description": "Croissant with butter and jam",
+        "calories": 380,
+        "carbsGrams": 48,
+        "proteinGram": 8,
+        "fatGram": 18,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "entry_165_5c8b1a3d",
+    "prompt": "Had tomato basil soup with grilled cheese sandwich",
+    "expected_output": {
+      "payload": {
+        "description": "Tomato basil soup with grilled cheese sandwich",
+        "calories": 460,
+        "carbsGrams": 42,
+        "proteinGram": 16,
+        "fatGram": 22,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_076_f3c5e30c",
+    "prompt": "Ramen noodles with soft boiled egg",
+    "expected_output": {
+      "payload": {
+        "description": "Ramen noodles with soft boiled egg",
+        "calories": 450,
+        "carbsGrams": 58,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_148_906295a5",
+    "prompt": "Chicken teriyaki with rice",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken teriyaki with rice",
+        "calories": 580,
+        "carbsGrams": 68,
+        "proteinGram": 38,
+        "fatGram": 14,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_077_1e51dd72",
+    "prompt": "Hummus (100g) with carrot sticks and pita bread",
+    "expected_output": {
+      "payload": {
+        "description": "Hummus (100g) with carrot sticks and pita bread",
+        "calories": 340,
+        "carbsGrams": 42,
+        "proteinGram": 12,
+        "fatGram": 14,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "entry_130_12d27deb",
+    "prompt": "Value meal",
+    "expected_output": {
+      "error": "Could you be more specific? What type of value meal did you have (e.g., burger, chicken, etc.)?"
+    }
+  },
+  {
+    "id": "entry_213_1e9a4c6b",
+    "prompt": "Ate pancakes with fresh blueberries and maple syrup",
+    "expected_output": {
+      "payload": {
+        "description": "3 pancakes with fresh blueberries and maple syrup",
+        "calories": 420,
+        "carbsGrams": 68,
+        "proteinGram": 10,
+        "fatGram": 10,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_191_4c8a1f6b",
+    "prompt": "Lunch: vegetable soup and half sandwich",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable soup and half turkey sandwich",
+        "calories": 280,
+        "carbsGrams": 38,
+        "proteinGram": 16,
+        "fatGram": 8,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_028_78ecfb8d",
+    "prompt": "Yogurt parfait with granola and berries",
+    "expected_output": {
+      "payload": {
+        "description": "Yogurt parfait with granola and berries (estimated portions)",
+        "calories": 350,
+        "carbsGrams": 48,
+        "proteinGram": 15,
+        "fatGram": 10,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_113_bd5cf63c",
+    "prompt": "Cheat meal",
+    "expected_output": {
+      "error": "Could you please specify what you had for your cheat meal?"
+    }
+  },
+  {
+    "id": "entry_209_2a8e4f9c",
+    "prompt": "Had chicken stir-fry with brown rice and vegetables",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken stir-fry with brown rice and mixed vegetables",
+        "calories": 460,
+        "carbsGrams": 52,
+        "proteinGram": 32,
+        "fatGram": 12,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_014_229e8c3e",
+    "prompt": "Had pizza",
+    "expected_output": {
+      "payload": {
+        "description": "Pizza (2 slices, estimated)",
+        "calories": 560,
+        "carbsGrams": 68,
+        "proteinGram": 24,
+        "fatGram": 22,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_217_9c5e1a7b",
+    "prompt": "Lunch: chicken salad sandwich with cucumber and sprouts",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken salad sandwich with cucumber and sprouts",
+        "calories": 340,
+        "carbsGrams": 32,
+        "proteinGram": 24,
+        "fatGram": 12,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_087_ca085b59",
+    "prompt": "Chipotle burrito bowl with carnitas",
+    "expected_output": {
+      "payload": {
+        "description": "Chipotle burrito bowl with carnitas",
+        "calories": 710,
+        "carbsGrams": 71,
+        "proteinGram": 38,
+        "fatGram": 30,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_058_4394ddc7",
+    "prompt": "Quinoa salad with chickpeas, cucumber, and feta",
+    "expected_output": {
+      "payload": {
+        "description": "Quinoa salad with chickpeas, cucumber, and feta",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "entry_079_04ead7b3",
+    "prompt": "Watched a movie",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_152_9e7f8a1b",
+    "prompt": "Ate a vegetarian pizza with cheese, tomatoes, and mushrooms",
+    "expected_output": {
+      "payload": {
+        "description": "Large slice of vegetarian pizza with cheese, tomatoes, and mushrooms",
+        "calories": 320,
+        "carbsGrams": 38,
+        "proteinGram": 14,
+        "fatGram": 12,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_108_c95e2deb",
+    "prompt": "My regular order",
+    "expected_output": {
+      "error": "Could you please describe what your regular order is?"
+    }
+  },
+  {
+    "id": "entry_002_4f6d9e1b",
+    "prompt": "Had 1 hot dog with mustard",
+    "expected_output": {
+      "payload": {
+        "description": "1 hot dog with mustard",
+        "calories": 290,
+        "carbsGrams": 24,
+        "proteinGram": 10,
+        "fatGram": 17,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_102_e0167b6b",
+    "prompt": "Mushroom risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Mushroom risotto",
+        "calories": 480,
+        "carbsGrams": 62,
+        "proteinGram": 14,
+        "fatGram": 20,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_164_2d9e4f6a",
+    "prompt": "Breakfast: scrambled eggs with ham and hash browns",
+    "expected_output": {
+      "payload": {
+        "description": "3 scrambled eggs with ham and hash browns",
+        "calories": 480,
+        "carbsGrams": 32,
+        "proteinGram": 28,
+        "fatGram": 28,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_167_1a8c5e2f",
+    "prompt": "Ate rice pudding with cinnamon and raisins",
+    "expected_output": {
+      "payload": {
+        "description": "Rice pudding with cinnamon and raisins",
+        "calories": 320,
+        "carbsGrams": 58,
+        "proteinGram": 8,
+        "fatGram": 8,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_027_c69358f2",
+    "prompt": "The weather is nice today",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_031_67f7f72b",
+    "prompt": "Veggie burger with sweet potato fries",
+    "expected_output": {
+      "payload": {
+        "description": "Veggie burger with sweet potato fries (estimated portions)",
+        "calories": 580,
+        "carbsGrams": 72,
+        "proteinGram": 18,
+        "fatGram": 24,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_177_7c9a2f5b",
+    "prompt": "Had shepherd's pie with ground beef and vegetables",
+    "expected_output": {
+      "payload": {
+        "description": "Shepherd's pie with ground beef and mixed vegetables",
+        "calories": 520,
+        "carbsGrams": 42,
+        "proteinGram": 28,
+        "fatGram": 26,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_003_8c3b2d5f",
+    "prompt": "2 slices whole grain toast with 2 eggs",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices whole grain toast with 2 eggs",
+        "calories": 330,
+        "carbsGrams": 26,
+        "proteinGram": 20,
+        "fatGram": 14,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_006_74f54ea3",
+    "prompt": "Breakfast was 3 pancakes with maple syrup and butter",
+    "expected_output": {
+      "payload": {
+        "description": "3 pancakes with maple syrup and butter",
+        "calories": 560,
+        "carbsGrams": 84,
+        "proteinGram": 9,
+        "fatGram": 21,
+        "glycemicIndex": 75
+      }
+    }
+  },
+  {
+    "id": "entry_111_4e92b9a3",
+    "prompt": "Light meal",
+    "expected_output": {
+      "error": "Could you be more specific about what you had for a light meal?"
+    }
+  },
+  {
+    "id": "entry_096_c6f90117",
+    "prompt": "Lasagna with garlic bread",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with garlic bread",
+        "calories": 780,
+        "carbsGrams": 68,
+        "proteinGram": 36,
+        "fatGram": 38,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_000_7d4c5f2a",
+    "prompt": "I had a 250g steak with 100g mixed roasted vegetables",
+    "expected_output": {
+      "payload": {
+        "description": "250g steak with 100g mixed roasted vegetables",
+        "calories": 650,
+        "carbsGrams": 8,
+        "proteinGram": 65,
+        "fatGram": 38,
+        "glycemicIndex": 25
+      }
+    }
+  },
+  {
+    "id": "entry_112_c9c3b008",
+    "prompt": "Heavy meal",
+    "expected_output": {
+      "error": "Could you be more specific about what you had for a heavy meal?"
+    }
+  },
+  {
+    "id": "entry_194_1b9d4f8a",
+    "prompt": "Dinner: roasted turkey with stuffing and cranberry sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Roasted turkey with stuffing and cranberry sauce",
+        "calories": 520,
+        "carbsGrams": 45,
+        "proteinGram": 38,
+        "fatGram": 18,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_062_f28c7228",
+    "prompt": "BLT sandwich",
+    "expected_output": {
+      "payload": {
+        "description": "BLT sandwich (bacon, lettuce, tomato)",
+        "calories": 440,
+        "carbsGrams": 34,
+        "proteinGram": 18,
+        "fatGram": 26,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "entry_039_069b3fc8",
+    "prompt": "Protein bar",
+    "expected_output": {
+      "payload": {
+        "description": "Protein bar (estimated standard size)",
+        "calories": 250,
+        "carbsGrams": 25,
+        "proteinGram": 20,
+        "fatGram": 8,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_074_38bd3c9f",
+    "prompt": "Chicken quesadilla with sour cream and salsa",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken quesadilla with sour cream and salsa",
+        "calories": 520,
+        "carbsGrams": 38,
+        "proteinGram": 32,
+        "fatGram": 26,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_115_b1a66e39",
+    "prompt": "Junk food",
+    "expected_output": {
+      "error": "Could you please specify what junk food you had?"
+    }
+  },
+  {
+    "id": "entry_105_f64eca22",
+    "prompt": "Food from yesterday",
+    "expected_output": {
+      "error": "Could you please specify what food you ate?"
+    }
+  },
+  {
+    "id": "entry_222_1d5a9c4e",
+    "prompt": "Lunch: tuna poke bowl with seaweed salad",
+    "expected_output": {
+      "payload": {
+        "description": "Tuna poke bowl with seaweed salad and rice",
+        "calories": 380,
+        "carbsGrams": 35,
+        "proteinGram": 32,
+        "fatGram": 12,
+        "glycemicIndex": 42
+      }
+    }
+  },
+  {
+    "id": "entry_179_1f4a7c2e",
+    "prompt": "Dinner: pork chops with applesauce and mashed potatoes",
+    "expected_output": {
+      "payload": {
+        "description": "Pork chops with applesauce and mashed potatoes",
+        "calories": 580,
+        "carbsGrams": 48,
+        "proteinGram": 38,
+        "fatGram": 24,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_019_aa5ca107",
+    "prompt": "Had a tuna sandwich on whole wheat with lettuce and tomato",
+    "expected_output": {
+      "payload": {
+        "description": "Tuna sandwich on whole wheat with lettuce and tomato",
+        "calories": 380,
+        "carbsGrams": 35,
+        "proteinGram": 28,
+        "fatGram": 14,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_020_d278e7f4",
+    "prompt": "Had some soup",
+    "expected_output": {
+      "error": "Could you please be more specific about what kind of soup and what ingredients it contained?"
+    }
+  },
+  {
+    "id": "entry_040_d7b32a6a",
+    "prompt": "Half a rotisserie chicken with coleslaw",
+    "expected_output": {
+      "payload": {
+        "description": "Half rotisserie chicken with coleslaw",
+        "calories": 680,
+        "carbsGrams": 12,
+        "proteinGram": 65,
+        "fatGram": 42,
+        "glycemicIndex": 20
+      }
+    }
+  },
+  {
+    "id": "entry_017_228bfe62",
+    "prompt": "Ate bread",
+    "expected_output": {
+      "payload": {
+        "description": "Bread (2 slices, estimated)",
+        "calories": 160,
+        "carbsGrams": 30,
+        "proteinGram": 6,
+        "fatGram": 2,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_025_af8ce356",
+    "prompt": "Just finished my workout",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_182_7f9b3c6e",
+    "prompt": "Lunch: tuna casserole with noodles and peas",
+    "expected_output": {
+      "payload": {
+        "description": "Tuna casserole with noodles and peas",
+        "calories": 420,
+        "carbsGrams": 48,
+        "proteinGram": 24,
+        "fatGram": 14,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_163_8a5f7b2c",
+    "prompt": "Ate oatmeal cookies with raisins and walnuts",
+    "expected_output": {
+      "payload": {
+        "description": "2 oatmeal cookies with raisins and walnuts",
+        "calories": 280,
+        "carbsGrams": 38,
+        "proteinGram": 6,
+        "fatGram": 12,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_041_f912d3a0",
+    "prompt": "Acai bowl with granola, banana, and coconut",
+    "expected_output": {
+      "payload": {
+        "description": "Acai bowl with granola, banana, and coconut",
+        "calories": 420,
+        "carbsGrams": 72,
+        "proteinGram": 8,
+        "fatGram": 12,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_203_8f4b7a3c",
+    "prompt": "Had turkey chili with cornbread",
+    "expected_output": {
+      "payload": {
+        "description": "Turkey chili with piece of cornbread",
+        "calories": 380,
+        "carbsGrams": 48,
+        "proteinGram": 24,
+        "fatGram": 10,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_081_5ac5fdfa",
+    "prompt": "Had medicine",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_149_f7274191",
+    "prompt": "Energy bar",
+    "expected_output": {
+      "payload": {
+        "description": "Energy bar (estimated standard size)",
+        "calories": 280,
+        "carbsGrams": 38,
+        "proteinGram": 10,
+        "fatGram": 10,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_221_8c1e7f3b",
+    "prompt": "Had vegetable soup with whole grain roll and salad",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable soup with whole grain roll and side salad",
+        "calories": 320,
+        "carbsGrams": 52,
+        "proteinGram": 12,
+        "fatGram": 8,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_060_274c5bad",
+    "prompt": "Bowl of cereal with milk",
+    "expected_output": {
+      "payload": {
+        "description": "Bowl of cereal with milk (estimated standard serving)",
+        "calories": 280,
+        "carbsGrams": 48,
+        "proteinGram": 10,
+        "fatGram": 6,
+        "glycemicIndex": 75
+      }
+    }
+  },
+  {
+    "id": "entry_056_cbf7e63b",
+    "prompt": "2 slices of pepperoni pizza from Domino's",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices of pepperoni pizza from Domino's",
+        "calories": 560,
+        "carbsGrams": 64,
+        "proteinGram": 24,
+        "fatGram": 22,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "entry_015_7987980b",
+    "prompt": "Breakfast was eggs",
+    "expected_output": {
+      "payload": {
+        "description": "Eggs (2 large, estimated)",
+        "calories": 140,
+        "carbsGrams": 1,
+        "proteinGram": 12,
+        "fatGram": 10,
+        "glycemicIndex": 0
+      }
+    }
+  },
+  {
+    "id": "entry_004_e5f9a2c7",
+    "prompt": "Just finished a grilled chicken breast (150g) with quinoa (1 cup cooked) and steamed broccoli (200g)",
+    "expected_output": {
+      "payload": {
+        "description": "Grilled chicken breast (150g) with quinoa (1 cup cooked) and steamed broccoli (200g)",
+        "calories": 470,
+        "carbsGrams": 47,
+        "proteinGram": 48,
+        "fatGram": 9,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "entry_184_1c7e5b9f",
+    "prompt": "Had meatloaf with gravy and green beans",
+    "expected_output": {
+      "payload": {
+        "description": "Meatloaf with gravy and green beans",
+        "calories": 480,
+        "carbsGrams": 28,
+        "proteinGram": 32,
+        "fatGram": 26,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_204_1c6e9d5b",
+    "prompt": "Snacked on yogurt with granola and fresh fruit",
+    "expected_output": {
+      "payload": {
+        "description": "Greek yogurt with granola and mixed fresh fruit",
+        "calories": 260,
+        "carbsGrams": 38,
+        "proteinGram": 16,
+        "fatGram": 6,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_012_ba28fe5f",
+    "prompt": "Had a burger",
+    "expected_output": {
+      "payload": {
+        "description": "Hamburger (standard size, estimated)",
+        "calories": 540,
+        "carbsGrams": 40,
+        "proteinGram": 25,
+        "fatGram": 28,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_008_e62f016e",
+    "prompt": "Snacked on 1 medium apple with 2 tablespoons of peanut butter",
+    "expected_output": {
+      "payload": {
+        "description": "1 medium apple with 2 tablespoons peanut butter",
+        "calories": 285,
+        "carbsGrams": 32,
+        "proteinGram": 8,
+        "fatGram": 16,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_052_2fe82ff7",
+    "prompt": "Ate at McDonald's",
+    "expected_output": {
+      "error": "Could you please be more specific about what you ordered at McDonald's?"
+    }
+  },
+  {
+    "id": "entry_199_1e7a3c9f",
+    "prompt": "Had baked ziti with meat sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Baked ziti with meat sauce and cheese",
+        "calories": 580,
+        "carbsGrams": 55,
+        "proteinGram": 28,
+        "fatGram": 24,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "entry_082_accb763a",
+    "prompt": "Just woke up",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_075_a7517d20",
+    "prompt": "Trail mix (50g)",
+    "expected_output": {
+      "payload": {
+        "description": "Trail mix (50g)",
+        "calories": 250,
+        "carbsGrams": 28,
+        "proteinGram": 6,
+        "fatGram": 14,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_168_3b7d9f1c",
+    "prompt": "Had vegetable lasagna with ricotta and spinach",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable lasagna with ricotta and spinach",
+        "calories": 380,
+        "carbsGrams": 42,
+        "proteinGram": 18,
+        "fatGram": 14,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_059_bd5295a7",
+    "prompt": "Bagel with cream cheese and smoked salmon",
+    "expected_output": {
+      "payload": {
+        "description": "Bagel with cream cheese and smoked salmon",
+        "calories": 480,
+        "carbsGrams": 52,
+        "proteinGram": 22,
+        "fatGram": 20,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_016_d2634a37",
+    "prompt": "Had rice and chicken",
+    "expected_output": {
+      "payload": {
+        "description": "Rice (1 cup cooked, estimated) and chicken (150g, estimated)",
+        "calories": 435,
+        "carbsGrams": 45,
+        "proteinGram": 38,
+        "fatGram": 7,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_013_a6cc956b",
+    "prompt": "Ate an apple",
+    "expected_output": {
+      "payload": {
+        "description": "Apple (1 medium, estimated)",
+        "calories": 95,
+        "carbsGrams": 25,
+        "proteinGram": 0,
+        "fatGram": 0,
+        "glycemicIndex": 36
+      }
+    }
+  },
+  {
+    "id": "entry_092_c24f3afe",
+    "prompt": "Popcorn (large bowl)",
+    "expected_output": {
+      "payload": {
+        "description": "Popcorn (large bowl)",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 6,
+        "fatGram": 22,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_042_9c1d002a",
+    "prompt": "2 hard boiled eggs with toast and avocado",
+    "expected_output": {
+      "payload": {
+        "description": "2 hard boiled eggs with toast and avocado",
+        "calories": 380,
+        "carbsGrams": 24,
+        "proteinGram": 18,
+        "fatGram": 22,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "entry_137_9a1ea8c5",
+    "prompt": "Ate out",
+    "expected_output": {
+      "error": "Could you please specify what you ate?"
+    }
+  },
+  {
+    "id": "entry_090_65f6016f",
+    "prompt": "Beef jerky (50g)",
+    "expected_output": {
+      "payload": {
+        "description": "Beef jerky (50g)",
+        "calories": 165,
+        "carbsGrams": 6,
+        "proteinGram": 28,
+        "fatGram": 4,
+        "glycemicIndex": 20
+      }
+    }
+  },
+  {
+    "id": "entry_071_667e7850",
+    "prompt": "Croissant with ham and cheese",
+    "expected_output": {
+      "payload": {
+        "description": "Croissant with ham and cheese",
+        "calories": 420,
+        "carbsGrams": 32,
+        "proteinGram": 18,
+        "fatGram": 24,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "entry_136_c61c6b12",
+    "prompt": "Skipped breakfast",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_018_4549d20d",
+    "prompt": "Drank a protein smoothie with banana, protein powder, and almond milk",
+    "expected_output": {
+      "payload": {
+        "description": "Protein smoothie with banana, protein powder, and almond milk",
+        "calories": 320,
+        "carbsGrams": 35,
+        "proteinGram": 28,
+        "fatGram": 5,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_150_7f3a9b2d",
+    "prompt": "Had a large bowl of chicken noodle soup with carrots, celery, and egg noodles",
+    "expected_output": {
+      "payload": {
+        "description": "Large bowl of chicken noodle soup with vegetables and noodles",
+        "calories": 280,
+        "carbsGrams": 32,
+        "proteinGram": 16,
+        "fatGram": 6,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_119_d8bbc037",
+    "prompt": "Fast food",
+    "expected_output": {
+      "error": "Could you please specify what fast food you ate?"
+    }
+  },
+  {
+    "id": "entry_086_a64a8cac",
+    "prompt": "Meal",
+    "expected_output": {
+      "error": "Could you please describe what was in your meal?"
+    }
+  },
+  {
+    "id": "entry_206_5d1c9f4a",
+    "prompt": "Had baked salmon with quinoa and asparagus",
+    "expected_output": {
+      "payload": {
+        "description": "Baked salmon with quinoa and asparagus",
+        "calories": 480,
+        "carbsGrams": 35,
+        "proteinGram": 42,
+        "fatGram": 20,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_224_5a9d1c6b",
+    "prompt": "Snacked on fresh fruit platter with cottage cheese",
+    "expected_output": {
+      "payload": {
+        "description": "Fresh fruit platter with cottage cheese",
+        "calories": 220,
+        "carbsGrams": 32,
+        "proteinGram": 16,
+        "fatGram": 4,
+        "glycemicIndex": 42
+      }
+    }
+  },
+  {
+    "id": "entry_146_28d5cfcb",
+    "prompt": "Movie theater snacks",
+    "expected_output": {
+      "error": "Could you please specify what snacks you had at the movie theater?"
+    }
+  },
+  {
+    "id": "entry_140_b3b39339",
+    "prompt": "Wedding food",
+    "expected_output": {
+      "error": "Could you please describe what you ate at the wedding?"
+    }
+  },
+  {
+    "id": "entry_050_07f8257b",
+    "prompt": "Chicken tikka masala with naan bread",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken tikka masala with naan bread",
+        "calories": 680,
+        "carbsGrams": 58,
+        "proteinGram": 38,
+        "fatGram": 28,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_131_b24c0388",
+    "prompt": "Kids meal",
+    "expected_output": {
+      "error": "Could you be more specific? What type of kids meal did you have (e.g., nuggets, burger, etc.)?"
+    }
+  },
+  {
+    "id": "entry_211_6d3f9a2e",
+    "prompt": "Lunch: vegetable burger on whole grain bun with sweet potato fries",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable burger on whole grain bun with sweet potato fries",
+        "calories": 480,
+        "carbsGrams": 68,
+        "proteinGram": 18,
+        "fatGram": 14,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_171_2c7e5a9b",
+    "prompt": "Had clam chowder with oyster crackers",
+    "expected_output": {
+      "payload": {
+        "description": "Large bowl of clam chowder with oyster crackers",
+        "calories": 340,
+        "carbsGrams": 32,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "entry_055_c5f06cfa",
+    "prompt": "Lentil soup with a side of crackers",
+    "expected_output": {
+      "payload": {
+        "description": "Lentil soup with a side of crackers",
+        "calories": 340,
+        "carbsGrams": 48,
+        "proteinGram": 16,
+        "fatGram": 8,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "entry_151_8c4d5e6f",
+    "prompt": "Breakfast: blueberry muffins with coffee and a banana",
+    "expected_output": {
+      "payload": {
+        "description": "2 blueberry muffins, coffee, and 1 medium banana",
+        "calories": 420,
+        "carbsGrams": 78,
+        "proteinGram": 8,
+        "fatGram": 12,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "entry_033_fe5f1e23",
+    "prompt": "Large bowl of pho with beef and noodles",
+    "expected_output": {
+      "payload": {
+        "description": "Large bowl of pho with beef and noodles",
+        "calories": 480,
+        "carbsGrams": 58,
+        "proteinGram": 28,
+        "fatGram": 12,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_120_856fe338",
+    "prompt": "Street food",
+    "expected_output": {
+      "error": "Could you please describe what street food you had?"
+    }
+  },
+  {
+    "id": "entry_192_6d3e9b2c",
+    "prompt": "Had chili con carne with beans and rice",
+    "expected_output": {
+      "payload": {
+        "description": "Chili con carne with beans and rice",
+        "calories": 460,
+        "carbsGrams": 52,
+        "proteinGram": 24,
+        "fatGram": 16,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "entry_057_57d59f28",
+    "prompt": "Chicken wings (8 pieces) with ranch dressing",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken wings (8 pieces) with ranch dressing",
+        "calories": 680,
+        "carbsGrams": 6,
+        "proteinGram": 44,
+        "fatGram": 52,
+        "glycemicIndex": 15
+      }
+    }
+  },
+  {
+    "id": "entry_053_7fa75299",
+    "prompt": "Just hydrated myself",
+    "expected_output": {
+      "error": "You want to log a meal but the query is not about food"
+    }
+  },
+  {
+    "id": "entry_022_8b7bd2a0",
+    "prompt": "Had dinner",
+    "expected_output": {
+      "error": "Could you please describe what you had for dinner?"
+    }
+  },
+  {
+    "id": "entry_101_e8f36b04",
+    "prompt": "Soba noodles with tempura",
+    "expected_output": {
+      "payload": {
+        "description": "Soba noodles with tempura",
+        "calories": 580,
+        "carbsGrams": 72,
+        "proteinGram": 22,
+        "fatGram": 22,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "entry_121_b422e4bf",
+    "prompt": "Leftovers",
+    "expected_output": {
+      "error": "Could you please specify what leftovers you ate?"
+    }
+  },
+  {
+    "id": "entry_195_3c6e2a9d",
+    "prompt": "Had coffee cake and black coffee",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of coffee cake with black coffee",
+        "calories": 340,
+        "carbsGrams": 48,
+        "proteinGram": 6,
+        "fatGram": 14,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "entry_174_1d9c5b8e",
+    "prompt": "Had chocolate chip cookies and milk",
+    "expected_output": {
+      "payload": {
+        "description": "3 chocolate chip cookies with 8 oz milk",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 10,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "entry_186_5b9e1d4a",
+    "prompt": "Breakfast: English muffin with peanut butter and honey",
+    "expected_output": {
+      "payload": {
+        "description": "English muffin with peanut butter and honey",
+        "calories": 380,
+        "carbsGrams": 48,
+        "proteinGram": 12,
+        "fatGram": 14,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "entry_069_5d641600",
+    "prompt": "Shrimp scampi with linguine",
+    "expected_output": {
+      "payload": {
+        "description": "Shrimp scampi with linguine",
+        "calories": 520,
+        "carbsGrams": 48,
+        "proteinGram": 32,
+        "fatGram": 20,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "entry_183_9a4d8f2b",
+    "prompt": "Ate fruit salad with yogurt dressing",
+    "expected_output": {
+      "payload": {
+        "description": "Large fruit salad with yogurt dressing",
+        "calories": 180,
+        "carbsGrams": 38,
+        "proteinGram": 6,
+        "fatGram": 2,
+        "glycemicIndex": 45
+      }
+    }
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "rag-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@sqliteai/sqlite-wasm": "^3.50.4-sync.0.8.38-vector.0.9.27",
+    "@tetherto/qvac-lib-rag": "^3.1.0",
+    "@tetherto/qvac-sdk": "file:../qvac-sdk/dist/tetherto-qvac-sdk-0.2.1.tgz",
+    "bare-fs": "^4.4.5",
+    "bare-process": "^4.2.1",
+    "body-parser": "^2.2.0",
+    "corestore": "^7.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0"
+  }
+}
