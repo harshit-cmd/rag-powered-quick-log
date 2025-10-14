@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -14,18 +13,18 @@
   "dependencies": {
     "@sqliteai/sqlite-wasm": "^3.50.4-sync.0.8.38-vector.0.9.27",
     "@tetherto/qvac-lib-rag": "^3.1.0",
-    "@tetherto/qvac-sdk": "file:../qvac-sdk/dist/tetherto-qvac-sdk-0.2.1.tgz",
-    "bare-fs": "^4.4.5",
+    "@tetherto/qvac-sdk": "^0.10.1",
+    "bare-fs": "^4.4.10",
     "bare-process": "^4.2.1",
     "body-parser": "^2.2.0",
-    "corestore": "^7.4.7",
+    "corestore": "^7.5.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "zod": "^4.1.11"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "eslint": "^9.36.0",
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
     "globals": "^16.4.0"
   }
 }

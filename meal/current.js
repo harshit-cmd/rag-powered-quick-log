@@ -1,11 +1,11 @@
 import {
   loadModel,
-  QWEN3_1_7B_Q4_0,
+  QWEN_3_1_7B_INST_Q4,
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import mealDatasetOriginal from "./dataset/meal-dataset-original.json" with { type: "json" };
-import fs from "fs";
+import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" with { type: "json" };
+import { calculatePayloadMetrics, extractJSON, writeResultIncrementally } from "../utils.js";
 
 const responseSchema = z.object({
   payload: z
@@ -89,58 +89,6 @@ function createHistory(query) {
   return history;
 }
 
-export function extractJSON(text) {
-  const firstBracket = text.indexOf("{");
-  const lastBracket = text.lastIndexOf("}");
-
-  if (
-    firstBracket === -1 ||
-    lastBracket === -1 ||
-    firstBracket >= lastBracket
-  ) {
-    throw new Error("No valid JSON found in response");
-  }
-
-  return text.substring(firstBracket, lastBracket + 1);
-}
-
-export function calculatePayloadMetrics(expected, actual) {
-  const metrics = {
-    caloriesError: calculateNormalizedError(expected.calories, actual.calories),
-    carbsError: calculateNormalizedError(
-      expected.carbsGrams,
-      actual.carbsGrams
-    ),
-    proteinError: calculateNormalizedError(
-      expected.proteinGram,
-      actual.proteinGram
-    ),
-    fatError: calculateNormalizedError(expected.fatGram, actual.fatGram),
-    glycemicIndexError: calculateNormalizedError(
-      expected.glycemicIndex,
-      actual.glycemicIndex
-    ),
-    averageNormalizedError: 0,
-  };
-
-  metrics.averageNormalizedError =
-    (metrics.caloriesError +
-      metrics.carbsError +
-      metrics.proteinError +
-      metrics.fatError +
-      metrics.glycemicIndexError) /
-    5;
-
-  return metrics;
-}
-
-export function calculateNormalizedError(expected, actual) {
-  if (expected === 0) {
-    return actual === 0 ? 0 : 1;
-  }
-  return Math.abs((expected - actual) / expected);
-}
-
 
 
 
@@ -152,18 +100,23 @@ export function calculateNormalizedError(expected, actual) {
 let llmModelId;
 
 const initLlmModel = async () => {
-  llmModelId = await loadModel(QWEN3_1_7B_Q4_0, {
+  llmModelId = await loadModel({
+    modelSrc: QWEN_3_1_7B_INST_Q4,
     modelType: "llm",
     modelConfig: {
       gpu_layers: 999,
       ctx_size: 2048,
       device: "gpu",
     },
+    onProgress: (progress) => {
+      process.stdout.write(`\rLoading model... ${progress.percentage.toFixed(4)}%`);
+    },
   });
 };
 
 const main = async () => {
   await initLlmModel();
+  const filePath = 'meal/benchmark-results/current/' + new Date().toISOString() + '.json';
 
   for (const sample of mealDatasetOriginal) {
     const benchmarkResult = {
@@ -172,7 +125,11 @@ const main = async () => {
     };
 
     const history = createHistory(sample.prompt);
-    const response = completion(llmModelId, history, true);
+    const response = completion({
+      modelId: llmModelId,
+      history,
+      stream: true,
+    });
     let text = "";
     for await (const token of response.tokenStream) {
       process.stdout.write(token);
@@ -222,71 +179,13 @@ const main = async () => {
         benchmarkResult.classification = "falsy_payload";
       }
     }
-    writeResultIncrementally(benchmarkResult, 'benchmark-results/current-impl-results.json');
+    await writeResultIncrementally(benchmarkResult, filePath);
   }
 };
 
-main().catch(console.error);
-
-function writeResultIncrementally(result, filePath = "benchmarkResults.json") {
-  // Load existing data
-  let results = [];
-  let counts = {
-    truthy_payload: 0,
-    falsy_payload: 0,
-    truthy_error: 0,
-    falsy_error: 0,
-    parse_error: 0
-  };
-
-  if (fs.existsSync(filePath)) {
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    try {
-      const data = JSON.parse(fileContent);
-      results = data.results || [];
-      if (data.summary) {
-        counts = {
-          truthy_payload: data.summary.truthy_payload || 0,
-          falsy_payload: data.summary.falsy_payload || 0,
-          truthy_error: data.summary.truthy_error || 0,
-          falsy_error: data.summary.falsy_error || 0,
-          parse_error: data.summary.parse_error || 0
-        };
-      }
-    } catch {
-      results = [];
-    }
-  }
-
-  // Add new result and increment its count
-  results.push(result);
-  if (counts[result.classification] !== undefined) {
-    counts[result.classification]++;
-  } else if (result.parseError) {
-    counts.parse_error++;
-  }
-
-  // Calculate percentages
-  const total = results.length;
-  const payloadTotal = counts.truthy_payload + counts.falsy_payload;
-  const errorTotal = counts.truthy_error + counts.falsy_error;
-
-  const accuracy = total > 0 ? (counts.truthy_payload + counts.truthy_error) / total * 100 : 0;
-  const payload_accuracy = payloadTotal > 0 ? counts.truthy_payload / payloadTotal * 100 : 0;
-  const error_accuracy = errorTotal > 0 ? counts.truthy_error / errorTotal * 100 : 0;
-
-  // Write output
-  const output = {
-    summary: {
-      ...counts,
-      total,
-      accuracy: Number(accuracy.toFixed(2)),
-      payload_accuracy: Number(payload_accuracy.toFixed(2)),
-      error_accuracy: Number(error_accuracy.toFixed(2))
-    },
-    results
-  };
-
-  fs.writeFileSync(filePath, JSON.stringify(output, null, 2));
-}
+main()
+  .catch(console.error)
+  .finally(() => {
+    process.kill(process.pid);
+  });
 
