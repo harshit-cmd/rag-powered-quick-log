@@ -5,7 +5,7 @@ import {
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
 import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" with { type: "json" };
-import { calculatePayloadMetrics, extractJSON, writeResultIncrementally } from "../utils.js";
+import { calculatePayloadMetrics, extractJSON, writeResultIncrementallyMeals } from "../utils.js";
 
 const responseSchema = z.object({
   payload: z
@@ -179,7 +179,7 @@ const main = async () => {
         benchmarkResult.classification = "falsy_payload";
       }
     }
-    await writeResultIncrementally(benchmarkResult, filePath);
+    await writeResultIncrementallyMeals(benchmarkResult, filePath);
   }
 };
 

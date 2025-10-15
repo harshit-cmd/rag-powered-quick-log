@@ -1,0 +1,2666 @@
+[
+  {
+    "id": "bio_001_heart_rate_exact",
+    "prompt": "My heart rate is 72 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 72,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_002_blood_pressure_standard",
+    "prompt": "Blood pressure is 120/80 mmHg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 120,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 80,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_003_spo2_percentage",
+    "prompt": "Blood oxygen saturation is 96%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_oxygen_saturation",
+          "value": 96,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_004_weight_kg",
+    "prompt": "Weight is 70.5 kg this morning",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 70.5,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_005_glucose_fasting",
+    "prompt": "Fasting glucose level 95 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 95,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_006_temperature_fahrenheit",
+    "prompt": "Body temperature 98.6°F",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 98.6,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_007_resting_hr_morning",
+    "prompt": "Resting heart rate was 65 bpm this morning",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "resting_heart_rate",
+          "value": 65,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_008_cholesterol_total",
+    "prompt": "Total cholesterol is 180 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 180,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_009_bmi_calculated",
+    "prompt": "My BMI is 24.5",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_mass_index",
+          "value": 24.5,
+          "unit": "kg/m²"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_010_steps_daily",
+    "prompt": "Daily step count was 8500 steps",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 8500,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_011_sleep_duration",
+    "prompt": "Slept for 7.5 hours last night",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 7.5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_012_hrv_measurement",
+    "prompt": "Heart rate variability was 35 ms",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate_variability",
+          "value": 35,
+          "unit": "ms"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_013_body_fat_percentage",
+    "prompt": "Body fat percentage is 18%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_fat_percentage",
+          "value": 18,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_014_hemoglobin_level",
+    "prompt": "Hemoglobin level is 14.2 g/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "hemoglobin",
+          "value": 14.2,
+          "unit": "g/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_015_creatinine_kidney",
+    "prompt": "Creatinine is 1.1 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "creatinine",
+          "value": 1.1,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_016_vitamin_d_level",
+    "prompt": "Vitamin D 25-hydroxy is 32 ng/mL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vitamin_d_25_hydroxy",
+          "value": 32,
+          "unit": "ng/mL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_017_testosterone_male",
+    "prompt": "Testosterone level is 650 ng/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "testosterone",
+          "value": 650,
+          "unit": "ng/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_018_cortisol_morning",
+    "prompt": "Morning cortisol was 15 μg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "cortisol",
+          "value": 15,
+          "unit": "μg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_019_tsh_thyroid",
+    "prompt": "TSH is 2.5 mIU/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "thyroid_stimulating_hormone",
+          "value": 2.5,
+          "unit": "mIU/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_020_vo2_max_fitness",
+    "prompt": "VO2 max is 45 mL/kg/min",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vo2_max",
+          "value": 45,
+          "unit": "mL/kg/min"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_021_spo2_alternative",
+    "prompt": "SpO2 reading is 98%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "spo2",
+          "value": 98,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_022_oxygen_sat_informal",
+    "prompt": "Oxygen saturation 97%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "oxygen_saturation",
+          "value": 97,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_023_blood_oxygen_colloquial",
+    "prompt": "Blood oxygen is 95%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_oxygen",
+          "value": 95,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_024_weight_pounds",
+    "prompt": "Weighed myself - 155 lbs",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 155,
+          "unit": "lbs"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_025_bp_informal",
+    "prompt": "BP was 110 over 70",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 110,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 70,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_026_temp_celsius",
+    "prompt": "Temperature is 37.2°C",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 37.2,
+          "unit": "°C"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_027_glucose_postmeal",
+    "prompt": "Blood sugar after meal: 140 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 140,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_028_hdl_cholesterol",
+    "prompt": "HDL cholesterol is 55 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "high_density_lipoprotein_cholesterol",
+          "value": 55,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_029_ldl_cholesterol",
+    "prompt": "LDL cholesterol 120 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "low_density_lipoprotein_cholesterol",
+          "value": 120,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_030_triglycerides",
+    "prompt": "Triglycerides are 150 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "triglyceride",
+          "value": 150,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_031_hematocrit_level",
+    "prompt": "Hematocrit is 42%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "hematocrit",
+          "value": 42,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_032_platelet_count",
+    "prompt": "Platelet count 275,000/μL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "platelet_count",
+          "value": 275000,
+          "unit": "/μL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_033_wbc_count",
+    "prompt": "White blood cell count is 7,200/μL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "white_blood_cell_count",
+          "value": 7200,
+          "unit": "/μL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_034_rbc_count",
+    "prompt": "Red blood cell count 4.8 million/μL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "red_blood_cell_count",
+          "value": 4.8,
+          "unit": "million/μL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_035_alt_liver",
+    "prompt": "ALT is 25 U/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "alanine_transaminase",
+          "value": 25,
+          "unit": "U/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_036_ast_liver",
+    "prompt": "AST level 30 U/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "aspartate_transaminase",
+          "value": 30,
+          "unit": "U/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_037_alkaline_phosphatase",
+    "prompt": "Alkaline phosphatase is 85 U/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "alkaline_phosphatase",
+          "value": 85,
+          "unit": "U/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_038_bun_kidney",
+    "prompt": "BUN is 18 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_urea_nitrogen",
+          "value": 18,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_039_sodium_electrolyte",
+    "prompt": "Sodium level 140 mEq/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sodium",
+          "value": 140,
+          "unit": "mEq/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_040_potassium_electrolyte",
+    "prompt": "Potassium is 4.2 mEq/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "potassium",
+          "value": 4.2,
+          "unit": "mEq/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_041_chloride_electrolyte",
+    "prompt": "Chloride 102 mEq/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "chloride",
+          "value": 102,
+          "unit": "mEq/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_042_albumin_protein",
+    "prompt": "Albumin level is 4.1 g/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "albumin",
+          "value": 4.1,
+          "unit": "g/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_043_total_bilirubin",
+    "prompt": "Total bilirubin 0.8 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_bilirubin",
+          "value": 0.8,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_044_uric_acid_level",
+    "prompt": "Uric acid is 6.2 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "uric_acid",
+          "value": 6.2,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_045_crp_inflammation",
+    "prompt": "C-reactive protein 2.1 mg/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "c_reactive_protein",
+          "value": 2.1,
+          "unit": "mg/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_046_hemoglobin_a1c",
+    "prompt": "HbA1c is 5.7%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "hemoglobin_a1c",
+          "value": 5.7,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_047_free_t4_thyroid",
+    "prompt": "Free T4 is 1.2 ng/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "free_thyroxine",
+          "value": 1.2,
+          "unit": "ng/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_048_waist_circumference",
+    "prompt": "Waist circumference 32 inches",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "waist_circumference",
+          "value": 32,
+          "unit": "inches"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_049_deep_sleep_hours",
+    "prompt": "Deep sleep was 2.1 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "deep_sleep_duration",
+          "value": 2.1,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_050_light_sleep_hours",
+    "prompt": "Light sleep duration 4.5 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "light_sleep_duration",
+          "value": 4.5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_051_rem_sleep_hours",
+    "prompt": "REM sleep was 1.8 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "rem_sleep_duration",
+          "value": 1.8,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_052_sleep_quality_score",
+    "prompt": "Sleep quality score 85/100",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_quality_score",
+          "value": 85,
+          "unit": "score"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_053_muscle_mass_kg",
+    "prompt": "Muscle mass is 35 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "muscle_mass",
+          "value": 35,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_054_lean_body_mass",
+    "prompt": "Lean body mass 58 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "lean_body_mass",
+          "value": 58,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_055_skeletal_muscle_mass",
+    "prompt": "Skeletal muscle mass is 32 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "skeletal_muscle_mass",
+          "value": 32,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_056_waist_hip_ratio",
+    "prompt": "Waist to hip ratio 0.85",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "waist_to_hip_ratio",
+          "value": 0.85,
+          "unit": "ratio"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_057_egfr_kidney",
+    "prompt": "eGFR is 95 mL/min/1.73m²",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "estimated_glomerular_filtration_rate",
+          "value": 95,
+          "unit": "mL/min/1.73m²"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_058_carbon_dioxide_level",
+    "prompt": "CO2 level 24 mEq/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "carbon_dioxide",
+          "value": 24,
+          "unit": "mEq/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_059_ggt_liver",
+    "prompt": "GGT is 22 U/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "gamma_glutamyl_transferase",
+          "value": 22,
+          "unit": "U/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_060_troponin_cardiac",
+    "prompt": "Troponin level 0.02 ng/mL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "troponin",
+          "value": 0.02,
+          "unit": "ng/mL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_061_multiple_vitals_basic",
+    "prompt": "Heart rate 75 bpm, weight 70 kg, temperature 98.6°F",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 75,
+          "unit": "bpm"
+        },
+        {
+          "name": "body_weight",
+          "value": 70,
+          "unit": "kg"
+        },
+        {
+          "name": "body_temperature",
+          "value": 98.6,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_062_multiple_bp_hr",
+    "prompt": "Blood pressure 125/82 mmHg and heart rate 68 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 125,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 82,
+          "unit": "mmHg"
+        },
+        {
+          "name": "heart_rate",
+          "value": 68,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_063_multiple_lipid_panel",
+    "prompt": "Total cholesterol 195 mg/dL, HDL 58 mg/dL, LDL 115 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 195,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "high_density_lipoprotein_cholesterol",
+          "value": 58,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "low_density_lipoprotein_cholesterol",
+          "value": 115,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_064_multiple_sleep_metrics",
+    "prompt": "Slept 8 hours total, 2.5 hours deep sleep, 1.5 hours REM",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "name": "deep_sleep_duration",
+          "value": 2.5,
+          "unit": "hours"
+        },
+        {
+          "name": "rem_sleep_duration",
+          "value": 1.5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_065_multiple_body_composition",
+    "prompt": "Weight 68 kg, BMI 23.2, body fat 16%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 68,
+          "unit": "kg"
+        },
+        {
+          "name": "body_mass_index",
+          "value": 23.2,
+          "unit": "kg/m²"
+        },
+        {
+          "name": "body_fat_percentage",
+          "value": 16,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_066_multiple_kidney_function",
+    "prompt": "Creatinine 1.0 mg/dL, BUN 15 mg/dL, eGFR 98 mL/min/1.73m²",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "creatinine",
+          "value": 1.0,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "blood_urea_nitrogen",
+          "value": 15,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "estimated_glomerular_filtration_rate",
+          "value": 98,
+          "unit": "mL/min/1.73m²"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_067_multiple_electrolytes",
+    "prompt": "Sodium 138 mEq/L, potassium 4.0 mEq/L, chloride 101 mEq/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sodium",
+          "value": 138,
+          "unit": "mEq/L"
+        },
+        {
+          "name": "potassium",
+          "value": 4.0,
+          "unit": "mEq/L"
+        },
+        {
+          "name": "chloride",
+          "value": 101,
+          "unit": "mEq/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_068_estimation_high_cholesterol",
+    "prompt": "My cholesterol is high",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 240,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_069_estimation_low_cholesterol",
+    "prompt": "My cholesterol is low",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 150,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_070_estimation_high_hr",
+    "prompt": "My heart rate is high",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 90,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_071_estimation_normal_bp",
+    "prompt": "Blood pressure is normal",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 120,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 80,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_072_estimation_low_glucose",
+    "prompt": "Blood sugar is low",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 70,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_073_estimation_high_glucose",
+    "prompt": "My glucose is elevated",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 160,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_074_estimation_normal_temp",
+    "prompt": "Temperature is normal",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 98.6,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_075_estimation_high_bp",
+    "prompt": "My blood pressure is elevated",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 140,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 90,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_076_colloquial_pulse",
+    "prompt": "Pulse is 78",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 78,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_077_colloquial_sugar",
+    "prompt": "Blood sugar 110",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 110,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_078_medical_abbreviation_hr",
+    "prompt": "HR 82 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 82,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_079_medical_abbreviation_rhr",
+    "prompt": "RHR 58 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "resting_heart_rate",
+          "value": 58,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_080_medical_abbreviation_wt",
+    "prompt": "Wt: 72.5 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 72.5,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_081_error_vague_glucose",
+    "prompt": "I checked my glucose",
+    "expected_output": {
+      "error": "What was your glucose reading?"
+    }
+  },
+  {
+    "id": "bio_082_error_vague_bp",
+    "prompt": "Had my blood pressure taken",
+    "expected_output": {
+      "error": "What was your blood pressure reading?"
+    }
+  },
+  {
+    "id": "bio_083_error_vague_weight",
+    "prompt": "Weighed myself today",
+    "expected_output": {
+      "error": "What was your weight measurement?"
+    }
+  },
+  {
+    "id": "bio_084_error_vague_temp",
+    "prompt": "Took my temperature",
+    "expected_output": {
+      "error": "What was your temperature reading?"
+    }
+  },
+  {
+    "id": "bio_085_error_vague_hr",
+    "prompt": "Checked my heart rate",
+    "expected_output": {
+      "error": "What was your heart rate measurement?"
+    }
+  },
+  {
+    "id": "bio_086_error_vague_sleep",
+    "prompt": "Tracked my sleep",
+    "expected_output": {
+      "error": "What were your specific sleep measurements?"
+    }
+  },
+  {
+    "id": "bio_087_error_vague_cholesterol",
+    "prompt": "Got my cholesterol checked",
+    "expected_output": {
+      "error": "What were your cholesterol levels?"
+    }
+  },
+  {
+    "id": "bio_088_error_vague_labs",
+    "prompt": "Had blood work done",
+    "expected_output": {
+      "error": "What were the specific results from your blood work?"
+    }
+  },
+  {
+    "id": "bio_089_error_vague_vitals",
+    "prompt": "Nurse took my vitals",
+    "expected_output": {
+      "error": "What were your vital sign measurements?"
+    }
+  },
+  {
+    "id": "bio_090_error_vague_checkup",
+    "prompt": "Had my annual physical",
+    "expected_output": {
+      "error": "What specific measurements or results do you want to log from your physical?"
+    }
+  },
+  {
+    "id": "bio_091_error_unrelated_exercise",
+    "prompt": "I went for a walk today",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_092_error_unrelated_meeting",
+    "prompt": "Meeting at 3pm",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_093_error_unrelated_weather",
+    "prompt": "The weather is nice today",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_094_error_unrelated_workout",
+    "prompt": "Just finished my workout",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_095_error_unrelated_food",
+    "prompt": "Had lunch at the cafeteria",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_096_error_unrelated_work",
+    "prompt": "Busy day at work",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_097_error_unrelated_travel",
+    "prompt": "Flying to New York tomorrow",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_098_error_unrelated_entertainment",
+    "prompt": "Watched a movie last night",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_099_error_ambiguous_levels",
+    "prompt": "My levels are off",
+    "expected_output": {
+      "error": "Which specific biomarker levels are you referring to?"
+    }
+  },
+  {
+    "id": "bio_100_error_ambiguous_results",
+    "prompt": "Got my test results back",
+    "expected_output": {
+      "error": "What were the specific test results and values?"
+    }
+  },
+  {
+    "id": "bio_101_error_ambiguous_health",
+    "prompt": "Something seems wrong with my health",
+    "expected_output": {
+      "error": "What specific health measurements or symptoms are you concerned about?"
+    }
+  },
+  {
+    "id": "bio_102_error_ambiguous_numbers",
+    "prompt": "The numbers don't look good",
+    "expected_output": {
+      "error": "Which specific biomarker numbers are you referring to?"
+    }
+  },
+  {
+    "id": "bio_103_error_generic_health",
+    "prompt": "Health check",
+    "expected_output": {
+      "error": "What specific health measurements do you want to log?"
+    }
+  },
+  {
+    "id": "bio_104_error_generic_monitoring",
+    "prompt": "Monitoring my health",
+    "expected_output": {
+      "error": "What specific biomarkers are you monitoring?"
+    }
+  },
+  {
+    "id": "bio_105_error_generic_wellness",
+    "prompt": "Wellness tracking",
+    "expected_output": {
+      "error": "What specific wellness metrics do you want to log?"
+    }
+  },
+  {
+    "id": "bio_106_error_generic_fitness",
+    "prompt": "Fitness assessment",
+    "expected_output": {
+      "error": "What specific fitness measurements do you want to record?"
+    }
+  },
+  {
+    "id": "bio_107_alternative_oxygen_sat",
+    "prompt": "O2 sat is 94%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "oxygen_saturation",
+          "value": 94,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_108_alternative_pulse_ox",
+    "prompt": "Pulse ox reading 99%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "spo2",
+          "value": 99,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_109_alternative_body_temp",
+    "prompt": "Core temperature 37.0°C",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 37.0,
+          "unit": "°C"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_110_alternative_glucose_bg",
+    "prompt": "BG is 105 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 105,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_111_alternative_steps_walked",
+    "prompt": "Walked 12,000 steps today",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 12000,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_112_alternative_sleep_time",
+    "prompt": "Sleep time was 6.5 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 6.5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_113_contextual_morning_weight",
+    "prompt": "Morning weight after bathroom: 68.2 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 68.2,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_114_contextual_post_workout_hr",
+    "prompt": "Heart rate 5 minutes post-workout: 95 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 95,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_115_contextual_fasting_glucose",
+    "prompt": "12-hour fasting glucose: 88 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 88,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_116_contextual_bedtime_temp",
+    "prompt": "Bedtime temperature check: 98.4°F",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 98.4,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_117_contextual_morning_bp",
+    "prompt": "Morning BP before coffee: 118/76 mmHg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 118,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 76,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_118_device_specific_fitbit",
+    "prompt": "Fitbit shows 8,750 steps",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 8750,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_119_device_specific_apple_watch",
+    "prompt": "Apple Watch recorded RHR 62 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "resting_heart_rate",
+          "value": 62,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_120_device_specific_scale",
+    "prompt": "Smart scale reading: 71.8 kg, 19% body fat",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 71.8,
+          "unit": "kg"
+        },
+        {
+          "name": "body_fat_percentage",
+          "value": 19,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_121_multiple_complete_metabolic_panel",
+    "prompt": "Complete metabolic panel: glucose 92 mg/dL, sodium 139 mEq/L, potassium 4.1 mEq/L, chloride 103 mEq/L, BUN 16 mg/dL, creatinine 0.9 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 92,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "sodium",
+          "value": 139,
+          "unit": "mEq/L"
+        },
+        {
+          "name": "potassium",
+          "value": 4.1,
+          "unit": "mEq/L"
+        },
+        {
+          "name": "chloride",
+          "value": 103,
+          "unit": "mEq/L"
+        },
+        {
+          "name": "blood_urea_nitrogen",
+          "value": 16,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "creatinine",
+          "value": 0.9,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_122_multiple_liver_function_panel",
+    "prompt": "Liver function tests: ALT 28 U/L, AST 32 U/L, alkaline phosphatase 88 U/L, total bilirubin 0.7 mg/dL, albumin 4.2 g/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "alanine_transaminase",
+          "value": 28,
+          "unit": "U/L"
+        },
+        {
+          "name": "aspartate_transaminase",
+          "value": 32,
+          "unit": "U/L"
+        },
+        {
+          "name": "alkaline_phosphatase",
+          "value": 88,
+          "unit": "U/L"
+        },
+        {
+          "name": "total_bilirubin",
+          "value": 0.7,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "albumin",
+          "value": 4.2,
+          "unit": "g/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_123_multiple_thyroid_panel",
+    "prompt": "Thyroid panel results: TSH 2.8 mIU/L, free T4 1.3 ng/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "thyroid_stimulating_hormone",
+          "value": 2.8,
+          "unit": "mIU/L"
+        },
+        {
+          "name": "free_thyroxine",
+          "value": 1.3,
+          "unit": "ng/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_124_multiple_complete_blood_count",
+    "prompt": "CBC results: hemoglobin 13.8 g/dL, hematocrit 41%, WBC 6800/μL, platelets 285,000/μL, RBC 4.6 million/μL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL"
+        },
+        {
+          "name": "hematocrit",
+          "value": 41,
+          "unit": "%"
+        },
+        {
+          "name": "white_blood_cell_count",
+          "value": 6800,
+          "unit": "/μL"
+        },
+        {
+          "name": "platelet_count",
+          "value": 285000,
+          "unit": "/μL"
+        },
+        {
+          "name": "red_blood_cell_count",
+          "value": 4.6,
+          "unit": "million/μL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_125_multiple_cardiac_markers",
+    "prompt": "Cardiac workup: troponin 0.01 ng/mL, CRP 1.8 mg/L, heart rate 74 bpm",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "troponin",
+          "value": 0.01,
+          "unit": "ng/mL"
+        },
+        {
+          "name": "c_reactive_protein",
+          "value": 1.8,
+          "unit": "mg/L"
+        },
+        {
+          "name": "heart_rate",
+          "value": 74,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_126_multiple_fitness_metrics",
+    "prompt": "Fitness assessment: VO2 max 42 mL/kg/min, resting HR 59 bpm, body fat 14%, muscle mass 38 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vo2_max",
+          "value": 42,
+          "unit": "mL/kg/min"
+        },
+        {
+          "name": "resting_heart_rate",
+          "value": 59,
+          "unit": "bpm"
+        },
+        {
+          "name": "body_fat_percentage",
+          "value": 14,
+          "unit": "%"
+        },
+        {
+          "name": "muscle_mass",
+          "value": 38,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_127_multiple_comprehensive_vitals",
+    "prompt": "Vitals check: BP 122/78 mmHg, HR 71 bpm, temp 98.4°F, SpO2 97%, weight 73.2 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 122,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 78,
+          "unit": "mmHg"
+        },
+        {
+          "name": "heart_rate",
+          "value": 71,
+          "unit": "bpm"
+        },
+        {
+          "name": "body_temperature",
+          "value": 98.4,
+          "unit": "°F"
+        },
+        {
+          "name": "spo2",
+          "value": 97,
+          "unit": "%"
+        },
+        {
+          "name": "body_weight",
+          "value": 73.2,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_128_multiple_diabetes_panel",
+    "prompt": "Diabetes monitoring: fasting glucose 89 mg/dL, HbA1c 5.4%, random glucose 118 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 89,
+          "unit": "mg/dL"
+        },
+        {
+          "name": "hemoglobin_a1c",
+          "value": 5.4,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_129_multiple_hormone_panel",
+    "prompt": "Hormone levels: testosterone 580 ng/dL, cortisol 12 μg/dL, vitamin D 28 ng/mL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "testosterone",
+          "value": 580,
+          "unit": "ng/dL"
+        },
+        {
+          "name": "cortisol",
+          "value": 12,
+          "unit": "μg/dL"
+        },
+        {
+          "name": "vitamin_d_25_hydroxy",
+          "value": 28,
+          "unit": "ng/mL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_130_multiple_body_composition_detailed",
+    "prompt": "DEXA scan results: total body weight 69.8 kg, lean mass 54.2 kg, skeletal muscle mass 29.8 kg, body fat 22%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 69.8,
+          "unit": "kg"
+        },
+        {
+          "name": "lean_body_mass",
+          "value": 54.2,
+          "unit": "kg"
+        },
+        {
+          "name": "skeletal_muscle_mass",
+          "value": 29.8,
+          "unit": "kg"
+        },
+        {
+          "name": "body_fat_percentage",
+          "value": 22,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_131_multiple_sleep_comprehensive",
+    "prompt": "Sleep study: total sleep 7.2 hours, deep sleep 1.9 hours, light sleep 4.1 hours, REM 1.2 hours, sleep quality 78/100",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 7.2,
+          "unit": "hours"
+        },
+        {
+          "name": "deep_sleep_duration",
+          "value": 1.9,
+          "unit": "hours"
+        },
+        {
+          "name": "light_sleep_duration",
+          "value": 4.1,
+          "unit": "hours"
+        },
+        {
+          "name": "rem_sleep_duration",
+          "value": 1.2,
+          "unit": "hours"
+        },
+        {
+          "name": "sleep_quality_score",
+          "value": 78,
+          "unit": "score"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_132_multiple_anthropometric",
+    "prompt": "Body measurements: weight 67.5 kg, BMI 22.8, waist 30 inches, waist-to-hip ratio 0.82",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 67.5,
+          "unit": "kg"
+        },
+        {
+          "name": "body_mass_index",
+          "value": 22.8,
+          "unit": "kg/m²"
+        },
+        {
+          "name": "waist_circumference",
+          "value": 30,
+          "unit": "inches"
+        },
+        {
+          "name": "waist_to_hip_ratio",
+          "value": 0.82,
+          "unit": "ratio"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_133_multiple_respiratory_cardiac",
+    "prompt": "Cardiopulmonary assessment: heart rate 76 bpm, HRV 42 ms, oxygen saturation 98%, blood pressure 118/74 mmHg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 76,
+          "unit": "bpm"
+        },
+        {
+          "name": "heart_rate_variability",
+          "value": 42,
+          "unit": "ms"
+        },
+        {
+          "name": "oxygen_saturation",
+          "value": 98,
+          "unit": "%"
+        },
+        {
+          "name": "blood_pressure_systolic",
+          "value": 118,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 74,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_134_multiple_wellness_tracking",
+    "prompt": "Daily wellness: steps 9,850, sleep 8.1 hours, resting HR 63 bpm, weight 71.2 kg, temperature 98.7°F",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 9850,
+          "unit": "steps"
+        },
+        {
+          "name": "sleep_duration",
+          "value": 8.1,
+          "unit": "hours"
+        },
+        {
+          "name": "resting_heart_rate",
+          "value": 63,
+          "unit": "bpm"
+        },
+        {
+          "name": "body_weight",
+          "value": 71.2,
+          "unit": "kg"
+        },
+        {
+          "name": "body_temperature",
+          "value": 98.7,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_135_estimation_very_high_bp",
+    "prompt": "My blood pressure is really high today",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 160,
+          "unit": "mmHg"
+        },
+        {
+          "name": "blood_pressure_diastolic",
+          "value": 100,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_136_estimation_low_hr",
+    "prompt": "Heart rate feels low",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 55,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_137_estimation_elevated_temp",
+    "prompt": "Running a slight fever",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 100.2,
+          "unit": "°F"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_138_estimation_poor_sleep",
+    "prompt": "Didn't sleep well, maybe 5 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_139_estimation_good_sleep",
+    "prompt": "Slept really well last night",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 8.5,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_140_estimation_low_oxygen",
+    "prompt": "Oxygen levels seem low",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "oxygen_saturation",
+          "value": 92,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_141_estimation_high_glucose",
+    "prompt": "Blood sugar feels elevated after that meal",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 180,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_142_estimation_normal_weight",
+    "prompt": "Weight is about normal for me",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_weight",
+          "value": 70,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_143_estimation_low_steps",
+    "prompt": "Barely walked today, very sedentary",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 2000,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_144_estimation_active_day",
+    "prompt": "Very active day, walked a lot",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 15000,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_145_estimation_high_hrv",
+    "prompt": "Heart rate variability seems good today",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate_variability",
+          "value": 45,
+          "unit": "ms"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_146_estimation_low_vitamin_d",
+    "prompt": "Vitamin D is probably low, haven't been in sun much",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vitamin_d_25_hydroxy",
+          "value": 20,
+          "unit": "ng/mL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_147_estimation_borderline_cholesterol",
+    "prompt": "Cholesterol is borderline high",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 220,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_148_estimation_excellent_fitness",
+    "prompt": "VO2 max is excellent for my age",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vo2_max",
+          "value": 55,
+          "unit": "mL/kg/min"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_149_estimation_dehydrated",
+    "prompt": "Feeling dehydrated, urine is dark",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "uric_acid",
+          "value": 7.5,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_150_alternative_pulse_rate",
+    "prompt": "Pulse rate 84",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "heart_rate",
+          "value": 84,
+          "unit": "bpm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_151_alternative_blood_glucose",
+    "prompt": "Blood glucose 108",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_sugar_level",
+          "value": 108,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_152_alternative_body_mass",
+    "prompt": "Body mass index 25.1",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_mass_index",
+          "value": 25.1,
+          "unit": "kg/m²"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_153_alternative_core_temp",
+    "prompt": "Core body temperature 37.1°C",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_temperature",
+          "value": 37.1,
+          "unit": "°C"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_154_alternative_sat_o2",
+    "prompt": "Sat O2 95%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "oxygen_saturation",
+          "value": 95,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_155_alternative_systolic_bp",
+    "prompt": "Systolic pressure 128 mmHg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "blood_pressure_systolic",
+          "value": 128,
+          "unit": "mmHg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_156_alternative_hemoglobin_level",
+    "prompt": "Hgb 13.5 g/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "hemoglobin",
+          "value": 13.5,
+          "unit": "g/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_157_alternative_white_cells",
+    "prompt": "White cell count 7500",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "white_blood_cell_count",
+          "value": 7500,
+          "unit": "/μL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_158_alternative_creat_level",
+    "prompt": "Creat 1.2 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "creatinine",
+          "value": 1.2,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_159_alternative_total_chol",
+    "prompt": "Total chol 185 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "total_cholesterol",
+          "value": 185,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_160_alternative_good_cholesterol",
+    "prompt": "Good cholesterol 62 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "high_density_lipoprotein_cholesterol",
+          "value": 62,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_161_alternative_bad_cholesterol",
+    "prompt": "Bad cholesterol 110 mg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "low_density_lipoprotein_cholesterol",
+          "value": 110,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_162_alternative_step_counter",
+    "prompt": "Step counter shows 11,250",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "daily_step_count",
+          "value": 11250,
+          "unit": "steps"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_163_alternative_sleep_time_total",
+    "prompt": "Total sleep time 6.8 hours",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "sleep_duration",
+          "value": 6.8,
+          "unit": "hours"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_164_alternative_body_fat_percent",
+    "prompt": "Body fat percent 21%",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "body_fat_percentage",
+          "value": 21,
+          "unit": "%"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_165_alternative_waist_measurement",
+    "prompt": "Waist measurement 34 inches",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "waist_circumference",
+          "value": 34,
+          "unit": "inches"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_166_alternative_muscle_weight",
+    "prompt": "Muscle weight 33 kg",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "muscle_mass",
+          "value": 33,
+          "unit": "kg"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_167_alternative_maximal_oxygen_uptake",
+    "prompt": "Maximal oxygen uptake 48 mL/kg/min",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "vo2_max",
+          "value": 48,
+          "unit": "mL/kg/min"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_168_alternative_thyroid_hormone",
+    "prompt": "Thyroid hormone TSH 3.2 mIU/L",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "thyroid_stimulating_hormone",
+          "value": 3.2,
+          "unit": "mIU/L"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_169_alternative_stress_hormone",
+    "prompt": "Stress hormone cortisol 18 μg/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "cortisol",
+          "value": 18,
+          "unit": "μg/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_170_alternative_male_hormone",
+    "prompt": "Male hormone testosterone 720 ng/dL",
+    "expected_output": {
+      "payload": [
+        {
+          "name": "testosterone",
+          "value": 720,
+          "unit": "ng/dL"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bio_171_error_vague_blood_work",
+    "prompt": "Got my blood work results",
+    "expected_output": {
+      "error": "What were the specific results from your blood work?"
+    }
+  },
+  {
+    "id": "bio_172_error_vague_physical_exam",
+    "prompt": "Had my physical exam today",
+    "expected_output": {
+      "error": "What specific measurements or results do you want to log from your physical exam?"
+    }
+  },
+  {
+    "id": "bio_173_error_vague_lab_results",
+    "prompt": "Lab results came back",
+    "expected_output": {
+      "error": "What were the specific lab values and results?"
+    }
+  },
+  {
+    "id": "bio_174_error_vague_doctor_visit",
+    "prompt": "Saw the doctor today",
+    "expected_output": {
+      "error": "What specific health measurements were taken during your doctor visit?"
+    }
+  },
+  {
+    "id": "bio_175_error_vague_health_screening",
+    "prompt": "Had a health screening",
+    "expected_output": {
+      "error": "What specific measurements were taken during your health screening?"
+    }
+  },
+  {
+    "id": "bio_176_error_vague_wellness_check",
+    "prompt": "Wellness check completed",
+    "expected_output": {
+      "error": "What specific wellness metrics do you want to log?"
+    }
+  },
+  {
+    "id": "bio_177_error_vague_biometrics",
+    "prompt": "Took my biometrics",
+    "expected_output": {
+      "error": "What were your specific biometric measurements?"
+    }
+  },
+  {
+    "id": "bio_178_error_vague_vital_signs",
+    "prompt": "Vital signs were taken",
+    "expected_output": {
+      "error": "What were your vital sign measurements?"
+    }
+  },
+  {
+    "id": "bio_179_error_vague_measurements",
+    "prompt": "Got my measurements done",
+    "expected_output": {
+      "error": "What were your specific measurement values?"
+    }
+  },
+  {
+    "id": "bio_180_error_vague_monitoring",
+    "prompt": "Health monitoring session",
+    "expected_output": {
+      "error": "What specific health parameters were monitored and what were the values?"
+    }
+  },
+  {
+    "id": "bio_181_error_vague_assessment",
+    "prompt": "Health assessment completed",
+    "expected_output": {
+      "error": "What specific health metrics were assessed and what were the results?"
+    }
+  },
+  {
+    "id": "bio_182_error_vague_tracking",
+    "prompt": "Tracking my health today",
+    "expected_output": {
+      "error": "What specific health metrics are you tracking and what are the values?"
+    }
+  },
+  {
+    "id": "bio_183_error_vague_numbers",
+    "prompt": "My numbers look different today",
+    "expected_output": {
+      "error": "Which specific biomarker numbers are you referring to and what are the values?"
+    }
+  },
+  {
+    "id": "bio_184_error_vague_readings",
+    "prompt": "Device gave me some readings",
+    "expected_output": {
+      "error": "What specific readings did the device show?"
+    }
+  },
+  {
+    "id": "bio_185_error_vague_test_results",
+    "prompt": "Test results are in",
+    "expected_output": {
+      "error": "What were the specific test results and values?"
+    }
+  },
+  {
+    "id": "bio_186_error_unrelated_medication",
+    "prompt": "Took my morning medications",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_187_error_unrelated_appointment",
+    "prompt": "Have a dentist appointment at 2pm",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_188_error_unrelated_symptoms",
+    "prompt": "Feeling a bit under the weather",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_189_error_unrelated_diet",
+    "prompt": "Started a new diet plan",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_190_error_unrelated_exercise_plan",
+    "prompt": "Beginning a new exercise routine",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_191_error_unrelated_sleep_schedule",
+    "prompt": "Trying to fix my sleep schedule",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_192_error_unrelated_stress",
+    "prompt": "Work has been really stressful lately",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_193_error_unrelated_hydration",
+    "prompt": "Need to drink more water",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_194_error_unrelated_recovery",
+    "prompt": "Recovering from my cold",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_195_error_unrelated_wellness_goals",
+    "prompt": "Setting new wellness goals for the year",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_196_error_unrelated_health_insurance",
+    "prompt": "Need to update my health insurance",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_197_error_unrelated_gym_membership",
+    "prompt": "Signed up for a gym membership",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_198_error_unrelated_meal_prep",
+    "prompt": "Doing meal prep for the week",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_199_error_unrelated_vacation",
+    "prompt": "Going on vacation next week",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_200_error_unrelated_shopping",
+    "prompt": "Bought some new workout clothes",
+    "expected_output": {
+      "error": "You want to log a biomarker but the query is not about health measurements"
+    }
+  },
+  {
+    "id": "bio_201_error_ambiguous_feeling",
+    "prompt": "Not feeling quite right today",
+    "expected_output": {
+      "error": "What specific health measurements or symptoms are you concerned about?"
+    }
+  },
+  {
+    "id": "bio_202_error_ambiguous_off",
+    "prompt": "Something feels off with my body",
+    "expected_output": {
+      "error": "What specific biomarker measurements are you concerned about?"
+    }
+  },
+  {
+    "id": "bio_203_error_ambiguous_weird",
+    "prompt": "My body feels weird today",
+    "expected_output": {
+      "error": "What specific health measurements would help assess how you're feeling?"
+    }
+  },
+  {
+    "id": "bio_204_error_ambiguous_different",
+    "prompt": "Everything feels different than usual",
+    "expected_output": {
+      "error": "Which specific biomarkers or measurements feel different?"
+    }
+  },
+  {
+    "id": "bio_205_error_ambiguous_concerning",
+    "prompt": "Some of my health metrics seem concerning",
+    "expected_output": {
+      "error": "Which specific health metrics are concerning and what are their values?"
+    }
+  },
+  {
+    "id": "bio_206_error_ambiguous_abnormal",
+    "prompt": "Results look abnormal",
+    "expected_output": {
+      "error": "Which specific results look abnormal and what are the values?"
+    }
+  },
+  {
+    "id": "bio_207_error_ambiguous_trending",
+    "prompt": "My health trends are changing",
+    "expected_output": {
+      "error": "Which specific health measurements are trending and what are the current values?"
+    }
+  },
+  {
+    "id": "bio_208_error_ambiguous_baseline",
+    "prompt": "Values are different from my baseline",
+    "expected_output": {
+      "error": "Which specific biomarker values are different and what are the current measurements?"
+    }
+  },
+  {
+    "id": "bio_209_error_ambiguous_range",
+    "prompt": "Some numbers are out of range",
+    "expected_output": {
+      "error": "Which specific biomarker numbers are out of range and what are their values?"
+    }
+  },
+  {
+    "id": "bio_210_error_ambiguous_improvement",
+    "prompt": "Health is improving",
+    "expected_output": {
+      "error": "Which specific health measurements show improvement and what are the current values?"
+    }
+  }
+]

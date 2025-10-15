@@ -12,7 +12,7 @@ import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" wit
 import { RAG, HyperDBAdapter } from "@tetherto/qvac-lib-rag";
 import Corestore from "corestore";
 import process from "bare-process";
-import { calculatePayloadMetrics, extractJSON, writeResultIncrementally } from "../utils";
+import { calculatePayloadMetrics, extractJSON, writeResultIncrementallyMeals } from "../utils";
 
 const responseSchema = z.object({
   payload: z
@@ -280,7 +280,7 @@ const main = async () => {
         benchmarkResult.classification = "falsy_payload";
       }
     }
-    await writeResultIncrementally(benchmarkResult, filePath, true);
+    await writeResultIncrementallyMeals(benchmarkResult, filePath, true);
   }
 
   process.kill(process.pid);

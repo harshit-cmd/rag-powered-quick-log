@@ -9,7 +9,7 @@ import { z } from "zod";
 import sqlite3InitModule from "@sqliteai/sqlite-wasm";
 import seedData1000plus from "./meal-datasets/seed-data-1000-plus.json" with { type: "json" };
 import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" with { type: "json" };
-import { calculatePayloadMetrics, extractJSON, writeResultIncrementally } from "../utils.js";
+import { calculatePayloadMetrics, extractJSON, writeResultIncrementallyMeals } from "../utils.js";
 
 const responseSchema = z.object({
   payload: z
@@ -316,7 +316,7 @@ const main = async () => {
         benchmarkResult.classification = "falsy_payload";
       }
     }
-    await writeResultIncrementally(benchmarkResult, filePath);
+    await writeResultIncrementallyMeals(benchmarkResult, filePath);
   }
 
   process.kill(process.pid);

@@ -1,0 +1,1671 @@
+[
+  {
+    "id": "med_001_past_basic",
+    "prompt": "I took 500mg aspirin for my headache",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for headache"
+      }
+    }
+  },
+  {
+    "id": "med_002_past_basic",
+    "prompt": "Just took my 10mg melatonin before bed",
+    "expected_output": {
+      "payload": {
+        "name": "Melatonin",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "before bed"
+      }
+    }
+  },
+  {
+    "id": "med_003_past_tablet",
+    "prompt": "Took 2 tablets of vitamin D",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 2,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_004_past_context",
+    "prompt": "Had 400mg ibuprofen this morning",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 400,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "this morning"
+      }
+    }
+  },
+  {
+    "id": "med_005_missed",
+    "prompt": "Missed my evening dose of blood pressure medication",
+    "expected_output": {
+      "payload": {
+        "name": "blood pressure medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": false,
+        "notes": "missed evening dose"
+      }
+    }
+  },
+  {
+    "id": "med_006_missed_specific",
+    "prompt": "Forgot to take my 20mg lisinopril this morning",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": false,
+        "notes": "forgot this morning"
+      }
+    }
+  },
+  {
+    "id": "med_007_missed_simple",
+    "prompt": "Didn't take my 50mg sertraline today",
+    "expected_output": {
+      "payload": {
+        "name": "sertraline",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_008_daily_time",
+    "prompt": "Remind me to take vitamin D every day at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_009_daily_time_alt",
+    "prompt": "I need to remember to take aspirin daily at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_010_daily_morning",
+    "prompt": "Need to take 2 tablets of vitamin D every morning at 8am",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 2,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "08:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_011_daily_no_time",
+    "prompt": "Remind me to take aspirin every morning",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_012_daily_evening",
+    "prompt": "Alert me about my blood pressure medication every evening",
+    "expected_output": {
+      "payload": {
+        "name": "blood pressure medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "every evening"
+      }
+    }
+  },
+  {
+    "id": "med_013_interval_explicit_remind",
+    "prompt": "Take 500mg paracetamol every 6 hours, notify me",
+    "expected_output": {
+      "payload": {
+        "name": "Paracetamol",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_014_interval_implicit_remind",
+    "prompt": "Take aspirin every 2 hours",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_015_interval_implicit_remind2",
+    "prompt": "Ibuprofen 400mg every 4 hours",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 400,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 4,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_016_interval_minutes",
+    "prompt": "Aspirin every 30 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 30,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_017_interval_minutes_explicit",
+    "prompt": "Take 30mg codeine every 45 minutes for pain",
+    "expected_output": {
+      "payload": {
+        "name": "codeine",
+        "dosage": 30,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 45,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "med_018_interval_hours_12",
+    "prompt": "Take 1000mg vitamin C every 12 hours",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin C",
+        "dosage": 1000,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_019_interval_hours_8",
+    "prompt": "Need to take 1g acetaminophen every 8 hours",
+    "expected_output": {
+      "payload": {
+        "name": "acetaminophen",
+        "dosage": 1,
+        "unit": "g",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_020_interval_days",
+    "prompt": "Need iron supplement every 3 days",
+    "expected_output": {
+      "payload": {
+        "name": "iron supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 3,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_021_interval_twice_daily",
+    "prompt": "Alert me to take 50mg metoprolol twice daily",
+    "expected_output": {
+      "payload": {
+        "name": "metoprolol",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "twice daily"
+      }
+    }
+  },
+  {
+    "id": "med_022_interval_three_times",
+    "prompt": "Take 500mg amoxicillin 3 times daily at 8am, 2pm, and 8pm",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "3 times daily at 8am, 2pm, and 8pm"
+      }
+    }
+  },
+  {
+    "id": "med_023_interval_four_times",
+    "prompt": "Alert me to take 500mg cephalexin 4 times daily",
+    "expected_output": {
+      "payload": {
+        "name": "cephalexin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "4 times daily"
+      }
+    }
+  },
+  {
+    "id": "med_024_interval_with_meals",
+    "prompt": "Take 500mg metformin with breakfast and dinner",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "with breakfast and dinner"
+      }
+    }
+  },
+  {
+    "id": "med_025_weekly_with_time",
+    "prompt": "Remind me to take B12 injection weekly at 3pm",
+    "expected_output": {
+      "payload": {
+        "name": "B12 injection",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "weekly",
+        "reminderTime": "15:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_026_weekly_no_time",
+    "prompt": "Take vitamin D 50000 IU every week",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 50000,
+        "unit": "IU",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_027_weekly_specific_day",
+    "prompt": "Remind me to take vitamin D 50000 IU weekly on Sundays at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 50000,
+        "unit": "IU",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "on Sundays"
+      }
+    }
+  },
+  {
+    "id": "med_028_monthly",
+    "prompt": "Monthly reminder for contraceptive pill",
+    "expected_output": {
+      "payload": {
+        "name": "contraceptive pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_029_monthly_specific",
+    "prompt": "Remind me about birth control pill monthly on the 1st at 8am",
+    "expected_output": {
+      "payload": {
+        "name": "birth control pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "08:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "on the 1st"
+      }
+    }
+  },
+  {
+    "id": "med_030_as_needed_track",
+    "prompt": "Keep track of aspirin as needed for headaches",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for headaches"
+      }
+    }
+  },
+  {
+    "id": "med_031_as_needed_track2",
+    "prompt": "Ibuprofen 200mg when needed for pain",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 200,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "med_032_as_needed_log",
+    "prompt": "Took 1mg lorazepam as needed for panic attack",
+    "expected_output": {
+      "payload": {
+        "name": "lorazepam",
+        "dosage": 1,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for panic attack"
+      }
+    }
+  },
+  {
+    "id": "med_033_unit_ml",
+    "prompt": "Took 5ml cough syrup",
+    "expected_output": {
+      "payload": {
+        "name": "cough syrup",
+        "dosage": 5,
+        "unit": "ml",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_034_unit_drop",
+    "prompt": "Applied 2 drops of eye medication",
+    "expected_output": {
+      "payload": {
+        "name": "eye medication",
+        "dosage": 2,
+        "unit": "drop",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_035_unit_spray",
+    "prompt": "Used 1 spray of nasal decongestant",
+    "expected_output": {
+      "payload": {
+        "name": "nasal decongestant",
+        "dosage": 1,
+        "unit": "spray",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_036_unit_patch",
+    "prompt": "Changed nicotine patch",
+    "expected_output": {
+      "payload": {
+        "name": "nicotine patch",
+        "dosage": 1,
+        "unit": "patch",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_037_unit_capsule",
+    "prompt": "Took 2 capsules of fish oil",
+    "expected_output": {
+      "payload": {
+        "name": "fish oil",
+        "dosage": 2,
+        "unit": "capsule",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_038_unit_iu",
+    "prompt": "Injected 10 IU insulin",
+    "expected_output": {
+      "payload": {
+        "name": "insulin",
+        "dosage": 10,
+        "unit": "IU",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_039_unit_mcg",
+    "prompt": "Took 100mcg levothyroxine",
+    "expected_output": {
+      "payload": {
+        "name": "levothyroxine",
+        "dosage": 100,
+        "unit": "mcg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_040_unit_injection",
+    "prompt": "Injected 15 units of Humalog before lunch",
+    "expected_output": {
+      "payload": {
+        "name": "Humalog",
+        "dosage": 15,
+        "unit": "IU",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "before lunch"
+      }
+    }
+  },
+  {
+    "id": "med_041_unit_gram",
+    "prompt": "Took 1g acetaminophen with food",
+    "expected_output": {
+      "payload": {
+        "name": "acetaminophen",
+        "dosage": 1,
+        "unit": "g",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "with food"
+      }
+    }
+  },
+  {
+    "id": "med_042_default_dosage",
+    "prompt": "I took aspirin",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_043_default_dosage2",
+    "prompt": "Had vitamin C today",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin C",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_044_spelling_aspirine",
+    "prompt": "Took aspirine for pain",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "med_045_spelling_paracetamol",
+    "prompt": "Had 500mg paracetamol",
+    "expected_output": {
+      "payload": {
+        "name": "Paracetamol",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_046_spelling_ibuprofen",
+    "prompt": "Took ibuprofin 200mg",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 200,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_047_decimal_dosage",
+    "prompt": "Took 2.5mg ramipril",
+    "expected_output": {
+      "payload": {
+        "name": "ramipril",
+        "dosage": 2.5,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_048_decimal_dosage2",
+    "prompt": "Had 0.25mg alprazolam for anxiety",
+    "expected_output": {
+      "payload": {
+        "name": "alprazolam",
+        "dosage": 0.25,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for anxiety"
+      }
+    }
+  },
+  {
+    "id": "med_049_decimal_dosage3",
+    "prompt": "Took 0.5mg lorazepam",
+    "expected_output": {
+      "payload": {
+        "name": "lorazepam",
+        "dosage": 0.5,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_050_multiple_tablets",
+    "prompt": "Took 2 tablets of 250mg each naproxen",
+    "expected_output": {
+      "payload": {
+        "name": "naproxen",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "2 tablets of 250mg each"
+      }
+    }
+  },
+  {
+    "id": "med_051_multiple_tablets2",
+    "prompt": "Had 3x 200mg ibuprofen tablets",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 600,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "3x 200mg tablets"
+      }
+    }
+  },
+  {
+    "id": "med_052_brand_name",
+    "prompt": "Took 2 Advil",
+    "expected_output": {
+      "payload": {
+        "name": "Advil",
+        "dosage": 2,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_053_brand_name2",
+    "prompt": "Had a Tylenol PM before bed",
+    "expected_output": {
+      "payload": {
+        "name": "Tylenol PM",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "before bed"
+      }
+    }
+  },
+  {
+    "id": "med_054_brand_name3",
+    "prompt": "Just took my Lipitor 20mg",
+    "expected_output": {
+      "payload": {
+        "name": "Lipitor",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_055_compound_med",
+    "prompt": "Took lisinopril-hydrochlorothiazide 20-12.5mg",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril-hydrochlorothiazide",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "20-12.5mg combination"
+      }
+    }
+  },
+  {
+    "id": "med_056_compound_med2",
+    "prompt": "Had my amoxicillin-clavulanate 875-125mg tablet",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin-clavulanate",
+        "dosage": 875,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "875-125mg combination"
+      }
+    }
+  },
+  {
+    "id": "med_057_casual_language",
+    "prompt": "popped some aspirin",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_058_casual_language2",
+    "prompt": "downed my vitamins",
+    "expected_output": {
+      "payload": {
+        "name": "vitamins",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_059_double_dose",
+    "prompt": "Accidentally took double dose of 10mg lisinopril",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "accidentally double dose"
+      }
+    }
+  },
+  {
+    "id": "med_060_late_dose",
+    "prompt": "Took my morning metformin late at 2pm",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "late at 2pm"
+      }
+    }
+  },
+  {
+    "id": "med_061_time_12h_am",
+    "prompt": "Remind me to take 10mg lisinopril at 7am",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_062_time_12h_pm",
+    "prompt": "Alert me to take synthroid at 8pm",
+    "expected_output": {
+      "payload": {
+        "name": "synthroid",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "20:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_063_time_midnight",
+    "prompt": "Alert me for melatonin at 12am",
+    "expected_output": {
+      "payload": {
+        "name": "melatonin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "00:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_064_time_noon",
+    "prompt": "Remind me to take metformin at 12pm",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "12:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_065_time_24h",
+    "prompt": "Remind me to take vitamin D at 08:30",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "08:30",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_066_time_evening",
+    "prompt": "Alert me to take losartan at 18:45",
+    "expected_output": {
+      "payload": {
+        "name": "losartan",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "18:45",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_067_time_late_night",
+    "prompt": "Alert me to take trazodone at 11:45pm",
+    "expected_output": {
+      "payload": {
+        "name": "trazodone",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "23:45",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_068_time_early_morning",
+    "prompt": "Remind me to take thyroid medication at 5:30am",
+    "expected_output": {
+      "payload": {
+        "name": "thyroid medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "05:30",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_069_time_with_context",
+    "prompt": "Remind me to take levothyroxine before breakfast at 6am",
+    "expected_output": {
+      "payload": {
+        "name": "levothyroxine",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "06:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "before breakfast"
+      }
+    }
+  },
+  {
+    "id": "med_070_time_bedtime",
+    "prompt": "Remind me to take melatonin at bedtime",
+    "expected_output": {
+      "payload": {
+        "name": "melatonin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "at bedtime"
+      }
+    }
+  },
+  {
+    "id": "med_071_time_implicit_future",
+    "prompt": "Take lisinopril every morning at 7am",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_072_time_need_to",
+    "prompt": "I need to take vitamin D at 8:30am every day",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "08:30",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_073_complex_multimed",
+    "prompt": "Remind me to take 20mg lisinopril at 7am and 5mg amlodipine at 7pm",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "and 5mg amlodipine at 7pm"
+      }
+    }
+  },
+  {
+    "id": "med_074_context_food",
+    "prompt": "Took 500mg acetaminophen with food",
+    "expected_output": {
+      "payload": {
+        "name": "acetaminophen",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "with food"
+      }
+    }
+  },
+  {
+    "id": "med_075_context_empty_stomach",
+    "prompt": "Took 10mg cetirizine on empty stomach",
+    "expected_output": {
+      "payload": {
+        "name": "cetirizine",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "on empty stomach"
+      }
+    }
+  },
+  {
+    "id": "med_076_context_location",
+    "prompt": "Applied 25mcg fentanyl patch to upper arm",
+    "expected_output": {
+      "payload": {
+        "name": "fentanyl patch",
+        "dosage": 25,
+        "unit": "mcg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "to upper arm"
+      }
+    }
+  },
+  {
+    "id": "med_077_inhaler_puffs",
+    "prompt": "Used albuterol inhaler 2 puffs for asthma",
+    "expected_output": {
+      "payload": {
+        "name": "albuterol inhaler",
+        "dosage": 2,
+        "unit": "spray",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for asthma"
+      }
+    }
+  },
+  {
+    "id": "med_078_insulin_specific",
+    "prompt": "Injected 15 units of Humalog before lunch",
+    "expected_output": {
+      "payload": {
+        "name": "Humalog",
+        "dosage": 15,
+        "unit": "IU",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "before lunch"
+      }
+    }
+  },
+  {
+    "id": "med_079_vaccine",
+    "prompt": "Got flu vaccine shot today",
+    "expected_output": {
+      "payload": {
+        "name": "flu vaccine",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_080_otc",
+    "prompt": "Took some Tums for heartburn",
+    "expected_output": {
+      "payload": {
+        "name": "Tums",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for heartburn"
+      }
+    }
+  },
+  {
+    "id": "med_081_liquid_pediatric",
+    "prompt": "Gave child 5ml amoxicillin 250mg/5ml",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 5,
+        "unit": "ml",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "250mg/5ml suspension"
+      }
+    }
+  },
+  {
+    "id": "med_082_emergency",
+    "prompt": "Used EpiPen 0.3mg for allergic reaction",
+    "expected_output": {
+      "payload": {
+        "name": "EpiPen",
+        "dosage": 0.3,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "for allergic reaction"
+      }
+    }
+  },
+  {
+    "id": "med_083_herbal",
+    "prompt": "Took 500mg turmeric supplement",
+    "expected_output": {
+      "payload": {
+        "name": "turmeric",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_084_powder",
+    "prompt": "Mixed 5g creatine powder in water",
+    "expected_output": {
+      "payload": {
+        "name": "creatine",
+        "dosage": 5,
+        "unit": "g",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "powder in water"
+      }
+    }
+  },
+  {
+    "id": "med_085_er_formulation",
+    "prompt": "Took 500mg metformin ER",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "extended release"
+      }
+    }
+  },
+  {
+    "id": "med_086_error_vague_med",
+    "prompt": "Remind me about vitamins",
+    "expected_output": {
+      "error": "Which vitamin and when?"
+    }
+  },
+  {
+    "id": "med_087_error_vague_med2",
+    "prompt": "Need vitamins",
+    "expected_output": {
+      "error": "Which vitamin and when?"
+    }
+  },
+  {
+    "id": "med_088_error_vague_med3",
+    "prompt": "Took medicine",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_089_error_vague_pills",
+    "prompt": "pills",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_090_error_vague_meds",
+    "prompt": "my meds",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_091_error_incomplete_dosage",
+    "prompt": "took 500mg",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_092_error_incomplete_time",
+    "prompt": "remind me at 8am",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_093_error_forgot_generic",
+    "prompt": "Forgot to take morning medication",
+    "expected_output": {
+      "error": "What specific medication?"
+    }
+  },
+  {
+    "id": "med_094_error_unrelated_weather",
+    "prompt": "What's the weather like today?",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_095_error_unrelated_alarm",
+    "prompt": "Set alarm for 8am",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_096_error_unrelated_call",
+    "prompt": "call the doctor",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_097_error_unrelated_appointment",
+    "prompt": "schedule an appointment",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_098_error_unrelated_music",
+    "prompt": "play some music",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_099_error_unrelated_food",
+    "prompt": "Had a sandwich",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_100_error_unrelated_symptom",
+    "prompt": "I have a headache",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_101_error_question",
+    "prompt": "What is aspirin used for?",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_102_error_dosage_question",
+    "prompt": "How much aspirin should I take?",
+    "expected_output": {
+      "error": "Query unrelated to medications"
+    }
+  },
+  {
+    "id": "med_103_error_refill",
+    "prompt": "Need to refill prescription",
+    "expected_output": {
+      "error": "Which prescription needs to be refilled?"
+    }
+  },
+  {
+    "id": "med_104_edge_very_high_dosage",
+    "prompt": "Took 100000 IU vitamin D",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 100000,
+        "unit": "IU",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "med_105_edge_very_frequent",
+    "prompt": "Take aspirin every 15 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 15,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_106_edge_every_1_minute",
+    "prompt": "Aspirin every 1 minute",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 1,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_107_edge_decimal_tablets",
+    "prompt": "Took 1.5 tablets of 10mg propranolol",
+    "expected_output": {
+      "payload": {
+        "name": "propranolol",
+        "dosage": 15,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "1.5 tablets"
+      }
+    }
+  },
+  {
+    "id": "med_108_edge_complex_schedule",
+    "prompt": "Alert me to take warfarin 5mg on Mon/Wed/Fri and 7.5mg on Tue/Thu/Sat/Sun",
+    "expected_output": {
+      "payload": {
+        "name": "warfarin",
+        "dosage": 5,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "5mg Mon/Wed/Fri and 7.5mg Tue/Thu/Sat/Sun"
+      }
+    }
+  },
+  {
+    "id": "med_109_edge_taper",
+    "prompt": "Remind me to take prednisone 10mg taper: 40mg day 1-2, 30mg day 3-4, 20mg day 5-6, 10mg day 7",
+    "expected_output": {
+      "payload": {
+        "name": "prednisone",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "taper: 40mg day 1-2, 30mg day 3-4, 20mg day 5-6, 10mg day 7"
+      }
+    }
+  },
+  {
+    "id": "med_110_edge_range_dosage",
+    "prompt": "Took 5-10mg cyclobenzaprine for muscle spasm",
+    "expected_output": {
+      "payload": {
+        "name": "cyclobenzaprine",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "5-10mg for muscle spasm"
+      }
+    }
+  },
+  {
+    "id": "med_111_special_tell_me",
+    "prompt": "Tell me when to take my calcium supplement",
+    "expected_output": {
+      "payload": {
+        "name": "calcium supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_112_special_remember_to",
+    "prompt": "I need to remember to take omega-3 every day",
+    "expected_output": {
+      "payload": {
+        "name": "omega-3",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_113_special_dont_forget",
+    "prompt": "Don't let me forget to take my thyroid pill at 6am",
+    "expected_output": {
+      "payload": {
+        "name": "thyroid pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "06:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_114_special_gotta",
+    "prompt": "gotta take my blood pressure meds every morning",
+    "expected_output": {
+      "payload": {
+        "name": "blood pressure medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_115_interval_no_remind_keyword",
+    "prompt": "Need to take ibuprofen every 6 hours",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_116_interval_starting_now",
+    "prompt": "Start taking 500mg tylenol every 4 hours starting now",
+    "expected_output": {
+      "payload": {
+        "name": "Tylenol",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 4,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "starting now"
+      }
+    }
+  },
+  {
+    "id": "med_117_interval_for_duration",
+    "prompt": "Take amoxicillin 500mg every 8 hours for 7 days",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for 7 days"
+      }
+    }
+  },
+  {
+    "id": "med_118_interval_short_10min",
+    "prompt": "Take pain medication every 10 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "pain medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 10,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_119_interval_every_other_day",
+    "prompt": "Take vitamin D every 2 days",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "med_120_interval_week",
+    "prompt": "Take iron supplement every 7 days",
+    "expected_output": {
+      "payload": {
+        "name": "iron supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 7,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  }
+]
