@@ -5,6 +5,7 @@ import {
 } from "@tetherto/qvac-sdk";
 import fs from "fs";
 import comprehensiveRagDataset from "./biomarkers-datasets/comprehensive-rag-dataset.json" with { type: "json" };
+import biomarkerTestDataset from "./biomarkers-datasets/biomarker-test-dataset.json" with { type: "json" };
 
 let embeddingModelId;
 
@@ -24,12 +25,12 @@ const main = async () => {
   await initEmbeddingModel();
 
   const dataWithEmbeddings = [];
-  const total = comprehensiveRagDataset.length;
+  const total = [...comprehensiveRagDataset, ...biomarkerTestDataset].length;
 
   console.log(`\n📊 Processing ${total} entries...`);
 
-  for (let i = 0; i < comprehensiveRagDataset.length; i++) {
-    const sample = comprehensiveRagDataset[i];
+  for (let i = 0; i < [...comprehensiveRagDataset, ...biomarkerTestDataset].length; i++) {
+    const sample = [...comprehensiveRagDataset, ...biomarkerTestDataset][i];
     
     // Generate embedding for the prompt
     const embedding = await embed({ 
@@ -53,7 +54,7 @@ const main = async () => {
   }
 
   // Save to file
-  const outputPath = "./biomarkers/biomarkers-datasets/comprehensive-rag-dataset-with-embeddings.json";
+  const outputPath = "./biomarkers/biomarkers-datasets/ultimate-rag-dataset-with-embeddings.json";
   console.log(`\n💾 Saving to ${outputPath}...`);
   
   fs.writeFileSync(

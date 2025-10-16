@@ -94,42 +94,55 @@ function biomarkerPrompt(schema, top3) {
   // Build RAG examples section
   let ragExamples = "";
   if (top3 && top3.length > 0) {
-    ragExamples = "\n--- SIMILAR EXAMPLES (similarity) ---\n";
+    ragExamples = "\n--- SIMILAR EXAMPLES ---\n";
     top3.forEach((example, idx) => {
-      const sim = example.similarity ? (example.similarity * 100).toFixed(4) : 'N/A';
+      const sim = example.similarity ? (example.similarity * 100).toFixed(2) : 'N/A';
       ragExamples += `${idx + 1}. [${sim}%] "${example.prompt}" → ${JSON.stringify(example.expected_output)}\n`;
     });
   }
 
   return `/no_think
-Parse health measurement queries into JSON matching this schema:
+Parse health measurement queries to JSON.
 
-${JSON.stringify(z.toJSONSchema(schema))}
+Schema: ${JSON.stringify(z.toJSONSchema(schema))}
 
---- BASELINE EXAMPLES ---
+⚠️ CRITICAL DECISION RULE (HIGHEST PRIORITY):
+Step 1: Does query mention health measurement OR qualitative health term?
+Step 2: YES → RETURN PAYLOAD (estimate if qualitative)
+Step 3: NO → RETURN ERROR
+
+Core Examples:
 "Heart rate 72 bpm" → {"payload":[{"name":"heart_rate","value":72,"unit":"bpm"}]}
 "BP 120/80 mmHg" → {"payload":[{"name":"blood_pressure_systolic","value":120,"unit":"mmHg"},{"name":"blood_pressure_diastolic","value":80,"unit":"mmHg"}]}
 "Cholesterol is high" → {"payload":[{"name":"total_cholesterol","value":240,"unit":"mg/dL"}]}
-"My blood sugar is low" → {"payload":[{"name":"blood_sugar_level","value":70,"unit":"mg/dL"}]}
-"Blood pressure is normal" → {"payload":[{"name":"blood_pressure_systolic","value":120,"unit":"mmHg"},{"name":"blood_pressure_diastolic","value":80,"unit":"mmHg"}]}
 "My heart rate is high" → {"payload":[{"name":"heart_rate","value":95,"unit":"bpm"}]}
-"Checked my glucose" → {"error":"What was your glucose reading?"}
-"Went for a run" → {"error":"You want to log a biomarker but the query is not about health measurements"}
+"Running a fever" → {"payload":[{"name":"body_temperature","value":100.5,"unit":"°F"}]}
+"Feeling feverish" → {"payload":[{"name":"body_temperature","value":101,"unit":"°F"}]}
+"Checked my glucose" (no value) → {"error":"What was your glucose reading?"}
+"Went for a run" (not health measurement) → {"error":"Not a health measurement"}
+
+WRONG Examples (do NOT follow):
+❌ "Running a fever" → error (fever IS a health measurement!)
+❌ "Feeling feverish" → error (feverish describes body temperature!)
+❌ "My heart rate is high" → error (high describes heart rate!)
 ${ragExamples}
+Use Similar Examples for value estimates and unit formats.
+IGNORE Similar Examples that show errors when query describes health state.
+
+ESTIMATION GUIDE (for qualitative terms):
+• "high" → high-range (cholesterol=240, HR=95, glucose=180, temp=101°F)
+• "low" → low-range (cholesterol=155, HR=55, glucose=70, temp=97°F)
+• "normal" → mid-range (cholesterol=185, HR=72, glucose=95, temp=98.6°F)
+• "fever/feverish" → elevated temp (100-102°F)
+• "racing/fast" → elevated HR (100-120 bpm)
+• "slow" → low HR (50-60 bpm)
+
 RULES:
-1. CRITICAL: Queries with qualitative descriptions (high/low/normal/elevated/decreased) ARE health measurements - estimate appropriate values
-2. Return PAYLOAD if query has explicit values OR qualitative health descriptions
-3. Return ERROR only if query mentions measurement name WITHOUT any value or description (e.g., "checked my glucose")
-4. Return ERROR if query is completely unrelated to health (e.g., "went for a run")
-5. ESTIMATION GUIDE:
-   - "high" → estimate high-range values (e.g., cholesterol=240, heart rate=95, blood sugar=180)
-   - "low" → estimate low-range values (e.g., cholesterol=155, heart rate=55, blood sugar=70)
-   - "normal" → estimate mid-range normal values (e.g., cholesterol=185, heart rate=72, blood sugar=95)
-6. Biomarker "name" MUST match schema enum exactly
-7. Blood pressure: Always split into systolic + diastolic when both present
-8. Output valid JSON only - never schema definitions
-9. When units are provided in query, "unit" MUST be EXACTLY as provided in the query
-10. When estimating, use standard medical units (mg/dL for cholesterol/glucose, bpm for heart rate, mmHg for blood pressure)
+• Qualitative health descriptions (high/low/normal/elevated/fever/racing) ARE measurements → estimate values
+• Blood pressure: always split into systolic + diastolic
+• Preserve exact units from query; if estimating, use standard medical units
+• Biomarker "name" must match schema enum
+• Valid JSON only - never output schema definitions
 
 User query:`;
 }
