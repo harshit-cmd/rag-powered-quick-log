@@ -508,4 +508,136 @@ export async function writeResultIncrementallyBiomarkers(result, filePath, isbar
   fs.writeFileSync(filePath, JSON.stringify(output, null, 2));
 }
 
+/**
+ * Compares two symptom payloads field-by-field
+ * Symptom schema: {name: string, description: string, severity?: "mild" | "moderate" | "severe"}
+ * @param {Object} expected - The expected payload from test dataset
+ * @param {Object} actual - The actual payload from model response
+ * @returns {Object} Detailed comparison results with scoring
+ */
+export function compareSymptomPayloads(expected, actual) {
+  // Simple comparison: only check if the name is semantically correct
+  if (!expected?.name || !actual?.name) {
+    return { 
+      expectedName: expected?.name || null,
+      actualName: actual?.name || null,
+      isMatch: false, 
+      matchPercentage: 0 
+    };
+  }
+
+  const expectedName = expected.name.toLowerCase().trim();
+  const actualName = actual.name.toLowerCase().trim();
+
+  // Exact or substring match for semantic similarity
+  const isMatch = expectedName === actualName || 
+                  actualName.includes(expectedName) || 
+                  expectedName.includes(actualName);
+
+  return {
+    expectedName: expected.name,
+    actualName: actual.name,
+    isMatch,
+    matchPercentage: isMatch ? 100 : 0
+  };
+}
+
+export async function writeResultIncrementallySymptoms(result, filePath, isbareRuntime = false) {
+  if (!filePath) {
+    throw new Error('File path is required');
+  }
+
+  let fs
+  let path
+  if (isbareRuntime) {
+    fs = await import('bare-fs');
+    path = await import('bare-path');
+  } else {
+    fs = await import('node:fs');
+    path = await import('node:path');
+  }
+
+  let results = [];
+  let counts = {
+    truthy_payload: 0,
+    falsy_payload: 0,
+    truthy_error: 0,
+    falsy_error: 0,
+    parse_error: 0,
+  };
+
+  // Read existing file, extract results and counts from summary if available
+  if (fs.existsSync(filePath)) {
+    const content = fs.readFileSync(filePath, 'utf8');
+    if (content.trim()) {
+      try {
+        const parsed = JSON.parse(content);
+        if (Array.isArray(parsed.results)) {
+          results = parsed.results;
+        }
+        if (parsed.summary) {
+          counts = {
+            truthy_payload: parsed.summary.truthy_payload || 0,
+            falsy_payload: parsed.summary.falsy_payload || 0,
+            truthy_error: parsed.summary.truthy_error || 0,
+            falsy_error: parsed.summary.falsy_error || 0,
+            parse_error: parsed.summary.parse_error || 0
+          };
+        }
+      } catch {
+        results = [];
+      }
+    }
+  }
+
+  // Add the new result
+  results.push(result);
+
+  // Incrementally update counts
+  if (counts[result.classification] !== undefined) {
+    counts[result.classification]++;
+  }
+
+  // Increment parse error count
+  if (result.parseError) {
+    counts.parse_error++;
+  }
+
+  // Calculate statistics
+  const total = results.length;
+  const payloadTotal = counts.truthy_payload + counts.falsy_payload;
+  const errorTotal = counts.truthy_error + counts.falsy_error;
+
+  const accuracy = total > 0
+    ? ((counts.truthy_payload + counts.truthy_error) / total) * 100
+    : 0;
+
+  const payload_accuracy = payloadTotal > 0
+    ? (counts.truthy_payload / payloadTotal) * 100
+    : 0;
+
+  const error_accuracy = errorTotal > 0
+    ? (counts.truthy_error / errorTotal) * 100
+    : 0;
+
+  const output = {
+    summary: {
+      ...counts,
+      total,
+      accuracy: Number(accuracy.toFixed(2)),
+      payload_accuracy: Number(payload_accuracy.toFixed(2)),
+      error_accuracy: Number(error_accuracy.toFixed(2)),
+    },
+    results,
+  };
+
+  // Ensure the directory exists before writing the file
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  fs.writeFileSync(filePath, JSON.stringify(output, null, 2));
+}
+
 

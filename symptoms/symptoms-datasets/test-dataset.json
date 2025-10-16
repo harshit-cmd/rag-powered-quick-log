@@ -1,0 +1,1895 @@
+[
+  {
+    "id": "symptom_001",
+    "prompt": "Mild headache on the left side of my head",
+    "expected_output": {
+      "payload": {
+        "name": "headache",
+        "description": "Mild headache on the left side of my head",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_002",
+    "prompt": "Severe nausea and stomach pain after eating",
+    "expected_output": {
+      "payload": {
+        "name": "nausea and stomach pain",
+        "description": "Severe nausea and stomach pain after eating",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_003",
+    "prompt": "My knee is aching, probably from yesterday's run",
+    "expected_output": {
+      "payload": {
+        "name": "knee pain",
+        "description": "My knee is aching, probably from yesterday's run",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_004",
+    "prompt": "Feeling very anxious and stressed about work presentation",
+    "expected_output": {
+      "payload": {
+        "name": "anxiety",
+        "description": "Feeling very anxious and stressed about work presentation",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_005",
+    "prompt": "Not feeling well",
+    "expected_output": {
+      "payload": {
+        "name": "general malaise",
+        "description": "Not feeling well",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_006",
+    "prompt": "My head hurts",
+    "expected_output": {
+      "payload": {
+        "name": "headache",
+        "description": "My head hurts",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_007",
+    "prompt": "I'm feeling bad",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_008",
+    "prompt": "I went running",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_009",
+    "prompt": "Severe migraine with light sensitivity",
+    "expected_output": {
+      "payload": {
+        "name": "migraine",
+        "description": "Severe migraine with light sensitivity",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_010",
+    "prompt": "Moderate back pain in lower back",
+    "expected_output": {
+      "payload": {
+        "name": "back pain",
+        "description": "Moderate back pain in lower back",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_011",
+    "prompt": "Feeling extremely tired and fatigued all day",
+    "expected_output": {
+      "payload": {
+        "name": "fatigue",
+        "description": "Feeling extremely tired and fatigued all day",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_012",
+    "prompt": "Mild dizziness when standing up",
+    "expected_output": {
+      "payload": {
+        "name": "dizziness",
+        "description": "Mild dizziness when standing up",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_013",
+    "prompt": "Fever with body aches",
+    "expected_output": {
+      "payload": {
+        "name": "fever",
+        "description": "Fever with body aches",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_014",
+    "prompt": "Severe chest pain",
+    "expected_output": {
+      "payload": {
+        "name": "chest pain",
+        "description": "Severe chest pain",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_015",
+    "prompt": "Sore throat and difficulty swallowing",
+    "expected_output": {
+      "payload": {
+        "name": "sore throat",
+        "description": "Sore throat and difficulty swallowing",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_016",
+    "prompt": "Mild cough that started this morning",
+    "expected_output": {
+      "payload": {
+        "name": "cough",
+        "description": "Mild cough that started this morning",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_017",
+    "prompt": "Shortness of breath after climbing stairs",
+    "expected_output": {
+      "payload": {
+        "name": "shortness of breath",
+        "description": "Shortness of breath after climbing stairs",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_018",
+    "prompt": "Joint pain in my fingers",
+    "expected_output": {
+      "payload": {
+        "name": "joint pain",
+        "description": "Joint pain in my fingers",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_019",
+    "prompt": "Feeling depressed and low energy",
+    "expected_output": {
+      "payload": {
+        "name": "depression",
+        "description": "Feeling depressed and low energy",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_020",
+    "prompt": "Insomnia, can't fall asleep",
+    "expected_output": {
+      "payload": {
+        "name": "insomnia",
+        "description": "Insomnia, can't fall asleep",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_021",
+    "prompt": "Stomach cramps and bloating",
+    "expected_output": {
+      "payload": {
+        "name": "stomach cramps",
+        "description": "Stomach cramps and bloating",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_022",
+    "prompt": "Rash on my arms",
+    "expected_output": {
+      "payload": {
+        "name": "rash",
+        "description": "Rash on my arms",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_023",
+    "prompt": "Severe toothache on the right side",
+    "expected_output": {
+      "payload": {
+        "name": "toothache",
+        "description": "Severe toothache on the right side",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_024",
+    "prompt": "Blurred vision in my left eye",
+    "expected_output": {
+      "payload": {
+        "name": "blurred vision",
+        "description": "Blurred vision in my left eye",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_025",
+    "prompt": "Ear pain and ringing",
+    "expected_output": {
+      "payload": {
+        "name": "ear pain",
+        "description": "Ear pain and ringing",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_026",
+    "prompt": "Muscle soreness all over",
+    "expected_output": {
+      "payload": {
+        "name": "muscle soreness",
+        "description": "Muscle soreness all over",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_027",
+    "prompt": "Heartburn after dinner",
+    "expected_output": {
+      "payload": {
+        "name": "heartburn",
+        "description": "Heartburn after dinner",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_028",
+    "prompt": "Runny nose and sneezing",
+    "expected_output": {
+      "payload": {
+        "name": "runny nose",
+        "description": "Runny nose and sneezing",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_029",
+    "prompt": "Numbness in my left hand",
+    "expected_output": {
+      "payload": {
+        "name": "numbness",
+        "description": "Numbness in my left hand",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_030",
+    "prompt": "Chills and cold sweats",
+    "expected_output": {
+      "payload": {
+        "name": "chills",
+        "description": "Chills and cold sweats",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_031",
+    "prompt": "Really tired today",
+    "expected_output": {
+      "payload": {
+        "name": "fatigue",
+        "description": "Really tired today",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_032",
+    "prompt": "Dizzy",
+    "expected_output": {
+      "payload": {
+        "name": "dizziness",
+        "description": "Dizzy",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_033",
+    "prompt": "Pain in my shoulder",
+    "expected_output": {
+      "payload": {
+        "name": "shoulder pain",
+        "description": "Pain in my shoulder",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_034",
+    "prompt": "Feel nauseous",
+    "expected_output": {
+      "payload": {
+        "name": "nausea",
+        "description": "Feel nauseous",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_035",
+    "prompt": "Got a fever",
+    "expected_output": {
+      "payload": {
+        "name": "fever",
+        "description": "Got a fever",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_036",
+    "prompt": "Feel sick",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_037",
+    "prompt": "Not doing well",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_038",
+    "prompt": "Feeling off",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_039",
+    "prompt": "Something is wrong",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_040",
+    "prompt": "I'm unwell",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_041",
+    "prompt": "What's the weather like?",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_042",
+    "prompt": "Set an alarm for 8am",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_043",
+    "prompt": "Call the doctor",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_044",
+    "prompt": "I ate pizza for lunch",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_045",
+    "prompt": "Took my medication this morning",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_046",
+    "prompt": "Severe anxiety attack with rapid heartbeat",
+    "expected_output": {
+      "payload": {
+        "name": "anxiety attack",
+        "description": "Severe anxiety attack with rapid heartbeat",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_047",
+    "prompt": "Mild sunburn on my shoulders",
+    "expected_output": {
+      "payload": {
+        "name": "sunburn",
+        "description": "Mild sunburn on my shoulders",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_048",
+    "prompt": "Constipation for the past two days",
+    "expected_output": {
+      "payload": {
+        "name": "constipation",
+        "description": "Constipation for the past two days",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_049",
+    "prompt": "Diarrhea and stomach upset",
+    "expected_output": {
+      "payload": {
+        "name": "diarrhea",
+        "description": "Diarrhea and stomach upset",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_050",
+    "prompt": "Swollen ankle after twisting it",
+    "expected_output": {
+      "payload": {
+        "name": "swollen ankle",
+        "description": "Swollen ankle after twisting it",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_051",
+    "prompt": "Stiff neck from sleeping wrong",
+    "expected_output": {
+      "payload": {
+        "name": "stiff neck",
+        "description": "Stiff neck from sleeping wrong",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_052",
+    "prompt": "Itchy eyes from allergies",
+    "expected_output": {
+      "payload": {
+        "name": "itchy eyes",
+        "description": "Itchy eyes from allergies",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_053",
+    "prompt": "Hot flashes and night sweats",
+    "expected_output": {
+      "payload": {
+        "name": "hot flashes",
+        "description": "Hot flashes and night sweats",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_054",
+    "prompt": "Brain fog and difficulty concentrating",
+    "expected_output": {
+      "payload": {
+        "name": "brain fog",
+        "description": "Brain fog and difficulty concentrating",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_055",
+    "prompt": "Panic attack with chest tightness",
+    "expected_output": {
+      "payload": {
+        "name": "panic attack",
+        "description": "Panic attack with chest tightness",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_056",
+    "prompt": "Lightheaded and weak",
+    "expected_output": {
+      "payload": {
+        "name": "lightheadedness",
+        "description": "Lightheaded and weak",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_057",
+    "prompt": "Dry cough that won't go away",
+    "expected_output": {
+      "payload": {
+        "name": "dry cough",
+        "description": "Dry cough that won't go away",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_058",
+    "prompt": "Wheezing when breathing",
+    "expected_output": {
+      "payload": {
+        "name": "wheezing",
+        "description": "Wheezing when breathing",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_059",
+    "prompt": "Tender breasts",
+    "expected_output": {
+      "payload": {
+        "name": "breast tenderness",
+        "description": "Tender breasts",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_060",
+    "prompt": "Menstrual cramps",
+    "expected_output": {
+      "payload": {
+        "name": "menstrual cramps",
+        "description": "Menstrual cramps",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_061",
+    "prompt": "Acid reflux at night",
+    "expected_output": {
+      "payload": {
+        "name": "acid reflux",
+        "description": "Acid reflux at night",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_062",
+    "prompt": "Leg cramps at night",
+    "expected_output": {
+      "payload": {
+        "name": "leg cramps",
+        "description": "Leg cramps at night",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_063",
+    "prompt": "Burning sensation when urinating",
+    "expected_output": {
+      "payload": {
+        "name": "burning urination",
+        "description": "Burning sensation when urinating",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_064",
+    "prompt": "Frequent urination",
+    "expected_output": {
+      "payload": {
+        "name": "frequent urination",
+        "description": "Frequent urination",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_065",
+    "prompt": "Trembling hands",
+    "expected_output": {
+      "payload": {
+        "name": "tremor",
+        "description": "Trembling hands",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_066",
+    "prompt": "Loss of appetite",
+    "expected_output": {
+      "payload": {
+        "name": "loss of appetite",
+        "description": "Loss of appetite",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_067",
+    "prompt": "Increased thirst",
+    "expected_output": {
+      "payload": {
+        "name": "increased thirst",
+        "description": "Increased thirst",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_068",
+    "prompt": "Feeling restless and can't sit still",
+    "expected_output": {
+      "payload": {
+        "name": "restlessness",
+        "description": "Feeling restless and can't sit still",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_069",
+    "prompt": "Memory problems lately",
+    "expected_output": {
+      "payload": {
+        "name": "memory problems",
+        "description": "Memory problems lately",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_070",
+    "prompt": "Mood swings throughout the day",
+    "expected_output": {
+      "payload": {
+        "name": "mood swings",
+        "description": "Mood swings throughout the day",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_071",
+    "prompt": "Sensitivity to light",
+    "expected_output": {
+      "payload": {
+        "name": "light sensitivity",
+        "description": "Sensitivity to light",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_072",
+    "prompt": "Loud ringing in my ears",
+    "expected_output": {
+      "payload": {
+        "name": "tinnitus",
+        "description": "Loud ringing in my ears",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_073",
+    "prompt": "Pins and needles in my feet",
+    "expected_output": {
+      "payload": {
+        "name": "tingling",
+        "description": "Pins and needles in my feet",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_074",
+    "prompt": "Hiccups for an hour",
+    "expected_output": {
+      "payload": {
+        "name": "hiccups",
+        "description": "Hiccups for an hour",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_075",
+    "prompt": "Excessive yawning",
+    "expected_output": {
+      "payload": {
+        "name": "excessive yawning",
+        "description": "Excessive yawning",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_076",
+    "prompt": "Grinding teeth at night",
+    "expected_output": {
+      "payload": {
+        "name": "teeth grinding",
+        "description": "Grinding teeth at night",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_077",
+    "prompt": "Bleeding gums when brushing",
+    "expected_output": {
+      "payload": {
+        "name": "bleeding gums",
+        "description": "Bleeding gums when brushing",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_078",
+    "prompt": "Dry skin on my hands",
+    "expected_output": {
+      "payload": {
+        "name": "dry skin",
+        "description": "Dry skin on my hands",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_079",
+    "prompt": "Hair loss more than usual",
+    "expected_output": {
+      "payload": {
+        "name": "hair loss",
+        "description": "Hair loss more than usual",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_080",
+    "prompt": "Brittle nails that keep breaking",
+    "expected_output": {
+      "payload": {
+        "name": "brittle nails",
+        "description": "Brittle nails that keep breaking",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_081",
+    "prompt": "Extremely painful migraine, can barely open my eyes",
+    "expected_output": {
+      "payload": {
+        "name": "migraine",
+        "description": "Extremely painful migraine, can barely open my eyes",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_082",
+    "prompt": "Throbbing headache behind my eyes with nausea",
+    "expected_output": {
+      "payload": {
+        "name": "headache with nausea",
+        "description": "Throbbing headache behind my eyes with nausea",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_083",
+    "prompt": "Tension headache across my forehead",
+    "expected_output": {
+      "payload": {
+        "name": "tension headache",
+        "description": "Tension headache across my forehead",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_084",
+    "prompt": "Persistent cough with green phlegm for a week",
+    "expected_output": {
+      "payload": {
+        "name": "productive cough",
+        "description": "Persistent cough with green phlegm for a week",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_085",
+    "prompt": "Chronic lower back pain, been dealing with it for months",
+    "expected_output": {
+      "payload": {
+        "name": "chronic back pain",
+        "description": "Chronic lower back pain, been dealing with it for months",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_086",
+    "prompt": "Sharp stabbing pain in my chest when I breathe deeply",
+    "expected_output": {
+      "payload": {
+        "name": "chest pain",
+        "description": "Sharp stabbing pain in my chest when I breathe deeply",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_087",
+    "prompt": "Feeling really anxious, heart racing and sweating",
+    "expected_output": {
+      "payload": {
+        "name": "anxiety with palpitations",
+        "description": "Feeling really anxious, heart racing and sweating",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_088",
+    "prompt": "Unbearable toothache, can't eat or sleep",
+    "expected_output": {
+      "payload": {
+        "name": "toothache",
+        "description": "Unbearable toothache, can't eat or sleep",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_089",
+    "prompt": "Slightly sore throat, nothing major",
+    "expected_output": {
+      "payload": {
+        "name": "sore throat",
+        "description": "Slightly sore throat, nothing major",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_090",
+    "prompt": "Terrible cramps during my period",
+    "expected_output": {
+      "payload": {
+        "name": "menstrual cramps",
+        "description": "Terrible cramps during my period",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_091",
+    "prompt": "Feeling nauseous and dizzy, room is spinning",
+    "expected_output": {
+      "payload": {
+        "name": "vertigo with nausea",
+        "description": "Feeling nauseous and dizzy, room is spinning",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_092",
+    "prompt": "Hives all over my body after eating shellfish",
+    "expected_output": {
+      "payload": {
+        "name": "hives",
+        "description": "Hives all over my body after eating shellfish",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_093",
+    "prompt": "Severe abdominal pain in lower right side",
+    "expected_output": {
+      "payload": {
+        "name": "abdominal pain",
+        "description": "Severe abdominal pain in lower right side",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_094",
+    "prompt": "Stinging pain when I pee",
+    "expected_output": {
+      "payload": {
+        "name": "painful urination",
+        "description": "Stinging pain when I pee",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_095",
+    "prompt": "Pounding heart, feels like it's going to jump out of my chest",
+    "expected_output": {
+      "payload": {
+        "name": "palpitations",
+        "description": "Pounding heart, feels like it's going to jump out of my chest",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_096",
+    "prompt": "Can't stop sneezing, nose won't stop running",
+    "expected_output": {
+      "payload": {
+        "name": "allergic rhinitis",
+        "description": "Can't stop sneezing, nose won't stop running",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_097",
+    "prompt": "Extreme fatigue, sleeping 12 hours and still exhausted",
+    "expected_output": {
+      "payload": {
+        "name": "chronic fatigue",
+        "description": "Extreme fatigue, sleeping 12 hours and still exhausted",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_098",
+    "prompt": "Swollen lymph nodes in my neck",
+    "expected_output": {
+      "payload": {
+        "name": "swollen lymph nodes",
+        "description": "Swollen lymph nodes in my neck",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_099",
+    "prompt": "Red, itchy rash that's spreading on my torso",
+    "expected_output": {
+      "payload": {
+        "name": "spreading rash",
+        "description": "Red, itchy rash that's spreading on my torso",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_100",
+    "prompt": "Excruciating pain in my right kidney area",
+    "expected_output": {
+      "payload": {
+        "name": "kidney pain",
+        "description": "Excruciating pain in my right kidney area",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_101",
+    "prompt": "help me",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_102",
+    "prompt": "How do I check my temperature?",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_103",
+    "prompt": "bad",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_104",
+    "prompt": "Having trouble",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_105",
+    "prompt": "Painful swollen joints in both hands and wrists",
+    "expected_output": {
+      "payload": {
+        "name": "joint swelling",
+        "description": "Painful swollen joints in both hands and wrists",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_106",
+    "prompt": "Difficulty breathing, gasping for air",
+    "expected_output": {
+      "payload": {
+        "name": "severe dyspnea",
+        "description": "Difficulty breathing, gasping for air",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_107",
+    "prompt": "Feeling faint and seeing spots",
+    "expected_output": {
+      "payload": {
+        "name": "presyncope",
+        "description": "Feeling faint and seeing spots",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_108",
+    "prompt": "Burning pain in my upper stomach after meals",
+    "expected_output": {
+      "payload": {
+        "name": "gastritis",
+        "description": "Burning pain in my upper stomach after meals",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_109",
+    "prompt": "Can't turn my neck without sharp pain",
+    "expected_output": {
+      "payload": {
+        "name": "severe neck pain",
+        "description": "Can't turn my neck without sharp pain",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_110",
+    "prompt": "Been vomiting all morning, can't keep anything down",
+    "expected_output": {
+      "payload": {
+        "name": "vomiting",
+        "description": "Been vomiting all morning, can't keep anything down",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_111",
+    "prompt": "Extremely itchy scalp with flaking",
+    "expected_output": {
+      "payload": {
+        "name": "scalp irritation",
+        "description": "Extremely itchy scalp with flaking",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_112",
+    "prompt": "Painful bloating and gas after eating dairy",
+    "expected_output": {
+      "payload": {
+        "name": "bloating",
+        "description": "Painful bloating and gas after eating dairy",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_113",
+    "prompt": "Pressure and pain in my sinuses",
+    "expected_output": {
+      "payload": {
+        "name": "sinus pain",
+        "description": "Pressure and pain in my sinuses",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_114",
+    "prompt": "My vision is blurry and I see halos around lights",
+    "expected_output": {
+      "payload": {
+        "name": "vision disturbance",
+        "description": "My vision is blurry and I see halos around lights",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_115",
+    "prompt": "Muscle weakness in my legs, hard to climb stairs",
+    "expected_output": {
+      "payload": {
+        "name": "leg weakness",
+        "description": "Muscle weakness in my legs, hard to climb stairs",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_116",
+    "prompt": "Severe pain radiating down my left arm",
+    "expected_output": {
+      "payload": {
+        "name": "radiating arm pain",
+        "description": "Severe pain radiating down my left arm",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_117",
+    "prompt": "Constant ringing and buzzing in both ears",
+    "expected_output": {
+      "payload": {
+        "name": "bilateral tinnitus",
+        "description": "Constant ringing and buzzing in both ears",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_118",
+    "prompt": "Woke up with puffy eyes and swollen face",
+    "expected_output": {
+      "payload": {
+        "name": "facial swelling",
+        "description": "Woke up with puffy eyes and swollen face",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_119",
+    "prompt": "Painful red bump on my eyelid",
+    "expected_output": {
+      "payload": {
+        "name": "stye",
+        "description": "Painful red bump on my eyelid",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_120",
+    "prompt": "Feeling very cold even though it's warm, shivering uncontrollably",
+    "expected_output": {
+      "payload": {
+        "name": "chills",
+        "description": "Feeling very cold even though it's warm, shivering uncontrollably",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_121",
+    "prompt": "Yesterday was great",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_122",
+    "prompt": "I need to schedule an appointment",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_123",
+    "prompt": "Remind me to take my pills",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_124",
+    "prompt": "Painful blisters on my lips",
+    "expected_output": {
+      "payload": {
+        "name": "cold sore",
+        "description": "Painful blisters on my lips",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_125",
+    "prompt": "Sharp shooting pain down my sciatic nerve",
+    "expected_output": {
+      "payload": {
+        "name": "sciatica",
+        "description": "Sharp shooting pain down my sciatic nerve",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_126",
+    "prompt": "Feeling extremely stressed and overwhelmed",
+    "expected_output": {
+      "payload": {
+        "name": "stress",
+        "description": "Feeling extremely stressed and overwhelmed",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_127",
+    "prompt": "Persistent hiccups for several hours now",
+    "expected_output": {
+      "payload": {
+        "name": "persistent hiccups",
+        "description": "Persistent hiccups for several hours now",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_128",
+    "prompt": "Cramping in my calves during exercise",
+    "expected_output": {
+      "payload": {
+        "name": "muscle cramps",
+        "description": "Cramping in my calves during exercise",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_129",
+    "prompt": "Nosebleed that won't stop",
+    "expected_output": {
+      "payload": {
+        "name": "nosebleed",
+        "description": "Nosebleed that won't stop",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_130",
+    "prompt": "Feeling disconnected from reality, like I'm in a fog",
+    "expected_output": {
+      "payload": {
+        "name": "dissociation",
+        "description": "Feeling disconnected from reality, like I'm in a fog",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_131",
+    "prompt": "Waking up multiple times during the night, can't stay asleep",
+    "expected_output": {
+      "payload": {
+        "name": "sleep maintenance insomnia",
+        "description": "Waking up multiple times during the night, can't stay asleep",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_132",
+    "prompt": "Painful canker sore inside my mouth",
+    "expected_output": {
+      "payload": {
+        "name": "canker sore",
+        "description": "Painful canker sore inside my mouth",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_133",
+    "prompt": "Constant urge to pee but nothing comes out",
+    "expected_output": {
+      "payload": {
+        "name": "urinary urgency",
+        "description": "Constant urge to pee but nothing comes out",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_134",
+    "prompt": "Painful intercourse",
+    "expected_output": {
+      "payload": {
+        "name": "dyspareunia",
+        "description": "Painful intercourse",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_135",
+    "prompt": "Intense itching all over my body at night",
+    "expected_output": {
+      "payload": {
+        "name": "nocturnal pruritus",
+        "description": "Intense itching all over my body at night",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_136",
+    "prompt": "Coughing up blood",
+    "expected_output": {
+      "payload": {
+        "name": "hemoptysis",
+        "description": "Coughing up blood",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_137",
+    "prompt": "Feeling hopeless and having dark thoughts",
+    "expected_output": {
+      "payload": {
+        "name": "severe depression",
+        "description": "Feeling hopeless and having dark thoughts",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_138",
+    "prompt": "Jaw pain when chewing",
+    "expected_output": {
+      "payload": {
+        "name": "jaw pain",
+        "description": "Jaw pain when chewing",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_139",
+    "prompt": "Painful heel when I step down in the morning",
+    "expected_output": {
+      "payload": {
+        "name": "heel pain",
+        "description": "Painful heel when I step down in the morning",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_140",
+    "prompt": "Rectal pain and bleeding",
+    "expected_output": {
+      "payload": {
+        "name": "rectal pain with bleeding",
+        "description": "Rectal pain and bleeding",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_141",
+    "prompt": "Double vision when looking to the side",
+    "expected_output": {
+      "payload": {
+        "name": "diplopia",
+        "description": "Double vision when looking to the side",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_142",
+    "prompt": "Lost my sense of smell and taste",
+    "expected_output": {
+      "payload": {
+        "name": "anosmia and ageusia",
+        "description": "Lost my sense of smell and taste",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_143",
+    "prompt": "Feeling paranoid, like people are watching me",
+    "expected_output": {
+      "payload": {
+        "name": "paranoia",
+        "description": "Feeling paranoid, like people are watching me",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_144",
+    "prompt": "Random bruising appearing on my legs",
+    "expected_output": {
+      "payload": {
+        "name": "unexplained bruising",
+        "description": "Random bruising appearing on my legs",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_145",
+    "prompt": "Swollen and painful big toe joint",
+    "expected_output": {
+      "payload": {
+        "name": "toe joint pain",
+        "description": "Swollen and painful big toe joint",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_146",
+    "prompt": "Feeling like there's a lump in my throat",
+    "expected_output": {
+      "payload": {
+        "name": "globus sensation",
+        "description": "Feeling like there's a lump in my throat",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_147",
+    "prompt": "Sudden onset of hives and difficulty breathing",
+    "expected_output": {
+      "payload": {
+        "name": "anaphylaxis",
+        "description": "Sudden onset of hives and difficulty breathing",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_148",
+    "prompt": "Uncontrollable shaking and tremors in my hands",
+    "expected_output": {
+      "payload": {
+        "name": "severe tremor",
+        "description": "Uncontrollable shaking and tremors in my hands",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_149",
+    "prompt": "Peeling skin on my palms and feet",
+    "expected_output": {
+      "payload": {
+        "name": "skin peeling",
+        "description": "Peeling skin on my palms and feet",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_150",
+    "prompt": "Yellowish tint to my skin and eyes",
+    "expected_output": {
+      "payload": {
+        "name": "jaundice",
+        "description": "Yellowish tint to my skin and eyes",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_151",
+    "prompt": "What should I eat today?",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_152",
+    "prompt": "Play some music",
+    "expected_output": {
+      "error": "You want to log a symptom but the query is not about how you're feeling"
+    }
+  },
+  {
+    "id": "symptom_153",
+    "prompt": "Meh",
+    "expected_output": {
+      "error": "Please describe what specific symptoms you're experiencing"
+    }
+  },
+  {
+    "id": "symptom_154",
+    "prompt": "Difficulty concentrating, mind keeps wandering",
+    "expected_output": {
+      "payload": {
+        "name": "poor concentration",
+        "description": "Difficulty concentrating, mind keeps wandering",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_155",
+    "prompt": "Painful spasms in my back muscles",
+    "expected_output": {
+      "payload": {
+        "name": "muscle spasms",
+        "description": "Painful spasms in my back muscles",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_156",
+    "prompt": "Excessive sweating at night, soaking the sheets",
+    "expected_output": {
+      "payload": {
+        "name": "night sweats",
+        "description": "Excessive sweating at night, soaking the sheets",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_157",
+    "prompt": "Rapid unexplained weight loss",
+    "expected_output": {
+      "payload": {
+        "name": "weight loss",
+        "description": "Rapid unexplained weight loss",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_158",
+    "prompt": "Swelling in my ankles and feet by end of day",
+    "expected_output": {
+      "payload": {
+        "name": "ankle edema",
+        "description": "Swelling in my ankles and feet by end of day",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_159",
+    "prompt": "Painful red eye with discharge",
+    "expected_output": {
+      "payload": {
+        "name": "conjunctivitis",
+        "description": "Painful red eye with discharge",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_160",
+    "prompt": "Shooting electric shock sensations down my spine",
+    "expected_output": {
+      "payload": {
+        "name": "nerve pain",
+        "description": "Shooting electric shock sensations down my spine",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_161",
+    "prompt": "Slurred speech and difficulty finding words",
+    "expected_output": {
+      "payload": {
+        "name": "speech difficulty",
+        "description": "Slurred speech and difficulty finding words",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_162",
+    "prompt": "Metallic taste in my mouth",
+    "expected_output": {
+      "payload": {
+        "name": "dysgeusia",
+        "description": "Metallic taste in my mouth",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_163",
+    "prompt": "Painful varicose veins in my legs",
+    "expected_output": {
+      "payload": {
+        "name": "varicose vein pain",
+        "description": "Painful varicose veins in my legs",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_164",
+    "prompt": "Persistent dry mouth no matter how much I drink",
+    "expected_output": {
+      "payload": {
+        "name": "xerostomia",
+        "description": "Persistent dry mouth no matter how much I drink",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_165",
+    "prompt": "Feeling extremely irritable and snapping at everyone",
+    "expected_output": {
+      "payload": {
+        "name": "irritability",
+        "description": "Feeling extremely irritable and snapping at everyone",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_166",
+    "prompt": "Painful cracking at the corners of my mouth",
+    "expected_output": {
+      "payload": {
+        "name": "angular cheilitis",
+        "description": "Painful cracking at the corners of my mouth",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_167",
+    "prompt": "Waking up gasping for breath",
+    "expected_output": {
+      "payload": {
+        "name": "paroxysmal nocturnal dyspnea",
+        "description": "Waking up gasping for breath",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_168",
+    "prompt": "Painful swallowing, feels like something stuck",
+    "expected_output": {
+      "payload": {
+        "name": "dysphagia",
+        "description": "Painful swallowing, feels like something stuck",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_169",
+    "prompt": "Feeling confused and disoriented",
+    "expected_output": {
+      "payload": {
+        "name": "confusion",
+        "description": "Feeling confused and disoriented",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_170",
+    "prompt": "Painful ingrown toenail",
+    "expected_output": {
+      "payload": {
+        "name": "ingrown toenail",
+        "description": "Painful ingrown toenail",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_171",
+    "prompt": "Severe pain in my temple, throbbing",
+    "expected_output": {
+      "payload": {
+        "name": "temporal headache",
+        "description": "Severe pain in my temple, throbbing",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_172",
+    "prompt": "Unintended weight gain over past month",
+    "expected_output": {
+      "payload": {
+        "name": "weight gain",
+        "description": "Unintended weight gain over past month",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_173",
+    "prompt": "Feeling emotionally numb, can't feel happiness or sadness",
+    "expected_output": {
+      "payload": {
+        "name": "emotional numbness",
+        "description": "Feeling emotionally numb, can't feel happiness or sadness",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_174",
+    "prompt": "Painful clicking in my jaw when I eat",
+    "expected_output": {
+      "payload": {
+        "name": "TMJ dysfunction",
+        "description": "Painful clicking in my jaw when I eat",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_175",
+    "prompt": "Chronic nasal congestion for weeks",
+    "expected_output": {
+      "payload": {
+        "name": "chronic congestion",
+        "description": "Chronic nasal congestion for weeks",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_176",
+    "prompt": "Sudden severe headache, worst of my life",
+    "expected_output": {
+      "payload": {
+        "name": "thunderclap headache",
+        "description": "Sudden severe headache, worst of my life",
+        "severity": "severe"
+      }
+    }
+  },
+  {
+    "id": "symptom_177",
+    "prompt": "Feeling shaky and weak, haven't eaten all day",
+    "expected_output": {
+      "payload": {
+        "name": "hypoglycemia symptoms",
+        "description": "Feeling shaky and weak, haven't eaten all day",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_178",
+    "prompt": "Painful burning sensation in my feet",
+    "expected_output": {
+      "payload": {
+        "name": "burning feet",
+        "description": "Painful burning sensation in my feet",
+        "severity": "moderate"
+      }
+    }
+  },
+  {
+    "id": "symptom_179",
+    "prompt": "Persistent bad breath despite brushing",
+    "expected_output": {
+      "payload": {
+        "name": "halitosis",
+        "description": "Persistent bad breath despite brushing",
+        "severity": "mild"
+      }
+    }
+  },
+  {
+    "id": "symptom_180",
+    "prompt": "Intense pain between my shoulder blades",
+    "expected_output": {
+      "payload": {
+        "name": "interscapular pain",
+        "description": "Intense pain between my shoulder blades",
+        "severity": "moderate"
+      }
+    }
+  }
+]
+

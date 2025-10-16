@@ -6,7 +6,7 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import comprehensiveSeedDataWithEmbeddings from "./medications-datasets/comprehensive-seed-data-with-embeddings.json" with { type: "json" };
+import newRagDatasetWithEmbeddings from "./medications-datasets/new-rag-dataset-with-embeddings.json" with { type: "json" };
 import medicationsTestDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
 import { extractJSON, writeResultIncrementallyMedications, compareMedicationPayloads } from "../utils.js";
 
@@ -181,7 +181,7 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 function getTop3Samples(queryEmbedding) {
-  const samplesWithSimilarity = comprehensiveSeedDataWithEmbeddings.map((sample) => ({
+  const samplesWithSimilarity = newRagDatasetWithEmbeddings.map((sample) => ({
     ...sample,
     similarity: cosineSimilarity(queryEmbedding, sample.embedding),
   }));
