@@ -1,0 +1,820 @@
+[
+  {
+    "id": "complex_time_001",
+    "prompt": "remind me to take ibuprofen every monday and tuesday at 9pm",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "21:00",
+        "reminderDays": [1, 2],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_002",
+    "prompt": "remind me take metformin every tuesday wednesday and friday before bed",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "22:00",
+        "reminderDays": [2, 3, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "before bed"
+      }
+    }
+  },
+  {
+    "id": "complex_time_003",
+    "prompt": "remind me to take xanax every monday wednesday thursday at 10 am",
+    "expected_output": {
+      "payload": {
+        "name": "xanax",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "10:00",
+        "reminderDays": [1, 3, 4],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_004",
+    "prompt": "take 500mg vitamin C every saturday and sunday at 8am",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin C",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "08:00",
+        "reminderDays": [6, 0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_005",
+    "prompt": "remind me to take levothyroxine every morning at 6:30am monday through friday",
+    "expected_output": {
+      "payload": {
+        "name": "levothyroxine",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "06:30",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning"
+      }
+    }
+  },
+  {
+    "id": "complex_time_006",
+    "prompt": "take 20mg lisinopril every weekday at 7pm",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "19:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_007",
+    "prompt": "remind me about 50mg sertraline every monday wednesday and friday at noon",
+    "expected_output": {
+      "payload": {
+        "name": "sertraline",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "12:00",
+        "reminderDays": [1, 3, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_008",
+    "prompt": "take omeprazole 40mg every tuesday and thursday before breakfast",
+    "expected_output": {
+      "payload": {
+        "name": "omeprazole",
+        "dosage": 40,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "07:00",
+        "reminderDays": [2, 4],
+        "isReminder": true,
+        "taken": false,
+        "notes": "before breakfast"
+      }
+    }
+  },
+  {
+    "id": "complex_time_009",
+    "prompt": "remind me to take 1000mg fish oil every sunday at 10:30pm",
+    "expected_output": {
+      "payload": {
+        "name": "fish oil",
+        "dosage": 1000,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "22:30",
+        "reminderDays": [0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_010",
+    "prompt": "take 2 tablets of magnesium every monday tuesday thursday at bedtime",
+    "expected_output": {
+      "payload": {
+        "name": "magnesium",
+        "dosage": 2,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "22:00",
+        "reminderDays": [1, 2, 4],
+        "isReminder": true,
+        "taken": false,
+        "notes": "bedtime"
+      }
+    }
+  },
+  {
+    "id": "complex_time_011",
+    "prompt": "remind me to take atorvastatin every weeknight at 8pm",
+    "expected_output": {
+      "payload": {
+        "name": "atorvastatin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "20:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_012",
+    "prompt": "take 25mg losartan every saturday morning at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "losartan",
+        "dosage": 25,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [6],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning"
+      }
+    }
+  },
+  {
+    "id": "complex_time_013",
+    "prompt": "remind me about prednisone 10mg every wednesday and saturday at 6am",
+    "expected_output": {
+      "payload": {
+        "name": "prednisone",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "06:00",
+        "reminderDays": [3, 6],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_014",
+    "prompt": "take vitamin D3 5000 IU every tuesday thursday and sunday at 11am",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin D3",
+        "dosage": 5000,
+        "unit": "IU",
+        "frequency": "weekly",
+        "reminderTime": "11:00",
+        "reminderDays": [2, 4, 0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_015",
+    "prompt": "remind me to take gabapentin 300mg every monday friday at 3pm",
+    "expected_output": {
+      "payload": {
+        "name": "gabapentin",
+        "dosage": 300,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "15:00",
+        "reminderDays": [1, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_016",
+    "prompt": "take amlodipine every day at 7:30am",
+    "expected_output": {
+      "payload": {
+        "name": "amlodipine",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "07:30",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_017",
+    "prompt": "remind me to take warfarin 5mg every evening at 6:45pm",
+    "expected_output": {
+      "payload": {
+        "name": "warfarin",
+        "dosage": 5,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "18:45",
+        "isReminder": true,
+        "taken": false,
+        "notes": "evening"
+      }
+    }
+  },
+  {
+    "id": "complex_time_018",
+    "prompt": "take 1 capsule of biotin every tuesday and sunday at 9:15am",
+    "expected_output": {
+      "payload": {
+        "name": "biotin",
+        "dosage": 1,
+        "unit": "capsule",
+        "frequency": "weekly",
+        "reminderTime": "09:15",
+        "reminderDays": [2, 0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_019",
+    "prompt": "remind me about insulin injection every day at 7am and 7pm",
+    "expected_output": {
+      "payload": {
+        "name": "insulin",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "also at 7pm"
+      }
+    }
+  },
+  {
+    "id": "complex_time_020",
+    "prompt": "take 10mg montelukast every night before sleep",
+    "expected_output": {
+      "payload": {
+        "name": "montelukast",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "22:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "before sleep"
+      }
+    }
+  },
+  {
+    "id": "complex_time_021",
+    "prompt": "remind me to take albuterol inhaler 2 sprays every 4 hours as needed",
+    "expected_output": {
+      "payload": {
+        "name": "albuterol",
+        "dosage": 2,
+        "unit": "spray",
+        "frequency": "as_needed",
+        "intervalValue": 4,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_022",
+    "prompt": "take propranolol 20mg every monday wednesday friday at 2:30pm",
+    "expected_output": {
+      "payload": {
+        "name": "propranolol",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "14:30",
+        "reminderDays": [1, 3, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_023",
+    "prompt": "remind me about metoprolol every morning at 8:15am weekdays only",
+    "expected_output": {
+      "payload": {
+        "name": "metoprolol",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "08:15",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning weekdays only"
+      }
+    }
+  },
+  {
+    "id": "complex_time_024",
+    "prompt": "take 150mg ranitidine every thursday and saturday at 5pm",
+    "expected_output": {
+      "payload": {
+        "name": "ranitidine",
+        "dosage": 150,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "17:00",
+        "reminderDays": [4, 6],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_025",
+    "prompt": "remind me to take zinc 50mg every other day at 10am",
+    "expected_output": {
+      "payload": {
+        "name": "zinc",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false,
+        "notes": "at 10am"
+      }
+    }
+  },
+  {
+    "id": "complex_time_026",
+    "prompt": "take cetirizine 10mg every night at 10:30pm",
+    "expected_output": {
+      "payload": {
+        "name": "cetirizine",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "22:30",
+        "isReminder": true,
+        "taken": false,
+        "notes": "night"
+      }
+    }
+  },
+  {
+    "id": "complex_time_027",
+    "prompt": "remind me about tramadol 50mg every 6 hours when needed",
+    "expected_output": {
+      "payload": {
+        "name": "tramadol",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_028",
+    "prompt": "take 3 tablets of omega-3 every monday and thursday after dinner",
+    "expected_output": {
+      "payload": {
+        "name": "omega-3",
+        "dosage": 3,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "19:30",
+        "reminderDays": [1, 4],
+        "isReminder": true,
+        "taken": false,
+        "notes": "after dinner"
+      }
+    }
+  },
+  {
+    "id": "complex_time_029",
+    "prompt": "remind me to take clopidogrel 75mg every afternoon at 2pm",
+    "expected_output": {
+      "payload": {
+        "name": "clopidogrel",
+        "dosage": 75,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "14:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "afternoon"
+      }
+    }
+  },
+  {
+    "id": "complex_time_030",
+    "prompt": "take methylphenidate 10mg every weekday morning at 7:30am",
+    "expected_output": {
+      "payload": {
+        "name": "methylphenidate",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "07:30",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning"
+      }
+    }
+  },
+  {
+    "id": "complex_time_031",
+    "prompt": "remind me about eye drops 2 drops every sunday and wednesday at 8pm",
+    "expected_output": {
+      "payload": {
+        "name": "eye drops",
+        "dosage": 2,
+        "unit": "drop",
+        "frequency": "weekly",
+        "reminderTime": "20:00",
+        "reminderDays": [0, 3],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_032",
+    "prompt": "take naproxen 500mg every 12 hours for pain",
+    "expected_output": {
+      "payload": {
+        "name": "naproxen",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "complex_time_033",
+    "prompt": "remind me to take duloxetine 60mg every morning at 6am",
+    "expected_output": {
+      "payload": {
+        "name": "duloxetine",
+        "dosage": 60,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "06:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning"
+      }
+    }
+  },
+  {
+    "id": "complex_time_034",
+    "prompt": "take fluoxetine 20mg every tuesday thursday saturday at 10am",
+    "expected_output": {
+      "payload": {
+        "name": "fluoxetine",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "10:00",
+        "reminderDays": [2, 4, 6],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_035",
+    "prompt": "remind me about nicotine patch 21mg every morning on weekdays",
+    "expected_output": {
+      "payload": {
+        "name": "nicotine",
+        "dosage": 21,
+        "unit": "patch",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning weekdays"
+      }
+    }
+  },
+  {
+    "id": "complex_time_036",
+    "prompt": "take 400mg ibuprofen every 8 hours after meals",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 400,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "after meals"
+      }
+    }
+  },
+  {
+    "id": "complex_time_037",
+    "prompt": "remind me to take clonazepam 0.5mg every night at 11pm",
+    "expected_output": {
+      "payload": {
+        "name": "clonazepam",
+        "dosage": 0.5,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "23:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "night"
+      }
+    }
+  },
+  {
+    "id": "complex_time_038",
+    "prompt": "take vitamin B complex every monday and friday at breakfast time",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin B complex",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "08:00",
+        "reminderDays": [1, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "breakfast time"
+      }
+    }
+  },
+  {
+    "id": "complex_time_039",
+    "prompt": "remind me about cyclobenzaprine 10mg every 8 hours as needed for muscle spasms",
+    "expected_output": {
+      "payload": {
+        "name": "cyclobenzaprine",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for muscle spasms"
+      }
+    }
+  },
+  {
+    "id": "complex_time_040",
+    "prompt": "take pantoprazole 40mg every day 30 minutes before breakfast",
+    "expected_output": {
+      "payload": {
+        "name": "pantoprazole",
+        "dosage": 40,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "30 minutes before breakfast"
+      }
+    }
+  },
+  {
+    "id": "complex_time_041",
+    "prompt": "remind me to take loratadine 10mg every wednesday and sunday at noon",
+    "expected_output": {
+      "payload": {
+        "name": "loratadine",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "12:00",
+        "reminderDays": [3, 0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_042",
+    "prompt": "take folic acid 1mg every weekday at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "folic acid",
+        "dosage": 1,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_043",
+    "prompt": "remind me about hydrochlorothiazide 25mg every morning at 7am on weekends",
+    "expected_output": {
+      "payload": {
+        "name": "hydrochlorothiazide",
+        "dosage": 25,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "07:00",
+        "reminderDays": [6, 0],
+        "isReminder": true,
+        "taken": false,
+        "notes": "morning weekends"
+      }
+    }
+  },
+  {
+    "id": "complex_time_044",
+    "prompt": "take diazepam 5mg every 6 hours when needed for anxiety",
+    "expected_output": {
+      "payload": {
+        "name": "diazepam",
+        "dosage": 5,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for anxiety"
+      }
+    }
+  },
+  {
+    "id": "complex_time_045",
+    "prompt": "remind me to take escitalopram 10mg every day at 8pm before sleep",
+    "expected_output": {
+      "payload": {
+        "name": "escitalopram",
+        "dosage": 10,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "20:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "before sleep"
+      }
+    }
+  },
+  {
+    "id": "complex_time_046",
+    "prompt": "take carvedilol 12.5mg every monday wednesday friday at 7:30am and 7:30pm",
+    "expected_output": {
+      "payload": {
+        "name": "carvedilol",
+        "dosage": 12.5,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "07:30",
+        "reminderDays": [1, 3, 5],
+        "isReminder": true,
+        "taken": false,
+        "notes": "also at 7:30pm"
+      }
+    }
+  },
+  {
+    "id": "complex_time_047",
+    "prompt": "remind me about latanoprost eye drops 1 drop every night at bedtime",
+    "expected_output": {
+      "payload": {
+        "name": "latanoprost",
+        "dosage": 1,
+        "unit": "drop",
+        "frequency": "daily",
+        "reminderTime": "22:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "bedtime"
+      }
+    }
+  },
+  {
+    "id": "complex_time_048",
+    "prompt": "take meloxicam 15mg every tuesday and saturday at 1pm with food",
+    "expected_output": {
+      "payload": {
+        "name": "meloxicam",
+        "dosage": 15,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "13:00",
+        "reminderDays": [2, 6],
+        "isReminder": true,
+        "taken": false,
+        "notes": "with food"
+      }
+    }
+  },
+  {
+    "id": "complex_time_049",
+    "prompt": "remind me to take spironolactone 100mg every weekday at 10am",
+    "expected_output": {
+      "payload": {
+        "name": "spironolactone",
+        "dosage": 100,
+        "unit": "mg",
+        "frequency": "weekly",
+        "reminderTime": "10:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "complex_time_050",
+    "prompt": "take trazodone 50mg every night at 10pm for sleep",
+    "expected_output": {
+      "payload": {
+        "name": "trazodone",
+        "dosage": 50,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "22:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for sleep"
+      }
+    }
+  }
+]
+

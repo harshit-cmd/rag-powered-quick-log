@@ -6,8 +6,9 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import ragDataset1000WithEmbeddings from "./medications-datasets/rag-dataset-1000-with-embeddings.json" with { type: "json" };
-import timeDataset from "./medications-datasets/time-dataset.json" with { type: "json" };
+import ragDataset1100WithEmbeddings from "./medications-datasets/rag-dataset-1100-with-embeddings.json" with { type: "json" };
+import complexTimeDataset from "./medications-datasets/complex-time-dataset.json" with { type: "json" };
+import additionalComplexTimeDataset from "./medications-datasets/additional-complex-time-50.json" with { type: "json" };
 import testDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
 import { extractJSON, writeResultIncrementallyMedications, compareMedicationPayloads } from "../utils.js";
 
@@ -83,6 +84,8 @@ Core Examples:
 "Missed blood pressure med" → {"payload":{"name":"blood pressure medication","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
 "Take birth control monthly" → {"payload":{"name":"birth control","dosage":1,"unit":"tablet","frequency":"monthly","reminderTime":"09:00","isReminder":true,"taken":false}}
 "Take paracetamol every 6 hours" → {"payload":{"name":"Paracetamol","dosage":1,"unit":"tablet","frequency":"interval","intervalValue":6,"intervalUnit":"hours","isReminder":true,"taken":false}}
+"Remind me to take metformin every monday wednesday friday at 9am" → {"payload":{"name":"metformin","dosage":1,"unit":"tablet","frequency":"weekly","reminderTime":"09:00","reminderDays":[1,3,5],"isReminder":true,"taken":false}}
+"Take vitamin D every tuesday and thursday at noon" → {"payload":{"name":"vitamin D","dosage":1,"unit":"tablet","frequency":"weekly","reminderTime":"12:00","reminderDays":[2,4],"isReminder":true,"taken":false}}
 "Took 500mg" → {"error":"Please specify the medication name"}
 "Took 2 tablets" → {"error":"Please specify the medication name"}
 "Remind me about vitamins" → {"error":"Which vitamin and when?"}
@@ -92,7 +95,8 @@ Use Similar Examples for dosage/unit/frequency patterns, but follow DECISION RUL
 
 FREQUENCY:
 • Past tense (took/had/popped) → "once"
-• "every X hours/minutes/days" (with numbers) → "interval" + intervalValue + intervalUnit
+• "every X hours/minutes/days" (with NUMBERS) → "interval" + intervalValue + intervalUnit
+• "every monday/tuesday/etc" (with DAY NAMES) → "weekly" + reminderDays array
 • "every morning/evening/afternoon" (time of day) → "daily" + put time phrase in notes
 • daily/weekly/monthly → same
 • "as needed"/"PRN" → "as_needed"
@@ -108,6 +112,13 @@ REMINDER:
 • remind/notify/alert/tell me/remember → isReminder=true
 • "need to take X every Y" → isReminder=true
 • Past tense only → isReminder=false
+
+DAY-OF-WEEK PATTERNS:
+• "every monday" / "every monday and tuesday" / "every mon tue wed" → frequency="weekly" + reminderDays=[1] or [1,2] or [1,2,3]
+• Day mapping: Sunday=0, Monday=1, Tuesday=2, Wednesday=3, Thursday=4, Friday=5, Saturday=6
+• "weekdays" / "monday through friday" / "weeknights" → reminderDays=[1,2,3,4,5]
+• "weekends" / "saturday and sunday" → reminderDays=[6,0]
+• Multiple specific days → ALWAYS use frequency="weekly" + reminderDays array (NOT interval!)
 
 IDENTIFIABLE (accept): aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril, Tylenol, Advil, blood pressure medication, birth control, calcium, omega-3, fish oil, magnesium, zinc, probiotic, multivitamin, collagen, EpiPen, etc.
 
@@ -193,7 +204,7 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 function getTop3Samples(queryEmbedding) {
-  const samplesWithSimilarity = ragDataset1000WithEmbeddings.map((sample) => ({
+  const samplesWithSimilarity = ragDataset1100WithEmbeddings.map((sample) => ({
     ...sample,
     similarity: cosineSimilarity(queryEmbedding, sample.embedding),
   }));
@@ -207,7 +218,7 @@ const main = async () => {
 
   const filePath = 'medications/benchmark-results/rag-over-mem/' + new Date().toISOString() + '.json';
 
-  for (const sample of [...timeDataset, ...testDataset]) {
+  for (const sample of [...testDataset]) {
     const benchmarkResult = {
       prompt: sample.prompt,
       expected_output: sample.expected_output,

@@ -1,0 +1,2033 @@
+[
+  {
+    "id": "entry_000_a1b2c3d4",
+    "prompt": "I ran for 30 minutes and burned 300 calories",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "30 minute run",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_001_e5f6g7h8",
+    "prompt": "3 sets of 10 reps bench press with 50kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Bench press workout",
+        "durationMinutes": 15,
+        "caloriesBurned": 90,
+        "exercises": [
+          {
+            "name": "bench press",
+            "sets": 3,
+            "reps": 10,
+            "weight": 50,
+            "weightUnit": "kg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_002_i9j0k1l2",
+    "prompt": "45 minute yoga session, mostly vinyasa flow",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "45 minute vinyasa flow yoga session",
+        "durationMinutes": 45,
+        "caloriesBurned": 135,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_003_m3n4o5p6",
+    "prompt": "Swimming laps for 25 minutes, burned about 200 calories",
+    "expected_output": {
+      "payload": {
+        "workoutType": "swimming",
+        "description": "25 minute lap swimming",
+        "durationMinutes": 25,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_004_q7r8s9t0",
+    "prompt": "High intensity interval training for 20 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "20 minute high intensity interval training",
+        "durationMinutes": 20,
+        "caloriesBurned": 240,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_005_u1v2w3x4",
+    "prompt": "I went for a run",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "running session",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_006_y5z6a7b8",
+    "prompt": "Did some pushups",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "pushup workout",
+        "durationMinutes": 10,
+        "caloriesBurned": 60,
+        "exercises": [
+          {
+            "name": "pushups",
+            "sets": 3,
+            "reps": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_007_c9d0e1f2",
+    "prompt": "I ran",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "running session",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_008_g3h4i5j6",
+    "prompt": "Worked out",
+    "expected_output": {
+      "error": "Could you please be more specific about what type of workout you did?"
+    }
+  },
+  {
+    "id": "entry_009_k7l8m9n0",
+    "prompt": "I exercised",
+    "expected_output": {
+      "error": "Could you please specify what type of exercise you did?"
+    }
+  },
+  {
+    "id": "entry_010_o1p2q3r4",
+    "prompt": "I ate a sandwich",
+    "expected_output": {
+      "error": "You want to log a workout but the query is not about exercise or fitness"
+    }
+  },
+  {
+    "id": "entry_011_s5t6u7v8",
+    "prompt": "What's the weather today?",
+    "expected_output": {
+      "error": "You want to log a workout but the query is not about exercise or fitness"
+    }
+  },
+  {
+    "id": "entry_012_w9x0y1z2",
+    "prompt": "Did a full body workout: 4 sets of 12 reps squats at 80kg, 3 sets of 8 reps deadlifts at 100kg, and 3 sets of 10 reps shoulder press at 30kg. Took about 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Full body strength training session",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {
+            "name": "squats",
+            "sets": 4,
+            "reps": 12,
+            "weight": 80,
+            "weightUnit": "kg"
+          },
+          {
+            "name": "deadlifts",
+            "sets": 3,
+            "reps": 8,
+            "weight": 100,
+            "weightUnit": "kg"
+          },
+          {
+            "name": "shoulder press",
+            "sets": 3,
+            "reps": 10,
+            "weight": 30,
+            "weightUnit": "kg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_013_a3b4c5d6",
+    "prompt": "Easy 20 minute walk around the neighborhood",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "Easy 20 minute neighborhood walk",
+        "durationMinutes": 20,
+        "caloriesBurned": 100,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_014_e7f8g9h0",
+    "prompt": "Intense 40 minute cycling session, really pushed myself",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "Intense 40 minute cycling session",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_015_i1j2k3l4",
+    "prompt": "Went to the gym for an hour, did some cardio and weights",
+    "expected_output": {
+      "payload": {
+        "workoutType": "mixed training",
+        "description": "1 hour gym session with cardio and weights",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_016_m5n6o7p8",
+    "prompt": "Bench pressed 135 pounds for 5 sets of 5 reps",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Bench press workout",
+        "durationMinutes": 20,
+        "caloriesBurned": 120,
+        "exercises": [
+          {
+            "name": "bench press",
+            "sets": 5,
+            "reps": 5,
+            "weight": 135,
+            "weightUnit": "lbs"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_017_q9r0s1t2",
+    "prompt": "Spent 50 minutes on the elliptical",
+    "expected_output": {
+      "payload": {
+        "workoutType": "elliptical",
+        "description": "50 minute elliptical session",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_018_u3v4w5x6",
+    "prompt": "Burned 500 calories doing cardio",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio",
+        "description": "Cardio workout burning 500 calories",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_019_y7z8a9b0",
+    "prompt": "Hit the gym and smashed legs today",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Leg day workout at the gym",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_020_c1d2e3f4",
+    "prompt": "10 minute warm-up jog, then 30 minutes of basketball",
+    "expected_output": {
+      "payload": {
+        "workoutType": "mixed training",
+        "description": "10 minute jog followed by 30 minutes of basketball",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_021_g5h6i7j8",
+    "prompt": "Did a calisthenics circuit: 50 pushups, 100 situps, 30 pullups",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Calisthenics circuit workout",
+        "durationMinutes": 25,
+        "caloriesBurned": 150,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {
+            "name": "pushups",
+            "reps": 50
+          },
+          {
+            "name": "situps",
+            "reps": 100
+          },
+          {
+            "name": "pullups",
+            "reps": 30
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_022_k9l0m1n2",
+    "prompt": "Played tennis for 90 minutes, singles match",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tennis",
+        "description": "90 minute singles tennis match",
+        "durationMinutes": 90,
+        "caloriesBurned": 630,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_023_o3p4q5r6",
+    "prompt": "Biked to work",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "Biking commute to work",
+        "durationMinutes": 25,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_024_s7t8u9v0",
+    "prompt": "One hour Zumba class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "One hour Zumba class",
+        "durationMinutes": 60,
+        "caloriesBurned": 420,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_025_w1x2y3z4",
+    "prompt": "Took a nap",
+    "expected_output": {
+      "error": "You want to log a workout but the query is not about exercise or fitness"
+    }
+  },
+  {
+    "id": "entry_026_a5b6c7d8",
+    "prompt": "Watched TV",
+    "expected_output": {
+      "error": "You want to log a workout but the query is not about exercise or fitness"
+    }
+  },
+  {
+    "id": "entry_027_e9f0g1h2",
+    "prompt": "Took my vitamins",
+    "expected_output": {
+      "error": "You want to log a workout but the query is not about exercise or fitness"
+    }
+  },
+  {
+    "id": "entry_028_i3j4k5l6",
+    "prompt": "Training",
+    "expected_output": {
+      "error": "Could you please be more specific about what type of training you did?"
+    }
+  },
+  {
+    "id": "entry_029_m7n8o9p0",
+    "prompt": "At the gym",
+    "expected_output": {
+      "error": "Could you please specify what exercises or activities you did at the gym?"
+    }
+  },
+  {
+    "id": "entry_030_q1r2s3t4",
+    "prompt": "Cardio session",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio",
+        "description": "cardio workout session",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_031_u5v6w7x8",
+    "prompt": "Leg day",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "leg day workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_032_y9z0a1b2",
+    "prompt": "Upper body workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "upper body workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_033_c3d4e5f6",
+    "prompt": "Core workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "core workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 180,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_034_g7h8i9j0",
+    "prompt": "Stretching session",
+    "expected_output": {
+      "payload": {
+        "workoutType": "flexibility",
+        "description": "stretching session",
+        "durationMinutes": 20,
+        "caloriesBurned": 40,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_035_k1l2m3n4",
+    "prompt": "Walked the dog for 15 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "15 minute dog walk",
+        "durationMinutes": 15,
+        "caloriesBurned": 75,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_036_o5p6q7r8",
+    "prompt": "Hiked for 2 hours on a mountain trail",
+    "expected_output": {
+      "payload": {
+        "workoutType": "hiking",
+        "description": "2 hour mountain trail hike",
+        "durationMinutes": 120,
+        "caloriesBurned": 720,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_037_s9t0u1v2",
+    "prompt": "Rowing machine for 35 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rowing",
+        "description": "35 minute rowing machine session",
+        "durationMinutes": 35,
+        "caloriesBurned": 315,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_038_w3x4y5z6",
+    "prompt": "Spin class at the gym, 50 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "50 minute spin class",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_039_a7b8c9d0",
+    "prompt": "Jumped rope for 10 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio",
+        "description": "10 minute jump rope session",
+        "durationMinutes": 10,
+        "caloriesBurned": 120,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_040_e1f2g3h4",
+    "prompt": "Pilates class for 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pilates",
+        "description": "1 hour pilates class",
+        "durationMinutes": 60,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_041_i5j6k7l8",
+    "prompt": "CrossFit WOD took 25 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "CrossFit",
+        "description": "25 minute CrossFit WOD",
+        "durationMinutes": 25,
+        "caloriesBurned": 300,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_042_m9n0o1p2",
+    "prompt": "Boxing training for 40 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "boxing",
+        "description": "40 minute boxing training session",
+        "durationMinutes": 40,
+        "caloriesBurned": 480,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_043_q3r4s5t6",
+    "prompt": "Kickboxing class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "kickboxing",
+        "description": "kickboxing class",
+        "durationMinutes": 45,
+        "caloriesBurned": 540,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_044_u7v8w9x0",
+    "prompt": "Martial arts practice for 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "martial arts",
+        "description": "90 minute martial arts practice",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_045_y1z2a3b4",
+    "prompt": "Played soccer for an hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "soccer",
+        "description": "1 hour soccer game",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_046_c5d6e7f8",
+    "prompt": "Basketball practice 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "basketball",
+        "description": "45 minute basketball practice",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_047_g9h0i1j2",
+    "prompt": "Rock climbing at the gym for 1.5 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rock climbing",
+        "description": "1.5 hour rock climbing session",
+        "durationMinutes": 90,
+        "caloriesBurned": 630,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_048_k3l4m5n6",
+    "prompt": "Stairs",
+    "expected_output": {
+      "error": "Could you please be more specific? How long did you climb stairs or how many flights?"
+    }
+  },
+  {
+    "id": "entry_049_o7p8q9r0",
+    "prompt": "Sports",
+    "expected_output": {
+      "error": "Could you please specify what sport you played?"
+    }
+  },
+  {
+    "id": "entry_050_s1t2u3v4",
+    "prompt": "Morning jog around the park, felt great! About 5k in 28 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Morning 5k jog around the park in 28 minutes",
+        "durationMinutes": 28,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_051_w5x6y7z8",
+    "prompt": "Lazy walk for 40 minutes, just taking it easy",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "Lazy 40 minute walk",
+        "durationMinutes": 40,
+        "caloriesBurned": 200,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_052_a9b0c1d2",
+    "prompt": "Sprint intervals - 8 rounds of 30 seconds sprint, 90 seconds rest",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "Sprint intervals - 8 rounds of 30s sprint with 90s rest",
+        "durationMinutes": 16,
+        "caloriesBurned": 192,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_053_e3f4g5h6",
+    "prompt": "Squats 5x5 at 200lbs, Overhead press 3x8 at 95lbs, Barbell rows 3x10 at 135lbs",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Strength training - squats, overhead press, barbell rows",
+        "durationMinutes": 50,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {
+            "name": "squats",
+            "sets": 5,
+            "reps": 5,
+            "weight": 200,
+            "weightUnit": "lbs"
+          },
+          {
+            "name": "overhead press",
+            "sets": 3,
+            "reps": 8,
+            "weight": 95,
+            "weightUnit": "lbs"
+          },
+          {
+            "name": "barbell rows",
+            "sets": 3,
+            "reps": 10,
+            "weight": 135,
+            "weightUnit": "lbs"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_054_i7j8k9l0",
+    "prompt": "Treadmill run - 5 miles at 7.5 mph",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Treadmill run - 5 miles at 7.5 mph",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_055_m1n2o3p4",
+    "prompt": "Power yoga for 60 minutes, very challenging",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "60 minute challenging power yoga session",
+        "durationMinutes": 60,
+        "caloriesBurned": 240,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_056_q5r6s7t8",
+    "prompt": "Restorative yoga 30 minutes before bed",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "30 minute restorative yoga before bed",
+        "durationMinutes": 30,
+        "caloriesBurned": 60,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_057_u9v0w1x2",
+    "prompt": "Outdoor bike ride for 2 hours, hilly terrain",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "2 hour outdoor bike ride on hilly terrain",
+        "durationMinutes": 120,
+        "caloriesBurned": 1200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_058_y3z4a5b6",
+    "prompt": "Stationary bike 25 minutes low resistance",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "25 minute stationary bike with low resistance",
+        "durationMinutes": 25,
+        "caloriesBurned": 150,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_059_c7d8e9f0",
+    "prompt": "Burpees! Did 100 burpees in 15 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "100 burpees in 15 minutes",
+        "durationMinutes": 15,
+        "caloriesBurned": 180,
+        "intensityLevel": "high",
+        "exercises": [
+          {
+            "name": "burpees",
+            "reps": 100
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_060_g1h2i3j4",
+    "prompt": "Abs workout: planks, crunches, leg raises. 20 minutes total",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "20 minute abs workout - planks, crunches, leg raises",
+        "durationMinutes": 20,
+        "caloriesBurned": 120,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {
+            "name": "planks"
+          },
+          {
+            "name": "crunches"
+          },
+          {
+            "name": "leg raises"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_061_k5l6m7n8",
+    "prompt": "Volleyball game for 1.5 hours, beach volleyball",
+    "expected_output": {
+      "payload": {
+        "workoutType": "volleyball",
+        "description": "1.5 hour beach volleyball game",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_062_o9p0q1r2",
+    "prompt": "Badminton doubles match, 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "badminton",
+        "description": "45 minute badminton doubles match",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_063_s3t4u5v6",
+    "prompt": "Stairmaster for 20 minutes, level 8",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio",
+        "description": "20 minute stairmaster at level 8",
+        "durationMinutes": 20,
+        "caloriesBurned": 200,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_064_w7x8y9z0",
+    "prompt": "Aerobics class 50 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "aerobics",
+        "description": "50 minute aerobics class",
+        "durationMinutes": 50,
+        "caloriesBurned": 350,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_065_a1b2c3d4",
+    "prompt": "Barre workout 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "barre",
+        "description": "45 minute barre workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_066_e5f6g7h8",
+    "prompt": "Kettlebell swings 4 sets of 20 with 24kg bell",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Kettlebell swings workout",
+        "durationMinutes": 15,
+        "caloriesBurned": 90,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {
+            "name": "kettlebell swings",
+            "sets": 4,
+            "reps": 20,
+            "weight": 24,
+            "weightUnit": "kg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_067_i9j0k1l2",
+    "prompt": "Turkish get-ups 3x5 each side with 16kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "Turkish get-ups workout",
+        "durationMinutes": 20,
+        "caloriesBurned": 120,
+        "exercises": [
+          {
+            "name": "turkish get-ups",
+            "sets": 3,
+            "reps": 5,
+            "weight": 16,
+            "weightUnit": "kg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_068_m3n4o5p6",
+    "prompt": "Foam rolling and mobility work for 25 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "recovery",
+        "description": "25 minute foam rolling and mobility work",
+        "durationMinutes": 25,
+        "caloriesBurned": 50,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_069_q7r8s9t0",
+    "prompt": "Active recovery - light swimming for 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "swimming",
+        "description": "30 minute light swimming for active recovery",
+        "durationMinutes": 30,
+        "caloriesBurned": 200,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_070_u1v2w3x4",
+    "prompt": "TRX suspension training 40 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "40 minute TRX suspension training",
+        "durationMinutes": 40,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_071_y5z6a7b8",
+    "prompt": "Battle ropes 10 rounds of 30 seconds on, 30 seconds off",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "Battle ropes - 10 rounds of 30s on/30s off",
+        "durationMinutes": 10,
+        "caloriesBurned": 120,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_072_c9d0e1f2",
+    "prompt": "Circuit training: jump squats, mountain climbers, push-ups, 3 rounds",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "Circuit training - jump squats, mountain climbers, push-ups, 3 rounds",
+        "durationMinutes": 25,
+        "caloriesBurned": 300,
+        "intensityLevel": "high",
+        "exercises": [
+          {
+            "name": "jump squats"
+          },
+          {
+            "name": "mountain climbers"
+          },
+          {
+            "name": "push-ups"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_073_g3h4i5j6",
+    "prompt": "Trail running 10k in 55 minutes, very hilly",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "10k trail run in 55 minutes on hilly terrain",
+        "durationMinutes": 55,
+        "caloriesBurned": 650,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_074_k7l8m9n0",
+    "prompt": "Nordic walking 1 hour with poles",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "1 hour nordic walking with poles",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_075_o1p2q3r4",
+    "prompt": "Plyometric training - box jumps, broad jumps, 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "30 minute plyometric training - box jumps, broad jumps",
+        "durationMinutes": 30,
+        "caloriesBurned": 360,
+        "intensityLevel": "high",
+        "exercises": [
+          {
+            "name": "box jumps"
+          },
+          {
+            "name": "broad jumps"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_076_s5t6u7v8",
+    "prompt": "Fencing practice 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "fencing",
+        "description": "1 hour fencing practice",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_077_w9x0y1z2",
+    "prompt": "Ice skating for 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "skating",
+        "description": "90 minute ice skating session",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_078_a3b4c5d6",
+    "prompt": "Rollerblading 45 minutes in the park",
+    "expected_output": {
+      "payload": {
+        "workoutType": "skating",
+        "description": "45 minute rollerblading in the park",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_079_e7f8g9h0",
+    "prompt": "Surfing 2 hours at the beach",
+    "expected_output": {
+      "payload": {
+        "workoutType": "surfing",
+        "description": "2 hour surfing session at the beach",
+        "durationMinutes": 120,
+        "caloriesBurned": 600,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_080_i1j2k3l4",
+    "prompt": "Kayaking 90 minutes on the river",
+    "expected_output": {
+      "payload": {
+        "workoutType": "kayaking",
+        "description": "90 minute kayaking on the river",
+        "durationMinutes": 90,
+        "caloriesBurned": 450,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_081_m5n6o7p8",
+    "prompt": "Stand-up paddleboarding 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "paddleboarding",
+        "description": "1 hour stand-up paddleboarding",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_082_q9r0s1t2",
+    "prompt": "Racquetball game 50 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "racquetball",
+        "description": "50 minute racquetball game",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_083_u3v4w5x6",
+    "prompt": "Squash match 40 minutes, very intense",
+    "expected_output": {
+      "payload": {
+        "workoutType": "squash",
+        "description": "40 minute very intense squash match",
+        "durationMinutes": 40,
+        "caloriesBurned": 520,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_084_y7z8a9b0",
+    "prompt": "Ping pong for 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "table tennis",
+        "description": "30 minute ping pong session",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_085_c1d2e3f4",
+    "prompt": "Bowling 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "bowling",
+        "description": "2 hour bowling session",
+        "durationMinutes": 120,
+        "caloriesBurned": 240,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_086_g5h6i7j8",
+    "prompt": "Golf 18 holes, walking the course - 4 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "golf",
+        "description": "18 holes of golf walking the course - 4 hours",
+        "durationMinutes": 240,
+        "caloriesBurned": 1200,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_087_k9l0m1n2",
+    "prompt": "Hot yoga 90 minutes, Bikram style",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "90 minute hot Bikram yoga",
+        "durationMinutes": 90,
+        "caloriesBurned": 450,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_088_o3p4q5r6",
+    "prompt": "Tai chi in the park 40 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tai chi",
+        "description": "40 minute tai chi in the park",
+        "durationMinutes": 40,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_089_s7t8u9v0",
+    "prompt": "Gymnastics practice 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gymnastics",
+        "description": "2 hour gymnastics practice",
+        "durationMinutes": 120,
+        "caloriesBurned": 600,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_090_w1x2y3z4",
+    "prompt": "Trampoline workout 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "trampoline",
+        "description": "30 minute trampoline workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_091_a5b6c7d8",
+    "prompt": "Frisbee in the park 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "frisbee",
+        "description": "1 hour frisbee in the park",
+        "durationMinutes": 60,
+        "caloriesBurned": 240,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_092_e9f0g1h2",
+    "prompt": "Ultimate frisbee game 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ultimate frisbee",
+        "description": "90 minute ultimate frisbee game",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_093_i3j4k5l6",
+    "prompt": "Rugby practice 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rugby",
+        "description": "2 hour rugby practice",
+        "durationMinutes": 120,
+        "caloriesBurned": 960,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_094_m7n8o9p0",
+    "prompt": "American football practice 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "football",
+        "description": "90 minute football practice",
+        "durationMinutes": 90,
+        "caloriesBurned": 720,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_095_q1r2s3t4",
+    "prompt": "Lacrosse game 60 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "lacrosse",
+        "description": "60 minute lacrosse game",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_096_u5v6w7x8",
+    "prompt": "Field hockey 75 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "field hockey",
+        "description": "75 minute field hockey session",
+        "durationMinutes": 75,
+        "caloriesBurned": 600,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_097_y9z0a1b2",
+    "prompt": "Ice hockey practice 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ice hockey",
+        "description": "90 minute ice hockey practice",
+        "durationMinutes": 90,
+        "caloriesBurned": 720,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_098_c3d4e5f6",
+    "prompt": "Sledding with kids for an hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "sledding",
+        "description": "1 hour sledding with kids",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_099_g7h8i9j0",
+    "prompt": "Snowshoeing 2 hours in the mountains",
+    "expected_output": {
+      "payload": {
+        "workoutType": "snowshoeing",
+        "description": "2 hour snowshoeing in the mountains",
+        "durationMinutes": 120,
+        "caloriesBurned": 960,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_100_k1l2m3n4",
+    "prompt": "Cross-country skiing 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cross-country skiing",
+        "description": "90 minute cross-country skiing",
+        "durationMinutes": 90,
+        "caloriesBurned": 900,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_101_o5p6q7r8",
+    "prompt": "Downhill skiing 3 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "skiing",
+        "description": "3 hour downhill skiing",
+        "durationMinutes": 180,
+        "caloriesBurned": 1080,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_102_s9t0u1v2",
+    "prompt": "Snowboarding 4 hours at the resort",
+    "expected_output": {
+      "payload": {
+        "workoutType": "snowboarding",
+        "description": "4 hour snowboarding at the resort",
+        "durationMinutes": 240,
+        "caloriesBurned": 1440,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_103_w3x4y5z6",
+    "prompt": "Horseback riding 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "horseback riding",
+        "description": "2 hour horseback riding",
+        "durationMinutes": 120,
+        "caloriesBurned": 480,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_104_a7b8c9d0",
+    "prompt": "Gardening and yard work for 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gardening",
+        "description": "2 hours of gardening and yard work",
+        "durationMinutes": 120,
+        "caloriesBurned": 480,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_105_e1f2g3h4",
+    "prompt": "Shoveling snow for 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "shoveling",
+        "description": "45 minutes of snow shoveling",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_106_i5j6k7l8",
+    "prompt": "Mowing the lawn for 1.5 hours with push mower",
+    "expected_output": {
+      "payload": {
+        "workoutType": "lawn mowing",
+        "description": "1.5 hours mowing lawn with push mower",
+        "durationMinutes": 90,
+        "caloriesBurned": 450,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_107_m9n0o1p2",
+    "prompt": "Housework - vacuuming, mopping, cleaning for 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "housework",
+        "description": "90 minutes of housework - vacuuming, mopping, cleaning",
+        "durationMinutes": 90,
+        "caloriesBurned": 270,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_108_q3r4s5t6",
+    "prompt": "Moving furniture and boxes for an hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "moving",
+        "description": "1 hour moving furniture and boxes",
+        "durationMinutes": 60,
+        "caloriesBurned": 420,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_109_u7v8w9x0",
+    "prompt": "Playing with kids at playground 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "play",
+        "description": "45 minutes playing with kids at playground",
+        "durationMinutes": 45,
+        "caloriesBurned": 180,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_110_y1z2a3b4",
+    "prompt": "Dancing at home for 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "30 minutes dancing at home",
+        "durationMinutes": 30,
+        "caloriesBurned": 210,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_111_c5d6e7f8",
+    "prompt": "Ballroom dancing class 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "1 hour ballroom dancing class",
+        "durationMinutes": 60,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_112_g9h0i1j2",
+    "prompt": "Hip hop dance class 50 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "50 minute hip hop dance class",
+        "durationMinutes": 50,
+        "caloriesBurned": 350,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_113_k3l4m5n6",
+    "prompt": "Salsa dancing 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "90 minute salsa dancing",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_114_o7p8q9r0",
+    "prompt": "Boot camp class 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "boot camp",
+        "description": "1 hour boot camp class",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_115_s1t2u3v4",
+    "prompt": "Military style PT - push-ups, sit-ups, pull-ups, running. 1 hour total",
+    "expected_output": {
+      "payload": {
+        "workoutType": "military PT",
+        "description": "1 hour military style PT - push-ups, sit-ups, pull-ups, running",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high",
+        "exercises": [
+          {
+            "name": "push-ups"
+          },
+          {
+            "name": "sit-ups"
+          },
+          {
+            "name": "pull-ups"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "entry_116_w5x6y7z8",
+    "prompt": "Obstacle course race training 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "obstacle course",
+        "description": "90 minute obstacle course race training",
+        "durationMinutes": 90,
+        "caloriesBurned": 900,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_117_a9b0c1d2",
+    "prompt": "Parkour practice 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "parkour",
+        "description": "1 hour parkour practice",
+        "durationMinutes": 60,
+        "caloriesBurned": 540,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_118_e3f4g5h6",
+    "prompt": "Meditation and breathing exercises 20 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "meditation",
+        "description": "20 minute meditation and breathing exercises",
+        "durationMinutes": 20,
+        "caloriesBurned": 20,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_119_i7j8k9l0",
+    "prompt": "Walked 10,000 steps today",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "Walked 10,000 steps",
+        "durationMinutes": 90,
+        "caloriesBurned": 450,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_120_m1n2o3p4",
+    "prompt": "Stadium stairs - ran up and down 20 times",
+    "expected_output": {
+      "payload": {
+        "workoutType": "stair climbing",
+        "description": "Stadium stairs - 20 rounds up and down",
+        "durationMinutes": 30,
+        "caloriesBurned": 360,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_121_q5r6s7t8",
+    "prompt": "Couch to 5k week 3 run",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Couch to 5k week 3 run",
+        "durationMinutes": 25,
+        "caloriesBurned": 250,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_122_u9v0w1x2",
+    "prompt": "Marathon pace run 18 miles in 2 hours 15 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Marathon pace run - 18 miles in 2:15",
+        "durationMinutes": 135,
+        "caloriesBurned": 1800,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_123_y3z4a5b6",
+    "prompt": "Recovery run 3 miles easy",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Recovery run - 3 miles easy",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_124_c7d8e9f0",
+    "prompt": "Tempo run 6 miles at threshold pace",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Tempo run - 6 miles at threshold pace",
+        "durationMinutes": 48,
+        "caloriesBurned": 600,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_125_g1h2i3j4",
+    "prompt": "Fartlek training - varied pace for 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "45 minute fartlek training with varied pace",
+        "durationMinutes": 45,
+        "caloriesBurned": 500,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_126_k5l6m7n8",
+    "prompt": "Track workout: 8x400m repeats with 2 min rest",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Track workout - 8x400m repeats with 2 min rest",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_127_o9p0q1r2",
+    "prompt": "Hill repeats - 10 sprints up steep hill",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "Hill repeats - 10 sprints up steep hill",
+        "durationMinutes": 35,
+        "caloriesBurned": 420,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_128_s3t4u5v6",
+    "prompt": "Long slow distance run 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "2 hour long slow distance run",
+        "durationMinutes": 120,
+        "caloriesBurned": 1200,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_129_w7x8y9z0",
+    "prompt": "Brick workout: 1 hour bike + 30 min run",
+    "expected_output": {
+      "payload": {
+        "workoutType": "triathlon training",
+        "description": "Brick workout - 1 hour bike + 30 min run",
+        "durationMinutes": 90,
+        "caloriesBurned": 900,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_130_a1b2c3d4",
+    "prompt": "Olympic distance triathlon training: 1500m swim, 40k bike, 10k run",
+    "expected_output": {
+      "payload": {
+        "workoutType": "triathlon training",
+        "description": "Olympic distance tri training - 1500m swim, 40k bike, 10k run",
+        "durationMinutes": 180,
+        "caloriesBurned": 1800,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_131_e5f6g7h8",
+    "prompt": "Open water swim 2000m in 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "swimming",
+        "description": "Open water swim - 2000m in 45 minutes",
+        "durationMinutes": 45,
+        "caloriesBurned": 500,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_132_i9j0k1l2",
+    "prompt": "Pool swim: 100x50m on 1:00",
+    "expected_output": {
+      "payload": {
+        "workoutType": "swimming",
+        "description": "Pool swim - 100x50m on 1:00",
+        "durationMinutes": 100,
+        "caloriesBurned": 1100,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_133_m3n4o5p6",
+    "prompt": "Water aerobics class 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "water aerobics",
+        "description": "45 minute water aerobics class",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_134_q7r8s9t0",
+    "prompt": "Aqua jogging 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "aqua jogging",
+        "description": "30 minute aqua jogging",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_135_u1v2w3x4",
+    "prompt": "Diving practice 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "diving",
+        "description": "90 minute diving practice",
+        "durationMinutes": 90,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_136_y5z6a7b8",
+    "prompt": "Water polo game 60 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "water polo",
+        "description": "60 minute water polo game",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_137_c9d0e1f2",
+    "prompt": "Synchronized swimming practice 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "synchronized swimming",
+        "description": "1 hour synchronized swimming practice",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_138_g3h4i5j6",
+    "prompt": "Scuba diving 2 hours",
+    "expected_output": {
+      "payload": {
+        "workoutType": "scuba diving",
+        "description": "2 hour scuba diving",
+        "durationMinutes": 120,
+        "caloriesBurned": 420,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_139_k7l8m9n0",
+    "prompt": "Snorkeling 90 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "snorkeling",
+        "description": "90 minute snorkeling",
+        "durationMinutes": 90,
+        "caloriesBurned": 360,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_140_o1p2q3r4",
+    "prompt": "Zumba Gold (low impact) 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dance",
+        "description": "45 minute Zumba Gold low impact class",
+        "durationMinutes": 45,
+        "caloriesBurned": 225,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_141_s5t6u7v8",
+    "prompt": "Chair yoga 30 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "30 minute chair yoga",
+        "durationMinutes": 30,
+        "caloriesBurned": 60,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_142_w9x0y1z2",
+    "prompt": "Senior fitness class 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "senior fitness",
+        "description": "1 hour senior fitness class",
+        "durationMinutes": 60,
+        "caloriesBurned": 240,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_143_a3b4c5d6",
+    "prompt": "Pregnancy workout 40 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "prenatal fitness",
+        "description": "40 minute pregnancy workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 160,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_144_e7f8g9h0",
+    "prompt": "Postnatal mom and baby class 45 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "postnatal fitness",
+        "description": "45 minute postnatal mom and baby class",
+        "durationMinutes": 45,
+        "caloriesBurned": 180,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "entry_145_i1j2k3l4",
+    "prompt": "Wheelchair basketball 1 hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "wheelchair basketball",
+        "description": "1 hour wheelchair basketball",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_146_m5n6o7p8",
+    "prompt": "Adaptive fitness training 50 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "adaptive fitness",
+        "description": "50 minute adaptive fitness training",
+        "durationMinutes": 50,
+        "caloriesBurned": 250,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_147_q9r0s1t2",
+    "prompt": "Virtual reality fitness game 30 minutes Beat Saber",
+    "expected_output": {
+      "payload": {
+        "workoutType": "VR fitness",
+        "description": "30 minute VR fitness - Beat Saber",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "entry_148_u3v4w5x6",
+    "prompt": "Peloton ride 45 minute HIIT class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "45 minute Peloton HIIT ride",
+        "durationMinutes": 45,
+        "caloriesBurned": 540,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "entry_149_y7z8a9b0",
+    "prompt": "Ring Fit Adventure on Nintendo Switch 40 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gaming fitness",
+        "description": "40 minute Ring Fit Adventure workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  }
+]
+

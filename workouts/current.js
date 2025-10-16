@@ -4,62 +4,76 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" with { type: "json" };
-import { calculatePayloadMetrics, extractJSON, writeResultIncrementallyMeals } from "../utils.js";
+import workoutDataset from "./workouts-datasets/workout-test-dataset.json" with { type: "json" };
+import { calculateWorkoutPayloadMetrics, extractJSON, writeResultIncrementallyWorkouts } from "../utils.js";
+
+export const workoutPayloadSchema = z.object({
+  workoutType: z.string().optional(),
+  description: z.string().optional(),
+  durationMinutes: z.number().optional(),
+  caloriesBurned: z.number().optional(),
+  intensityLevel: z.string().optional(),
+  exercises: z
+    .array(
+      z.object({
+        name: z.string(),
+        sets: z.number().optional(),
+        reps: z.number().optional(),
+        weight: z.number().optional(),
+        weightUnit: z.string().optional(),
+        durationMinutes: z.number().optional(),
+      }),
+    )
+    .optional(),
+});
 
 const responseSchema = z.object({
-  payload: z
-    .object({
-      description: z.string(),
-      calories: z.number(),
-      carbsGrams: z.number(),
-      proteinGram: z.number(),
-      fatGram: z.number(),
-      glycemicIndex: z.number(),
-    })
-    .optional(),
+  payload: workoutPayloadSchema.optional(),
   error: z.string().optional(),
 });
 
-export function mealPrompt(schema) {
+export function workoutPrompt(schema) {
   return `/no_think
-    You are given a schema for a meal tool call and you need to fill it based on the user query. Here's the schema:
+    You are given a schema for a workout tool call and you need to fill it based on the user query. Here's the schema:
 
     ${JSON.stringify(z.toJSONSchema(schema))}
 
-    GOOD examples (specific with quantities):
-    - "I had a 250g steak with 100g mixed roasted vegetables" ✓
-    - "Ate 1 cup oatmeal with 1 medium banana" ✓  
-    - "Had 1 hot dog with mustard" ✓ (hot dog is a known item: bun + sausage)
-    - "2 slices whole grain toast with 2 eggs" ✓
+    GOOD examples (specific with details):
+    - "I ran for 30 minutes and burned 300 calories" ✓
+    - "3 sets of 10 reps bench press with 50kg" ✓
+    - "45 minute yoga session, mostly vinyasa flow" ✓
+    - "Swimming laps for 25 minutes, burned about 200 calories" ✓
+    - "High intensity interval training for 20 minutes" ✓
 
-    SIMPLE SNACKS/SINGLE ITEMS (always acceptable, estimate standard portions):
-    - "I ate banana" → 1 medium banana (~120g)
-    - "I ate apple" → 1 medium apple (~180g)
-    - "I drink 100mg espresso" → 1 shot espresso with 100mg caffeine
-    - "Had nuts" → handful of mixed nuts (~30g)
-    - "Ate chocolate" → 1 piece/square dark chocolate (~20g)
+    BAD examples (but still estimate):
+    - "I went for a run" → Estimate: 30 min running, 300 calories
+    - "Did some pushups" → Estimate: 3 sets of 10 reps, 50 calories
+    - "I ran" → Estimate: 30 min running, 300 calories
+    - "Worked out" → ERROR: What type of workout?
 
-    ESTIMATE when quantities missing but food is identifiable:
-    - "I had steak and veggies" → Estimate: 200g steak, 80g vegetables
-    - "Ate pasta" → Estimate: 1 cup cooked pasta
-    - "Had some soup" → ERROR: Could you please be more specific, what's in the soup?
+    CALORIE ESTIMATION GUIDELINES:
+    - Running: ~10 cal/min (300 cal for 30 min)
+    - Walking: ~5 cal/min (150 cal for 30 min)
+    - Cycling: ~8 cal/min (240 cal for 30 min)
+    - Swimming: ~11 cal/min (275 cal for 25 min)
+    - Strength training: ~6 cal/min (180 cal for 30 min)
+    - Yoga: ~3 cal/min (90 cal for 30 min)
+    - HIIT: ~12 cal/min (240 cal for 20 min)
+    - Adjust based on intensity mentioned (high/low/moderate)
 
     RULES:
-    - Simple single food items (apple, banana, nuts, etc.) are ALWAYS acceptable - use standard portion sizes
-    - Always estimate quantities when missing but food is identifiable
-    - "Pasta" = estimate 1 cup cooked pasta, "steak" = estimate 200g steak
-    - Only error if completely unclear ("soup", "some food") or unrelated to eating
-
-    For nutrition estimates use common portions. Glycemic index: vegetables/nuts (15-35), grains (25-45), white bread/rice (70-85).
+    - Always include workoutType (running, cycling, strength training, etc.)
+    - Always include a brief description of what they did
+    - Estimate durationMinutes if not specified (20-45 min typical)
+    - ALWAYS estimate caloriesBurned based on activity and duration
+    - Include intensityLevel if mentioned (low, moderate, high)
+    - For strength training, include exercises array with sets/reps/weight
+    - Only error if completely unclear ("exercised") or unrelated to fitness
 
     CRITICAL:
-    - Set ONLY "payload" field if you can create the log (even with estimates)
-    - Set ONLY "error" field if info is too vague
-    - Don't just say "too vague", come up with a proper error message
-    - ONLY if the query is completely unrelated to food/eating (like "I went running"), set error: "You want to log a meal but the query is not about food"
-    - Single food items like "apple", "banana", "nuts", "chocolate", "espresso" ARE valid meals - use standard portions
-    - Complex foods like "pasta", "steak", "bread" ARE about meals - estimate quantities if missing
+    - Set ONLY "payload" field if you can create the log (always estimate calories)
+    - Set ONLY "error" field if workout is too vague to identify
+    - Use error if the query is completely unrelated to exercise/fitness
     - Never set both fields
 
     Output valid JSON only.
@@ -69,8 +83,9 @@ export function mealPrompt(schema) {
 }
 
 
+
 function createHistory(query) {
-  const prompt = mealPrompt(responseSchema);
+  const prompt = workoutPrompt(responseSchema);
   const history = [
     {
       role: "session",
@@ -116,10 +131,11 @@ const initLlmModel = async () => {
 
 const main = async () => {
   await initLlmModel();
-  const filePath = 'meal/benchmark-results/current/' + new Date().toISOString() + '.json';
+  const filePath = 'workouts/benchmark-results/current/' + new Date().toISOString() + '.json';
 
-  for (const sample of mealDatasetOriginal) {
+  for (const sample of workoutDataset) {
     const benchmarkResult = {
+      id: sample.id,
       prompt: sample.prompt,
       expected_output: sample.expected_output,
     };
@@ -153,7 +169,7 @@ const main = async () => {
 
       if (expectsPayload && hasPayload) {
         benchmarkResult.classification = "truthy_payload";
-        benchmarkResult.metrics = calculatePayloadMetrics(
+        benchmarkResult.metrics = calculateWorkoutPayloadMetrics(
           sample.expected_output.payload,
           parsedResult.payload
         );
@@ -179,7 +195,7 @@ const main = async () => {
         benchmarkResult.classification = "falsy_payload";
       }
     }
-    await writeResultIncrementallyMeals(benchmarkResult, filePath);
+    await writeResultIncrementallyWorkouts(benchmarkResult, filePath);
   }
 };
 

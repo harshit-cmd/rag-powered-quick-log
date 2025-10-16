@@ -51,6 +51,185 @@ export function calculateNormalizedError(expected, actual) {
 }
 
 /**
+ * Calculate metrics for workout payloads
+ * @param {Object} expected - Expected workout payload
+ * @param {Object} actual - Actual workout payload from model
+ * @returns {Object} Metrics including numeric errors, string matches, and exercise scores
+ */
+export function calculateWorkoutPayloadMetrics(expected, actual) {
+  const metrics = {
+    // Numeric field errors (normalized)
+    durationError: calculateNormalizedError(
+      expected.durationMinutes, 
+      actual.durationMinutes
+    ),
+    caloriesError: calculateNormalizedError(
+      expected.caloriesBurned, 
+      actual.caloriesBurned
+    ),
+    
+    // String field matches (exact or fuzzy)
+    workoutTypeMatch: calculateStringMatch(
+      expected.workoutType, 
+      actual.workoutType
+    ),
+    descriptionMatch: calculateStringMatch(
+      expected.description, 
+      actual.description
+    ),
+    intensityLevelMatch: calculateStringMatch(
+      expected.intensityLevel, 
+      actual.intensityLevel
+    ),
+    
+    // Exercise array comparison
+    exercisesScore: calculateExercisesScore(
+      expected.exercises, 
+      actual.exercises
+    ),
+    
+    // Overall metrics
+    averageNormalizedError: 0,
+    overallScore: 0
+  };
+
+  // Calculate average numeric error (for duration and calories)
+  const numericErrors = [
+    metrics.durationError, 
+    metrics.caloriesError
+  ].filter(e => e !== null && !isNaN(e));
+  
+  metrics.averageNormalizedError = numericErrors.length > 0
+    ? numericErrors.reduce((sum, e) => sum + e, 0) / numericErrors.length
+    : 0;
+
+  // Calculate overall score (combining numeric accuracy and string matches)
+  const stringMatches = [
+    metrics.workoutTypeMatch,
+    metrics.descriptionMatch,
+    metrics.intensityLevelMatch
+  ].filter(m => m !== null);
+  
+  const avgStringMatch = stringMatches.length > 0
+    ? stringMatches.reduce((sum, m) => sum + m, 0) / stringMatches.length
+    : 1;
+  
+  // Overall score: 50% numeric accuracy, 20% string matches, 30% exercises
+  const numericAccuracy = 1 - metrics.averageNormalizedError;
+  metrics.overallScore = (
+    (numericAccuracy * 0.5) + 
+    (avgStringMatch * 0.2) + 
+    (metrics.exercisesScore * 0.3)
+  );
+
+  return metrics;
+}
+
+/**
+ * Calculate string similarity between expected and actual strings
+ * @param {string} expected - Expected string value
+ * @param {string} actual - Actual string value
+ * @returns {number|null} Similarity score (0-1) or null if not applicable
+ */
+export function calculateStringMatch(expected, actual) {
+  // Handle missing values
+  if (expected === undefined && actual === undefined) return null; // Not applicable
+  if (expected === undefined || actual === undefined) return 0; // Mismatch
+  
+  // Normalize strings for comparison
+  const expStr = String(expected).toLowerCase().trim();
+  const actStr = String(actual).toLowerCase().trim();
+  
+  // Exact match
+  if (expStr === actStr) return 1;
+  
+  // Check if one contains the other (partial match)
+  if (expStr.includes(actStr) || actStr.includes(expStr)) {
+    return 0.7; // Partial match gets 70%
+  }
+  
+  // Simple similarity based on shared words
+  const expWords = new Set(expStr.split(/\s+/));
+  const actWords = new Set(actStr.split(/\s+/));
+  const intersection = [...expWords].filter(w => actWords.has(w));
+  const union = new Set([...expWords, ...actWords]);
+  
+  return union.size > 0 ? intersection.length / union.size : 0;
+}
+
+/**
+ * Calculate score for exercise arrays
+ * @param {Array} expected - Expected exercises array
+ * @param {Array} actual - Actual exercises array
+ * @returns {number} Score (0-1) for exercise array match
+ */
+export function calculateExercisesScore(expected, actual) {
+  // Handle missing exercises
+  if (!expected && !actual) return 1; // Both null/undefined
+  if (!expected || !actual) return 0; // One missing
+  if (expected.length === 0 && actual.length === 0) return 1; // Both empty
+  if (expected.length === 0 || actual.length === 0) return 0; // One empty
+  
+  // Score each exercise and average
+  let totalScore = 0;
+  const maxLength = Math.max(expected.length, actual.length);
+  
+  for (let i = 0; i < expected.length; i++) {
+    const exp = expected[i];
+    // Find best matching exercise in actual (by name)
+    const matchingActual = actual.find(a => 
+      a.name && exp.name && 
+      (a.name.toLowerCase().includes(exp.name.toLowerCase()) ||
+      exp.name.toLowerCase().includes(a.name.toLowerCase()))
+    );
+    
+    if (matchingActual) {
+      const exerciseScore = calculateSingleExerciseScore(exp, matchingActual);
+      totalScore += exerciseScore;
+    } else {
+      // No matching exercise found
+      totalScore += 0;
+    }
+  }
+  
+  return totalScore / maxLength;
+}
+
+/**
+ * Calculate score for a single exercise comparison
+ * @param {Object} expected - Expected exercise object
+ * @param {Object} actual - Actual exercise object
+ * @returns {number} Score (0-1) for single exercise match
+ */
+export function calculateSingleExerciseScore(expected, actual) {
+  const scores = [];
+  
+  // Name match (most important, weighted 2x)
+  scores.push(calculateStringMatch(expected.name, actual.name) * 2);
+  
+  // Numeric fields
+  if (expected.sets !== undefined && actual.sets !== undefined) {
+    scores.push(1 - calculateNormalizedError(expected.sets, actual.sets));
+  }
+  if (expected.reps !== undefined && actual.reps !== undefined) {
+    scores.push(1 - calculateNormalizedError(expected.reps, actual.reps));
+  }
+  if (expected.weight !== undefined && actual.weight !== undefined) {
+    scores.push(1 - calculateNormalizedError(expected.weight, actual.weight));
+  }
+  if (expected.durationMinutes !== undefined && actual.durationMinutes !== undefined) {
+    scores.push(1 - calculateNormalizedError(expected.durationMinutes, actual.durationMinutes));
+  }
+  
+  // Weight unit match
+  if (expected.weightUnit !== undefined && actual.weightUnit !== undefined) {
+    scores.push(calculateStringMatch(expected.weightUnit, actual.weightUnit));
+  }
+  
+  return scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : 0;
+}
+
+/**
  * Compares two medication payloads field-by-field
  * Excludes notes field from scoring as it's free-text
  * @param {Object} expected - The expected payload from test dataset
@@ -279,6 +458,144 @@ export async function writeResultIncrementallyMeals(result, filePath, isbareRunt
       payload_accuracy: Number(payload_accuracy.toFixed(2)),
       error_accuracy: Number(error_accuracy.toFixed(2)),
       average_normalized_error: Number(averageNormalizedError.toFixed(4))
+    },
+    results
+  };
+
+  // Ensure the directory exists before writing the file
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  fs.writeFileSync(filePath, JSON.stringify(output, null, 2));
+}
+
+export async function writeResultIncrementallyWorkouts(result, filePath, isbareRuntime = false) {
+  if (!filePath) {
+    throw new Error('File path is required');
+  }
+
+  let fs
+  let path
+  if (isbareRuntime) {
+    fs = await import('bare-fs');
+    path = await import('bare-path');
+  } else {
+    fs = await import('node:fs');
+    path = await import('node:path');
+  }
+
+  // Load existing data
+  let results = [];
+  let counts = {
+    truthy_payload: 0,
+    falsy_payload: 0,
+    truthy_error: 0,
+    falsy_error: 0,
+    parse_error: 0
+  };
+
+  if (fs.existsSync(filePath)) {
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    try {
+      const data = JSON.parse(fileContent);
+      results = data.results || [];
+      if (data.summary) {
+        counts = {
+          truthy_payload: data.summary.truthy_payload || 0,
+          falsy_payload: data.summary.falsy_payload || 0,
+          truthy_error: data.summary.truthy_error || 0,
+          falsy_error: data.summary.falsy_error || 0,
+          parse_error: data.summary.parse_error || 0
+        };
+      }
+    } catch {
+      results = [];
+    }
+  }
+
+  // Add new result and increment its count
+  results.push(result);
+  if (counts[result.classification] !== undefined) {
+    counts[result.classification]++;
+  }
+
+  // Increment parse error count
+  if (result.parseError) {
+    counts.parse_error++;
+  }
+
+  // Calculate percentages
+  const total = results.length;
+  const payloadTotal = counts.truthy_payload + counts.falsy_payload;
+  const errorTotal = counts.truthy_error + counts.falsy_error;
+
+  const accuracy = total > 0 ? (counts.truthy_payload + counts.truthy_error) / total * 100 : 0;
+  const payload_accuracy = payloadTotal > 0 ? counts.truthy_payload / payloadTotal * 100 : 0;
+  const error_accuracy = errorTotal > 0 ? counts.truthy_error / errorTotal * 100 : 0;
+
+  // Calculate average metrics across all truthy_payload results
+  const truthyPayloadResults = results.filter(r => r.classification === 'truthy_payload');
+  let averageNormalizedError = 0;
+  let averageOverallScore = 0;
+  let averageWorkoutTypeMatch = 0;
+  let averageDescriptionMatch = 0;
+  let averageIntensityMatch = 0;
+  let averageExercisesScore = 0;
+  
+  if (truthyPayloadResults.length > 0) {
+    const sumNormalizedErrors = truthyPayloadResults.reduce((sum, r) => {
+      return sum + (r.metrics?.averageNormalizedError || 0);
+    }, 0);
+    averageNormalizedError = sumNormalizedErrors / truthyPayloadResults.length;
+
+    const sumOverallScores = truthyPayloadResults.reduce((sum, r) => {
+      return sum + (r.metrics?.overallScore || 0);
+    }, 0);
+    averageOverallScore = sumOverallScores / truthyPayloadResults.length;
+
+    // Calculate average string matches (only count non-null values)
+    let workoutTypeCount = 0, descCount = 0, intensityCount = 0, exercisesCount = 0;
+    truthyPayloadResults.forEach(r => {
+      if (r.metrics?.workoutTypeMatch !== null && r.metrics?.workoutTypeMatch !== undefined) {
+        averageWorkoutTypeMatch += r.metrics.workoutTypeMatch;
+        workoutTypeCount++;
+      }
+      if (r.metrics?.descriptionMatch !== null && r.metrics?.descriptionMatch !== undefined) {
+        averageDescriptionMatch += r.metrics.descriptionMatch;
+        descCount++;
+      }
+      if (r.metrics?.intensityLevelMatch !== null && r.metrics?.intensityLevelMatch !== undefined) {
+        averageIntensityMatch += r.metrics.intensityLevelMatch;
+        intensityCount++;
+      }
+      if (r.metrics?.exercisesScore !== null && r.metrics?.exercisesScore !== undefined) {
+        averageExercisesScore += r.metrics.exercisesScore;
+        exercisesCount++;
+      }
+    });
+    
+    averageWorkoutTypeMatch = workoutTypeCount > 0 ? averageWorkoutTypeMatch / workoutTypeCount : 0;
+    averageDescriptionMatch = descCount > 0 ? averageDescriptionMatch / descCount : 0;
+    averageIntensityMatch = intensityCount > 0 ? averageIntensityMatch / intensityCount : 0;
+    averageExercisesScore = exercisesCount > 0 ? averageExercisesScore / exercisesCount : 0;
+  }
+
+  // Write output
+  const output = {
+    summary: {
+      ...counts,
+      total,
+      accuracy: Number(accuracy.toFixed(2)),
+      payload_accuracy: Number(payload_accuracy.toFixed(2)),
+      error_accuracy: Number(error_accuracy.toFixed(2)),
+      average_normalized_error: Number(averageNormalizedError.toFixed(4)),
+      average_overall_score: Number(averageOverallScore.toFixed(4)),
+      average_workout_type_match: Number(averageWorkoutTypeMatch.toFixed(4)),
+      average_description_match: Number(averageDescriptionMatch.toFixed(4)),
+      average_intensity_match: Number(averageIntensityMatch.toFixed(4)),
+      average_exercises_score: Number(averageExercisesScore.toFixed(4))
     },
     results
   };
