@@ -6,8 +6,9 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import newRagDatasetWithEmbeddings from "./medications-datasets/new-rag-dataset-with-embeddings.json" with { type: "json" };
-import medicationsTestDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
+import ragDataset1000WithEmbeddings from "./medications-datasets/rag-dataset-1000-with-embeddings.json" with { type: "json" };
+import timeDataset from "./medications-datasets/time-dataset.json" with { type: "json" };
+import testDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
 import { extractJSON, writeResultIncrementallyMedications, compareMedicationPayloads } from "../utils.js";
 
 const IntervalUnitEnum = ["minutes", "hours", "days"];
@@ -80,7 +81,10 @@ Core Examples:
 "Popped aspirin" → {"payload":{"name":"Aspirin","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":true}}
 "Didn't take sertraline" → {"payload":{"name":"Sertraline","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
 "Missed blood pressure med" → {"payload":{"name":"blood pressure medication","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
+"Take birth control monthly" → {"payload":{"name":"birth control","dosage":1,"unit":"tablet","frequency":"monthly","reminderTime":"09:00","isReminder":true,"taken":false}}
 "Take paracetamol every 6 hours" → {"payload":{"name":"Paracetamol","dosage":1,"unit":"tablet","frequency":"interval","intervalValue":6,"intervalUnit":"hours","isReminder":true,"taken":false}}
+"Took 500mg" → {"error":"Please specify the medication name"}
+"Took 2 tablets" → {"error":"Please specify the medication name"}
 "Remind me about vitamins" → {"error":"Which vitamin and when?"}
 "Pills" → {"error":"Which medication?"}
 ${ragExamples}
@@ -88,9 +92,12 @@ Use Similar Examples for dosage/unit/frequency patterns, but follow DECISION RUL
 
 FREQUENCY:
 • Past tense (took/had/popped) → "once"
+• "every X hours/minutes/days" (with numbers) → "interval" + intervalValue + intervalUnit
+• "every morning/evening/afternoon" (time of day) → "daily" + put time phrase in notes
 • daily/weekly/monthly → same
 • "as needed"/"PRN" → "as_needed"
-• "every X min/hr/days" → "interval" + intervalValue + intervalUnit
+• "twice daily"/"BID" → "interval" intervalValue=12 intervalUnit="hours"
+• "three times daily"/"TID" → "interval" intervalValue=8 intervalUnit="hours"
 
 TAKEN:
 • took/had/used/applied/injected → true
@@ -102,13 +109,18 @@ REMINDER:
 • "need to take X every Y" → isReminder=true
 • Past tense only → isReminder=false
 
-IDENTIFIABLE (accept): aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril, Tylenol, Advil, blood pressure medication, thyroid medication, pain medication
+IDENTIFIABLE (accept): aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril, Tylenol, Advil, blood pressure medication, birth control, calcium, omega-3, fish oil, magnesium, zinc, probiotic, multivitamin, collagen, EpiPen, etc.
 
-VAGUE (error): medicine, medication, pills, meds, vitamins (without type)
+VAGUE (error): Just "medication", "medicine", "pill", "pills", "tablet", "meds", "vitamins" alone WITHOUT any other medication word
 
 DEFAULTS: dosage=1, unit="tablet" if missing. Misspellings: aspirine→Aspirin, ibuprofin→Ibuprofen
 
-RULES: Never both payload & error. reminderTime for clock times ("9am"→"09:00") only, NOT intervals. Valid JSON only.
+RULES: 
+• Never both payload & error
+• If query is ONLY numbers+units with NO medication name word → ERROR
+• reminderTime for clock times ("9am"→"09:00") only, NOT intervals
+• "X tablets" literally means dosage=X unit="tablet" (don't convert to mg/IU)
+• Valid JSON only
 
 User query:`;
 }
@@ -181,7 +193,7 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 function getTop3Samples(queryEmbedding) {
-  const samplesWithSimilarity = newRagDatasetWithEmbeddings.map((sample) => ({
+  const samplesWithSimilarity = ragDataset1000WithEmbeddings.map((sample) => ({
     ...sample,
     similarity: cosineSimilarity(queryEmbedding, sample.embedding),
   }));
@@ -195,7 +207,7 @@ const main = async () => {
 
   const filePath = 'medications/benchmark-results/rag-over-mem/' + new Date().toISOString() + '.json';
 
-  for (const sample of medicationsTestDataset) {
+  for (const sample of [...timeDataset, ...testDataset]) {
     const benchmarkResult = {
       prompt: sample.prompt,
       expected_output: sample.expected_output,

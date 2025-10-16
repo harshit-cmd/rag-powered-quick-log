@@ -1,0 +1,716 @@
+[
+  {
+    "id": "time_test_001",
+    "prompt": "Remind me to take aspirin every 4 hours",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 4,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_002",
+    "prompt": "Alert me for metformin every 6 hours",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_003",
+    "prompt": "Take ibuprofen every 8 hours",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_004",
+    "prompt": "Remind me to take vitamin D every 12 hours",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_005",
+    "prompt": "Take paracetamol every 2 hours",
+    "expected_output": {
+      "payload": {
+        "name": "paracetamol",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_006",
+    "prompt": "Alert me for medication every 30 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 30,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_007",
+    "prompt": "Take eye drops every 15 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "eye drops",
+        "dosage": 1,
+        "unit": "drop",
+        "frequency": "interval",
+        "intervalValue": 15,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_008",
+    "prompt": "Remind me to take iron supplement every 2 days",
+    "expected_output": {
+      "payload": {
+        "name": "iron supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_009",
+    "prompt": "Take vitamin B12 every 3 days",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin B12",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 3,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_010",
+    "prompt": "Remind me about levothyroxine every day",
+    "expected_output": {
+      "payload": {
+        "name": "levothyroxine",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_011",
+    "prompt": "Take omeprazole daily",
+    "expected_output": {
+      "payload": {
+        "name": "omeprazole",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_012",
+    "prompt": "Remind me to take vitamin D daily at 8am",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "08:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_013",
+    "prompt": "Alert me for insulin daily at 7:30am",
+    "expected_output": {
+      "payload": {
+        "name": "insulin",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "daily",
+        "reminderTime": "07:30",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_014",
+    "prompt": "Take metformin daily at 10pm",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "22:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_015",
+    "prompt": "Remind me about sertraline every morning at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "sertraline",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_016",
+    "prompt": "Take vitamin D weekly",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_017",
+    "prompt": "Remind me to take methotrexate weekly on Monday",
+    "expected_output": {
+      "payload": {
+        "name": "methotrexate",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_018",
+    "prompt": "Alert me for B12 injection weekly on Tuesday",
+    "expected_output": {
+      "payload": {
+        "name": "B12 injection",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [2],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_019",
+    "prompt": "Take alendronate weekly on Wednesday",
+    "expected_output": {
+      "payload": {
+        "name": "alendronate",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [3],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_020",
+    "prompt": "Remind me about vitamin D weekly on Thursday",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [4],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_021",
+    "prompt": "Take methotrexate weekly on Friday",
+    "expected_output": {
+      "payload": {
+        "name": "methotrexate",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_022",
+    "prompt": "Alert me for semaglutide injection weekly on Saturday",
+    "expected_output": {
+      "payload": {
+        "name": "semaglutide injection",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [6],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_023",
+    "prompt": "Remind me to take vitamin D weekly on Sunday",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_024",
+    "prompt": "Take vitamin D weekly on Sunday at 8am",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "08:00",
+        "reminderDays": [0],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_025",
+    "prompt": "Remind me about methotrexate weekly on Monday at 10am",
+    "expected_output": {
+      "payload": {
+        "name": "methotrexate",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "10:00",
+        "reminderDays": [1],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_026",
+    "prompt": "Alert me for injection every Monday and Wednesday",
+    "expected_output": {
+      "payload": {
+        "name": "injection",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1, 3],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_027",
+    "prompt": "Take dialysis medication on Monday, Wednesday, and Friday",
+    "expected_output": {
+      "payload": {
+        "name": "dialysis medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1, 3, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_028",
+    "prompt": "Remind me about vitamin D on Tuesday and Thursday",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [2, 4],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_029",
+    "prompt": "Alert me for medication on weekends",
+    "expected_output": {
+      "payload": {
+        "name": "medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [0, 6],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_030",
+    "prompt": "Take supplements on weekdays",
+    "expected_output": {
+      "payload": {
+        "name": "supplements",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1, 2, 3, 4, 5],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_031",
+    "prompt": "Remind me to take birth control monthly",
+    "expected_output": {
+      "payload": {
+        "name": "birth control",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_032",
+    "prompt": "Take contraceptive pill every month",
+    "expected_output": {
+      "payload": {
+        "name": "contraceptive pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_033",
+    "prompt": "Remind me to take aspirin twice daily",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_034",
+    "prompt": "Take amoxicillin three times daily",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_035",
+    "prompt": "Alert me for medication four times daily",
+    "expected_output": {
+      "payload": {
+        "name": "medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_036",
+    "prompt": "Remind me about aspirin BID",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "BID (twice daily)"
+      }
+    }
+  },
+  {
+    "id": "time_test_037",
+    "prompt": "Take amoxicillin TID",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 8,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "TID (three times daily)"
+      }
+    }
+  },
+  {
+    "id": "time_test_038",
+    "prompt": "Alert me for medication QID",
+    "expected_output": {
+      "payload": {
+        "name": "medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 6,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "QID (four times daily)"
+      }
+    }
+  },
+  {
+    "id": "time_test_039",
+    "prompt": "Remind me to take melatonin QHS",
+    "expected_output": {
+      "payload": {
+        "name": "melatonin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "QHS (at bedtime)"
+      }
+    }
+  },
+  {
+    "id": "time_test_040",
+    "prompt": "Take vitamin D every other day",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 2,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_041",
+    "prompt": "Remind me about aspirin every 1 hour",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 1,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_042",
+    "prompt": "Alert me for eye drops every 5 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "eye drops",
+        "dosage": 1,
+        "unit": "drop",
+        "frequency": "interval",
+        "intervalValue": 5,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_043",
+    "prompt": "Take medication every 45 minutes",
+    "expected_output": {
+      "payload": {
+        "name": "medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 45,
+        "intervalUnit": "minutes",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_044",
+    "prompt": "Remind me about aspirin every 10 days",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "interval",
+        "intervalValue": 10,
+        "intervalUnit": "days",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "time_test_045",
+    "prompt": "Take vitamin B12 every week on Monday at 9am",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin B12",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "reminderDays": [1],
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  }
+]

@@ -1667,5 +1667,400 @@
         "taken": false
       }
     }
+  },
+  {
+    "id": "fail_028_birth_control",
+    "prompt": "Remind me to take birth control monthly",
+    "expected_output": {
+      "payload": {
+        "name": "birth control",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_029_birth_control_pill",
+    "prompt": "Monthly reminder for birth control pill",
+    "expected_output": {
+      "payload": {
+        "name": "birth control pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_030_contraceptive",
+    "prompt": "Take contraceptive pill every month",
+    "expected_output": {
+      "payload": {
+        "name": "contraceptive pill",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "monthly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_031_calcium_supplement",
+    "prompt": "Take calcium supplement daily",
+    "expected_output": {
+      "payload": {
+        "name": "calcium supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_032_calcium",
+    "prompt": "Remind me about calcium every day",
+    "expected_output": {
+      "payload": {
+        "name": "calcium",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_033_omega3",
+    "prompt": "I need to remember to take omega-3 every day",
+    "expected_output": {
+      "payload": {
+        "name": "omega-3",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_034_fish_oil",
+    "prompt": "Take fish oil supplement daily",
+    "expected_output": {
+      "payload": {
+        "name": "fish oil supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_035_numeric_only",
+    "prompt": "Took 500mg",
+    "expected_output": {
+      "error": "Please specify the medication name"
+    }
+  },
+  {
+    "id": "fail_036_numeric_only_mcg",
+    "prompt": "Had 100mcg",
+    "expected_output": {
+      "error": "Please specify the medication name"
+    }
+  },
+  {
+    "id": "fail_037_numeric_only_tablets",
+    "prompt": "Took 2 tablets",
+    "expected_output": {
+      "error": "Please specify the medication name"
+    }
+  },
+  {
+    "id": "fail_038_numeric_only_ml",
+    "prompt": "Used 5ml",
+    "expected_output": {
+      "error": "Please specify the medication name"
+    }
+  },
+  {
+    "id": "fail_039_vitamin_d_tablets",
+    "prompt": "Took 2 tablets of vitamin D",
+    "expected_output": {
+      "payload": {
+        "name": "Vitamin D",
+        "dosage": 2,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "fail_040_propranolol_tablets",
+    "prompt": "Took 1.5 tablets propranolol",
+    "expected_output": {
+      "payload": {
+        "name": "propranolol",
+        "dosage": 1.5,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "fail_041_aspirin_tablets",
+    "prompt": "Had 2.5 tablets of aspirin",
+    "expected_output": {
+      "payload": {
+        "name": "aspirin",
+        "dosage": 2.5,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "fail_042_every_evening",
+    "prompt": "Remind me about blood pressure medication every evening",
+    "expected_output": {
+      "payload": {
+        "name": "blood pressure medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "every evening"
+      }
+    }
+  },
+  {
+    "id": "fail_043_every_morning",
+    "prompt": "Take thyroid medication every morning",
+    "expected_output": {
+      "payload": {
+        "name": "thyroid medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "every morning"
+      }
+    }
+  },
+  {
+    "id": "fail_044_every_afternoon",
+    "prompt": "Remind me to take pain medication every afternoon",
+    "expected_output": {
+      "payload": {
+        "name": "pain medication",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "every afternoon"
+      }
+    }
+  },
+  {
+    "id": "fail_045_complex_warfarin",
+    "prompt": "Alert me to take warfarin 5mg on Mon/Wed/Fri and 7.5mg on Tue/Thu/Sat/Sun",
+    "expected_output": {
+      "payload": {
+        "name": "warfarin",
+        "dosage": 5,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "5mg Mon/Wed/Fri and 7.5mg Tue/Thu/Sat/Sun"
+      }
+    }
+  },
+  {
+    "id": "fail_046_variable_dose",
+    "prompt": "Remind me about prednisone 20mg for 5 days then 10mg for 5 days",
+    "expected_output": {
+      "payload": {
+        "name": "prednisone",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "20mg for 5 days then 10mg for 5 days"
+      }
+    }
+  },
+  {
+    "id": "fail_047_keep_as_needed",
+    "prompt": "Keep 200mg ibuprofen as needed for pain",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 200,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "fail_048_keep_on_hand",
+    "prompt": "Keep EpiPen on hand for emergencies",
+    "expected_output": {
+      "payload": {
+        "name": "EpiPen",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for emergencies"
+      }
+    }
+  },
+  {
+    "id": "fail_049_multi_medication_first",
+    "prompt": "Remind me to take 20mg lisinopril at 7am and 5mg amlodipine at 7pm",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "07:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "and 5mg amlodipine at 7pm"
+      }
+    }
+  },
+  {
+    "id": "fail_050_multi_medication_both",
+    "prompt": "Take metformin 500mg and lisinopril 10mg twice daily",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "interval",
+        "intervalValue": 12,
+        "intervalUnit": "hours",
+        "isReminder": true,
+        "taken": false,
+        "notes": "and lisinopril 10mg"
+      }
+    }
+  },
+  {
+    "id": "fail_051_magnesium",
+    "prompt": "Take magnesium supplement before bed",
+    "expected_output": {
+      "payload": {
+        "name": "magnesium supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "before bed"
+      }
+    }
+  },
+  {
+    "id": "fail_052_zinc",
+    "prompt": "Remind zinc daily",
+    "expected_output": {
+      "payload": {
+        "name": "zinc",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_053_probiotic",
+    "prompt": "Take probiotic every morning",
+    "expected_output": {
+      "payload": {
+        "name": "probiotic",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "every morning"
+      }
+    }
+  },
+  {
+    "id": "fail_054_multivitamin",
+    "prompt": "Remind me about multivitamin daily",
+    "expected_output": {
+      "payload": {
+        "name": "multivitamin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "fail_055_collagen",
+    "prompt": "Take collagen supplement every day",
+    "expected_output": {
+      "payload": {
+        "name": "collagen supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
   }
 ]

@@ -4,8 +4,9 @@ import {
   embed,
 } from "@tetherto/qvac-sdk";
 import fs from "fs";
-import comprehensiveSeedData from "./medications-datasets/comprehensive-seed-data.json" with { type: "json" };
-import medicationsTestDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
+// import comprehensiveSeedData from "./medications-datasets/comprehensive-seed-data.json" with { type: "json" };
+// import medicationsTestDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
+import ragDataset1000 from "./medications-datasets/rag-dataset-1000.json" with { type: "json" };
 
 let embeddingModelId;
 const initEmbeddingModel = async () => {
@@ -24,12 +25,12 @@ const main = async () => {
   await initEmbeddingModel();
 
   const dataWithEmbeddings = [];
-  const total = [...comprehensiveSeedData, ...medicationsTestDataset].length;
+  const total = [...ragDataset1000].length;
 
   console.log(`\n📊 Processing ${total} entries...`);
 
-  for (let i = 0; i < [...comprehensiveSeedData, ...medicationsTestDataset].length; i++) {
-    const sample = [...comprehensiveSeedData, ...medicationsTestDataset][i];
+  for (let i = 0; i < [...ragDataset1000].length; i++) {
+    const sample = [...ragDataset1000][i];
     
     // Generate embedding for the prompt
     const embedding = await embed({ 
@@ -53,7 +54,7 @@ const main = async () => {
   }
 
   // Save to file
-  const outputPath = "./medications/medications-datasets/ultimate-seed-data-with-embeddings.json";
+  const outputPath = "./medications/medications-datasets/rag-dataset-1000-with-embeddings.json";
   console.log(`\n💾 Saving to ${outputPath}...`);
   
   fs.writeFileSync(
@@ -61,7 +62,7 @@ const main = async () => {
     JSON.stringify(dataWithEmbeddings, null, 2)
   );
 
-  console.log("✅ Successfully created ultimate-seed-data-with-embeddings.json!");
+  console.log("✅ Successfully created rag-dataset-1000-with-embeddings.json!");
   console.log(`📊 Total entries with embeddings: ${dataWithEmbeddings.length}`);
 
   process.kill(process.pid);
