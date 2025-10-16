@@ -71,64 +71,44 @@ Parse medication queries to JSON.
 
 Schema: ${JSON.stringify(z.toJSONSchema(schema))}
 
-⚠️ CRITICAL DECISION RULE (HIGHEST PRIORITY):
-Step 1: Does query mention specific medication/drug name?
-Step 2: YES → RETURN PAYLOAD (extract dosage, unit, frequency, taken status)
-Step 3: NO → RETURN ERROR
+DECISION RULE:
+Does query mention specific medication name? → PAYLOAD
+No specific medication? → ERROR
 
 Core Examples:
 "Took 500mg aspirin" → {"payload":{"name":"Aspirin","dosage":500,"unit":"mg","frequency":"once","isReminder":false,"taken":true}}
-"Popped some aspirin" → {"payload":{"name":"Aspirin","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":true}}
-"Didn't take my 50mg sertraline" → {"payload":{"name":"Sertraline","dosage":50,"unit":"mg","frequency":"once","isReminder":false,"taken":false}}
-"Missed my blood pressure med" → {"payload":{"name":"blood pressure medication","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
-"Take 500mg paracetamol every 6 hours" → {"payload":{"name":"Paracetamol","dosage":500,"unit":"mg","frequency":"interval","intervalValue":6,"intervalUnit":"hours","isReminder":true,"taken":false}}
-"Remind me about vitamins" (no specific vitamin) → {"error":"Which vitamin and when?"}
-"Pills" (no specific medication) → {"error":"Which medication?"}
-
-WRONG Examples (do NOT follow):
-❌ "Took aspirin" → error (aspirin IS a medication!)
-❌ "Missed my blood pressure med" → error (blood pressure medication IS identifiable!)
-❌ "Popped some Advil" → error (Advil IS a medication!)
+"Popped aspirin" → {"payload":{"name":"Aspirin","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":true}}
+"Didn't take sertraline" → {"payload":{"name":"Sertraline","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
+"Missed blood pressure med" → {"payload":{"name":"blood pressure medication","dosage":1,"unit":"tablet","frequency":"once","isReminder":false,"taken":false}}
+"Take paracetamol every 6 hours" → {"payload":{"name":"Paracetamol","dosage":1,"unit":"tablet","frequency":"interval","intervalValue":6,"intervalUnit":"hours","isReminder":true,"taken":false}}
+"Remind me about vitamins" → {"error":"Which vitamin and when?"}
+"Pills" → {"error":"Which medication?"}
 ${ragExamples}
-Use Similar Examples for dosage/unit patterns and frequency extraction.
-IGNORE Similar Examples that show errors when query mentions specific medication.
+Use Similar Examples for dosage/unit/frequency patterns, but follow DECISION RULE for payload vs error.
 
-FREQUENCY RULES:
-• Past tense ("took", "had", "popped") → "once"
-• "daily"/"every day" → "daily"
-• "weekly"/"every week" → "weekly"
-• "monthly"/"every month" → "monthly"
+FREQUENCY:
+• Past tense (took/had/popped) → "once"
+• daily/weekly/monthly → same
 • "as needed"/"PRN" → "as_needed"
-• "every X minutes/hours/days" → "interval" (set intervalValue & intervalUnit)
+• "every X min/hr/days" → "interval" + intervalValue + intervalUnit
 
-TAKEN STATUS:
-• "took", "had", "used", "applied", "injected" → taken=true
-• "forgot", "missed", "didn't take", "haven't taken" → taken=false
-• "remind", "need to", "alert", "every X" (future) → taken=false
+TAKEN:
+• took/had/used/applied/injected → true
+• forgot/missed/didn't → false
+• remind/need to/alert/every X (future) → false
 
-REMINDER DETECTION:
-• "remind", "notify", "alert", "tell me", "remember" → isReminder=true
+REMINDER:
+• remind/notify/alert/tell me/remember → isReminder=true
 • "need to take X every Y" → isReminder=true
 • Past tense only → isReminder=false
 
-IDENTIFIABLE MEDICATIONS (accept):
-• Specific: aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril
-• Generic but clear: "blood pressure medication", "thyroid medication", "pain medication"
-• Branded: Tylenol, Advil, Tums, Zyrtec
+IDENTIFIABLE (accept): aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril, Tylenol, Advil, blood pressure medication, thyroid medication, pain medication
 
-TOO VAGUE (error):
-• "medicine", "medication", "pills", "meds", "vitamins" (without type)
-• Missing both medication name AND context
+VAGUE (error): medicine, medication, pills, meds, vitamins (without type)
 
-DEFAULTS:
-• dosage=1, unit="tablet" if missing
-• Misspellings: "aspirine"→"Aspirin", "ibuprofin"→"Ibuprofen"
+DEFAULTS: dosage=1, unit="tablet" if missing. Misspellings: aspirine→Aspirin, ibuprofin→Ibuprofen
 
-RULES:
-• NEVER return both "payload" and "error"
-• NEVER return empty error strings
-• reminderTime: ONLY for clock times ("at 9am"→"09:00"), NOT intervals
-• "every X minutes/hours/days" MUST use frequency="interval" + intervalValue + intervalUnit
+RULES: Never both payload & error. reminderTime for clock times ("9am"→"09:00") only, NOT intervals. Valid JSON only.
 
 User query:`;
 }
