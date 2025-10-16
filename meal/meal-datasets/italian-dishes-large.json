@@ -1,0 +1,2103 @@
+[
+  {
+    "id": "italian_001_lasagna_classic",
+    "prompt": "I had a serving of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Classic lasagna with meat sauce, ricotta, and mozzarella",
+        "calories": 450,
+        "carbsGrams": 35,
+        "proteinGram": 28,
+        "fatGram": 22,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_002_lasagna_homemade",
+    "prompt": "Ate a large portion of homemade lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Large serving of homemade lasagna with ground beef and cheese",
+        "calories": 680,
+        "carbsGrams": 52,
+        "proteinGram": 42,
+        "fatGram": 33,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_003_lasagna_casual",
+    "prompt": "Had some lasagna for dinner",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with meat sauce and melted cheese",
+        "calories": 480,
+        "carbsGrams": 38,
+        "proteinGram": 30,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_004_lasagna_slice",
+    "prompt": "Just finished a slice of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "1 slice of lasagna with beef ragù and béchamel",
+        "calories": 420,
+        "carbsGrams": 32,
+        "proteinGram": 26,
+        "fatGram": 20,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_005_lasagna_veggie",
+    "prompt": "Ate vegetable lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable lasagna with zucchini, spinach, and ricotta",
+        "calories": 380,
+        "carbsGrams": 42,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_006_lasagna_restaurant",
+    "prompt": "Lunch: lasagna at Italian restaurant",
+    "expected_output": {
+      "payload": {
+        "description": "Restaurant-style lasagna with meat sauce and three cheeses",
+        "calories": 550,
+        "carbsGrams": 42,
+        "proteinGram": 32,
+        "fatGram": 28,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_007_lasagna_leftover",
+    "prompt": "Had leftover lasagna from yesterday",
+    "expected_output": {
+      "payload": {
+        "description": "Reheated lasagna with meat sauce and mozzarella",
+        "calories": 460,
+        "carbsGrams": 36,
+        "proteinGram": 28,
+        "fatGram": 22,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_008_carbonara_classic",
+    "prompt": "Had spaghetti carbonara",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti carbonara with eggs, pancetta, and parmesan",
+        "calories": 580,
+        "carbsGrams": 55,
+        "proteinGram": 24,
+        "fatGram": 28,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_009_carbonara_authentic",
+    "prompt": "Dinner was authentic carbonara with guanciale",
+    "expected_output": {
+      "payload": {
+        "description": "Traditional carbonara with guanciale, eggs, and pecorino romano",
+        "calories": 620,
+        "carbsGrams": 58,
+        "proteinGram": 26,
+        "fatGram": 32,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_010_carbonara_creamy",
+    "prompt": "Ate creamy carbonara pasta",
+    "expected_output": {
+      "payload": {
+        "description": "Creamy spaghetti carbonara with bacon and parmesan",
+        "calories": 600,
+        "carbsGrams": 56,
+        "proteinGram": 25,
+        "fatGram": 30,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_011_margherita_pizza_2slices",
+    "prompt": "Ate 2 slices of margherita pizza",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices margherita pizza with mozzarella, tomato, and basil",
+        "calories": 520,
+        "carbsGrams": 58,
+        "proteinGram": 22,
+        "fatGram": 20,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_012_margherita_pizza_whole",
+    "prompt": "Had a whole margherita pizza",
+    "expected_output": {
+      "payload": {
+        "description": "12-inch margherita pizza with fresh mozzarella and basil",
+        "calories": 1240,
+        "carbsGrams": 145,
+        "proteinGram": 52,
+        "fatGram": 48,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_013_margherita_pizza_slice",
+    "prompt": "Grabbed a slice of margherita",
+    "expected_output": {
+      "payload": {
+        "description": "1 slice margherita pizza with tomato sauce and cheese",
+        "calories": 260,
+        "carbsGrams": 29,
+        "proteinGram": 11,
+        "fatGram": 10,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_014_pizza_napoletana",
+    "prompt": "Had Neapolitan pizza with anchovies",
+    "expected_output": {
+      "payload": {
+        "description": "Neapolitan pizza with anchovies, capers, and mozzarella",
+        "calories": 580,
+        "carbsGrams": 62,
+        "proteinGram": 28,
+        "fatGram": 22,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_015_pizza_quattro_formaggi",
+    "prompt": "Ate quattro formaggi pizza",
+    "expected_output": {
+      "payload": {
+        "description": "Four cheese pizza with mozzarella, gorgonzola, parmesan, and fontina",
+        "calories": 680,
+        "carbsGrams": 65,
+        "proteinGram": 30,
+        "fatGram": 32,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_016_pizza_diavola",
+    "prompt": "Had spicy diavola pizza",
+    "expected_output": {
+      "payload": {
+        "description": "Diavola pizza with spicy salami and mozzarella",
+        "calories": 620,
+        "carbsGrams": 60,
+        "proteinGram": 26,
+        "fatGram": 28,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_017_chicken_parm",
+    "prompt": "Dinner was chicken parmigiana with spaghetti",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken parmigiana with marinara sauce and spaghetti",
+        "calories": 720,
+        "carbsGrams": 62,
+        "proteinGram": 48,
+        "fatGram": 28,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_018_chicken_parm_casual",
+    "prompt": "Had chicken parm",
+    "expected_output": {
+      "payload": {
+        "description": "Breaded chicken parmigiana with melted mozzarella",
+        "calories": 580,
+        "carbsGrams": 42,
+        "proteinGram": 45,
+        "fatGram": 24,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_019_chicken_parm_salad",
+    "prompt": "Ate chicken parmigiana with side salad",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken parmigiana with mozzarella and side garden salad",
+        "calories": 620,
+        "carbsGrams": 45,
+        "proteinGram": 48,
+        "fatGram": 26,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "italian_020_eggplant_parm",
+    "prompt": "Had eggplant parmigiana",
+    "expected_output": {
+      "payload": {
+        "description": "Eggplant parmigiana with mozzarella and tomato sauce",
+        "calories": 420,
+        "carbsGrams": 38,
+        "proteinGram": 18,
+        "fatGram": 22,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "italian_021_eggplant_parm_pasta",
+    "prompt": "Lunch: eggplant parmigiana with penne",
+    "expected_output": {
+      "payload": {
+        "description": "Eggplant parmigiana served over penne pasta",
+        "calories": 580,
+        "carbsGrams": 68,
+        "proteinGram": 22,
+        "fatGram": 24,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_022_risotto_mushroom",
+    "prompt": "Had mushroom risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Creamy mushroom risotto with parmesan",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 12,
+        "fatGram": 18,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_023_risotto_seafood",
+    "prompt": "Ate seafood risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Risotto with mixed seafood and white wine",
+        "calories": 480,
+        "carbsGrams": 55,
+        "proteinGram": 22,
+        "fatGram": 16,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_024_risotto_asparagus",
+    "prompt": "Had asparagus risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Creamy asparagus risotto with parmesan and butter",
+        "calories": 390,
+        "carbsGrams": 50,
+        "proteinGram": 11,
+        "fatGram": 16,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_025_risotto_milanese",
+    "prompt": "Dinner: risotto alla milanese",
+    "expected_output": {
+      "payload": {
+        "description": "Saffron risotto milanese with beef marrow and parmesan",
+        "calories": 450,
+        "carbsGrams": 54,
+        "proteinGram": 13,
+        "fatGram": 20,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_026_osso_buco",
+    "prompt": "Ate osso buco with polenta",
+    "expected_output": {
+      "payload": {
+        "description": "Braised veal osso buco with creamy polenta",
+        "calories": 650,
+        "carbsGrams": 35,
+        "proteinGram": 52,
+        "fatGram": 32,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_027_osso_buco_risotto",
+    "prompt": "Had osso buco over risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Braised veal osso buco served on saffron risotto",
+        "calories": 720,
+        "carbsGrams": 58,
+        "proteinGram": 54,
+        "fatGram": 28,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_028_alfredo_fettuccine",
+    "prompt": "Lunch was fettuccine alfredo",
+    "expected_output": {
+      "payload": {
+        "description": "Fettuccine alfredo with cream and parmesan sauce",
+        "calories": 620,
+        "carbsGrams": 58,
+        "proteinGram": 18,
+        "fatGram": 35,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_029_alfredo_chicken",
+    "prompt": "Had chicken fettuccine alfredo",
+    "expected_output": {
+      "payload": {
+        "description": "Fettuccine alfredo with grilled chicken breast",
+        "calories": 780,
+        "carbsGrams": 60,
+        "proteinGram": 42,
+        "fatGram": 38,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_030_alfredo_shrimp",
+    "prompt": "Ate shrimp alfredo",
+    "expected_output": {
+      "payload": {
+        "description": "Fettuccine alfredo with sautéed shrimp",
+        "calories": 720,
+        "carbsGrams": 59,
+        "proteinGram": 35,
+        "fatGram": 36,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_031_arrabbiata",
+    "prompt": "Had penne arrabbiata",
+    "expected_output": {
+      "payload": {
+        "description": "Penne pasta with spicy tomato sauce",
+        "calories": 380,
+        "carbsGrams": 65,
+        "proteinGram": 14,
+        "fatGram": 8,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_032_arrabbiata_spicy",
+    "prompt": "Ate spicy penne arrabbiata",
+    "expected_output": {
+      "payload": {
+        "description": "Penne with spicy arrabbiata sauce and garlic",
+        "calories": 390,
+        "carbsGrams": 66,
+        "proteinGram": 14,
+        "fatGram": 9,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_033_amatriciana",
+    "prompt": "Had pasta all'amatriciana",
+    "expected_output": {
+      "payload": {
+        "description": "Bucatini all'amatriciana with guanciale and tomato sauce",
+        "calories": 520,
+        "carbsGrams": 62,
+        "proteinGram": 18,
+        "fatGram": 22,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_034_bolognese",
+    "prompt": "Ate spaghetti bolognese",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti with traditional meat ragù bolognese",
+        "calories": 550,
+        "carbsGrams": 62,
+        "proteinGram": 32,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_035_bolognese_tagliatelle",
+    "prompt": "Had tagliatelle with bolognese sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Fresh tagliatelle with slow-cooked meat ragù",
+        "calories": 580,
+        "carbsGrams": 64,
+        "proteinGram": 34,
+        "fatGram": 20,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_036_bolognese_large",
+    "prompt": "Large serving of spaghetti bolognese",
+    "expected_output": {
+      "payload": {
+        "description": "Large portion of spaghetti with beef and pork ragù",
+        "calories": 720,
+        "carbsGrams": 82,
+        "proteinGram": 42,
+        "fatGram": 24,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_037_pesto_pasta",
+    "prompt": "Had pesto pasta",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta with basil pesto, pine nuts, and parmesan",
+        "calories": 520,
+        "carbsGrams": 58,
+        "proteinGram": 16,
+        "fatGram": 24,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_038_pesto_gnocchi",
+    "prompt": "Ate potato gnocchi with pesto sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Potato gnocchi with basil pesto and pine nuts",
+        "calories": 520,
+        "carbsGrams": 62,
+        "proteinGram": 16,
+        "fatGram": 22,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "italian_039_pesto_chicken",
+    "prompt": "Had chicken pesto pasta",
+    "expected_output": {
+      "payload": {
+        "description": "Penne with grilled chicken and basil pesto",
+        "calories": 680,
+        "carbsGrams": 60,
+        "proteinGram": 42,
+        "fatGram": 28,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_040_puttanesca",
+    "prompt": "Ate spaghetti puttanesca",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti puttanesca with olives, capers, and anchovies",
+        "calories": 420,
+        "carbsGrams": 62,
+        "proteinGram": 16,
+        "fatGram": 12,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_041_vongole",
+    "prompt": "Had spaghetti alle vongole",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti with clams in white wine and garlic sauce",
+        "calories": 480,
+        "carbsGrams": 64,
+        "proteinGram": 28,
+        "fatGram": 12,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_042_vongole_rosso",
+    "prompt": "Ate spaghetti alle vongole rosso",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti with clams in tomato sauce",
+        "calories": 450,
+        "carbsGrams": 66,
+        "proteinGram": 26,
+        "fatGram": 10,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_043_linguine_seafood",
+    "prompt": "Had linguine with seafood",
+    "expected_output": {
+      "payload": {
+        "description": "Linguine with mixed seafood in white wine sauce",
+        "calories": 580,
+        "carbsGrams": 62,
+        "proteinGram": 35,
+        "fatGram": 18,
+        "glycemicIndex": 56
+      }
+    }
+  },
+  {
+    "id": "italian_044_linguine_lobster",
+    "prompt": "Ate lobster linguine",
+    "expected_output": {
+      "payload": {
+        "description": "Linguine with fresh lobster in garlic butter sauce",
+        "calories": 680,
+        "carbsGrams": 64,
+        "proteinGram": 38,
+        "fatGram": 26,
+        "glycemicIndex": 56
+      }
+    }
+  },
+  {
+    "id": "italian_045_ravioli_cheese",
+    "prompt": "Ate cheese ravioli in tomato sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Ricotta cheese ravioli with marinara sauce",
+        "calories": 450,
+        "carbsGrams": 52,
+        "proteinGram": 20,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_046_ravioli_spinach",
+    "prompt": "Had spinach and ricotta ravioli",
+    "expected_output": {
+      "payload": {
+        "description": "Spinach and ricotta ravioli with butter and sage",
+        "calories": 420,
+        "carbsGrams": 48,
+        "proteinGram": 18,
+        "fatGram": 18,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_047_ravioli_lobster",
+    "prompt": "Ate lobster ravioli in cream sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Lobster ravioli with creamy tomato sauce",
+        "calories": 580,
+        "carbsGrams": 54,
+        "proteinGram": 26,
+        "fatGram": 28,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_048_tortellini",
+    "prompt": "Had cheese tortellini",
+    "expected_output": {
+      "payload": {
+        "description": "Cheese tortellini in broth",
+        "calories": 320,
+        "carbsGrams": 42,
+        "proteinGram": 16,
+        "fatGram": 10,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_049_tortellini_cream",
+    "prompt": "Ate tortellini in cream sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Tortellini with parmesan cream sauce",
+        "calories": 520,
+        "carbsGrams": 48,
+        "proteinGram": 20,
+        "fatGram": 28,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_050_gnocchi_tomato",
+    "prompt": "Had gnocchi in tomato sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Potato gnocchi with tomato basil sauce",
+        "calories": 420,
+        "carbsGrams": 68,
+        "proteinGram": 12,
+        "fatGram": 10,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "italian_051_gnocchi_gorgonzola",
+    "prompt": "Ate gnocchi with gorgonzola sauce",
+    "expected_output": {
+      "payload": {
+        "description": "Potato gnocchi in creamy gorgonzola sauce",
+        "calories": 580,
+        "carbsGrams": 62,
+        "proteinGram": 18,
+        "fatGram": 28,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_052_gnocchi_sorrentina",
+    "prompt": "Had gnocchi alla sorrentina",
+    "expected_output": {
+      "payload": {
+        "description": "Gnocchi with tomato sauce and mozzarella",
+        "calories": 480,
+        "carbsGrams": 64,
+        "proteinGram": 18,
+        "fatGram": 16,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_053_saltimbocca",
+    "prompt": "Had veal saltimbocca",
+    "expected_output": {
+      "payload": {
+        "description": "Veal saltimbocca with prosciutto and sage",
+        "calories": 480,
+        "carbsGrams": 12,
+        "proteinGram": 45,
+        "fatGram": 28,
+        "glycemicIndex": 20
+      }
+    }
+  },
+  {
+    "id": "italian_054_saltimbocca_chicken",
+    "prompt": "Ate chicken saltimbocca",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken saltimbocca with prosciutto, sage, and white wine",
+        "calories": 420,
+        "carbsGrams": 10,
+        "proteinGram": 42,
+        "fatGram": 22,
+        "glycemicIndex": 18
+      }
+    }
+  },
+  {
+    "id": "italian_055_piccata",
+    "prompt": "Had chicken piccata",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken piccata with lemon, capers, and white wine",
+        "calories": 380,
+        "carbsGrams": 14,
+        "proteinGram": 40,
+        "fatGram": 18,
+        "glycemicIndex": 25
+      }
+    }
+  },
+  {
+    "id": "italian_056_piccata_pasta",
+    "prompt": "Ate chicken piccata with angel hair pasta",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken piccata served over angel hair pasta",
+        "calories": 580,
+        "carbsGrams": 52,
+        "proteinGram": 44,
+        "fatGram": 20,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "italian_057_marsala",
+    "prompt": "Had chicken marsala",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken marsala with mushrooms and marsala wine sauce",
+        "calories": 420,
+        "carbsGrams": 18,
+        "proteinGram": 42,
+        "fatGram": 20,
+        "glycemicIndex": 30
+      }
+    }
+  },
+  {
+    "id": "italian_058_marsala_mashed",
+    "prompt": "Ate chicken marsala with mashed potatoes",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken marsala with creamy mashed potatoes",
+        "calories": 620,
+        "carbsGrams": 48,
+        "proteinGram": 45,
+        "fatGram": 26,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "italian_059_cacciatore",
+    "prompt": "Had chicken cacciatore",
+    "expected_output": {
+      "payload": {
+        "description": "Chicken cacciatore with tomatoes, peppers, and mushrooms",
+        "calories": 380,
+        "carbsGrams": 22,
+        "proteinGram": 38,
+        "fatGram": 16,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "italian_060_caprese_salad",
+    "prompt": "Had caprese salad as a starter",
+    "expected_output": {
+      "payload": {
+        "description": "Caprese salad with fresh mozzarella, tomatoes, and basil",
+        "calories": 220,
+        "carbsGrams": 8,
+        "proteinGram": 14,
+        "fatGram": 16,
+        "glycemicIndex": 25
+      }
+    }
+  },
+  {
+    "id": "italian_061_caprese_balsamic",
+    "prompt": "Ate caprese with balsamic glaze",
+    "expected_output": {
+      "payload": {
+        "description": "Caprese salad with buffalo mozzarella and balsamic reduction",
+        "calories": 240,
+        "carbsGrams": 10,
+        "proteinGram": 14,
+        "fatGram": 17,
+        "glycemicIndex": 28
+      }
+    }
+  },
+  {
+    "id": "italian_062_caesar_salad",
+    "prompt": "Had Caesar salad",
+    "expected_output": {
+      "payload": {
+        "description": "Caesar salad with romaine, parmesan, croutons, and dressing",
+        "calories": 320,
+        "carbsGrams": 18,
+        "proteinGram": 12,
+        "fatGram": 22,
+        "glycemicIndex": 42
+      }
+    }
+  },
+  {
+    "id": "italian_063_caesar_chicken",
+    "prompt": "Ate chicken Caesar salad",
+    "expected_output": {
+      "payload": {
+        "description": "Caesar salad with grilled chicken breast",
+        "calories": 480,
+        "carbsGrams": 20,
+        "proteinGram": 38,
+        "fatGram": 28,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "italian_064_bruschetta",
+    "prompt": "Snacked on bruschetta",
+    "expected_output": {
+      "payload": {
+        "description": "4 pieces bruschetta with tomatoes, garlic, and basil",
+        "calories": 240,
+        "carbsGrams": 32,
+        "proteinGram": 8,
+        "fatGram": 9,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "italian_065_bruschetta_classic",
+    "prompt": "Had classic tomato bruschetta",
+    "expected_output": {
+      "payload": {
+        "description": "Tomato bruschetta on toasted bread with olive oil",
+        "calories": 220,
+        "carbsGrams": 30,
+        "proteinGram": 7,
+        "fatGram": 8,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "italian_066_antipasto",
+    "prompt": "Had antipasto platter",
+    "expected_output": {
+      "payload": {
+        "description": "Antipasto with prosciutto, salami, cheese, olives, and peppers",
+        "calories": 420,
+        "carbsGrams": 12,
+        "proteinGram": 24,
+        "fatGram": 32,
+        "glycemicIndex": 15
+      }
+    }
+  },
+  {
+    "id": "italian_067_prosciutto_melon",
+    "prompt": "Started with prosciutto and melon",
+    "expected_output": {
+      "payload": {
+        "description": "Prosciutto wrapped cantaloupe melon",
+        "calories": 180,
+        "carbsGrams": 18,
+        "proteinGram": 12,
+        "fatGram": 6,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "italian_068_prosciutto_figs",
+    "prompt": "Had prosciutto with figs",
+    "expected_output": {
+      "payload": {
+        "description": "Prosciutto di Parma with fresh figs and honey",
+        "calories": 220,
+        "carbsGrams": 24,
+        "proteinGram": 14,
+        "fatGram": 7,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "italian_069_arancini",
+    "prompt": "Snacked on arancini",
+    "expected_output": {
+      "payload": {
+        "description": "2 fried rice balls (arancini) with meat ragu",
+        "calories": 420,
+        "carbsGrams": 48,
+        "proteinGram": 16,
+        "fatGram": 18,
+        "glycemicIndex": 72
+      }
+    }
+  },
+  {
+    "id": "italian_070_arancini_cheese",
+    "prompt": "Had cheese arancini",
+    "expected_output": {
+      "payload": {
+        "description": "Sicilian arancini with mozzarella center",
+        "calories": 380,
+        "carbsGrams": 44,
+        "proteinGram": 14,
+        "fatGram": 16,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "italian_071_calzone",
+    "prompt": "Had a calzone with ham and cheese",
+    "expected_output": {
+      "payload": {
+        "description": "Calzone filled with ham, mozzarella, and ricotta",
+        "calories": 620,
+        "carbsGrams": 58,
+        "proteinGram": 32,
+        "fatGram": 26,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_072_calzone_veggie",
+    "prompt": "Ate vegetable calzone",
+    "expected_output": {
+      "payload": {
+        "description": "Calzone with spinach, mushrooms, and ricotta",
+        "calories": 520,
+        "carbsGrams": 62,
+        "proteinGram": 22,
+        "fatGram": 20,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_073_stromboli",
+    "prompt": "Had stromboli with pepperoni",
+    "expected_output": {
+      "payload": {
+        "description": "Stromboli stuffed with pepperoni, mozzarella, and sauce",
+        "calories": 680,
+        "carbsGrams": 62,
+        "proteinGram": 28,
+        "fatGram": 32,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_074_minestrone",
+    "prompt": "Had a bowl of minestrone soup",
+    "expected_output": {
+      "payload": {
+        "description": "Italian minestrone soup with vegetables and beans",
+        "calories": 180,
+        "carbsGrams": 28,
+        "proteinGram": 8,
+        "fatGram": 4,
+        "glycemicIndex": 40
+      }
+    }
+  },
+  {
+    "id": "italian_075_minestrone_large",
+    "prompt": "Lunch: large bowl of minestrone",
+    "expected_output": {
+      "payload": {
+        "description": "Large serving of minestrone with pasta and vegetables",
+        "calories": 280,
+        "carbsGrams": 42,
+        "proteinGram": 12,
+        "fatGram": 6,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "italian_076_pasta_fagioli",
+    "prompt": "Had pasta e fagioli",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta and bean soup with tomatoes",
+        "calories": 320,
+        "carbsGrams": 48,
+        "proteinGram": 14,
+        "fatGram": 8,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "italian_077_wedding_soup",
+    "prompt": "Ate Italian wedding soup",
+    "expected_output": {
+      "payload": {
+        "description": "Italian wedding soup with meatballs, pasta, and greens",
+        "calories": 280,
+        "carbsGrams": 24,
+        "proteinGram": 18,
+        "fatGram": 12,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "italian_078_ribollita",
+    "prompt": "Had ribollita soup",
+    "expected_output": {
+      "payload": {
+        "description": "Tuscan ribollita soup with beans and vegetables",
+        "calories": 220,
+        "carbsGrams": 32,
+        "proteinGram": 10,
+        "fatGram": 6,
+        "glycemicIndex": 42
+      }
+    }
+  },
+  {
+    "id": "italian_079_tiramisu",
+    "prompt": "Had tiramisu for dessert",
+    "expected_output": {
+      "payload": {
+        "description": "Classic tiramisu with mascarpone and coffee",
+        "calories": 380,
+        "carbsGrams": 42,
+        "proteinGram": 8,
+        "fatGram": 20,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_080_tiramisu_slice",
+    "prompt": "Dessert was a slice of tiramisu",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of tiramisu with ladyfingers and espresso",
+        "calories": 420,
+        "carbsGrams": 46,
+        "proteinGram": 9,
+        "fatGram": 22,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_081_panna_cotta",
+    "prompt": "Had panna cotta for dessert",
+    "expected_output": {
+      "payload": {
+        "description": "Vanilla panna cotta with berry compote",
+        "calories": 320,
+        "carbsGrams": 35,
+        "proteinGram": 6,
+        "fatGram": 18,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "italian_082_panna_cotta_caramel",
+    "prompt": "Ate panna cotta with caramel",
+    "expected_output": {
+      "payload": {
+        "description": "Panna cotta with salted caramel sauce",
+        "calories": 380,
+        "carbsGrams": 42,
+        "proteinGram": 6,
+        "fatGram": 20,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_083_cannoli",
+    "prompt": "Dessert was cannoli",
+    "expected_output": {
+      "payload": {
+        "description": "2 Sicilian cannoli with ricotta cream filling",
+        "calories": 440,
+        "carbsGrams": 48,
+        "proteinGram": 12,
+        "fatGram": 22,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_084_cannoli_single",
+    "prompt": "Had a cannoli",
+    "expected_output": {
+      "payload": {
+        "description": "1 cannoli with sweet ricotta and chocolate chips",
+        "calories": 220,
+        "carbsGrams": 24,
+        "proteinGram": 6,
+        "fatGram": 11,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_085_gelato",
+    "prompt": "Had gelato",
+    "expected_output": {
+      "payload": {
+        "description": "2 scoops Italian gelato (stracciatella and pistachio)",
+        "calories": 280,
+        "carbsGrams": 32,
+        "proteinGram": 6,
+        "fatGram": 14,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "italian_086_gelato_cone",
+    "prompt": "Snacked on gelato cone",
+    "expected_output": {
+      "payload": {
+        "description": "Gelato cone with 2 flavors",
+        "calories": 320,
+        "carbsGrams": 38,
+        "proteinGram": 6,
+        "fatGram": 15,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_087_affogato",
+    "prompt": "Had affogato for dessert",
+    "expected_output": {
+      "payload": {
+        "description": "Affogato with vanilla gelato and espresso",
+        "calories": 220,
+        "carbsGrams": 26,
+        "proteinGram": 5,
+        "fatGram": 11,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "italian_088_zabaglione",
+    "prompt": "Dessert was zabaglione",
+    "expected_output": {
+      "payload": {
+        "description": "Zabaglione with marsala wine and berries",
+        "calories": 240,
+        "carbsGrams": 28,
+        "proteinGram": 6,
+        "fatGram": 10,
+        "glycemicIndex": 45
+      }
+    }
+  },
+  {
+    "id": "italian_089_biscotti",
+    "prompt": "Had biscotti with coffee",
+    "expected_output": {
+      "payload": {
+        "description": "3 almond biscotti cookies",
+        "calories": 180,
+        "carbsGrams": 28,
+        "proteinGram": 4,
+        "fatGram": 6,
+        "glycemicIndex": 50
+      }
+    }
+  },
+  {
+    "id": "italian_090_focaccia",
+    "prompt": "Snacked on focaccia bread",
+    "expected_output": {
+      "payload": {
+        "description": "Rosemary focaccia bread with olive oil",
+        "calories": 280,
+        "carbsGrams": 38,
+        "proteinGram": 7,
+        "fatGram": 11,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "italian_091_focaccia_sandwich",
+    "prompt": "Had focaccia sandwich with prosciutto",
+    "expected_output": {
+      "payload": {
+        "description": "Focaccia sandwich with prosciutto, mozzarella, and arugula",
+        "calories": 520,
+        "carbsGrams": 42,
+        "proteinGram": 28,
+        "fatGram": 26,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_092_panini_caprese",
+    "prompt": "Lunch: caprese panini",
+    "expected_output": {
+      "payload": {
+        "description": "Pressed panini with mozzarella, tomato, and basil",
+        "calories": 420,
+        "carbsGrams": 42,
+        "proteinGram": 18,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_093_panini_chicken",
+    "prompt": "Had chicken panini",
+    "expected_output": {
+      "payload": {
+        "description": "Grilled chicken panini with pesto and mozzarella",
+        "calories": 520,
+        "carbsGrams": 44,
+        "proteinGram": 36,
+        "fatGram": 22,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_094_panini_italian",
+    "prompt": "Ate Italian panini",
+    "expected_output": {
+      "payload": {
+        "description": "Italian panini with salami, provolone, and roasted peppers",
+        "calories": 580,
+        "carbsGrams": 46,
+        "proteinGram": 28,
+        "fatGram": 30,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_095_meatballs",
+    "prompt": "Had spaghetti and meatballs",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti with Italian meatballs in marinara sauce",
+        "calories": 680,
+        "carbsGrams": 68,
+        "proteinGram": 38,
+        "fatGram": 26,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_096_meatballs_sub",
+    "prompt": "Ate meatball sub",
+    "expected_output": {
+      "payload": {
+        "description": "Meatball submarine sandwich with marinara and mozzarella",
+        "calories": 720,
+        "carbsGrams": 62,
+        "proteinGram": 36,
+        "fatGram": 32,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_097_sausage_peppers",
+    "prompt": "Had sausage and peppers",
+    "expected_output": {
+      "payload": {
+        "description": "Italian sausage with sautéed bell peppers and onions",
+        "calories": 480,
+        "carbsGrams": 18,
+        "proteinGram": 24,
+        "fatGram": 34,
+        "glycemicIndex": 35
+      }
+    }
+  },
+  {
+    "id": "italian_098_sausage_pasta",
+    "prompt": "Ate pasta with Italian sausage",
+    "expected_output": {
+      "payload": {
+        "description": "Penne with Italian sausage and tomato sauce",
+        "calories": 620,
+        "carbsGrams": 64,
+        "proteinGram": 28,
+        "fatGram": 26,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_099_polenta",
+    "prompt": "Had creamy polenta",
+    "expected_output": {
+      "payload": {
+        "description": "Creamy polenta with butter and parmesan",
+        "calories": 280,
+        "carbsGrams": 38,
+        "proteinGram": 8,
+        "fatGram": 10,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_100_polenta_ragu",
+    "prompt": "Ate polenta with meat ragu",
+    "expected_output": {
+      "payload": {
+        "description": "Polenta topped with slow-cooked meat ragu",
+        "calories": 480,
+        "carbsGrams": 42,
+        "proteinGram": 28,
+        "fatGram": 20,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_101_frittata",
+    "prompt": "Had Italian frittata",
+    "expected_output": {
+      "payload": {
+        "description": "Frittata with vegetables and parmesan cheese",
+        "calories": 320,
+        "carbsGrams": 12,
+        "proteinGram": 22,
+        "fatGram": 20,
+        "glycemicIndex": 28
+      }
+    }
+  },
+  {
+    "id": "italian_102_frittata_sausage",
+    "prompt": "Breakfast: sausage and pepper frittata",
+    "expected_output": {
+      "payload": {
+        "description": "Frittata with Italian sausage, peppers, and onions",
+        "calories": 420,
+        "carbsGrams": 14,
+        "proteinGram": 26,
+        "fatGram": 30,
+        "glycemicIndex": 30
+      }
+    }
+  },
+  {
+    "id": "italian_103_carbonara_casual",
+    "prompt": "Grabbed carbonara for lunch",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti carbonara with bacon and egg sauce",
+        "calories": 590,
+        "carbsGrams": 56,
+        "proteinGram": 24,
+        "fatGram": 29,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_104_carbonara_restaurant",
+    "prompt": "Dinner: carbonara at Italian place",
+    "expected_output": {
+      "payload": {
+        "description": "Restaurant carbonara with pancetta and pecorino",
+        "calories": 640,
+        "carbsGrams": 60,
+        "proteinGram": 27,
+        "fatGram": 32,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_105_lasagna_veggie_casual",
+    "prompt": "Trying vegetarian lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Vegetable lasagna with eggplant and zucchini",
+        "calories": 390,
+        "carbsGrams": 44,
+        "proteinGram": 19,
+        "fatGram": 17,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_106_lasagna_bolognese",
+    "prompt": "Had lasagna bolognese",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with traditional bolognese meat sauce",
+        "calories": 520,
+        "carbsGrams": 40,
+        "proteinGram": 32,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_107_lasagna_white",
+    "prompt": "Ate white lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "White lasagna with béchamel, ricotta, and spinach",
+        "calories": 480,
+        "carbsGrams": 38,
+        "proteinGram": 24,
+        "fatGram": 26,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_108_lasagna_seafood",
+    "prompt": "Had seafood lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Seafood lasagna with shrimp and white sauce",
+        "calories": 520,
+        "carbsGrams": 42,
+        "proteinGram": 35,
+        "fatGram": 22,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_109_pizza_pepperoni",
+    "prompt": "Had pepperoni pizza",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices pepperoni pizza",
+        "calories": 580,
+        "carbsGrams": 56,
+        "proteinGram": 24,
+        "fatGram": 26,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_110_pizza_supreme",
+    "prompt": "Ate supreme pizza",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices supreme pizza with sausage, peppers, mushrooms, onions",
+        "calories": 640,
+        "carbsGrams": 60,
+        "proteinGram": 26,
+        "fatGram": 30,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_111_pizza_bianca",
+    "prompt": "Had pizza bianca",
+    "expected_output": {
+      "payload": {
+        "description": "White pizza with ricotta, mozzarella, and garlic",
+        "calories": 620,
+        "carbsGrams": 62,
+        "proteinGram": 28,
+        "fatGram": 28,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_112_pizza_prosciutto_arugula",
+    "prompt": "Ate prosciutto and arugula pizza",
+    "expected_output": {
+      "payload": {
+        "description": "Pizza with prosciutto, arugula, and shaved parmesan",
+        "calories": 580,
+        "carbsGrams": 58,
+        "proteinGram": 28,
+        "fatGram": 24,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_113_pizza_veggie",
+    "prompt": "Had vegetable pizza",
+    "expected_output": {
+      "payload": {
+        "description": "2 slices vegetarian pizza with peppers, mushrooms, olives",
+        "calories": 480,
+        "carbsGrams": 58,
+        "proteinGram": 18,
+        "fatGram": 18,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_114_pizza_funghi",
+    "prompt": "Ate pizza ai funghi",
+    "expected_output": {
+      "payload": {
+        "description": "Mushroom pizza with mozzarella and truffle oil",
+        "calories": 560,
+        "carbsGrams": 60,
+        "proteinGram": 22,
+        "fatGram": 24,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_115_risotto_porcini",
+    "prompt": "Had porcini mushroom risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Risotto with porcini mushrooms and truffle oil",
+        "calories": 480,
+        "carbsGrams": 54,
+        "proteinGram": 13,
+        "fatGram": 22,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_116_risotto_butternut",
+    "prompt": "Ate butternut squash risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Creamy butternut squash risotto with sage",
+        "calories": 420,
+        "carbsGrams": 58,
+        "proteinGram": 11,
+        "fatGram": 15,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_117_risotto_shrimp",
+    "prompt": "Had shrimp risotto",
+    "expected_output": {
+      "payload": {
+        "description": "Risotto with sautéed shrimp and lemon",
+        "calories": 520,
+        "carbsGrams": 56,
+        "proteinGram": 26,
+        "fatGram": 18,
+        "glycemicIndex": 68
+      }
+    }
+  },
+  {
+    "id": "italian_118_pasta_nero",
+    "prompt": "Ate squid ink pasta with seafood",
+    "expected_output": {
+      "payload": {
+        "description": "Black squid ink pasta with mixed seafood",
+        "calories": 560,
+        "carbsGrams": 62,
+        "proteinGram": 32,
+        "fatGram": 18,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_119_pasta_norma",
+    "prompt": "Had pasta alla norma",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta with eggplant, tomato, ricotta salata, and basil",
+        "calories": 460,
+        "carbsGrams": 64,
+        "proteinGram": 16,
+        "fatGram": 14,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_120_pasta_cacio_pepe",
+    "prompt": "Ate cacio e pepe",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta with pecorino cheese and black pepper",
+        "calories": 520,
+        "carbsGrams": 58,
+        "proteinGram": 20,
+        "fatGram": 22,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_121_pasta_gricia",
+    "prompt": "Had pasta alla gricia",
+    "expected_output": {
+      "payload": {
+        "description": "Pasta with guanciale and pecorino romano",
+        "calories": 580,
+        "carbsGrams": 60,
+        "proteinGram": 22,
+        "fatGram": 26,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_122_pasta_aglio_olio",
+    "prompt": "Ate aglio e olio",
+    "expected_output": {
+      "payload": {
+        "description": "Spaghetti with garlic, olive oil, and chili flakes",
+        "calories": 420,
+        "carbsGrams": 62,
+        "proteinGram": 12,
+        "fatGram": 14,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_123_ossobuco_classic",
+    "prompt": "Lunch: traditional osso buco",
+    "expected_output": {
+      "payload": {
+        "description": "Traditional osso buco with gremolata and saffron risotto",
+        "calories": 720,
+        "carbsGrams": 58,
+        "proteinGram": 54,
+        "fatGram": 28,
+        "glycemicIndex": 65
+      }
+    }
+  },
+  {
+    "id": "italian_124_braciole",
+    "prompt": "Had braciole",
+    "expected_output": {
+      "payload": {
+        "description": "Beef braciole stuffed with cheese and herbs in tomato sauce",
+        "calories": 520,
+        "carbsGrams": 18,
+        "proteinGram": 46,
+        "fatGram": 30,
+        "glycemicIndex": 30
+      }
+    }
+  },
+  {
+    "id": "italian_125_involtini",
+    "prompt": "Ate beef involtini",
+    "expected_output": {
+      "payload": {
+        "description": "Beef rolls with prosciutto, cheese, and herbs",
+        "calories": 480,
+        "carbsGrams": 12,
+        "proteinGram": 44,
+        "fatGram": 28,
+        "glycemicIndex": 20
+      }
+    }
+  },
+  {
+    "id": "italian_126_porchetta",
+    "prompt": "Had porchetta sandwich",
+    "expected_output": {
+      "payload": {
+        "description": "Porchetta sandwich with roasted pork, herbs, and crispy skin",
+        "calories": 620,
+        "carbsGrams": 42,
+        "proteinGram": 38,
+        "fatGram": 32,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_127_vitello_tonnato",
+    "prompt": "Had vitello tonnato",
+    "expected_output": {
+      "payload": {
+        "description": "Sliced veal with tuna-caper sauce",
+        "calories": 380,
+        "carbsGrams": 8,
+        "proteinGram": 42,
+        "fatGram": 20,
+        "glycemicIndex": 15
+      }
+    }
+  },
+  {
+    "id": "italian_128_carpaccio",
+    "prompt": "Started with beef carpaccio",
+    "expected_output": {
+      "payload": {
+        "description": "Beef carpaccio with arugula, parmesan, and olive oil",
+        "calories": 220,
+        "carbsGrams": 4,
+        "proteinGram": 26,
+        "fatGram": 12,
+        "glycemicIndex": 5
+      }
+    }
+  },
+  {
+    "id": "italian_129_suppli",
+    "prompt": "Snacked on supplì",
+    "expected_output": {
+      "payload": {
+        "description": "Roman supplì (fried rice balls with mozzarella)",
+        "calories": 380,
+        "carbsGrams": 44,
+        "proteinGram": 14,
+        "fatGram": 16,
+        "glycemicIndex": 70
+      }
+    }
+  },
+  {
+    "id": "italian_130_sfogliatelle",
+    "prompt": "Had sfogliatelle pastry",
+    "expected_output": {
+      "payload": {
+        "description": "Sfogliatelle with ricotta and orange filling",
+        "calories": 340,
+        "carbsGrams": 38,
+        "proteinGram": 8,
+        "fatGram": 17,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_131_zeppole",
+    "prompt": "Dessert was zeppole",
+    "expected_output": {
+      "payload": {
+        "description": "Fried zeppole with powdered sugar and custard",
+        "calories": 420,
+        "carbsGrams": 48,
+        "proteinGram": 8,
+        "fatGram": 21,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_132_semifreddo",
+    "prompt": "Had semifreddo",
+    "expected_output": {
+      "payload": {
+        "description": "Chocolate semifreddo with hazelnut",
+        "calories": 380,
+        "carbsGrams": 38,
+        "proteinGram": 7,
+        "fatGram": 22,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "italian_133_granita",
+    "prompt": "Had lemon granita",
+    "expected_output": {
+      "payload": {
+        "description": "Sicilian lemon granita",
+        "calories": 120,
+        "carbsGrams": 30,
+        "proteinGram": 0,
+        "fatGram": 0,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_134_amaretti",
+    "prompt": "Snacked on amaretti cookies",
+    "expected_output": {
+      "payload": {
+        "description": "5 amaretti almond cookies",
+        "calories": 220,
+        "carbsGrams": 32,
+        "proteinGram": 4,
+        "fatGram": 8,
+        "glycemicIndex": 52
+      }
+    }
+  },
+  {
+    "id": "italian_135_pandoro",
+    "prompt": "Had slice of pandoro",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of pandoro Christmas cake",
+        "calories": 320,
+        "carbsGrams": 42,
+        "proteinGram": 6,
+        "fatGram": 14,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_136_panettone",
+    "prompt": "Ate panettone",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of panettone with candied fruit",
+        "calories": 340,
+        "carbsGrams": 48,
+        "proteinGram": 7,
+        "fatGram": 13,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_137_sbrisolona",
+    "prompt": "Had sbrisolona cake",
+    "expected_output": {
+      "payload": {
+        "description": "Slice of crumbly sbrisolona with almonds",
+        "calories": 380,
+        "carbsGrams": 44,
+        "proteinGram": 8,
+        "fatGram": 19,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_138_cassata",
+    "prompt": "Dessert was cassata siciliana",
+    "expected_output": {
+      "payload": {
+        "description": "Sicilian cassata with ricotta, marzipan, and candied fruit",
+        "calories": 420,
+        "carbsGrams": 52,
+        "proteinGram": 10,
+        "fatGram": 19,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_139_torta_caprese",
+    "prompt": "Had chocolate torta caprese",
+    "expected_output": {
+      "payload": {
+        "description": "Flourless chocolate almond cake from Capri",
+        "calories": 380,
+        "carbsGrams": 36,
+        "proteinGram": 9,
+        "fatGram": 23,
+        "glycemicIndex": 48
+      }
+    }
+  },
+  {
+    "id": "italian_140_crostata",
+    "prompt": "Had jam crostata",
+    "expected_output": {
+      "payload": {
+        "description": "Italian jam tart with apricot filling",
+        "calories": 320,
+        "carbsGrams": 46,
+        "proteinGram": 5,
+        "fatGram": 12,
+        "glycemicIndex": 58
+      }
+    }
+  },
+  {
+    "id": "italian_141_lasagna_description",
+    "prompt": "Eating mom's homemade lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Homemade lasagna with layers of pasta, meat sauce, and cheese",
+        "calories": 520,
+        "carbsGrams": 40,
+        "proteinGram": 32,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_142_lasagna_lunch",
+    "prompt": "Lunch today: lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with ground beef and ricotta",
+        "calories": 470,
+        "carbsGrams": 37,
+        "proteinGram": 29,
+        "fatGram": 23,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_143_lasagna_takeout",
+    "prompt": "Got lasagna takeout",
+    "expected_output": {
+      "payload": {
+        "description": "Takeout lasagna with meat sauce and mozzarella",
+        "calories": 490,
+        "carbsGrams": 38,
+        "proteinGram": 30,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_144_lasagna_frozen",
+    "prompt": "Heated up frozen lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Frozen lasagna with meat and cheese",
+        "calories": 420,
+        "carbsGrams": 42,
+        "proteinGram": 24,
+        "fatGram": 18,
+        "glycemicIndex": 62
+      }
+    }
+  },
+  {
+    "id": "italian_145_lasagna_square",
+    "prompt": "Had a square of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Medium square of meat lasagna",
+        "calories": 440,
+        "carbsGrams": 34,
+        "proteinGram": 27,
+        "fatGram": 21,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_146_lasagna_corner",
+    "prompt": "Got the corner piece of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Corner piece of lasagna with extra crispy cheese",
+        "calories": 480,
+        "carbsGrams": 36,
+        "proteinGram": 29,
+        "fatGram": 24,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_147_lasagna_spinach",
+    "prompt": "Had spinach lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with spinach, ricotta, and marinara",
+        "calories": 390,
+        "carbsGrams": 40,
+        "proteinGram": 20,
+        "fatGram": 17,
+        "glycemicIndex": 55
+      }
+    }
+  },
+  {
+    "id": "italian_148_lasagna_extra_cheese",
+    "prompt": "Ate lasagna with extra cheese",
+    "expected_output": {
+      "payload": {
+        "description": "Lasagna with extra mozzarella and parmesan",
+        "calories": 550,
+        "carbsGrams": 38,
+        "proteinGram": 32,
+        "fatGram": 30,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_149_lasagna_small",
+    "prompt": "Just had a small piece of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Small serving of meat lasagna",
+        "calories": 320,
+        "carbsGrams": 25,
+        "proteinGram": 20,
+        "fatGram": 16,
+        "glycemicIndex": 60
+      }
+    }
+  },
+  {
+    "id": "italian_150_lasagna_huge",
+    "prompt": "Demolished a huge serving of lasagna",
+    "expected_output": {
+      "payload": {
+        "description": "Extra large portion of lasagna with meat sauce",
+        "calories": 750,
+        "carbsGrams": 58,
+        "proteinGram": 46,
+        "fatGram": 36,
+        "glycemicIndex": 62
+      }
+    }
+  }
+]
+

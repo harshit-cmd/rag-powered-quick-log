@@ -6,8 +6,9 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import seedData1000plusWithEmbeddings from "./meal-datasets/seed-data-1000-plus-with-embeddings.json" with { type: "json" };
+import ultimateSeedDataWithEmbeddings from "./meal-datasets/ultimate-seed-data-with-embeddings.json" with { type: "json" };
 import mealDatasetOriginal from "./meal-datasets/meal-dataset-original.json" with { type: "json" };
+import italianDishesLarge from "./meal-datasets/italian-dishes-large.json" with { type: "json" };
 import { calculatePayloadMetrics, extractJSON, writeResultIncrementallyMeals } from "../utils.js";
 
 const responseSchema = z.object({
@@ -28,7 +29,7 @@ function mealPrompt(schema, top3) {
   // Build RAG examples section
   let ragExamples = "";
   if (top3 && top3.length > 0) {
-    ragExamples = "\n--- SIMILAR EXAMPLES (Reference only) ---\n";
+    ragExamples = "\n--- SIMILAR EXAMPLES ---\n";
     top3.forEach((example, idx) => {
       ragExamples += `\nExample ${idx + 1} (similarity: ${example.similarity?.toString() || 'N/A'}):\nInput: "${example.prompt}"\nOutput: ${JSON.stringify(example.expected_output)}\n`;
     });
@@ -36,88 +37,27 @@ function mealPrompt(schema, top3) {
   }
 
   return `/no_think
-Task: Parse meal logging queries into structured JSON format.
+Parse meal queries to JSON with nutrition estimates.
 
-⚠️ CRITICAL RULE - READ FIRST:
-If the query contains ANY identifiable food name (pasta, burger, nuts, eggs, apple, steak, chicken, etc.), 
-you MUST return PAYLOAD with estimates. Do NOT be influenced by Similar Examples that show errors 
-unless they have the EXACT or SIMILAR food items.
+Schema: ${JSON.stringify(z.toJSONSchema(schema), null, 2)}
 
-Examples:
-- "Ate pasta" has identifiable food "pasta" → MUST return PAYLOAD
-- "Had a burger" has identifiable food "burger" → MUST return PAYLOAD  
-- "Ate some food" has NO identifiable food → return ERROR
-- "Restaurant meal" has NO identifiable food → return ERROR
+DECISION RULE:
+Does query mention specific food/drink name? → PAYLOAD
+No specific food/drink mentioned? → ERROR
 
-Output Schema:
-${JSON.stringify(z.toJSONSchema(schema), null, 2)}
-
---- BASELINE EXAMPLES ---
-
-Example A - Specific meal with details:
-Input: "Lunch was tuna sandwich on white bread with lettuce and mayo"
-Output: {"payload":{"description":"Tuna sandwich on white bread with lettuce and mayo","calories":380,"carbsGrams":32,"proteinGram":22,"fatGram":18,"glycemicIndex":58}}
-
-Example B - Simple snack with identifiable foods:
-Input: "String cheese and apple slices"
-Output: {"payload":{"description":"String cheese and apple slices","calories":175,"carbsGrams":20,"proteinGram":7,"fatGram":7,"glycemicIndex":30}}
-
-Example C - Single identifiable food (estimate portions):
-Input: "Ate pasta"
-Output: {"payload":{"description":"Pasta (1 cup cooked, estimated)","calories":220,"carbsGrams":43,"proteinGram":8,"fatGram":1,"glycemicIndex":60}}
-
-Example D - Single word food:
-Input: "Ate eggs"
-Output: {"payload":{"description":"Eggs (2 large, estimated)","calories":140,"carbsGrams":1,"proteinGram":12,"fatGram":10,"glycemicIndex":0}}
-
-Example E - Beverage with quantity:
-Input: "Coconut water (500ml)"
-Output: {"payload":{"description":"Coconut water (500ml)","calories":90,"carbsGrams":22,"proteinGram":2,"fatGram":0,"glycemicIndex":35}}
-
-Example F - Generic branded item:
-Input: "Ate a protein bar"
-Output: {"payload":{"description":"Protein bar (standard, estimated)","calories":200,"carbsGrams":24,"proteinGram":10,"fatGram":7,"glycemicIndex":45}}
-
-Example G - Specific branded food:
-Input: "2 slices of pepperoni pizza from Domino's"
-Output: {"payload":{"description":"2 slices of pepperoni pizza from Domino's","calories":560,"carbsGrams":64,"proteinGram":24,"fatGram":22,"glycemicIndex":70}}
-
-Example H - Generic location, no food (error):
-Input: "Restaurant meal"
-Output: {"error":"Could you please specify what you ordered at the restaurant?"}
-
-Example I - Generic category only (error):
-Input: "Healthy stuff"
-Output: {"error":"Could you please be more specific about what healthy foods you ate?"}
-
-Example J - No food info (error):
-Input: "Things"
-Output: {"error":"Could you please be more specific about what food you consumed?"}
+Core Examples:
+"Ate pasta" → {"payload":{"description":"Pasta (1 cup)","calories":220,"carbsGrams":43,"proteinGram":8,"fatGram":1,"glycemicIndex":60}}
+"Ate bread" → {"payload":{"description":"Bread (2 slices)","calories":160,"carbsGrams":30,"proteinGram":6,"fatGram":2,"glycemicIndex":70}}
+"Snacked on cheese and crackers" → {"payload":{"description":"Cheese and crackers","calories":320,"carbsGrams":22,"proteinGram":16,"fatGram":18,"glycemicIndex":45}}
+"Coconut water (500ml)" → {"payload":{"description":"Coconut water 500ml","calories":90,"carbsGrams":22,"proteinGram":2,"fatGram":0,"glycemicIndex":35}}
+"Restaurant meal" (no food) → {"error":"What did you order?"}
+"Snack" (no food) → {"error":"What did you snack on?"}
 ${ragExamples}
-SPECIFICITY RULES (Follow strictly):
-✅ RETURN PAYLOAD if query contains identifiable food names:
-   - Specific foods: "pizza", "pasta", "burger", "sandwich", "salad", "chicken", "steak"
-   - Simple items: "nuts", "apple", "eggs", "cheese", "cookies", "quinoa"
-   - Beverages: "coconut water", "smoothie", "juice", "milk"
-   - Generic brands: "protein bar", "energy bar", "cereal"
-   - Branded items: "Domino's pizza", "Subway sandwich"
-   → Estimate standard portions if quantity missing
+Use Similar Examples for nutrition estimates and descriptions, but always follow the DECISION RULE above for determining payload vs error.
 
-❌ RETURN ERROR if query is too generic:
-   - Location only: "restaurant meal", "takeout", "dined in"
-   - Generic categories: "healthy stuff", "snack", "food", "things"
-   - Context only: "party food", "hospital food"
-   → Ask for specific food details
+Food keywords: pasta, burger, pizza, steak, chicken, fish, rice, eggs, bread, cheese, yogurt, nuts, apple, banana, orange, berries, cookies, crackers, chips, popcorn, pretzels, cake, brownies, salad, sandwich, wrap, burrito, taco, soup, smoothie, juice, milk, water, coffee, tea, soda, wine, beer, protein bar, cereal, oatmeal, quinoa
 
-INSTRUCTIONS:
-1. FIRST: Check if query contains an IDENTIFIABLE FOOD NAME → Return PAYLOAD (ignore RAG errors)
-2. ONLY if NO identifiable food AND only location/category → Return ERROR
-3. Ignore Similar Examples unless they have the EXACT or SIMILAR food items
-4. For single foods without quantity, estimate standard portions
-5. NEVER return both "payload" and "error" fields (or empty error field)
-6. Glycemic Index: Low (15-35), Medium (40-60), High (70-85)
-
-Response: Valid JSON only
+GI ranges: Low (15-35), Med (40-60), High (70-85). Never return both payload and error fields.
 
 User query:`;
 }
@@ -197,7 +137,7 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 function getTop3Samples(queryEmbedding) {
-  const samples = seedData1000plusWithEmbeddings;
+  const samples = ultimateSeedDataWithEmbeddings;
   const samplesWithSimilarity = samples.map((sample) => ({
     ...sample,
     similarity: cosineSimilarity(queryEmbedding, sample.embedding),
@@ -212,7 +152,7 @@ const main = async () => {
 
   const filePath = 'meal/benchmark-results/rag-over-mem/' + new Date().toISOString() + '.json';
 
-  for (const sample of mealDatasetOriginal) {
+  for (const sample of [...mealDatasetOriginal, ...italianDishesLarge]) {
     const benchmarkResult = {
       prompt: sample.prompt,
       expected_output: sample.expected_output,
