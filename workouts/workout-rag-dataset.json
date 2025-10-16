@@ -11341,6 +11341,2785 @@
         "intensityLevel": "low"
       }
     }
+  },
+  {
+    "id": "rag_entry_801_c1d2e3f4",
+    "prompt": "Peloton ride 45 minutes, live class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "peloton cycling",
+        "description": "45 minute peloton live ride",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_802_g5h6i7j8",
+    "prompt": "Zwift cycling 60 minutes, virtual race",
+    "expected_output": {
+      "payload": {
+        "workoutType": "zwift",
+        "description": "60 minute zwift virtual cycling race",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_803_k9l0m1n2",
+    "prompt": "Mirror workout 30 minutes, guided strength",
+    "expected_output": {
+      "payload": {
+        "workoutType": "mirror fitness",
+        "description": "30 minute mirror guided strength",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_804_o3p4q5r6",
+    "prompt": "Tonal workout 40 minutes, digital weight training",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tonal",
+        "description": "40 minute tonal digital weights",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_805_s7t8u9v0",
+    "prompt": "Apple Fitness+ HIIT 20 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "apple fitness",
+        "description": "20 minute apple fitness HIIT",
+        "durationMinutes": 20,
+        "caloriesBurned": 240,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_806_w1x2y3z4",
+    "prompt": "Beat Saber VR 35 minutes, expert level",
+    "expected_output": {
+      "payload": {
+        "workoutType": "beat saber VR",
+        "description": "35 minute beat saber VR expert",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_807_a5b6c7d8",
+    "prompt": "Supernatural VR 30 minutes, boxing workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "supernatural VR",
+        "description": "30 minute supernatural VR boxing",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_808_e9f0g1h2",
+    "prompt": "FitXR VR boxing 25 minutes, combat workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "fitxr VR",
+        "description": "25 minute fitxr VR boxing combat",
+        "durationMinutes": 25,
+        "caloriesBurned": 250,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_809_i3j4k5l6",
+    "prompt": "Oculus Move 40 minutes, mixed VR games",
+    "expected_output": {
+      "payload": {
+        "workoutType": "oculus move",
+        "description": "40 minute oculus move VR workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_810_m7n8o9p0",
+    "prompt": "Ring Fit Adventure 50 minutes, Nintendo Switch",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ring fit adventure",
+        "description": "50 minute ring fit adventure game",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_811_q1r2s3t4",
+    "prompt": "Pokemon GO walk 75 minutes, catching and walking",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pokemon go",
+        "description": "75 minute pokemon go walking",
+        "durationMinutes": 75,
+        "caloriesBurned": 300,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_812_u5v6w7x8",
+    "prompt": "Zombies Run! 45 minutes, immersive running",
+    "expected_output": {
+      "payload": {
+        "workoutType": "zombies run",
+        "description": "45 minute zombies run immersive run",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_813_y9z0a1b2",
+    "prompt": "Strava challenge run 60 minutes, tracking",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strava run",
+        "description": "60 minute strava challenge run",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_814_c3d4e5f6",
+    "prompt": "Nike Training Club 35 minutes, app workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "nike training club",
+        "description": "35 minute NTC app workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_815_g7h8i9j0",
+    "prompt": "ClassPass studio 50 minutes, spinning class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "classpass spinning",
+        "description": "50 minute classpass spin studio",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_816_k1l2m3n4",
+    "prompt": "Hydrow rowing 40 minutes, live outdoor reality",
+    "expected_output": {
+      "payload": {
+        "workoutType": "hydrow rowing",
+        "description": "40 minute hydrow outdoor reality rowing",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_817_o5p6q7r8",
+    "prompt": "Tempo Studio 45 minutes, AI form coaching",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tempo studio",
+        "description": "45 minute tempo AI coaching workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_818_s9t0u1v2",
+    "prompt": "Echelon bike 55 minutes, scenic ride",
+    "expected_output": {
+      "payload": {
+        "workoutType": "echelon cycling",
+        "description": "55 minute echelon scenic bike ride",
+        "durationMinutes": 55,
+        "caloriesBurned": 550,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_819_w3x4y5z6",
+    "prompt": "Les Mills On Demand 30 minutes, BodyPump",
+    "expected_output": {
+      "payload": {
+        "workoutType": "les mills digital",
+        "description": "30 minute les mills bodypump digital",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_820_a7b8c9d0",
+    "prompt": "Beachbody on Demand 40 minutes, P90X workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "beachbody digital",
+        "description": "40 minute beachbody P90X stream",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_821_e1f2g3h4",
+    "prompt": "Daily Burn 35 minutes, streaming workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "daily burn",
+        "description": "35 minute daily burn stream",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_822_i5j6k7l8",
+    "prompt": "iFit treadmill 50 minutes, guided workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ifit treadmill",
+        "description": "50 minute ifit guided treadmill run",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_823_m9n0o1p2",
+    "prompt": "Wahoo SYSTM 60 minutes, structured cycling",
+    "expected_output": {
+      "payload": {
+        "workoutType": "wahoo systm",
+        "description": "60 minute wahoo systm cycling workout",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_824_q3r4s5t6",
+    "prompt": "TrainerRoad workout 45 minutes, FTP intervals",
+    "expected_output": {
+      "payload": {
+        "workoutType": "trainerroad",
+        "description": "45 minute trainerroad FTP intervals",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_825_u7v8w9x0",
+    "prompt": "Rouvy virtual 55 minutes, augmented reality cycling",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rouvy",
+        "description": "55 minute rouvy AR cycling",
+        "durationMinutes": 55,
+        "caloriesBurned": 550,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_826_y1z2a3b4",
+    "prompt": "Aaptiv audio workout 30 minutes, running",
+    "expected_output": {
+      "payload": {
+        "workoutType": "aaptiv",
+        "description": "30 minute aaptiv audio guided run",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_827_c5d6e7f8",
+    "prompt": "Fitbod app workout 40 minutes, personalized strength",
+    "expected_output": {
+      "payload": {
+        "workoutType": "fitbod",
+        "description": "40 minute fitbod personalized strength",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_828_g9h0i1j2",
+    "prompt": "Strong app tracking 50 minutes, gym session",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strength training",
+        "description": "50 minute strong app tracked gym session",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_829_k3l4m5n6",
+    "prompt": "JEFIT workout 45 minutes, bodybuilding routine",
+    "expected_output": {
+      "payload": {
+        "workoutType": "bodybuilding",
+        "description": "45 minute jefit bodybuilding routine",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_830_o7p8q9r0",
+    "prompt": "Seven app 20 minutes, 7 minute workout circuits",
+    "expected_output": {
+      "payload": {
+        "workoutType": "seven workout",
+        "description": "20 minute seven app circuits",
+        "durationMinutes": 20,
+        "caloriesBurned": 160,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_831_s1t2u3v4",
+    "prompt": "Sworkit 35 minutes, customized workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "sworkit",
+        "description": "35 minute sworkit custom workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_832_w5x6y7z8",
+    "prompt": "Freeletics bodyweight 30 minutes, app guided",
+    "expected_output": {
+      "payload": {
+        "workoutType": "freeletics",
+        "description": "30 minute freeletics bodyweight workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_833_a9b0c1d2",
+    "prompt": "Centr app 40 minutes, Chris Hemsworth workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "centr",
+        "description": "40 minute centr app workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_834_e3f4g5h6",
+    "prompt": "Sweat app 35 minutes, Kayla Itsines BBG",
+    "expected_output": {
+      "payload": {
+        "workoutType": "sweat BBG",
+        "description": "35 minute sweat app BBG workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 350,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_835_i7j8k9l0",
+    "prompt": "Asana Rebel 25 minutes, yoga fitness fusion",
+    "expected_output": {
+      "payload": {
+        "workoutType": "asana rebel",
+        "description": "25 minute asana rebel yoga fusion",
+        "durationMinutes": 25,
+        "caloriesBurned": 150,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_836_m1n2o3p4",
+    "prompt": "8fit workout 30 minutes, HIIT and nutrition",
+    "expected_output": {
+      "payload": {
+        "workoutType": "8fit",
+        "description": "30 minute 8fit HIIT workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_837_q5r6s7t8",
+    "prompt": "Keelo app 20 minutes, high intensity",
+    "expected_output": {
+      "payload": {
+        "workoutType": "keelo",
+        "description": "20 minute keelo high intensity workout",
+        "durationMinutes": 20,
+        "caloriesBurned": 240,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_838_u9v0w1x2",
+    "prompt": "Gymshark app 35 minutes, athlete training",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gymshark training",
+        "description": "35 minute gymshark app workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_839_y3z4a5b6",
+    "prompt": "Caliber strength 45 minutes, coached workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "caliber strength",
+        "description": "45 minute caliber coached strength",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_840_c7d8e9f0",
+    "prompt": "Future Fitness 40 minutes, remote coaching",
+    "expected_output": {
+      "payload": {
+        "workoutType": "future fitness",
+        "description": "40 minute future remote coached workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_841_g1h2i3j4",
+    "prompt": "Playstation VR Sports 30 minutes, boxing",
+    "expected_output": {
+      "payload": {
+        "workoutType": "playstation VR sports",
+        "description": "30 minute PS VR boxing workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_842_k5l6m7n8",
+    "prompt": "Switch Sports 45 minutes, tennis and bowling",
+    "expected_output": {
+      "payload": {
+        "workoutType": "switch sports",
+        "description": "45 minute nintendo switch sports",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_843_o9p0q1r2",
+    "prompt": "Xbox Fitness 25 minutes, kinect workout",
+    "expected_output": {
+      "payload": {
+        "workoutType": "xbox fitness",
+        "description": "25 minute xbox kinect fitness",
+        "durationMinutes": 25,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_844_s3t4u5v6",
+    "prompt": "Just Dance 40 minutes, workout mode",
+    "expected_output": {
+      "payload": {
+        "workoutType": "just dance",
+        "description": "40 minute just dance workout mode",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_845_w7x8y9z0",
+    "prompt": "Audio Punch 20 minutes, rhythm boxing",
+    "expected_output": {
+      "payload": {
+        "workoutType": "audio punch",
+        "description": "20 minute audio punch rhythm boxing",
+        "durationMinutes": 20,
+        "caloriesBurned": 200,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_846_a1b2c3d4",
+    "prompt": "Whoop recovery protocol 15 minutes, strain tracking",
+    "expected_output": {
+      "payload": {
+        "workoutType": "whoop recovery",
+        "description": "15 minute whoop tracked recovery work",
+        "durationMinutes": 15,
+        "caloriesBurned": 60,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_847_e5f6g7h8",
+    "prompt": "Oura ring guided workout 30 minutes, readiness-based",
+    "expected_output": {
+      "payload": {
+        "workoutType": "oura guided",
+        "description": "30 minute oura readiness workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_848_i9j0k1l2",
+    "prompt": "Garmin coach running 50 minutes, adaptive plan",
+    "expected_output": {
+      "payload": {
+        "workoutType": "garmin coach",
+        "description": "50 minute garmin adaptive run plan",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_849_m3n4o5p6",
+    "prompt": "Polar Flow workout 40 minutes, heart rate guided",
+    "expected_output": {
+      "payload": {
+        "workoutType": "polar flow",
+        "description": "40 minute polar HR guided workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_850_q7r8s9t0",
+    "prompt": "Suunto app trail run 65 minutes, GPS tracking",
+    "expected_output": {
+      "payload": {
+        "workoutType": "trail running",
+        "description": "65 minute suunto GPS trail run",
+        "durationMinutes": 65,
+        "caloriesBurned": 650,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_851_u1v2w3x4",
+    "prompt": "Prenatal yoga 40 minutes, pregnancy safe",
+    "expected_output": {
+      "payload": {
+        "workoutType": "prenatal yoga",
+        "description": "40 minute pregnancy safe yoga",
+        "durationMinutes": 40,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_852_y5z6a7b8",
+    "prompt": "Postnatal recovery 30 minutes, postpartum exercise",
+    "expected_output": {
+      "payload": {
+        "workoutType": "postnatal exercise",
+        "description": "30 minute postpartum recovery workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_853_c9d0e1f2",
+    "prompt": "Senior fitness 35 minutes, older adults class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "senior fitness",
+        "description": "35 minute senior adults fitness class",
+        "durationMinutes": 35,
+        "caloriesBurned": 140,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_854_g3h4i5j6",
+    "prompt": "Silver Sneakers 45 minutes, mature adult program",
+    "expected_output": {
+      "payload": {
+        "workoutType": "silver sneakers",
+        "description": "45 minute silver sneakers class",
+        "durationMinutes": 45,
+        "caloriesBurned": 180,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_855_k7l8m9n0",
+    "prompt": "Wheelchair basketball 60 minutes, adaptive sports",
+    "expected_output": {
+      "payload": {
+        "workoutType": "wheelchair basketball",
+        "description": "60 minute adaptive wheelchair basketball",
+        "durationMinutes": 60,
+        "caloriesBurned": 360,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_856_o1p2q3r4",
+    "prompt": "Adaptive swimming 40 minutes, modified strokes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "adaptive swimming",
+        "description": "40 minute modified adaptive swimming",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_857_s5t6u7v8",
+    "prompt": "Seated aerobics 30 minutes, chair-based cardio",
+    "expected_output": {
+      "payload": {
+        "workoutType": "seated aerobics",
+        "description": "30 minute seated chair aerobics",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_858_w9x0y1z2",
+    "prompt": "Parkinson's boxing 45 minutes, Rock Steady Boxing",
+    "expected_output": {
+      "payload": {
+        "workoutType": "parkinsons boxing",
+        "description": "45 minute rock steady boxing for parkinsons",
+        "durationMinutes": 45,
+        "caloriesBurned": 270,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_859_a3b4c5d6",
+    "prompt": "MS exercise therapy 30 minutes, multiple sclerosis adapted",
+    "expected_output": {
+      "payload": {
+        "workoutType": "MS therapy",
+        "description": "30 minute MS adapted exercise therapy",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_860_e7f8g9h0",
+    "prompt": "Cardiac rehab 40 minutes, heart disease recovery",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardiac rehab",
+        "description": "40 minute cardiac rehabilitation exercise",
+        "durationMinutes": 40,
+        "caloriesBurned": 200,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_861_i1j2k3l4",
+    "prompt": "Stroke rehabilitation 35 minutes, recovery exercises",
+    "expected_output": {
+      "payload": {
+        "workoutType": "stroke rehab",
+        "description": "35 minute stroke recovery exercises",
+        "durationMinutes": 35,
+        "caloriesBurned": 140,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_862_m5n6o7p8",
+    "prompt": "Arthritis water aerobics 45 minutes, joint-friendly",
+    "expected_output": {
+      "payload": {
+        "workoutType": "arthritis aquatics",
+        "description": "45 minute arthritis water aerobics",
+        "durationMinutes": 45,
+        "caloriesBurned": 225,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_863_q9r0s1t2",
+    "prompt": "Osteoporosis exercise 30 minutes, bone health",
+    "expected_output": {
+      "payload": {
+        "workoutType": "osteoporosis exercise",
+        "description": "30 minute bone health osteoporosis workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_864_u3v4w5x6",
+    "prompt": "Cancer survivor fitness 35 minutes, oncology exercise",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cancer survivor fitness",
+        "description": "35 minute oncology survivor exercise",
+        "durationMinutes": 35,
+        "caloriesBurned": 175,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_865_y7z8a9b0",
+    "prompt": "Diabetes management walk 50 minutes, blood sugar control",
+    "expected_output": {
+      "payload": {
+        "workoutType": "diabetes exercise",
+        "description": "50 minute diabetes management walk",
+        "durationMinutes": 50,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_866_c1d2e3f4",
+    "prompt": "Blind/visually impaired running 40 minutes, guide runner",
+    "expected_output": {
+      "payload": {
+        "workoutType": "guided running",
+        "description": "40 minute visually impaired guided run",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_867_g5h6i7j8",
+    "prompt": "Deaf fitness class 45 minutes, visual cues",
+    "expected_output": {
+      "payload": {
+        "workoutType": "deaf fitness",
+        "description": "45 minute visual cue deaf fitness",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_868_k9l0m1n2",
+    "prompt": "Amputee training 50 minutes, prosthetic adaptation",
+    "expected_output": {
+      "payload": {
+        "workoutType": "amputee training",
+        "description": "50 minute prosthetic adapted training",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_869_o3p4q5r6",
+    "prompt": "Cerebral palsy therapy 30 minutes, movement therapy",
+    "expected_output": {
+      "payload": {
+        "workoutType": "CP therapy",
+        "description": "30 minute cerebral palsy movement therapy",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_870_s7t8u9v0",
+    "prompt": "Spinal cord injury exercise 40 minutes, SCI adapted",
+    "expected_output": {
+      "payload": {
+        "workoutType": "SCI exercise",
+        "description": "40 minute spinal cord injury adapted workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_871_w1x2y3z4",
+    "prompt": "Traumatic brain injury rehab 25 minutes, TBI recovery",
+    "expected_output": {
+      "payload": {
+        "workoutType": "TBI rehab",
+        "description": "25 minute TBI recovery rehabilitation",
+        "durationMinutes": 25,
+        "caloriesBurned": 125,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_872_a5b6c7d8",
+    "prompt": "Autism spectrum fitness 35 minutes, sensory-friendly",
+    "expected_output": {
+      "payload": {
+        "workoutType": "autism fitness",
+        "description": "35 minute sensory-friendly autism workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 210,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_873_e9f0g1h2",
+    "prompt": "Down syndrome exercise 30 minutes, adapted movement",
+    "expected_output": {
+      "payload": {
+        "workoutType": "down syndrome exercise",
+        "description": "30 minute down syndrome adapted workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_874_i3j4k5l6",
+    "prompt": "Kids fitness 40 minutes, children's exercise class",
+    "expected_output": {
+      "payload": {
+        "workoutType": "kids fitness",
+        "description": "40 minute children's fitness class",
+        "durationMinutes": 40,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_875_m7n8o9p0",
+    "prompt": "Teen athletic development 60 minutes, youth training",
+    "expected_output": {
+      "payload": {
+        "workoutType": "teen training",
+        "description": "60 minute teen athletic development",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_876_q1r2s3t4",
+    "prompt": "Obesity management 45 minutes, weight loss program",
+    "expected_output": {
+      "payload": {
+        "workoutType": "obesity management",
+        "description": "45 minute obesity weight loss workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_877_u5v6w7x8",
+    "prompt": "Bariatric post-surgery 30 minutes, surgical recovery",
+    "expected_output": {
+      "payload": {
+        "workoutType": "bariatric exercise",
+        "description": "30 minute post-bariatric surgery workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 180,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_878_y9z0a1b2",
+    "prompt": "COPD exercise 25 minutes, breathing and movement",
+    "expected_output": {
+      "payload": {
+        "workoutType": "COPD exercise",
+        "description": "25 minute COPD breathing exercise",
+        "durationMinutes": 25,
+        "caloriesBurned": 100,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_879_c3d4e5f6",
+    "prompt": "Asthma-friendly cardio 30 minutes, controlled breathing",
+    "expected_output": {
+      "payload": {
+        "workoutType": "asthma cardio",
+        "description": "30 minute asthma-friendly cardio",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_880_g7h8i9j0",
+    "prompt": "Fibromyalgia gentle exercise 35 minutes, pain management",
+    "expected_output": {
+      "payload": {
+        "workoutType": "fibromyalgia exercise",
+        "description": "35 minute gentle fibromyalgia workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 140,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_881_k1l2m3n4",
+    "prompt": "Chronic fatigue syndrome 20 minutes, pacing exercise",
+    "expected_output": {
+      "payload": {
+        "workoutType": "CFS exercise",
+        "description": "20 minute paced chronic fatigue workout",
+        "durationMinutes": 20,
+        "caloriesBurned": 80,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_882_o5p6q7r8",
+    "prompt": "Lymphedema exercise 30 minutes, swelling management",
+    "expected_output": {
+      "payload": {
+        "workoutType": "lymphedema exercise",
+        "description": "30 minute lymphedema swelling management",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_883_s9t0u1v2",
+    "prompt": "Scoliosis-specific exercise 40 minutes, spine alignment",
+    "expected_output": {
+      "payload": {
+        "workoutType": "scoliosis exercise",
+        "description": "40 minute scoliosis spine alignment workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_884_w3x4y5z6",
+    "prompt": "Hypermobility exercise 35 minutes, joint stability",
+    "expected_output": {
+      "payload": {
+        "workoutType": "hypermobility exercise",
+        "description": "35 minute hypermobility joint stability",
+        "durationMinutes": 35,
+        "caloriesBurned": 175,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_885_a7b8c9d0",
+    "prompt": "EDS workout 30 minutes, Ehlers-Danlos syndrome",
+    "expected_output": {
+      "payload": {
+        "workoutType": "EDS exercise",
+        "description": "30 minute Ehlers-Danlos syndrome workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_886_e1f2g3h4",
+    "prompt": "POTS exercise 25 minutes, dysautonomia management",
+    "expected_output": {
+      "payload": {
+        "workoutType": "POTS exercise",
+        "description": "25 minute POTS dysautonomia workout",
+        "durationMinutes": 25,
+        "caloriesBurned": 125,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_887_i5j6k7l8",
+    "prompt": "Menopause fitness 40 minutes, hormone health",
+    "expected_output": {
+      "payload": {
+        "workoutType": "menopause fitness",
+        "description": "40 minute menopause hormone health workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_888_m9n0o1p2",
+    "prompt": "PCOS exercise 45 minutes, polycystic ovary syndrome",
+    "expected_output": {
+      "payload": {
+        "workoutType": "PCOS exercise",
+        "description": "45 minute PCOS management workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_889_q3r4s5t6",
+    "prompt": "Endometriosis-friendly 30 minutes, low-impact",
+    "expected_output": {
+      "payload": {
+        "workoutType": "endometriosis exercise",
+        "description": "30 minute endometriosis low-impact workout",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_890_u7v8w9x0",
+    "prompt": "Chronic pain yoga 35 minutes, pain relief",
+    "expected_output": {
+      "payload": {
+        "workoutType": "chronic pain yoga",
+        "description": "35 minute chronic pain relief yoga",
+        "durationMinutes": 35,
+        "caloriesBurned": 105,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_891_y1z2a3b4",
+    "prompt": "Low vision fitness 40 minutes, tactile cueing",
+    "expected_output": {
+      "payload": {
+        "workoutType": "low vision fitness",
+        "description": "40 minute tactile cue low vision workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 240,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_892_c5d6e7f8",
+    "prompt": "Vestibular rehab 30 minutes, balance disorder therapy",
+    "expected_output": {
+      "payload": {
+        "workoutType": "vestibular rehab",
+        "description": "30 minute vestibular balance therapy",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_893_g9h0i1j2",
+    "prompt": "Neuropathy exercise 35 minutes, nerve damage adapted",
+    "expected_output": {
+      "payload": {
+        "workoutType": "neuropathy exercise",
+        "description": "35 minute neuropathy adapted workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 175,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_894_k3l4m5n6",
+    "prompt": "Pelvic floor therapy 25 minutes, core recovery",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pelvic floor therapy",
+        "description": "25 minute pelvic floor core recovery",
+        "durationMinutes": 25,
+        "caloriesBurned": 100,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_895_o7p8q9r0",
+    "prompt": "Diastasis recti repair 30 minutes, abdominal separation",
+    "expected_output": {
+      "payload": {
+        "workoutType": "diastasis recti",
+        "description": "30 minute diastasis recti ab repair",
+        "durationMinutes": 30,
+        "caloriesBurned": 120,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_896_s1t2u3v4",
+    "prompt": "Mental health exercise 40 minutes, anxiety and depression",
+    "expected_output": {
+      "payload": {
+        "workoutType": "mental health exercise",
+        "description": "40 minute anxiety depression workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_897_w5x6y7z8",
+    "prompt": "PTSD trauma-informed 35 minutes, safe movement",
+    "expected_output": {
+      "payload": {
+        "workoutType": "trauma-informed exercise",
+        "description": "35 minute PTSD trauma-informed workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 210,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_898_a9b0c1d2",
+    "prompt": "Wheelchair rugby 60 minutes, murderball practice",
+    "expected_output": {
+      "payload": {
+        "workoutType": "wheelchair rugby",
+        "description": "60 minute wheelchair murderball rugby",
+        "durationMinutes": 60,
+        "caloriesBurned": 420,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_899_e3f4g5h6",
+    "prompt": "Para-athletics 50 minutes, paralympic training",
+    "expected_output": {
+      "payload": {
+        "workoutType": "para-athletics",
+        "description": "50 minute paralympic athletics training",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_900_i7j8k9l0",
+    "prompt": "Special Olympics training 45 minutes, adaptive sports",
+    "expected_output": {
+      "payload": {
+        "workoutType": "special olympics",
+        "description": "45 minute special olympics training",
+        "durationMinutes": 45,
+        "caloriesBurned": 315,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_901_m1n2o3p4",
+    "prompt": "Full body workout 75 minutes: squats 3x10 80kg, bench press 3x8 60kg, deadlifts 3x6 100kg, overhead press 3x10 40kg, rows 3x10 50kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "full body strength",
+        "description": "75 minute full body compound lifts",
+        "durationMinutes": 75,
+        "caloriesBurned": 600,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 3, "reps": 10, "weight": 80, "weightUnit": "kg"},
+          {"name": "bench press", "sets": 3, "reps": 8, "weight": 60, "weightUnit": "kg"},
+          {"name": "deadlifts", "sets": 3, "reps": 6, "weight": 100, "weightUnit": "kg"},
+          {"name": "overhead press", "sets": 3, "reps": 10, "weight": 40, "weightUnit": "kg"},
+          {"name": "rows", "sets": 3, "reps": 10, "weight": 50, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_902_q5r6s7t8",
+    "prompt": "Circuit training 50 minutes: burpees 3x15, pushups 3x20, jumping jacks 3x30, mountain climbers 3x25, plank holds 3x60sec",
+    "expected_output": {
+      "payload": {
+        "workoutType": "circuit training",
+        "description": "50 minute bodyweight circuit",
+        "durationMinutes": 50,
+        "caloriesBurned": 500,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "burpees", "sets": 3, "reps": 15},
+          {"name": "pushups", "sets": 3, "reps": 20},
+          {"name": "jumping jacks", "sets": 3, "reps": 30},
+          {"name": "mountain climbers", "sets": 3, "reps": 25},
+          {"name": "plank holds", "sets": 3, "durationMinutes": 1}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_903_u9v0w1x2",
+    "prompt": "Upper body day 60 minutes: bench 4x8 70kg, pull-ups 4x10, dips 3x12, shoulder raises 3x15 15kg, tricep extensions 3x12 20kg, bicep curls 3x12 15kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "upper body strength",
+        "description": "60 minute upper body hypertrophy",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press", "sets": 4, "reps": 8, "weight": 70, "weightUnit": "kg"},
+          {"name": "pull-ups", "sets": 4, "reps": 10},
+          {"name": "dips", "sets": 3, "reps": 12},
+          {"name": "shoulder raises", "sets": 3, "reps": 15, "weight": 15, "weightUnit": "kg"},
+          {"name": "tricep extensions", "sets": 3, "reps": 12, "weight": 20, "weightUnit": "kg"},
+          {"name": "bicep curls", "sets": 3, "reps": 12, "weight": 15, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_904_y3z4a5b6",
+    "prompt": "Lower body session 70 minutes: squats 5x5 90kg, Romanian deadlifts 4x8 70kg, lunges 3x12 per leg 25kg, leg press 4x10 150kg, calf raises 4x15 60kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "lower body strength",
+        "description": "70 minute leg day strength session",
+        "durationMinutes": 70,
+        "caloriesBurned": 560,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 5, "reps": 5, "weight": 90, "weightUnit": "kg"},
+          {"name": "Romanian deadlifts", "sets": 4, "reps": 8, "weight": 70, "weightUnit": "kg"},
+          {"name": "lunges", "sets": 3, "reps": 12, "weight": 25, "weightUnit": "kg"},
+          {"name": "leg press", "sets": 4, "reps": 10, "weight": 150, "weightUnit": "kg"},
+          {"name": "calf raises", "sets": 4, "reps": 15, "weight": 60, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_905_c7d8e9f0",
+    "prompt": "Push day 65 minutes: bench 4x6 80kg, incline press 3x10 60kg, dumbbell flyes 3x12 20kg, overhead press 4x8 45kg, lateral raises 3x15 12kg, tricep dips 3x10",
+    "expected_output": {
+      "payload": {
+        "workoutType": "push day",
+        "description": "65 minute push workout chest shoulders triceps",
+        "durationMinutes": 65,
+        "caloriesBurned": 520,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press", "sets": 4, "reps": 6, "weight": 80, "weightUnit": "kg"},
+          {"name": "incline press", "sets": 3, "reps": 10, "weight": 60, "weightUnit": "kg"},
+          {"name": "dumbbell flyes", "sets": 3, "reps": 12, "weight": 20, "weightUnit": "kg"},
+          {"name": "overhead press", "sets": 4, "reps": 8, "weight": 45, "weightUnit": "kg"},
+          {"name": "lateral raises", "sets": 3, "reps": 15, "weight": 12, "weightUnit": "kg"},
+          {"name": "tricep dips", "sets": 3, "reps": 10}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_906_g1h2i3j4",
+    "prompt": "Pull day 65 minutes: deadlifts 5x3 110kg, pull-ups 4x8, barbell rows 4x10 60kg, lat pulldown 3x12 55kg, face pulls 3x15 20kg, hammer curls 3x12 15kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pull day",
+        "description": "65 minute pull workout back biceps",
+        "durationMinutes": 65,
+        "caloriesBurned": 520,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "deadlifts", "sets": 5, "reps": 3, "weight": 110, "weightUnit": "kg"},
+          {"name": "pull-ups", "sets": 4, "reps": 8},
+          {"name": "barbell rows", "sets": 4, "reps": 10, "weight": 60, "weightUnit": "kg"},
+          {"name": "lat pulldown", "sets": 3, "reps": 12, "weight": 55, "weightUnit": "kg"},
+          {"name": "face pulls", "sets": 3, "reps": 15, "weight": 20, "weightUnit": "kg"},
+          {"name": "hammer curls", "sets": 3, "reps": 12, "weight": 15, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_907_k5l6m7n8",
+    "prompt": "Leg day 80 minutes: back squats 5x5 95kg, front squats 4x8 60kg, leg extensions 4x12 45kg, leg curls 4x12 40kg, Bulgarian split squats 3x10 20kg per leg, seated calf raises 4x20 30kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "leg day",
+        "description": "80 minute comprehensive leg workout",
+        "durationMinutes": 80,
+        "caloriesBurned": 640,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "back squats", "sets": 5, "reps": 5, "weight": 95, "weightUnit": "kg"},
+          {"name": "front squats", "sets": 4, "reps": 8, "weight": 60, "weightUnit": "kg"},
+          {"name": "leg extensions", "sets": 4, "reps": 12, "weight": 45, "weightUnit": "kg"},
+          {"name": "leg curls", "sets": 4, "reps": 12, "weight": 40, "weightUnit": "kg"},
+          {"name": "Bulgarian split squats", "sets": 3, "reps": 10, "weight": 20, "weightUnit": "kg"},
+          {"name": "seated calf raises", "sets": 4, "reps": 20, "weight": 30, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_908_o9p0q1r2",
+    "prompt": "HIIT workout 40 minutes: sprint intervals 10x30sec, kettlebell swings 5x20 24kg, box jumps 5x10, battle ropes 5x30sec, slam balls 5x15 15kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "40 minute high intensity interval training",
+        "durationMinutes": 40,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "sprint intervals", "sets": 10, "durationMinutes": 0.5},
+          {"name": "kettlebell swings", "sets": 5, "reps": 20, "weight": 24, "weightUnit": "kg"},
+          {"name": "box jumps", "sets": 5, "reps": 10},
+          {"name": "battle ropes", "sets": 5, "durationMinutes": 0.5},
+          {"name": "slam balls", "sets": 5, "reps": 15, "weight": 15, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_909_s3t4u5v6",
+    "prompt": "CrossFit WOD 35 minutes: 21-15-9 reps of thrusters 40kg, pull-ups, and burpees for time",
+    "expected_output": {
+      "payload": {
+        "workoutType": "crossfit",
+        "description": "35 minute crossfit 21-15-9 WOD",
+        "durationMinutes": 35,
+        "caloriesBurned": 420,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "thrusters", "reps": 21, "weight": 40, "weightUnit": "kg"},
+          {"name": "pull-ups", "reps": 21},
+          {"name": "burpees", "reps": 21}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_910_w7x8y9z0",
+    "prompt": "Core workout 30 minutes: planks 4x90sec, Russian twists 4x30 10kg, leg raises 4x15, bicycle crunches 4x40, dead bugs 4x20",
+    "expected_output": {
+      "payload": {
+        "workoutType": "core workout",
+        "description": "30 minute ab core circuit",
+        "durationMinutes": 30,
+        "caloriesBurned": 180,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "planks", "sets": 4, "durationMinutes": 1.5},
+          {"name": "Russian twists", "sets": 4, "reps": 30, "weight": 10, "weightUnit": "kg"},
+          {"name": "leg raises", "sets": 4, "reps": 15},
+          {"name": "bicycle crunches", "sets": 4, "reps": 40},
+          {"name": "dead bugs", "sets": 4, "reps": 20}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_911_a1b2c3d4",
+    "prompt": "Chest and triceps 55 minutes: flat bench 4x8 75kg, incline dumbbells 3x10 30kg, cable flyes 3x12 15kg, close-grip bench 3x10 50kg, overhead extensions 3x12 25kg, rope pushdowns 3x15 25kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "chest and triceps",
+        "description": "55 minute chest triceps workout",
+        "durationMinutes": 55,
+        "caloriesBurned": 440,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "flat bench", "sets": 4, "reps": 8, "weight": 75, "weightUnit": "kg"},
+          {"name": "incline dumbbells", "sets": 3, "reps": 10, "weight": 30, "weightUnit": "kg"},
+          {"name": "cable flyes", "sets": 3, "reps": 12, "weight": 15, "weightUnit": "kg"},
+          {"name": "close-grip bench", "sets": 3, "reps": 10, "weight": 50, "weightUnit": "kg"},
+          {"name": "overhead extensions", "sets": 3, "reps": 12, "weight": 25, "weightUnit": "kg"},
+          {"name": "rope pushdowns", "sets": 3, "reps": 15, "weight": 25, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_912_e5f6g7h8",
+    "prompt": "Back and biceps 60 minutes: deadlifts 4x6 105kg, wide-grip pulldowns 4x10 50kg, cable rows 4x12 55kg, T-bar rows 3x10 40kg, barbell curls 4x10 25kg, preacher curls 3x12 15kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "back and biceps",
+        "description": "60 minute back biceps workout",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "deadlifts", "sets": 4, "reps": 6, "weight": 105, "weightUnit": "kg"},
+          {"name": "wide-grip pulldowns", "sets": 4, "reps": 10, "weight": 50, "weightUnit": "kg"},
+          {"name": "cable rows", "sets": 4, "reps": 12, "weight": 55, "weightUnit": "kg"},
+          {"name": "T-bar rows", "sets": 3, "reps": 10, "weight": 40, "weightUnit": "kg"},
+          {"name": "barbell curls", "sets": 4, "reps": 10, "weight": 25, "weightUnit": "kg"},
+          {"name": "preacher curls", "sets": 3, "reps": 12, "weight": 15, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_913_i9j0k1l2",
+    "prompt": "Shoulders and abs 50 minutes: military press 4x8 50kg, Arnold press 3x10 22kg, lateral raises 4x15 12kg, rear delt flyes 3x15 10kg, abs circuit 3 rounds",
+    "expected_output": {
+      "payload": {
+        "workoutType": "shoulders and abs",
+        "description": "50 minute shoulders and core",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "military press", "sets": 4, "reps": 8, "weight": 50, "weightUnit": "kg"},
+          {"name": "Arnold press", "sets": 3, "reps": 10, "weight": 22, "weightUnit": "kg"},
+          {"name": "lateral raises", "sets": 4, "reps": 15, "weight": 12, "weightUnit": "kg"},
+          {"name": "rear delt flyes", "sets": 3, "reps": 15, "weight": 10, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_914_m3n4o5p6",
+    "prompt": "Full body calisthenics 45 minutes: pull-ups 5x10, dips 5x12, pistol squats 4x8 per leg, handstand pushups 4x8, L-sits 4x30sec",
+    "expected_output": {
+      "payload": {
+        "workoutType": "calisthenics",
+        "description": "45 minute full body calisthenics",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "pull-ups", "sets": 5, "reps": 10},
+          {"name": "dips", "sets": 5, "reps": 12},
+          {"name": "pistol squats", "sets": 4, "reps": 8},
+          {"name": "handstand pushups", "sets": 4, "reps": 8},
+          {"name": "L-sits", "sets": 4, "durationMinutes": 0.5}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_915_q7r8s9t0",
+    "prompt": "Olympic lifting 60 minutes: clean and jerk 6x3 70kg, snatch 6x2 55kg, front squats 4x5 80kg, overhead squats 3x8 50kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "olympic weightlifting",
+        "description": "60 minute olympic lifting session",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "clean and jerk", "sets": 6, "reps": 3, "weight": 70, "weightUnit": "kg"},
+          {"name": "snatch", "sets": 6, "reps": 2, "weight": 55, "weightUnit": "kg"},
+          {"name": "front squats", "sets": 4, "reps": 5, "weight": 80, "weightUnit": "kg"},
+          {"name": "overhead squats", "sets": 3, "reps": 8, "weight": 50, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_916_u1v2w3x4",
+    "prompt": "Powerlifting session 90 minutes: squats 8x3 120kg, bench 8x3 90kg, deadlifts 8x2 140kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "powerlifting",
+        "description": "90 minute powerlifting big 3 session",
+        "durationMinutes": 90,
+        "caloriesBurned": 540,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 8, "reps": 3, "weight": 120, "weightUnit": "kg"},
+          {"name": "bench press", "sets": 8, "reps": 3, "weight": 90, "weightUnit": "kg"},
+          {"name": "deadlifts", "sets": 8, "reps": 2, "weight": 140, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_917_y5z6a7b8",
+    "prompt": "Kettlebell complex 40 minutes: swings 5x20 24kg, goblet squats 4x15 24kg, Turkish get-ups 4x5 16kg per side, kettlebell presses 4x10 16kg, rows 4x12 20kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "kettlebell workout",
+        "description": "40 minute kettlebell complex",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "kettlebell swings", "sets": 5, "reps": 20, "weight": 24, "weightUnit": "kg"},
+          {"name": "goblet squats", "sets": 4, "reps": 15, "weight": 24, "weightUnit": "kg"},
+          {"name": "Turkish get-ups", "sets": 4, "reps": 5, "weight": 16, "weightUnit": "kg"},
+          {"name": "kettlebell presses", "sets": 4, "reps": 10, "weight": 16, "weightUnit": "kg"},
+          {"name": "kettlebell rows", "sets": 4, "reps": 12, "weight": 20, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_918_c9d0e1f2",
+    "prompt": "Strongman training 75 minutes: tire flips 5x8, farmer's walks 5x50m 40kg per hand, sled pushes 6x30m 100kg, log press 5x5 60kg, atlas stone lifts 4x5 80kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "strongman",
+        "description": "75 minute strongman event training",
+        "durationMinutes": 75,
+        "caloriesBurned": 750,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "tire flips", "sets": 5, "reps": 8},
+          {"name": "farmer's walks", "sets": 5, "weight": 40, "weightUnit": "kg"},
+          {"name": "sled pushes", "sets": 6, "weight": 100, "weightUnit": "kg"},
+          {"name": "log press", "sets": 5, "reps": 5, "weight": 60, "weightUnit": "kg"},
+          {"name": "atlas stone lifts", "sets": 4, "reps": 5, "weight": 80, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_919_g3h4i5j6",
+    "prompt": "Tabata workout 25 minutes: 8 rounds each of squats, pushups, jumping lunges, mountain climbers, burpees - 20 seconds work 10 seconds rest",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tabata",
+        "description": "25 minute tabata HIIT intervals",
+        "durationMinutes": 25,
+        "caloriesBurned": 300,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 8},
+          {"name": "pushups", "sets": 8},
+          {"name": "jumping lunges", "sets": 8},
+          {"name": "mountain climbers", "sets": 8},
+          {"name": "burpees", "sets": 8}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_920_k7l8m9n0",
+    "prompt": "Bodyweight pyramid 35 minutes: 1-10-1 reps of pullups, pushups, squats, dips, and jump squats",
+    "expected_output": {
+      "payload": {
+        "workoutType": "bodyweight pyramid",
+        "description": "35 minute calisthenics pyramid workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 350,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "pullups"},
+          {"name": "pushups"},
+          {"name": "squats"},
+          {"name": "dips"},
+          {"name": "jump squats"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_921_o1p2q3r4",
+    "prompt": "Dumbbell only workout 55 minutes: goblet squats 4x12 25kg, Romanian deadlifts 4x10 20kg per hand, chest press 4x10 25kg, rows 4x12 22kg, shoulder press 4x10 18kg, curls 3x12 12kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "dumbbell workout",
+        "description": "55 minute full body dumbbell session",
+        "durationMinutes": 55,
+        "caloriesBurned": 440,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "goblet squats", "sets": 4, "reps": 12, "weight": 25, "weightUnit": "kg"},
+          {"name": "Romanian deadlifts", "sets": 4, "reps": 10, "weight": 20, "weightUnit": "kg"},
+          {"name": "chest press", "sets": 4, "reps": 10, "weight": 25, "weightUnit": "kg"},
+          {"name": "dumbbell rows", "sets": 4, "reps": 12, "weight": 22, "weightUnit": "kg"},
+          {"name": "shoulder press", "sets": 4, "reps": 10, "weight": 18, "weightUnit": "kg"},
+          {"name": "bicep curls", "sets": 3, "reps": 12, "weight": 12, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_922_s5t6u7v8",
+    "prompt": "Superset workout 50 minutes: bench + rows 4x10, squats + leg curls 4x12, shoulder press + pulldowns 3x12, dips + curls 3x10",
+    "expected_output": {
+      "payload": {
+        "workoutType": "superset training",
+        "description": "50 minute antagonistic superset workout",
+        "durationMinutes": 50,
+        "caloriesBurned": 450,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press", "sets": 4, "reps": 10},
+          {"name": "barbell rows", "sets": 4, "reps": 10},
+          {"name": "squats", "sets": 4, "reps": 12},
+          {"name": "leg curls", "sets": 4, "reps": 12},
+          {"name": "shoulder press", "sets": 3, "reps": 12},
+          {"name": "lat pulldowns", "sets": 3, "reps": 12},
+          {"name": "dips", "sets": 3, "reps": 10},
+          {"name": "curls", "sets": 3, "reps": 10}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_923_w9x0y1z2",
+    "prompt": "Giant set workout 45 minutes: 4 rounds of squats, pushups, rows, lunges, overhead press - no rest between exercises",
+    "expected_output": {
+      "payload": {
+        "workoutType": "giant set",
+        "description": "45 minute giant set circuit",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 4},
+          {"name": "pushups", "sets": 4},
+          {"name": "rows", "sets": 4},
+          {"name": "lunges", "sets": 4},
+          {"name": "overhead press", "sets": 4}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_924_a3b4c5d6",
+    "prompt": "Drop set workout 40 minutes: bench 3 drops from 70kg to 40kg, squats 3 drops from 90kg to 50kg, lat pulldown 3 drops from 60kg to 30kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "drop sets",
+        "description": "40 minute drop set intensity workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press drop sets", "sets": 3, "weight": 70, "weightUnit": "kg"},
+          {"name": "squat drop sets", "sets": 3, "weight": 90, "weightUnit": "kg"},
+          {"name": "lat pulldown drop sets", "sets": 3, "weight": 60, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_925_e7f8g9h0",
+    "prompt": "Rest-pause training 45 minutes: bench 4 sets rest-pause 75kg, squats 4 sets rest-pause 85kg, rows 4 sets rest-pause 65kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rest-pause training",
+        "description": "45 minute rest-pause intensity method",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press rest-pause", "sets": 4, "weight": 75, "weightUnit": "kg"},
+          {"name": "squat rest-pause", "sets": 4, "weight": 85, "weightUnit": "kg"},
+          {"name": "row rest-pause", "sets": 4, "weight": 65, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_926_i1j2k3l4",
+    "prompt": "21s workout 35 minutes: bicep curls 21s 15kg, leg extensions 21s 40kg, tricep extensions 21s 20kg, leg curls 21s 35kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "21s method",
+        "description": "35 minute 21s partial rep workout",
+        "durationMinutes": 35,
+        "caloriesBurned": 280,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "bicep curls 21s", "sets": 3, "weight": 15, "weightUnit": "kg"},
+          {"name": "leg extensions 21s", "sets": 3, "weight": 40, "weightUnit": "kg"},
+          {"name": "tricep extensions 21s", "sets": 3, "weight": 20, "weightUnit": "kg"},
+          {"name": "leg curls 21s", "sets": 3, "weight": 35, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_927_m5n6o7p8",
+    "prompt": "Tempo training 50 minutes: squats 4x6 4-0-1-0 tempo 80kg, bench 4x6 3-0-1-0 70kg, rows 4x8 3-1-1-0 55kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "tempo training",
+        "description": "50 minute controlled tempo workout",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "tempo squats", "sets": 4, "reps": 6, "weight": 80, "weightUnit": "kg"},
+          {"name": "tempo bench", "sets": 4, "reps": 6, "weight": 70, "weightUnit": "kg"},
+          {"name": "tempo rows", "sets": 4, "reps": 8, "weight": 55, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_928_q9r0s1t2",
+    "prompt": "Contrast loading 55 minutes: heavy squats 5x3 100kg followed by jump squats 5x5, heavy bench 5x3 80kg followed by plyometric pushups 5x8",
+    "expected_output": {
+      "payload": {
+        "workoutType": "contrast loading",
+        "description": "55 minute contrast heavy to explosive",
+        "durationMinutes": 55,
+        "caloriesBurned": 550,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "heavy squats", "sets": 5, "reps": 3, "weight": 100, "weightUnit": "kg"},
+          {"name": "jump squats", "sets": 5, "reps": 5},
+          {"name": "heavy bench", "sets": 5, "reps": 3, "weight": 80, "weightUnit": "kg"},
+          {"name": "plyometric pushups", "sets": 5, "reps": 8}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_929_u3v4w5x6",
+    "prompt": "Cluster sets 60 minutes: squats 6 clusters of 3 reps 95kg, bench 6 clusters of 3 reps 75kg, deadlifts 5 clusters of 2 reps 110kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cluster sets",
+        "description": "60 minute cluster set strength workout",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squat clusters", "sets": 6, "reps": 3, "weight": 95, "weightUnit": "kg"},
+          {"name": "bench clusters", "sets": 6, "reps": 3, "weight": 75, "weightUnit": "kg"},
+          {"name": "deadlift clusters", "sets": 5, "reps": 2, "weight": 110, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_930_y7z8a9b0",
+    "prompt": "Wave loading 55 minutes: squats 3-2-1, 3-2-1, 3-2-1 at 85/90/95kg, bench 3-2-1, 3-2-1 at 70/75/80kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "wave loading",
+        "description": "55 minute wave loading undulating intensity",
+        "durationMinutes": 55,
+        "caloriesBurned": 440,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "wave loading squats", "weight": 95, "weightUnit": "kg"},
+          {"name": "wave loading bench", "weight": 80, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_931_c1d2e3f4",
+    "prompt": "German Volume Training 70 minutes: squats 10x10 60kg, bench 10x10 50kg, rows 10x10 45kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "german volume training",
+        "description": "70 minute GVT 10x10 workout",
+        "durationMinutes": 70,
+        "caloriesBurned": 560,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 10, "reps": 10, "weight": 60, "weightUnit": "kg"},
+          {"name": "bench press", "sets": 10, "reps": 10, "weight": 50, "weightUnit": "kg"},
+          {"name": "barbell rows", "sets": 10, "reps": 10, "weight": 45, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_932_g5h6i7j8",
+    "prompt": "FST-7 workout 50 minutes: chest workout ending with 7 sets of cable flyes 15 reps minimal rest",
+    "expected_output": {
+      "payload": {
+        "workoutType": "FST-7",
+        "description": "50 minute FST-7 chest workout",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "bench press", "sets": 4, "reps": 10},
+          {"name": "incline press", "sets": 3, "reps": 12},
+          {"name": "cable flyes FST-7", "sets": 7, "reps": 15}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_933_k9l0m1n2",
+    "prompt": "Blood flow restriction 40 minutes: BFR squats 4x25 30kg, BFR leg extensions 3x25 20kg, BFR curls 4x25 8kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "blood flow restriction",
+        "description": "40 minute BFR occlusion training",
+        "durationMinutes": 40,
+        "caloriesBurned": 320,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "BFR squats", "sets": 4, "reps": 25, "weight": 30, "weightUnit": "kg"},
+          {"name": "BFR leg extensions", "sets": 3, "reps": 25, "weight": 20, "weightUnit": "kg"},
+          {"name": "BFR curls", "sets": 4, "reps": 25, "weight": 8, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_934_o3p4q5r6",
+    "prompt": "EDT workout 40 minutes: PR Zone 1 - pullups and dips 15 minutes, PR Zone 2 - squats and pushups 15 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "EDT",
+        "description": "40 minute escalating density training",
+        "durationMinutes": 40,
+        "caloriesBurned": 400,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "pullups", "durationMinutes": 15},
+          {"name": "dips", "durationMinutes": 15},
+          {"name": "squats", "durationMinutes": 15},
+          {"name": "pushups", "durationMinutes": 15}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_935_s7t8u9v0",
+    "prompt": "Mechanical advantage sets 45 minutes: squats - full range then partials then quarter reps 3 sets 80kg, bench - wide then normal then close grip 3 sets 65kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "mechanical advantage",
+        "description": "45 minute mechanical advantage drop sets",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "mechanical advantage squats", "sets": 3, "weight": 80, "weightUnit": "kg"},
+          {"name": "mechanical advantage bench", "sets": 3, "weight": 65, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_936_w1x2y3z4",
+    "prompt": "5x5 strength program 60 minutes: squats 5x5 90kg, bench 5x5 75kg, rows 5x5 65kg, overhead press 5x5 45kg, deadlifts 5x5 100kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "5x5 program",
+        "description": "60 minute 5x5 strength workout",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 5, "reps": 5, "weight": 90, "weightUnit": "kg"},
+          {"name": "bench press", "sets": 5, "reps": 5, "weight": 75, "weightUnit": "kg"},
+          {"name": "barbell rows", "sets": 5, "reps": 5, "weight": 65, "weightUnit": "kg"},
+          {"name": "overhead press", "sets": 5, "reps": 5, "weight": 45, "weightUnit": "kg"},
+          {"name": "deadlifts", "sets": 5, "reps": 5, "weight": 100, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_937_a5b6c7d8",
+    "prompt": "Pyramid sets 50 minutes: bench 12-10-8-6-8-10-12 reps ascending then descending weight from 50kg to 75kg back to 50kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pyramid training",
+        "description": "50 minute pyramid up and down",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "bench press pyramid", "sets": 7, "weight": 75, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_938_e9f0g1h2",
+    "prompt": "Reverse pyramid 45 minutes: deadlifts 2-4-6-8 reps from 120kg down to 90kg, squats 4-6-8-10 from 95kg to 70kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "reverse pyramid",
+        "description": "45 minute reverse pyramid training",
+        "durationMinutes": 45,
+        "caloriesBurned": 450,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "deadlifts reverse pyramid", "sets": 4, "weight": 120, "weightUnit": "kg"},
+          {"name": "squats reverse pyramid", "sets": 4, "weight": 95, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_939_i3j4k5l6",
+    "prompt": "Pre-exhaust training 55 minutes: leg extensions then squats, flyes then bench, pulldowns then rows",
+    "expected_output": {
+      "payload": {
+        "workoutType": "pre-exhaust",
+        "description": "55 minute pre-exhaust isolation to compound",
+        "durationMinutes": 55,
+        "caloriesBurned": 440,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "leg extensions", "sets": 3, "reps": 15},
+          {"name": "squats", "sets": 4, "reps": 8},
+          {"name": "flyes", "sets": 3, "reps": 12},
+          {"name": "bench press", "sets": 4, "reps": 8},
+          {"name": "lat pulldowns", "sets": 3, "reps": 12},
+          {"name": "rows", "sets": 4, "reps": 10}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_940_m7n8o9p0",
+    "prompt": "Post-exhaust training 50 minutes: squats then leg extensions, bench then flyes, rows then pulldowns",
+    "expected_output": {
+      "payload": {
+        "workoutType": "post-exhaust",
+        "description": "50 minute post-exhaust compound to isolation",
+        "durationMinutes": 50,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "squats", "sets": 4, "reps": 8},
+          {"name": "leg extensions", "sets": 3, "reps": 15},
+          {"name": "bench press", "sets": 4, "reps": 8},
+          {"name": "flyes", "sets": 3, "reps": 12},
+          {"name": "rows", "sets": 4, "reps": 10},
+          {"name": "lat pulldowns", "sets": 3, "reps": 12}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_941_q1r2s3t4",
+    "prompt": "100 rep challenge 60 minutes: 100 squats, 100 pushups, 100 situps, 100 jumping jacks completed as fast as possible",
+    "expected_output": {
+      "payload": {
+        "workoutType": "100 rep challenge",
+        "description": "60 minute 100 rep challenge workout",
+        "durationMinutes": 60,
+        "caloriesBurned": 600,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "reps": 100},
+          {"name": "pushups", "reps": 100},
+          {"name": "situps", "reps": 100},
+          {"name": "jumping jacks", "reps": 100}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_942_u5v6w7x8",
+    "prompt": "AMRAP 30 minutes: as many rounds as possible of 10 pushups, 15 squats, 20 situps",
+    "expected_output": {
+      "payload": {
+        "workoutType": "AMRAP",
+        "description": "30 minute AMRAP bodyweight circuit",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "pushups", "reps": 10},
+          {"name": "squats", "reps": 15},
+          {"name": "situps", "reps": 20}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_943_y9z0a1b2",
+    "prompt": "EMOM 40 minutes: minute 1 - 10 burpees, minute 2 - 15 kettlebell swings 24kg, minute 3 - 20 box jumps, minute 4 - rest, repeat",
+    "expected_output": {
+      "payload": {
+        "workoutType": "EMOM",
+        "description": "40 minute EMOM every minute workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "burpees", "reps": 10},
+          {"name": "kettlebell swings", "reps": 15, "weight": 24, "weightUnit": "kg"},
+          {"name": "box jumps", "reps": 20}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_944_c3d4e5f6",
+    "prompt": "For time workout 35 minutes: 50-40-30-20-10 reps of wall balls 9kg, pullups, and situps",
+    "expected_output": {
+      "payload": {
+        "workoutType": "for time",
+        "description": "35 minute descending rep for time",
+        "durationMinutes": 35,
+        "caloriesBurned": 420,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "wall balls", "weight": 9, "weightUnit": "kg"},
+          {"name": "pullups"},
+          {"name": "situps"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_945_g7h8i9j0",
+    "prompt": "Chipper workout 45 minutes: 100 squats, 75 pushups, 50 pullups, 25 burpees - chip away until done",
+    "expected_output": {
+      "payload": {
+        "workoutType": "chipper",
+        "description": "45 minute chipper chip away workout",
+        "durationMinutes": 45,
+        "caloriesBurned": 540,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "reps": 100},
+          {"name": "pushups", "reps": 75},
+          {"name": "pullups", "reps": 50},
+          {"name": "burpees", "reps": 25}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_946_k1l2m3n4",
+    "prompt": "Ladder workout 30 minutes: 1-10 ladder of thrusters 30kg and pullups",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ladder workout",
+        "description": "30 minute ascending rep ladder",
+        "durationMinutes": 30,
+        "caloriesBurned": 360,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "thrusters", "weight": 30, "weightUnit": "kg"},
+          {"name": "pullups"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_947_o5p6q7r8",
+    "prompt": "Death by workout 25 minutes: minute 1 do 1 burpee, minute 2 do 2 burpees, continue until failure",
+    "expected_output": {
+      "payload": {
+        "workoutType": "death by",
+        "description": "25 minute death by burpees",
+        "durationMinutes": 25,
+        "caloriesBurned": 300,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "burpees"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_948_s9t0u1v2",
+    "prompt": "Buy-in buy-out 40 minutes: 50 burpees buy-in, then 5 rounds of 10 squats/10 pushups/10 situps, then 50 burpees buy-out",
+    "expected_output": {
+      "payload": {
+        "workoutType": "buy-in buy-out",
+        "description": "40 minute buy-in buy-out workout",
+        "durationMinutes": 40,
+        "caloriesBurned": 480,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "burpees buy-in", "reps": 50},
+          {"name": "squats", "sets": 5, "reps": 10},
+          {"name": "pushups", "sets": 5, "reps": 10},
+          {"name": "situps", "sets": 5, "reps": 10},
+          {"name": "burpees buy-out", "reps": 50}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_949_w3x4y5z6",
+    "prompt": "Hero WOD Murph 55 minutes: 1 mile run, 100 pullups, 200 pushups, 300 squats, 1 mile run with 20lb vest",
+    "expected_output": {
+      "payload": {
+        "workoutType": "hero WOD",
+        "description": "55 minute Murph hero workout with vest",
+        "durationMinutes": 55,
+        "caloriesBurned": 825,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "run", "durationMinutes": 8},
+          {"name": "pullups", "reps": 100},
+          {"name": "pushups", "reps": 200},
+          {"name": "squats", "reps": 300},
+          {"name": "run", "durationMinutes": 8}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_950_a7b8c9d0",
+    "prompt": "Crossfit Fran 12 minutes: 21-15-9 thrusters 43kg and pullups for time",
+    "expected_output": {
+      "payload": {
+        "workoutType": "crossfit",
+        "description": "12 minute Fran benchmark WOD",
+        "durationMinutes": 12,
+        "caloriesBurned": 180,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "thrusters", "reps": 21, "weight": 43, "weightUnit": "kg"},
+          {"name": "pullups", "reps": 21}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_951_e1f2g3h4",
+    "prompt": "workout",
+    "expected_output": {
+      "error": "What type of workout?"
+    }
+  },
+  {
+    "id": "rag_entry_952_i5j6k7l8",
+    "prompt": "exercised",
+    "expected_output": {
+      "error": "What type of exercise or activity?"
+    }
+  },
+  {
+    "id": "rag_entry_953_m9n0o1p2",
+    "prompt": "trained",
+    "expected_output": {
+      "error": "What type of training did you do?"
+    }
+  },
+  {
+    "id": "rag_entry_954_q3r4s5t6",
+    "prompt": "did sports",
+    "expected_output": {
+      "error": "What sport or activity?"
+    }
+  },
+  {
+    "id": "rag_entry_955_u7v8w9x0",
+    "prompt": "went to the gym",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gym session",
+        "description": "gym workout session",
+        "durationMinutes": 60,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_956_y1z2a3b4",
+    "prompt": "ran",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "running session estimated",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_957_c5d6e7f8",
+    "prompt": "lifted",
+    "expected_output": {
+      "payload": {
+        "workoutType": "weightlifting",
+        "description": "weightlifting session estimated",
+        "durationMinutes": 45,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_958_g9h0i1j2",
+    "prompt": "swam",
+    "expected_output": {
+      "payload": {
+        "workoutType": "swimming",
+        "description": "swimming session estimated",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_959_k3l4m5n6",
+    "prompt": "biked",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cycling",
+        "description": "cycling session estimated",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_960_o7p8q9r0",
+    "prompt": "walked",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "walking session estimated",
+        "durationMinutes": 40,
+        "caloriesBurned": 160,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_961_s1t2u3v4",
+    "prompt": "played ball",
+    "expected_output": {
+      "payload": {
+        "workoutType": "ball game",
+        "description": "ball game activity estimated",
+        "durationMinutes": 60,
+        "caloriesBurned": 420,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_962_w5x6y7z8",
+    "prompt": "did pushups",
+    "expected_output": {
+      "payload": {
+        "workoutType": "calisthenics",
+        "description": "pushup workout estimated",
+        "durationMinutes": 15,
+        "caloriesBurned": 90,
+        "intensityLevel": "moderate",
+        "exercises": [
+          {"name": "pushups", "sets": 3, "reps": 10}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_963_a9b0c1d2",
+    "prompt": "quick run before work",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "quick morning run before work",
+        "durationMinutes": 20,
+        "caloriesBurned": 200,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_964_e3f4g5h6",
+    "prompt": "ate a sandwich",
+    "expected_output": {
+      "error": "This is not a workout or exercise activity"
+    }
+  },
+  {
+    "id": "rag_entry_965_i7j8k9l0",
+    "prompt": "watched TV",
+    "expected_output": {
+      "error": "This is not a fitness activity"
+    }
+  },
+  {
+    "id": "rag_entry_966_m1n2o3p4",
+    "prompt": "slept 8 hours",
+    "expected_output": {
+      "error": "This is not an exercise activity"
+    }
+  },
+  {
+    "id": "rag_entry_967_q5r6s7t8",
+    "prompt": "drove to the store",
+    "expected_output": {
+      "error": "This is not a physical workout"
+    }
+  },
+  {
+    "id": "rag_entry_968_u9v0w1x2",
+    "prompt": "read a book",
+    "expected_output": {
+      "error": "This is not a workout activity"
+    }
+  },
+  {
+    "id": "rag_entry_969_y3z4a5b6",
+    "prompt": "1000 minutes running",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "1000 minute ultra long run",
+        "durationMinutes": 1000,
+        "caloriesBurned": 10000,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_970_c7d8e9f0",
+    "prompt": "squats with 500kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "squats",
+        "description": "heavy squats 500kg estimated",
+        "durationMinutes": 30,
+        "caloriesBurned": 240,
+        "intensityLevel": "high",
+        "exercises": [
+          {"name": "squats", "sets": 3, "reps": 3, "weight": 500, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_971_g1h2i3j4",
+    "prompt": "ran 1 minute burned 10000 calories",
+    "expected_output": {
+      "payload": {
+        "workoutType": "running",
+        "description": "1 minute run",
+        "durationMinutes": 1,
+        "caloriesBurned": 10,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_972_k5l6m7n8",
+    "prompt": "bench press 0kg",
+    "expected_output": {
+      "payload": {
+        "workoutType": "bench press",
+        "description": "bench press bodyweight only",
+        "durationMinutes": 20,
+        "caloriesBurned": 120,
+        "intensityLevel": "low",
+        "exercises": [
+          {"name": "bench press", "sets": 3, "reps": 10, "weight": 0, "weightUnit": "kg"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "rag_entry_973_o9p0q1r2",
+    "prompt": "yoga 0 minutes",
+    "expected_output": {
+      "error": "Duration must be greater than 0"
+    }
+  },
+  {
+    "id": "rag_entry_974_s3t4u5v6",
+    "prompt": "running negative 30 minutes",
+    "expected_output": {
+      "error": "Duration cannot be negative"
+    }
+  },
+  {
+    "id": "rag_entry_975_w7x8y9z0",
+    "prompt": "burned -500 calories",
+    "expected_output": {
+      "error": "Calories burned cannot be negative"
+    }
+  },
+  {
+    "id": "rag_entry_976_a1b2c3d4",
+    "prompt": "squats -5 reps",
+    "expected_output": {
+      "error": "Reps cannot be negative"
+    }
+  },
+  {
+    "id": "rag_entry_977_e5f6g7h8",
+    "prompt": "bench press -50kg",
+    "expected_output": {
+      "error": "Weight cannot be negative"
+    }
+  },
+  {
+    "id": "rag_entry_978_i9j0k1l2",
+    "prompt": "felt great after my workout!",
+    "expected_output": {
+      "error": "What workout did you do?"
+    }
+  },
+  {
+    "id": "rag_entry_979_m3n4o5p6",
+    "prompt": "planning to workout tomorrow",
+    "expected_output": {
+      "error": "Log your workout after you complete it"
+    }
+  },
+  {
+    "id": "rag_entry_980_q7r8s9t0",
+    "prompt": "skipped the gym today",
+    "expected_output": {
+      "error": "No workout to log"
+    }
+  },
+  {
+    "id": "rag_entry_981_u1v2w3x4",
+    "prompt": "too tired to exercise",
+    "expected_output": {
+      "error": "No workout activity to log"
+    }
+  },
+  {
+    "id": "rag_entry_982_y5z6a7b8",
+    "prompt": "will go running later",
+    "expected_output": {
+      "error": "Log your workout after completion"
+    }
+  },
+  {
+    "id": "rag_entry_983_c9d0e1f2",
+    "prompt": "rest day",
+    "expected_output": {
+      "payload": {
+        "workoutType": "rest day",
+        "description": "rest and recovery day",
+        "durationMinutes": 0,
+        "caloriesBurned": 0,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_984_g3h4i5j6",
+    "prompt": "active rest day light walk 20 minutes",
+    "expected_output": {
+      "payload": {
+        "workoutType": "active rest",
+        "description": "20 minute light walk active rest",
+        "durationMinutes": 20,
+        "caloriesBurned": 80,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_985_k7l8m9n0",
+    "prompt": "mix of cardio and weights about an hour",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio and strength",
+        "description": "60 minute mixed cardio and weights",
+        "durationMinutes": 60,
+        "caloriesBurned": 480,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_986_o1p2q3r4",
+    "prompt": "some stuff at the gym",
+    "expected_output": {
+      "payload": {
+        "workoutType": "gym session",
+        "description": "gym workout various exercises",
+        "durationMinutes": 60,
+        "caloriesBurned": 400,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_987_s5t6u7v8",
+    "prompt": "hit the weights",
+    "expected_output": {
+      "payload": {
+        "workoutType": "weightlifting",
+        "description": "weightlifting session estimated",
+        "durationMinutes": 45,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_988_w9x0y1z2",
+    "prompt": "got my steps in",
+    "expected_output": {
+      "payload": {
+        "workoutType": "walking",
+        "description": "walking to get steps",
+        "durationMinutes": 45,
+        "caloriesBurned": 180,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_989_a3b4c5d6",
+    "prompt": "moved my body",
+    "expected_output": {
+      "payload": {
+        "workoutType": "general activity",
+        "description": "general movement and activity",
+        "durationMinutes": 30,
+        "caloriesBurned": 150,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_990_e7f8g9h0",
+    "prompt": "did a thing",
+    "expected_output": {
+      "error": "What activity or workout?"
+    }
+  },
+  {
+    "id": "rag_entry_991_i1j2k3l4",
+    "prompt": "crushed it today",
+    "expected_output": {
+      "error": "What workout did you crush?"
+    }
+  },
+  {
+    "id": "rag_entry_992_m5n6o7p8",
+    "prompt": "feeling the burn",
+    "expected_output": {
+      "error": "What exercise caused the burn?"
+    }
+  },
+  {
+    "id": "rag_entry_993_q9r0s1t2",
+    "prompt": "sweating",
+    "expected_output": {
+      "error": "What workout made you sweat?"
+    }
+  },
+  {
+    "id": "rag_entry_994_u3v4w5x6",
+    "prompt": "cardio",
+    "expected_output": {
+      "payload": {
+        "workoutType": "cardio",
+        "description": "cardio workout estimated",
+        "durationMinutes": 30,
+        "caloriesBurned": 300,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_995_y7z8a9b0",
+    "prompt": "HIIT",
+    "expected_output": {
+      "payload": {
+        "workoutType": "HIIT",
+        "description": "HIIT workout estimated",
+        "durationMinutes": 20,
+        "caloriesBurned": 240,
+        "intensityLevel": "high"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_996_c1d2e3f4",
+    "prompt": "yoga",
+    "expected_output": {
+      "payload": {
+        "workoutType": "yoga",
+        "description": "yoga session estimated",
+        "durationMinutes": 45,
+        "caloriesBurned": 135,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_997_g5h6i7j8",
+    "prompt": "stretching",
+    "expected_output": {
+      "payload": {
+        "workoutType": "stretching",
+        "description": "stretching session estimated",
+        "durationMinutes": 15,
+        "caloriesBurned": 30,
+        "intensityLevel": "low"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_998_k9l0m1n2",
+    "prompt": "abs",
+    "expected_output": {
+      "payload": {
+        "workoutType": "abs workout",
+        "description": "ab workout estimated",
+        "durationMinutes": 20,
+        "caloriesBurned": 100,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_999_o3p4q5r6",
+    "prompt": "legs",
+    "expected_output": {
+      "payload": {
+        "workoutType": "leg workout",
+        "description": "leg workout estimated",
+        "durationMinutes": 45,
+        "caloriesBurned": 360,
+        "intensityLevel": "moderate"
+      }
+    }
+  },
+  {
+    "id": "rag_entry_1000_s7t8u9v0",
+    "prompt": "arms",
+    "expected_output": {
+      "payload": {
+        "workoutType": "arms workout",
+        "description": "arm workout estimated",
+        "durationMinutes": 30,
+        "caloriesBurned": 180,
+        "intensityLevel": "moderate"
+      }
+    }
   }
 ]
 

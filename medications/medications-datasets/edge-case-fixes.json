@@ -1,0 +1,227 @@
+[
+  {
+    "id": "edge_keep_001",
+    "prompt": "Keep ibuprofen as needed for pain",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "edge_keep_002",
+    "prompt": "Keep 200mg ibuprofen as needed for pain",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 200,
+        "unit": "mg",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "edge_keep_003",
+    "prompt": "Have EpiPen on hand for emergencies",
+    "expected_output": {
+      "payload": {
+        "name": "EpiPen",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for emergencies"
+      }
+    }
+  },
+  {
+    "id": "edge_keep_004",
+    "prompt": "Keep EpiPen on hand for emergencies",
+    "expected_output": {
+      "payload": {
+        "name": "EpiPen",
+        "dosage": 1,
+        "unit": "injection",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for emergencies"
+      }
+    }
+  },
+  {
+    "id": "edge_keep_005",
+    "prompt": "Carry naloxone in case of emergency",
+    "expected_output": {
+      "payload": {
+        "name": "naloxone",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "in case of emergency"
+      }
+    }
+  },
+  {
+    "id": "edge_short_001",
+    "prompt": "I took aspirin",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "edge_short_002",
+    "prompt": "Had ibuprofen",
+    "expected_output": {
+      "payload": {
+        "name": "Ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "edge_short_003",
+    "prompt": "Took metformin",
+    "expected_output": {
+      "payload": {
+        "name": "metformin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true
+      }
+    }
+  },
+  {
+    "id": "edge_short_004",
+    "prompt": "Took lisinopril this morning",
+    "expected_output": {
+      "payload": {
+        "name": "lisinopril",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "once",
+        "isReminder": false,
+        "taken": true,
+        "notes": "this morning"
+      }
+    }
+  },
+  {
+    "id": "edge_track_001",
+    "prompt": "Keep track of aspirin as needed for headaches",
+    "expected_output": {
+      "payload": {
+        "name": "Aspirin",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for headaches"
+      }
+    }
+  },
+  {
+    "id": "edge_track_002",
+    "prompt": "Monitor ibuprofen for pain",
+    "expected_output": {
+      "payload": {
+        "name": "ibuprofen",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "as_needed",
+        "isReminder": false,
+        "taken": false,
+        "notes": "for pain"
+      }
+    }
+  },
+  {
+    "id": "edge_weekly_001",
+    "prompt": "Remind iron supplement weekly",
+    "expected_output": {
+      "payload": {
+        "name": "iron supplement",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "edge_weekly_002",
+    "prompt": "Take vitamin B12 every week",
+    "expected_output": {
+      "payload": {
+        "name": "vitamin B12",
+        "dosage": 1,
+        "unit": "tablet",
+        "frequency": "weekly",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false
+      }
+    }
+  },
+  {
+    "id": "edge_days_course_001",
+    "prompt": "Remind me about prednisone 20mg for 5 days",
+    "expected_output": {
+      "payload": {
+        "name": "prednisone",
+        "dosage": 20,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for 5 days"
+      }
+    }
+  },
+  {
+    "id": "edge_days_course_002",
+    "prompt": "Take amoxicillin 500mg for 10 days",
+    "expected_output": {
+      "payload": {
+        "name": "amoxicillin",
+        "dosage": 500,
+        "unit": "mg",
+        "frequency": "daily",
+        "reminderTime": "09:00",
+        "isReminder": true,
+        "taken": false,
+        "notes": "for 10 days"
+      }
+    }
+  }
+]
+

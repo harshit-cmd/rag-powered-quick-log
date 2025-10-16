@@ -6,7 +6,7 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import ragDataset1100WithEmbeddings from "./medications-datasets/rag-dataset-1100-with-embeddings.json" with { type: "json" };
+import ragDataset1115WithEmbeddings from "./medications-datasets/rag-dataset-1115-with-embeddings.json" with { type: "json" };
 import complexTimeDataset from "./medications-datasets/complex-time-dataset.json" with { type: "json" };
 import additionalComplexTimeDataset from "./medications-datasets/additional-complex-time-50.json" with { type: "json" };
 import testDataset from "./medications-datasets/test-dataset.json" with { type: "json" };
@@ -113,12 +113,22 @@ REMINDER:
 • "need to take X every Y" → isReminder=true
 • Past tense only → isReminder=false
 
+TRACKING vs REMINDER:
+• "keep", "have on hand", "carry", "monitor", "keep track" WITHOUT "remind" → isReminder=false
+• "remind", "notify", "alert" → isReminder=true
+
 DAY-OF-WEEK PATTERNS:
 • "every monday" / "every monday and tuesday" / "every mon tue wed" → frequency="weekly" + reminderDays=[1] or [1,2] or [1,2,3]
 • Day mapping: Sunday=0, Monday=1, Tuesday=2, Wednesday=3, Thursday=4, Friday=5, Saturday=6
 • "weekdays" / "monday through friday" / "weeknights" → reminderDays=[1,2,3,4,5]
 • "weekends" / "saturday and sunday" → reminderDays=[6,0]
 • Multiple specific days → ALWAYS use frequency="weekly" + reminderDays array (NOT interval!)
+
+WEEKLY FREQUENCY CLARIFICATION:
+• "weekly" / "every week" WITHOUT specific days → frequency="weekly" (NO reminderDays field)
+• "weekly on Monday" → frequency="weekly" + reminderDays=[1]
+• reminderDays values: 0-6 only (Sun=0, Mon=1, Tue=2, Wed=3, Thu=4, Fri=5, Sat=6), never 7!
+• "for X days" / "X day course" → frequency="daily" (put course duration in notes)
 
 IDENTIFIABLE (accept): aspirin, ibuprofen, vitamin D, melatonin, metformin, lisinopril, Tylenol, Advil, blood pressure medication, birth control, calcium, omega-3, fish oil, magnesium, zinc, probiotic, multivitamin, collagen, EpiPen, etc.
 
@@ -204,7 +214,7 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 function getTop3Samples(queryEmbedding) {
-  const samplesWithSimilarity = ragDataset1100WithEmbeddings.map((sample) => ({
+  const samplesWithSimilarity = ragDataset1115WithEmbeddings.map((sample) => ({
     ...sample,
     similarity: cosineSimilarity(queryEmbedding, sample.embedding),
   }));
