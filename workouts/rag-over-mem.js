@@ -6,7 +6,7 @@ import {
   completion,
 } from "@tetherto/qvac-sdk";
 import { z } from "zod";
-import workoutRagDatasetWithEmbeddings from "./workouts-datasets/workout-rag-dataset-with-embeddings.json" with { type: "json" };
+import workoutRagDatasetWithEmbeddings from "./workouts-datasets/workout-rag-dataset-cleaned-with-embeddings.json" with { type: "json" };
 import workoutTestDataset from "./workouts-datasets/workout-test-dataset.json" with { type: "json" };
 import { extractJSON, writeResultIncrementallyWorkouts, calculateWorkoutPayloadMetrics } from "../utils.js";
 
@@ -47,46 +47,29 @@ function workoutPrompt(schema, top3) {
   }
 
   return `/no_think
-Parse workout queries to JSON.
+Parse workout queries to JSON. Schema: ${JSON.stringify(z.toJSONSchema(schema))}
 
-Schema: ${JSON.stringify(z.toJSONSchema(schema))}
-
-DECISION RULE:
-Mentions specific exercise/activity? → PAYLOAD
-Only vague terms ("exercised"/"worked out") or non-fitness? → ERROR
+⚠️ RULE: Specific activity (run/swim/yoga/bench press/squats) → PAYLOAD | Only vague (gym/cardio/workout/stairs/sports) → ERROR
 
 Examples:
-"Ran 30 min, 300 cal" → {"payload":{"workoutType":"running","description":"30 min run","durationMinutes":30,"caloriesBurned":300,"intensityLevel":"moderate"}}
-"3x10 bench press 50kg" → {"payload":{"workoutType":"strength training","description":"Bench press","durationMinutes":15,"caloriesBurned":90,"exercises":[{"name":"bench press","sets":3,"reps":10,"weight":50,"weightUnit":"kg"}]}}
-"Yoga 45min" → {"payload":{"workoutType":"yoga","description":"Yoga session","durationMinutes":45,"caloriesBurned":135,"intensityLevel":"moderate"}}
-"Swam" → {"payload":{"workoutType":"swimming","description":"Swimming","durationMinutes":25,"caloriesBurned":275,"intensityLevel":"moderate"}}
-"Pushups" → {"payload":{"workoutType":"strength training","description":"Pushups","durationMinutes":10,"caloriesBurned":60,"exercises":[{"name":"pushups","sets":3,"reps":10}]}}
-"Worked out" → {"error":"What type of workout?"}
+"Ran 30min" → {"payload":{"workoutType":"running","description":"30 min run","durationMinutes":30,"caloriesBurned":300,"intensityLevel":"moderate"}}
+"Bench 3x10 50kg" → {"payload":{"workoutType":"strength training","description":"Bench press","durationMinutes":15,"caloriesBurned":90,"exercises":[{"name":"bench press","sets":3,"reps":10,"weight":50,"weightUnit":"kg"}]}}
+"Gym" → {"error":"What workout did you do?"}
 ${ragExamples}
-Use Similar Examples for patterns, follow DECISION RULE for payload vs error.
+Use examples if they follow the RULE.
 
-Calorie rates (cal/min, adjust by intensity):
-Run:10 Walk:5 Cycle:8 Swim:11 Strength:6 Yoga:3 HIIT:12
+Types: running|walking|cycling|swimming|rowing|elliptical|strength training|weightlifting|calisthenics|yoga|pilates|stretching|HIIT|circuit training|CrossFit|basketball|soccer|tennis
 
-Duration defaults if unspecified:
-Cardio:30min Strength:45min Yoga:45min HIIT:25min Sports:60min
+Duration: Use given OR distance÷speed OR estimate (cardio:30, strength:45, yoga:45, HIIT:25)
 
-Intensity keywords:
-• high: intense/hard/fast/vigorous/heavy/max
-• moderate: default if not mentioned
-• low: easy/light/gentle/recovery/slow
+Calories = min × rate: Run:10 Walk:5 Cycle:8 Swim:11 Strength:6 Yoga:3 HIIT:12
+Examples: 30min run=30×10=300 | 45min strength=45×6=270 | Adjust ±20% intensity
 
-Exercises array (strength/CrossFit only):
-• Name required, include sets/reps/weight/weightUnit if mentioned
-• Units: kg or lbs
+Intensity: high(intense/hard/fast) | moderate(default) | low(easy/light/gentle)
 
-RULES:
-• Include workoutType if activity identifiable
-• Always estimate durationMinutes & caloriesBurned if not given
-• Description: brief summary
-• intensityLevel: infer from keywords or default moderate
-• Never both payload & error
-• Valid JSON only
+Exercises (strength only): Sets=# sets NOT reps! | "50 pushups"=sets:5 reps:10 | Units: kg/lbs
+
+CRITICAL: REJECT vague terms alone | Calculate calories correctly | Never both payload & error | Valid JSON
 
 User query:`;
 }

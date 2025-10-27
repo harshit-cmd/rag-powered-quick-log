@@ -1,0 +1,19 @@
+{
+  "original": 1000,
+  "cleaned": 996,
+  "removed": 4,
+  "issues": {
+    "trulyVague": [
+      "cardio"
+    ],
+    "invalidData": [
+      "planning to workout tomorrow",
+      "will go running later"
+    ],
+    "extremeCalories": [],
+    "negativeDuration": [
+      "rest day"
+    ]
+  },
+  "workoutTypeMappings": 56
+}

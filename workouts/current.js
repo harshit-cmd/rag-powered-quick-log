@@ -34,52 +34,32 @@ const responseSchema = z.object({
 
 export function workoutPrompt(schema) {
   return `/no_think
-    You are given a schema for a workout tool call and you need to fill it based on the user query. Here's the schema:
+Parse workout queries to JSON. Schema: ${JSON.stringify(z.toJSONSchema(schema))}
 
-    ${JSON.stringify(z.toJSONSchema(schema))}
+⚠️ RULE: Specific activity (run/swim/yoga/bench press/squats) → PAYLOAD | Only vague (gym/cardio/workout/stairs/sports) → ERROR
 
-    GOOD examples (specific with details):
-    - "I ran for 30 minutes and burned 300 calories" ✓
-    - "3 sets of 10 reps bench press with 50kg" ✓
-    - "45 minute yoga session, mostly vinyasa flow" ✓
-    - "Swimming laps for 25 minutes, burned about 200 calories" ✓
-    - "High intensity interval training for 20 minutes" ✓
+Examples:
+"Ran 30min" → {"payload":{"workoutType":"running","description":"30 min run","durationMinutes":30,"caloriesBurned":300,"intensityLevel":"moderate"}}
+"Bench 3x10 50kg" → {"payload":{"workoutType":"strength training","description":"Bench press","durationMinutes":15,"caloriesBurned":90,"exercises":[{"name":"bench press","sets":3,"reps":10,"weight":50,"weightUnit":"kg"}]}}
+"50 pushups" → {"payload":{"workoutType":"strength training","description":"Pushups","durationMinutes":10,"caloriesBurned":60,"exercises":[{"name":"pushups","sets":5,"reps":10}]}}
+"Gym" → {"error":"What workout did you do?"}
+"Cardio" → {"error":"What type of cardio?"}
 
-    BAD examples (but still estimate):
-    - "I went for a run" → Estimate: 30 min running, 300 calories
-    - "Did some pushups" → Estimate: 3 sets of 10 reps, 50 calories
-    - "I ran" → Estimate: 30 min running, 300 calories
-    - "Worked out" → ERROR: What type of workout?
+Types: running|walking|cycling|swimming|rowing|elliptical|strength training|weightlifting|calisthenics|yoga|pilates|stretching|HIIT|circuit training|CrossFit|basketball|soccer|tennis
 
-    CALORIE ESTIMATION GUIDELINES:
-    - Running: ~10 cal/min (300 cal for 30 min)
-    - Walking: ~5 cal/min (150 cal for 30 min)
-    - Cycling: ~8 cal/min (240 cal for 30 min)
-    - Swimming: ~11 cal/min (275 cal for 25 min)
-    - Strength training: ~6 cal/min (180 cal for 30 min)
-    - Yoga: ~3 cal/min (90 cal for 30 min)
-    - HIIT: ~12 cal/min (240 cal for 20 min)
-    - Adjust based on intensity mentioned (high/low/moderate)
+Duration: Use given OR distance÷speed OR estimate (cardio:30, strength:45, yoga:45, HIIT:25)
 
-    RULES:
-    - Always include workoutType (running, cycling, strength training, etc.)
-    - Always include a brief description of what they did
-    - Estimate durationMinutes if not specified (20-45 min typical)
-    - ALWAYS estimate caloriesBurned based on activity and duration
-    - Include intensityLevel if mentioned (low, moderate, high)
-    - For strength training, include exercises array with sets/reps/weight
-    - Only error if completely unclear ("exercised") or unrelated to fitness
+Calories = min × rate: Run:10 Walk:5 Cycle:8 Swim:11 Strength:6 Yoga:3 HIIT:12
+Examples: 30min run=30×10=300 | 45min strength=45×6=270 | Adjust ±20% intensity
 
-    CRITICAL:
-    - Set ONLY "payload" field if you can create the log (always estimate calories)
-    - Set ONLY "error" field if workout is too vague to identify
-    - Use error if the query is completely unrelated to exercise/fitness
-    - Never set both fields
+Intensity: high(intense/hard/fast) | moderate(default) | low(easy/light/gentle)
 
-    Output valid JSON only.
+Exercises (strength only): Sets=# sets NOT reps! | "50 pushups"=sets:5 reps:10 | Units: kg/lbs
 
-    User query:
-    `;
+CRITICAL: REJECT vague terms alone | Calculate calories correctly | Never both payload & error | Valid JSON
+
+User query:
+`;
 }
 
 

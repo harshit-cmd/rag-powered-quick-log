@@ -4,7 +4,7 @@ import {
   embed,
 } from "@tetherto/qvac-sdk";
 import fs from "fs";
-import workoutRagDataset from "./workout-rag-dataset.json" with { type: "json" };
+import workoutRagDataset from "./workout-rag-dataset-cleaned.json" with { type: "json" };
 
 let embeddingModelId;
 
@@ -53,7 +53,7 @@ const main = async () => {
   }
 
   // Save to file
-  const outputPath = "./workouts/workouts-datasets/workout-rag-dataset-with-embeddings.json";
+  const outputPath = "./workouts/workouts-datasets/workout-rag-dataset-cleaned-with-embeddings.json";
   console.log(`\n💾 Saving to ${outputPath}...`);
   
   fs.writeFileSync(
@@ -61,8 +61,9 @@ const main = async () => {
     JSON.stringify(dataWithEmbeddings, null, 2)
   );
 
-  console.log("✅ Successfully created workout-rag-dataset-with-embeddings.json!");
+  console.log("✅ Successfully created workout-rag-dataset-cleaned-with-embeddings.json!");
   console.log(`📊 Total entries with embeddings: ${dataWithEmbeddings.length}`);
+  console.log(`📉 Removed from original: ${1000 - dataWithEmbeddings.length} entries`);
 
   process.kill(process.pid);
 };

@@ -1,0 +1,5642 @@
+{
+  "summary": {
+    "total": 1000,
+    "filtered": 978,
+    "removed": 22,
+    "contradictions": 0,
+    "vagueCases": 5,
+    "specificCases": 6,
+    "extremeCalories": 17
+  },
+  "contradictions": [],
+  "vagueCases": [
+    {
+      "id": "rag_entry_436_y1z2a3b4",
+      "prompt": "Cardio boxing 50 minutes, heavy bag and combos",
+      "issue": "Vague term \"cardio\" returns payload instead of error",
+      "output": {
+        "payload": {
+          "workoutType": "cardio boxing",
+          "description": "50 minute cardio boxing with heavy bag",
+          "durationMinutes": 50,
+          "caloriesBurned": 500,
+          "intensityLevel": "high"
+        }
+      }
+    },
+    {
+      "id": "rag_entry_444_e3f4g5h6",
+      "prompt": "Cardio sculpt 55 minutes, cardio and toning",
+      "issue": "Vague term \"cardio\" returns payload instead of error",
+      "output": {
+        "payload": {
+          "workoutType": "cardio sculpt",
+          "description": "55 minute cardio sculpt class",
+          "durationMinutes": 55,
+          "caloriesBurned": 440,
+          "intensityLevel": "moderate"
+        }
+      }
+    },
+    {
+      "id": "rag_entry_626_e1f2g3h4",
+      "prompt": "Cardio tennis class 60 minutes, group workout",
+      "issue": "Vague term \"cardio\" returns payload instead of error",
+      "output": {
+        "payload": {
+          "workoutType": "cardio tennis",
+          "description": "60 minute cardio tennis group class",
+          "durationMinutes": 60,
+          "caloriesBurned": 480,
+          "intensityLevel": "high"
+        }
+      }
+    },
+    {
+      "id": "rag_entry_719_m3n4o5p6",
+      "prompt": "Sports performance training 60 minutes, athlete development",
+      "issue": "Vague term \"sports\" returns payload instead of error",
+      "output": {
+        "payload": {
+          "workoutType": "sports performance",
+          "description": "60 minute athlete performance training",
+          "durationMinutes": 60,
+          "caloriesBurned": 480,
+          "intensityLevel": "high"
+        }
+      }
+    },
+    {
+      "id": "rag_entry_994_u3v4w5x6",
+      "prompt": "cardio",
+      "issue": "Vague term \"cardio\" returns payload instead of error",
+      "output": {
+        "payload": {
+          "workoutType": "cardio",
+          "description": "cardio workout estimated",
+          "durationMinutes": 30,
+          "caloriesBurned": 300,
+          "intensityLevel": "moderate"
+        }
+      }
+    }
+  ],
+  "specificCases": [
+    {
+      "id": "rag_entry_973_o9p0q1r2",
+      "prompt": "yoga 0 minutes",
+      "issue": "Specific activity \"yoga\" returns error instead of payload",
+      "output": {
+        "error": "Duration must be greater than 0"
+      }
+    },
+    {
+      "id": "rag_entry_974_s3t4u5v6",
+      "prompt": "running negative 30 minutes",
+      "issue": "Specific activity \"run\" returns error instead of payload",
+      "output": {
+        "error": "Duration cannot be negative"
+      }
+    },
+    {
+      "id": "rag_entry_976_a1b2c3d4",
+      "prompt": "squats -5 reps",
+      "issue": "Specific activity \"squat\" returns error instead of payload",
+      "output": {
+        "error": "Reps cannot be negative"
+      }
+    },
+    {
+      "id": "rag_entry_977_e5f6g7h8",
+      "prompt": "bench press -50kg",
+      "issue": "Specific activity \"bench press\" returns error instead of payload",
+      "output": {
+        "error": "Weight cannot be negative"
+      }
+    },
+    {
+      "id": "rag_entry_979_m3n4o5p6",
+      "prompt": "planning to workout tomorrow",
+      "issue": "Specific activity \"row\" returns error instead of payload",
+      "output": {
+        "error": "Log your workout after you complete it"
+      }
+    },
+    {
+      "id": "rag_entry_982_y5z6a7b8",
+      "prompt": "will go running later",
+      "issue": "Specific activity \"run\" returns error instead of payload",
+      "output": {
+        "error": "Log your workout after completion"
+      }
+    }
+  ],
+  "extremeCalories": [
+    {
+      "id": "rag_entry_154_o3p4q5r6",
+      "prompt": "Yin yoga 90 minute session, deep stretching and holds",
+      "duration": 90,
+      "calories": 135,
+      "rate": "1.50",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_157_a5b6c7d8",
+      "prompt": "Restorative yoga 75 minutes with props, so relaxing",
+      "duration": 75,
+      "calories": 75,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_160_m7n8o9p0",
+      "prompt": "Yoga nidra 30 minutes, deep relaxation",
+      "duration": 30,
+      "calories": 30,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_180_o7p8q9r0",
+      "prompt": "Meditation sitting 30 minutes, mindfulness practice",
+      "duration": 30,
+      "calories": 30,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_181_s1t2u3v4",
+      "prompt": "Guided meditation 20 minutes, body scan",
+      "duration": 20,
+      "calories": 20,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_282_g5h6i7j8",
+      "prompt": "Tubing down the river 2 hours, lazy float",
+      "duration": 120,
+      "calories": 180,
+      "rate": "1.50",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_663_w9x0y1z2",
+      "prompt": "Standing desk 4 hours, active standing",
+      "duration": 240,
+      "calories": 240,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_689_w3x4y5z6",
+      "prompt": "Teaching on feet 5 hours, classroom standing",
+      "duration": 300,
+      "calories": 450,
+      "rate": "1.50",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_752_o5p6q7r8",
+      "prompt": "Massage therapy 60 minutes, sports massage",
+      "duration": 60,
+      "calories": 60,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_760_u7v8w9x0",
+      "prompt": "Meditation 30 minutes, mindfulness recovery",
+      "duration": 30,
+      "calories": 30,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_761_y1z2a3b4",
+      "prompt": "Breathing exercises 15 minutes, pranayama",
+      "duration": 15,
+      "calories": 15,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_773_u9v0w1x2",
+      "prompt": "Float tank 60 minutes, sensory deprivation",
+      "duration": 60,
+      "calories": 60,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_774_y3z4a5b6",
+      "prompt": "Lymphatic drainage massage 50 minutes",
+      "duration": 50,
+      "calories": 50,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_777_k5l6m7n8",
+      "prompt": "Yoga nidra 40 minutes, yogic sleep meditation",
+      "duration": 40,
+      "calories": 40,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_778_o9p0q1r2",
+      "prompt": "Guided relaxation 20 minutes, body scan",
+      "duration": 20,
+      "calories": 20,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_782_e5f6g7h8",
+      "prompt": "Alexander technique 40 minutes, posture awareness",
+      "duration": 40,
+      "calories": 60,
+      "rate": "1.50",
+      "issue": "Unrealistically low calorie rate"
+    },
+    {
+      "id": "rag_entry_794_a3b4c5d6",
+      "prompt": "Sound bath 45 minutes, vibrational healing",
+      "duration": 45,
+      "calories": 45,
+      "rate": "1.00",
+      "issue": "Unrealistically low calorie rate"
+    }
+  ],
+  "workoutTypeVariants": {
+    "HIIT": 53,
+    "strength training": 51,
+    "running": 45,
+    "yoga": 21,
+    "walking": 11,
+    "swimming": 10,
+    "cycling": 10,
+    "CrossFit": 8,
+    "tennis drills": 6,
+    "pilates": 5,
+    "badminton": 5,
+    "stretching": 4,
+    "table tennis": 4,
+    "racquetball": 4,
+    "squash": 4,
+    "road cycling": 4,
+    "stair climbing": 3,
+    "barre": 3,
+    "tai chi": 3,
+    "meditation": 3,
+    "mobility": 3,
+    "handball": 3,
+    "pickleball": 3,
+    "paddleball": 3,
+    "snow activities": 3,
+    "mountain biking": 3,
+    "indoor cycling": 3,
+    "muay thai": 3,
+    "squash drills": 3,
+    "qigong": 2,
+    "breathwork": 2,
+    "recovery": 2,
+    "feldenkrais": 2,
+    "alexander technique": 2,
+    "ice hockey": 2,
+    "curling": 2,
+    "rowing": 2,
+    "coasteering": 2,
+    "aqua zumba": 2,
+    "gravel cycling": 2,
+    "bike touring": 2,
+    "kickboxing": 2,
+    "circuit training": 2,
+    "tabata": 2,
+    "brazilian jiu-jitsu": 2,
+    "boxing": 2,
+    "karate": 2,
+    "taekwondo": 2,
+    "krav maga": 2,
+    "MMA": 2,
+    "wrestling": 2,
+    "self defense": 2,
+    "trail running": 2,
+    "EMOM": 2,
+    "AMRAP": 2,
+    "tennis": 2,
+    "pickleball drills": 2,
+    "powerlifting": 2,
+    "olympic weightlifting": 2,
+    "bodybuilding": 2,
+    "strongman": 2,
+    "cluster sets": 2,
+    "wave loading": 2,
+    "tempo training": 2,
+    "crossfit": 2,
+    "calisthenics": 2,
+    "gym session": 2,
+    "weightlifting": 2,
+    "body balance": 1,
+    "essentrics": 1,
+    "gyrotonic": 1,
+    "gyrokinesis": 1,
+    "somatic movement": 1,
+    "basketball": 1,
+    "soccer": 1,
+    "football": 1,
+    "volleyball": 1,
+    "ultimate frisbee": 1,
+    "baseball": 1,
+    "softball": 1,
+    "rugby": 1,
+    "lacrosse": 1,
+    "field hockey": 1,
+    "water polo": 1,
+    "dodgeball": 1,
+    "kickball": 1,
+    "touch football": 1,
+    "flag football": 1,
+    "netball": 1,
+    "futsal": 1,
+    "hurling": 1,
+    "gaelic football": 1,
+    "australian football": 1,
+    "cricket": 1,
+    "beach soccer": 1,
+    "roller derby": 1,
+    "quidditch": 1,
+    "broomball": 1,
+    "spikeball": 1,
+    "cornhole": 1,
+    "disc golf": 1,
+    "sepak takraw": 1,
+    "kabaddi": 1,
+    "floorball": 1,
+    "tchoukball": 1,
+    "kin-ball": 1,
+    "bossaball": 1,
+    "korfball": 1,
+    "wallyball": 1,
+    "bocce ball": 1,
+    "lawn bowling": 1,
+    "bowling": 1,
+    "water aerobics": 1,
+    "aqua jogging": 1,
+    "synchronized swimming": 1,
+    "kayaking": 1,
+    "whitewater kayaking": 1,
+    "sea kayaking": 1,
+    "canoeing": 1,
+    "stand up paddleboarding": 1,
+    "SUP yoga": 1,
+    "sculling": 1,
+    "dragon boat": 1,
+    "surfing": 1,
+    "bodyboarding": 1,
+    "kitesurfing": 1,
+    "windsurfing": 1,
+    "wakeboarding": 1,
+    "water skiing": 1,
+    "jet skiing": 1,
+    "snorkeling": 1,
+    "scuba diving": 1,
+    "freediving": 1,
+    "rafting": 1,
+    "tubing": 1,
+    "sailing": 1,
+    "hydrofoiling": 1,
+    "underwater hockey": 1,
+    "underwater rugby": 1,
+    "aqua cycling": 1,
+    "pool intervals": 1,
+    "cliff jumping": 1,
+    "spearfishing": 1,
+    "tidal pool exploration": 1,
+    "pool basketball": 1,
+    "pool games": 1,
+    "deep water running": 1,
+    "aqua boxing": 1,
+    "survival swimming": 1,
+    "downhill skiing": 1,
+    "cross country skiing": 1,
+    "skate skiing": 1,
+    "snowboarding": 1,
+    "backcountry skiing": 1,
+    "ski mountaineering": 1,
+    "telemark skiing": 1,
+    "snowshoeing": 1,
+    "ice skating": 1,
+    "speed skating": 1,
+    "figure skating": 1,
+    "sledding": 1,
+    "tobogganing": 1,
+    "luge": 1,
+    "bobsledding": 1,
+    "skeleton": 1,
+    "ice climbing": 1,
+    "snow tubing": 1,
+    "snowmobiling": 1,
+    "dog sledding": 1,
+    "skijoring": 1,
+    "fat biking": 1,
+    "snow volleyball": 1,
+    "snowball fight": 1,
+    "snow shoveling": 1,
+    "winter hiking": 1,
+    "cold water swimming": 1,
+    "winter trail running": 1,
+    "biathlon": 1,
+    "nordic combined": 1,
+    "ski jumping": 1,
+    "freestyle skiing": 1,
+    "mogul skiing": 1,
+    "avalanche training": 1,
+    "ice fishing": 1,
+    "snowkiting": 1,
+    "winter camping": 1,
+    "snowboard cross": 1,
+    "halfpipe snowboarding": 1,
+    "slopestyle skiing": 1,
+    "snow golf": 1,
+    "yukigassen": 1,
+    "splitboarding": 1,
+    "heliskiing": 1,
+    "cat skiing": 1,
+    "spin class": 1,
+    "track cycling": 1,
+    "cyclocross": 1,
+    "BMX": 1,
+    "downhill mountain biking": 1,
+    "enduro mountain biking": 1,
+    "stationary cycling": 1,
+    "virtual cycling": 1,
+    "criterium": 1,
+    "recumbent cycling": 1,
+    "tandem cycling": 1,
+    "unicycling": 1,
+    "bike polo": 1,
+    "fixed gear cycling": 1,
+    "e-bike": 1,
+    "trials biking": 1,
+    "cargo biking": 1,
+    "airdyne": 1,
+    "assault bike": 1,
+    "bikepacking": 1,
+    "bike maintenance": 1,
+    "dirt jumping": 1,
+    "bike skills": 1,
+    "night cycling": 1,
+    "rollers": 1,
+    "alleycat racing": 1,
+    "handcycling": 1,
+    "zumba": 1,
+    "hip hop dance": 1,
+    "ballroom dancing": 1,
+    "salsa dancing": 1,
+    "contemporary dance": 1,
+    "ballet": 1,
+    "jazz dance": 1,
+    "tap dancing": 1,
+    "bollywood dance": 1,
+    "line dancing": 1,
+    "belly dancing": 1,
+    "swing dancing": 1,
+    "break dancing": 1,
+    "pole dancing": 1,
+    "dance cardio": 1,
+    "afrobeat dance": 1,
+    "k-pop dance": 1,
+    "flamenco dancing": 1,
+    "irish step dancing": 1,
+    "reggaeton dance": 1,
+    "bodyjam": 1,
+    "jazzercise": 1,
+    "capoeira": 1,
+    "bachata dancing": 1,
+    "samba": 1,
+    "modern dance": 1,
+    "lyrical dance": 1,
+    "step aerobics": 1,
+    "aerobic dance": 1,
+    "bodypump": 1,
+    "bodycombat": 1,
+    "bodyattack": 1,
+    "bodystep": 1,
+    "shbam": 1,
+    "cardio boxing": 1,
+    "TRX": 1,
+    "boot camp": 1,
+    "spin and sculpt": 1,
+    "cardio sculpt": 1,
+    "yoga sculpt": 1,
+    "core fusion": 1,
+    "insanity": 1,
+    "P90X3": 1,
+    "orangetheory": 1,
+    "F45": 1,
+    "judo": 1,
+    "kung fu": 1,
+    "aikido": 1,
+    "sambo": 1,
+    "wing chun": 1,
+    "hapkido": 1,
+    "savate": 1,
+    "eskrima": 1,
+    "ninjutsu": 1,
+    "kyokushin karate": 1,
+    "combat sambo": 1,
+    "systema": 1,
+    "silat": 1,
+    "catch wrestling": 1,
+    "lethwei": 1,
+    "sanda": 1,
+    "kendo": 1,
+    "iaido": 1,
+    "HEMA": 1,
+    "fencing": 1,
+    "shadow boxing": 1,
+    "speed bag": 1,
+    "double-end bag": 1,
+    "no-gi grappling": 1,
+    "pad work": 1,
+    "martial arts": 1,
+    "kali": 1,
+    "arnis": 1,
+    "jeet kune do": 1,
+    "tang soo do": 1,
+    "rock climbing": 1,
+    "hiking": 1,
+    "backpacking": 1,
+    "rappelling": 1,
+    "via ferrata": 1,
+    "scrambling": 1,
+    "mountaineering": 1,
+    "canyoneering": 1,
+    "orienteering": 1,
+    "geocaching": 1,
+    "beach cleanup": 1,
+    "nature walk": 1,
+    "foraging hike": 1,
+    "parkour": 1,
+    "freerunning": 1,
+    "slacklining": 1,
+    "highlining": 1,
+    "tree climbing": 1,
+    "zip lining": 1,
+    "ropes course": 1,
+    "obstacle course race": 1,
+    "spartan race": 1,
+    "tough mudder": 1,
+    "rope climbing": 1,
+    "speed climbing": 1,
+    "deep water soloing": 1,
+    "sport climbing": 1,
+    "trad climbing": 1,
+    "multi-pitch climbing": 1,
+    "bouldering": 1,
+    "campus board": 1,
+    "hangboard": 1,
+    "kilter board": 1,
+    "moonboard": 1,
+    "beach running": 1,
+    "sand dune sprints": 1,
+    "hill sprints": 1,
+    "waterfall hiking": 1,
+    "canyon hiking": 1,
+    "desert hiking": 1,
+    "jungle trekking": 1,
+    "alpine hiking": 1,
+    "gorge walking": 1,
+    "thru-hiking": 1,
+    "peak bagging": 1,
+    "ridge walking": 1,
+    "cross country running": 1,
+    "functional fitness": 1,
+    "kettlebell complex": 1,
+    "sandbag training": 1,
+    "tire slams": 1,
+    "tire flips": 1,
+    "battle ropes": 1,
+    "sled work": 1,
+    "farmers carries": 1,
+    "yoke walk": 1,
+    "atlas stones": 1,
+    "log press": 1,
+    "barbell complex": 1,
+    "turkish get-ups": 1,
+    "pistol squats": 1,
+    "muscle-ups": 1,
+    "handstand walking": 1,
+    "double unders": 1,
+    "box jump overs": 1,
+    "burpee box jump overs": 1,
+    "wall walks": 1,
+    "devil press": 1,
+    "man makers": 1,
+    "dumbbell snatches": 1,
+    "toes to bar": 1,
+    "chest to bar pull-ups": 1,
+    "ring dips": 1,
+    "ring rows": 1,
+    "GHD sit-ups": 1,
+    "GHD back extensions": 1,
+    "bear crawls": 1,
+    "crab walks": 1,
+    "broad jumps": 1,
+    "single leg RDLs": 1,
+    "bulgarian split squats": 1,
+    "overhead walking lunges": 1,
+    "goblet squats": 1,
+    "zercher squats": 1,
+    "assault runner": 1,
+    "SkiErg": 1,
+    "BikeErg": 1,
+    "platform tennis": 1,
+    "real tennis": 1,
+    "jai alai": 1,
+    "speedminton": 1,
+    "frontenis": 1,
+    "beach tennis": 1,
+    "soft tennis": 1,
+    "tennis coaching": 1,
+    "cardio tennis": 1,
+    "table tennis drills": 1,
+    "tennis footwork": 1,
+    "tennis conditioning": 1,
+    "squash fitness": 1,
+    "badminton drills": 1,
+    "mini tennis": 1,
+    "touchtennis": 1,
+    "racketlon": 1,
+    "paddle tennis": 1,
+    "badminton conditioning": 1,
+    "racquetball drills": 1,
+    "dog walking": 1,
+    "gardening": 1,
+    "housecleaning": 1,
+    "grocery shopping": 1,
+    "playing with kids": 1,
+    "lawn mowing": 1,
+    "raking leaves": 1,
+    "car washing": 1,
+    "house painting": 1,
+    "moving furniture": 1,
+    "standing desk": 1,
+    "taking out trash": 1,
+    "cooking": 1,
+    "shopping walk": 1,
+    "commute walking": 1,
+    "museum walking": 1,
+    "amusement park walking": 1,
+    "airport walking": 1,
+    "chopping wood": 1,
+    "carrying groceries": 1,
+    "washing dishes": 1,
+    "folding laundry": 1,
+    "sightseeing walk": 1,
+    "power walking": 1,
+    "pacing": 1,
+    "spring cleaning": 1,
+    "organizing": 1,
+    "stroller pushing": 1,
+    "construction work": 1,
+    "warehouse work": 1,
+    "waitressing": 1,
+    "retail work": 1,
+    "nursing work": 1,
+    "landscaping": 1,
+    "bartending": 1,
+    "delivery work": 1,
+    "teaching": 1,
+    "farm work": 1,
+    "frisbee": 1,
+    "kite flying": 1,
+    "feeding chickens": 1,
+    "playing catch": 1,
+    "stretching breaks": 1,
+    "active commute": 1,
+    "gutter cleaning": 1,
+    "holiday decorating": 1,
+    "unpacking": 1,
+    "loading truck": 1,
+    "marathon training": 1,
+    "half marathon training": 1,
+    "triathlon brick": 1,
+    "ironman training": 1,
+    "sprint triathlon": 1,
+    "5K training": 1,
+    "10K training": 1,
+    "ultra marathon training": 1,
+    "calisthenics skills": 1,
+    "gymnastics strength": 1,
+    "sprint training": 1,
+    "plyometrics": 1,
+    "agility training": 1,
+    "speed and agility": 1,
+    "sports performance": 1,
+    "vertical jump training": 1,
+    "aerobic base building": 1,
+    "VO2 max training": 1,
+    "lactate threshold": 1,
+    "endurance base": 1,
+    "periodization training": 1,
+    "deload training": 1,
+    "peaking phase": 1,
+    "off-season conditioning": 1,
+    "pre-season training": 1,
+    "in-season maintenance": 1,
+    "competition taper": 1,
+    "core stability": 1,
+    "balance training": 1,
+    "coordination training": 1,
+    "reaction training": 1,
+    "metabolic conditioning": 1,
+    "energy systems training": 1,
+    "movement prep": 1,
+    "neuromuscular training": 1,
+    "contrast training": 1,
+    "complex training": 1,
+    "eccentric training": 1,
+    "isometric training": 1,
+    "accommodating resistance": 1,
+    "density training": 1,
+    "time under tension": 1,
+    "PAP training": 1,
+    "foam rolling": 1,
+    "massage therapy": 1,
+    "sauna": 1,
+    "cold plunge": 1,
+    "contrast therapy": 1,
+    "compression therapy": 1,
+    "static stretching": 1,
+    "restorative yoga": 1,
+    "yin yoga": 1,
+    "breathing exercises": 1,
+    "recovery walk": 1,
+    "recovery swim": 1,
+    "recovery cycling": 1,
+    "fascial stretch": 1,
+    "acupuncture": 1,
+    "cupping therapy": 1,
+    "epsom salt bath": 1,
+    "percussion therapy": 1,
+    "EMS therapy": 1,
+    "infrared sauna": 1,
+    "cryotherapy": 1,
+    "float therapy": 1,
+    "lymphatic massage": 1,
+    "graston therapy": 1,
+    "active recovery": 1,
+    "yoga nidra": 1,
+    "guided relaxation": 1,
+    "gentle pilates": 1,
+    "easy barre": 1,
+    "aquatic therapy": 1,
+    "PNF stretching": 1,
+    "mobility flow": 1,
+    "chair yoga": 1,
+    "wall pilates": 1,
+    "recovery yoga": 1,
+    "hyperbaric therapy": 1,
+    "red light therapy": 1,
+    "PEMF therapy": 1,
+    "sound bath": 1,
+    "reiki": 1,
+    "contrast showers": 1,
+    "grounding": 1,
+    "gentle stretching": 1,
+    "soft tissue work": 1,
+    "rest day mobility": 1,
+    "peloton cycling": 1,
+    "zwift": 1,
+    "mirror fitness": 1,
+    "tonal": 1,
+    "apple fitness": 1,
+    "beat saber VR": 1,
+    "supernatural VR": 1,
+    "fitxr VR": 1,
+    "oculus move": 1,
+    "ring fit adventure": 1,
+    "pokemon go": 1,
+    "zombies run": 1,
+    "strava run": 1,
+    "nike training club": 1,
+    "classpass spinning": 1,
+    "hydrow rowing": 1,
+    "tempo studio": 1,
+    "echelon cycling": 1,
+    "les mills digital": 1,
+    "beachbody digital": 1,
+    "daily burn": 1,
+    "ifit treadmill": 1,
+    "wahoo systm": 1,
+    "trainerroad": 1,
+    "rouvy": 1,
+    "aaptiv": 1,
+    "fitbod": 1,
+    "seven workout": 1,
+    "sworkit": 1,
+    "freeletics": 1,
+    "centr": 1,
+    "sweat BBG": 1,
+    "asana rebel": 1,
+    "8fit": 1,
+    "keelo": 1,
+    "gymshark training": 1,
+    "caliber strength": 1,
+    "future fitness": 1,
+    "playstation VR sports": 1,
+    "switch sports": 1,
+    "xbox fitness": 1,
+    "just dance": 1,
+    "audio punch": 1,
+    "whoop recovery": 1,
+    "oura guided": 1,
+    "garmin coach": 1,
+    "polar flow": 1,
+    "prenatal yoga": 1,
+    "postnatal exercise": 1,
+    "senior fitness": 1,
+    "silver sneakers": 1,
+    "wheelchair basketball": 1,
+    "adaptive swimming": 1,
+    "seated aerobics": 1,
+    "parkinsons boxing": 1,
+    "MS therapy": 1,
+    "cardiac rehab": 1,
+    "stroke rehab": 1,
+    "arthritis aquatics": 1,
+    "osteoporosis exercise": 1,
+    "cancer survivor fitness": 1,
+    "diabetes exercise": 1,
+    "guided running": 1,
+    "deaf fitness": 1,
+    "amputee training": 1,
+    "CP therapy": 1,
+    "SCI exercise": 1,
+    "TBI rehab": 1,
+    "autism fitness": 1,
+    "down syndrome exercise": 1,
+    "kids fitness": 1,
+    "teen training": 1,
+    "obesity management": 1,
+    "bariatric exercise": 1,
+    "COPD exercise": 1,
+    "asthma cardio": 1,
+    "fibromyalgia exercise": 1,
+    "CFS exercise": 1,
+    "lymphedema exercise": 1,
+    "scoliosis exercise": 1,
+    "hypermobility exercise": 1,
+    "EDS exercise": 1,
+    "POTS exercise": 1,
+    "menopause fitness": 1,
+    "PCOS exercise": 1,
+    "endometriosis exercise": 1,
+    "chronic pain yoga": 1,
+    "low vision fitness": 1,
+    "vestibular rehab": 1,
+    "neuropathy exercise": 1,
+    "pelvic floor therapy": 1,
+    "diastasis recti": 1,
+    "mental health exercise": 1,
+    "trauma-informed exercise": 1,
+    "wheelchair rugby": 1,
+    "para-athletics": 1,
+    "special olympics": 1,
+    "full body strength": 1,
+    "upper body strength": 1,
+    "lower body strength": 1,
+    "push day": 1,
+    "pull day": 1,
+    "leg day": 1,
+    "core workout": 1,
+    "chest and triceps": 1,
+    "back and biceps": 1,
+    "shoulders and abs": 1,
+    "kettlebell workout": 1,
+    "bodyweight pyramid": 1,
+    "dumbbell workout": 1,
+    "superset training": 1,
+    "giant set": 1,
+    "drop sets": 1,
+    "rest-pause training": 1,
+    "21s method": 1,
+    "contrast loading": 1,
+    "german volume training": 1,
+    "FST-7": 1,
+    "blood flow restriction": 1,
+    "EDT": 1,
+    "mechanical advantage": 1,
+    "5x5 program": 1,
+    "pyramid training": 1,
+    "reverse pyramid": 1,
+    "pre-exhaust": 1,
+    "post-exhaust": 1,
+    "100 rep challenge": 1,
+    "for time": 1,
+    "chipper": 1,
+    "ladder workout": 1,
+    "death by": 1,
+    "buy-in buy-out": 1,
+    "hero WOD": 1,
+    "ball game": 1,
+    "squats": 1,
+    "bench press": 1,
+    "rest day": 1,
+    "active rest": 1,
+    "cardio and strength": 1,
+    "general activity": 1,
+    "cardio": 1,
+    "abs workout": 1,
+    "leg workout": 1,
+    "arms workout": 1
+  },
+  "nonStandardTypes": [
+    {
+      "type": "badminton",
+      "count": 5,
+      "examples": [
+        "Badminton singles 45 minutes, intense rallies",
+        "Badminton 75 minutes, competitive match",
+        "Badminton doubles 55 minutes, mixed pairs"
+      ]
+    },
+    {
+      "type": "table tennis",
+      "count": 4,
+      "examples": [
+        "Table tennis tournament 90 minutes",
+        "Table tennis 60 minutes, ping pong competition",
+        "Table tennis tournament 2 hours, multiple matches"
+      ]
+    },
+    {
+      "type": "racquetball",
+      "count": 4,
+      "examples": [
+        "Racquetball 45 minutes, enclosed court",
+        "Racquetball 60 minutes, fast-paced game",
+        "Racquetball doubles 45 minutes, team play"
+      ]
+    },
+    {
+      "type": "squash",
+      "count": 4,
+      "examples": [
+        "Squash match 35 minutes, very intense",
+        "Squash 45 minutes, intense rallies",
+        "Squash ladder match 50 minutes, club competition"
+      ]
+    },
+    {
+      "type": "road cycling",
+      "count": 4,
+      "examples": [
+        "Road cycling 2 hours, 50 miles at steady pace",
+        "Century ride 6.5 hours, 100 miles completed",
+        "Tempo ride 90 minutes, zone 3 effort"
+      ]
+    },
+    {
+      "type": "stair climbing",
+      "count": 3,
+      "examples": [
+        "Ran up and down stadium stairs for 25 minutes, brutal workout",
+        "Stair climbing outdoors 40 minutes, 500 steps",
+        "Stair climbing at work 20 minutes, taking stairs"
+      ]
+    },
+    {
+      "type": "barre",
+      "count": 3,
+      "examples": [
+        "Barre class 55 minutes, tiny pulsing movements",
+        "Pure barre 45 minutes, isometric holds and light weights",
+        "Barre3 60 minutes, ballet + pilates + yoga fusion"
+      ]
+    },
+    {
+      "type": "tai chi",
+      "count": 3,
+      "examples": [
+        "Tai chi in the park 40 minutes, morning practice",
+        "Tai chi 24 form, 30 minutes of flowing movements",
+        "Tai chi easy 30 minutes, gentle movement"
+      ]
+    },
+    {
+      "type": "meditation",
+      "count": 3,
+      "examples": [
+        "Meditation sitting 30 minutes, mindfulness practice",
+        "Guided meditation 20 minutes, body scan",
+        "Meditation 30 minutes, mindfulness recovery"
+      ]
+    },
+    {
+      "type": "mobility",
+      "count": 3,
+      "examples": [
+        "Hip mobility routine 25 minutes, needed this badly",
+        "Shoulder mobility drills 20 minutes",
+        "Ankle and wrist mobility 15 minutes"
+      ]
+    },
+    {
+      "type": "handball",
+      "count": 3,
+      "examples": [
+        "Handball match 50 minutes, fast-paced",
+        "Handball doubles 50 minutes on outdoor court",
+        "Handball 60 minutes, court handball"
+      ]
+    },
+    {
+      "type": "pickleball",
+      "count": 3,
+      "examples": [
+        "Pickleball doubles 60 minutes, great workout",
+        "Pickleball 90 minutes, tournament play",
+        "Pickleball round robin 2 hours, rotating partners"
+      ]
+    },
+    {
+      "type": "paddleball",
+      "count": 3,
+      "examples": [
+        "Paddleball 40 minutes at the beach",
+        "Paddleball tournament 2 hours, 5 matches",
+        "Paddleball 50 minutes at the beach"
+      ]
+    },
+    {
+      "type": "snow activities",
+      "count": 3,
+      "examples": [
+        "Building snowman 90 minutes, heavy lifting",
+        "Igloo building 3 hours, cutting and stacking ice blocks",
+        "Snow cave building 2 hours for winter camping"
+      ]
+    },
+    {
+      "type": "mountain biking",
+      "count": 3,
+      "examples": [
+        "Mountain biking 90 minutes on technical trails",
+        "Singletrack mountain biking 2 hours, flow trails",
+        "Bike park session 3 hours, jumps and drops"
+      ]
+    },
+    {
+      "type": "indoor cycling",
+      "count": 3,
+      "examples": [
+        "Peloton ride 40 minutes, power zone training",
+        "Indoor trainer 60 minutes, structured workout",
+        "Sweet spot intervals 75 minutes, threshold work"
+      ]
+    },
+    {
+      "type": "muay thai",
+      "count": 3,
+      "examples": [
+        "Muay Thai training 75 minutes, pad work and sparring",
+        "Clinch work 40 minutes, Muay Thai knees and elbows",
+        "Elbow and knee strikes 35 minutes, Muay Thai drills"
+      ]
+    },
+    {
+      "type": "squash drills",
+      "count": 3,
+      "examples": [
+        "Squash solo drills 30 minutes, ghosting exercises",
+        "Squash boast practice 20 minutes, wall shots",
+        "Squash drop shot practice 18 minutes, finesse work"
+      ]
+    },
+    {
+      "type": "qigong",
+      "count": 2,
+      "examples": [
+        "Qigong practice 45 minutes with breathing exercises",
+        "Qigong practice 35 minutes, energy cultivation"
+      ]
+    },
+    {
+      "type": "breathwork",
+      "count": 2,
+      "examples": [
+        "Breathwork session 25 minutes, Wim Hof method",
+        "Pranayama breathing exercises 35 minutes"
+      ]
+    },
+    {
+      "type": "recovery",
+      "count": 2,
+      "examples": [
+        "Foam rolling and mobility 30 minutes, hitting all the sore spots",
+        "Myofascial release with lacrosse ball 20 minutes"
+      ]
+    },
+    {
+      "type": "feldenkrais",
+      "count": 2,
+      "examples": [
+        "Feldenkrais method 50 minutes, awareness through movement",
+        "Feldenkrais method 45 minutes, somatic education"
+      ]
+    },
+    {
+      "type": "alexander technique",
+      "count": 2,
+      "examples": [
+        "Alexander technique 40 minutes, posture and alignment",
+        "Alexander technique 40 minutes, posture awareness"
+      ]
+    },
+    {
+      "type": "ice hockey",
+      "count": 2,
+      "examples": [
+        "Ice hockey game 60 minutes, two 30-minute periods",
+        "Ice hockey pond game 2 hours, old school outdoor"
+      ]
+    },
+    {
+      "type": "curling",
+      "count": 2,
+      "examples": [
+        "Curling match 90 minutes, sweeping is hard work",
+        "Curling bonspiel 2.5 hours, multiple games"
+      ]
+    },
+    {
+      "type": "coasteering",
+      "count": 2,
+      "examples": [
+        "Coasteering 2.5 hours, cliff traverse and ocean swims",
+        "Coasteering session 3 hours, cliffs and caves"
+      ]
+    },
+    {
+      "type": "aqua zumba",
+      "count": 2,
+      "examples": [
+        "Aqua Zumba 50 minutes, dance party in the pool",
+        "Aqua Zumba 45 minutes in the pool"
+      ]
+    },
+    {
+      "type": "gravel cycling",
+      "count": 2,
+      "examples": [
+        "Gravel riding 3 hours, mixed terrain",
+        "Gravel grinder race 5 hours, 80 miles rough roads"
+      ]
+    },
+    {
+      "type": "bike touring",
+      "count": 2,
+      "examples": [
+        "Bike touring 6 hours with panniers, 70 miles",
+        "Bike camping trip 7 hours riding to campsite"
+      ]
+    },
+    {
+      "type": "kickboxing",
+      "count": 2,
+      "examples": [
+        "Kickboxing class 60 minutes, punches and kicks",
+        "Kickboxing sparring 50 minutes, full contact"
+      ]
+    },
+    {
+      "type": "tabata",
+      "count": 2,
+      "examples": [
+        "Tabata class 25 minutes, 20 seconds on 10 off",
+        "Tabata workout 25 minutes: 8 rounds each of squats, pushups, jumping lunges, mountain climbers, burpees - 20 seconds work 10 seconds rest"
+      ]
+    },
+    {
+      "type": "brazilian jiu-jitsu",
+      "count": 2,
+      "examples": [
+        "Brazilian Jiu-Jitsu class 90 minutes, drilling and rolling",
+        "BJJ gi class 90 minutes, positional sparring"
+      ]
+    },
+    {
+      "type": "boxing",
+      "count": 2,
+      "examples": [
+        "Boxing training 60 minutes, heavy bag and mitts",
+        "Boxing sparring 45 minutes, 9 rounds"
+      ]
+    },
+    {
+      "type": "karate",
+      "count": 2,
+      "examples": [
+        "Karate class 75 minutes, kata and kumite",
+        "Kata practice 40 minutes, traditional forms"
+      ]
+    },
+    {
+      "type": "taekwondo",
+      "count": 2,
+      "examples": [
+        "Taekwondo practice 60 minutes, kicks and forms",
+        "Spinning kicks practice 30 minutes, advanced techniques"
+      ]
+    },
+    {
+      "type": "krav maga",
+      "count": 2,
+      "examples": [
+        "Krav Maga training 60 minutes, self defense drills",
+        "Weapons disarming 45 minutes, krav maga drills"
+      ]
+    },
+    {
+      "type": "MMA",
+      "count": 2,
+      "examples": [
+        "MMA training 90 minutes, striking and grappling",
+        "Ground and pound practice 30 minutes, MMA training"
+      ]
+    },
+    {
+      "type": "wrestling",
+      "count": 2,
+      "examples": [
+        "Wrestling practice 90 minutes, takedowns and mat work",
+        "Takedown drills 45 minutes, wrestling shots"
+      ]
+    },
+    {
+      "type": "self defense",
+      "count": 2,
+      "examples": [
+        "Escape drills 50 minutes, defensive techniques",
+        "Multiple attacker scenarios 40 minutes, defensive tactics"
+      ]
+    },
+    {
+      "type": "trail running",
+      "count": 2,
+      "examples": [
+        "Trail running 75 minutes, technical terrain",
+        "Suunto app trail run 65 minutes, GPS tracking"
+      ]
+    },
+    {
+      "type": "EMOM",
+      "count": 2,
+      "examples": [
+        "EMOM 30 minutes: 5 burpees, 10 kettlebell swings, 15 box jumps",
+        "EMOM 40 minutes: minute 1 - 10 burpees, minute 2 - 15 kettlebell swings 24kg, minute 3 - 20 box jumps, minute 4 - rest, repeat"
+      ]
+    },
+    {
+      "type": "AMRAP",
+      "count": 2,
+      "examples": [
+        "AMRAP 20 minutes: 10 deadlifts, 15 wall balls, 20 double unders",
+        "AMRAP 30 minutes: as many rounds as possible of 10 pushups, 15 squats, 20 situps"
+      ]
+    },
+    {
+      "type": "pickleball drills",
+      "count": 2,
+      "examples": [
+        "Pickleball drills 30 minutes, dinking practice",
+        "Pickleball serve practice 20 minutes, consistency work"
+      ]
+    },
+    {
+      "type": "powerlifting",
+      "count": 2,
+      "examples": [
+        "Powerlifting training 90 minutes, squat/bench/dead focus",
+        "Powerlifting session 90 minutes: squats 8x3 120kg, bench 8x3 90kg, deadlifts 8x2 140kg"
+      ]
+    },
+    {
+      "type": "olympic weightlifting",
+      "count": 2,
+      "examples": [
+        "Olympic weightlifting 75 minutes, snatch and clean work",
+        "Olympic lifting 60 minutes: clean and jerk 6x3 70kg, snatch 6x2 55kg, front squats 4x5 80kg, overhead squats 3x8 50kg"
+      ]
+    },
+    {
+      "type": "bodybuilding",
+      "count": 2,
+      "examples": [
+        "Bodybuilding chest day 90 minutes, hypertrophy focus",
+        "JEFIT workout 45 minutes, bodybuilding routine"
+      ]
+    },
+    {
+      "type": "strongman",
+      "count": 2,
+      "examples": [
+        "Strongman training 2 hours, event work",
+        "Strongman training 75 minutes: tire flips 5x8, farmer's walks 5x50m 40kg per hand, sled pushes 6x30m 100kg, log press 5x5 60kg, atlas stone lifts 4x5 80kg"
+      ]
+    },
+    {
+      "type": "cluster sets",
+      "count": 2,
+      "examples": [
+        "Cluster sets training 40 minutes, intra-set rest",
+        "Cluster sets 60 minutes: squats 6 clusters of 3 reps 95kg, bench 6 clusters of 3 reps 75kg, deadlifts 5 clusters of 2 reps 110kg"
+      ]
+    },
+    {
+      "type": "wave loading",
+      "count": 2,
+      "examples": [
+        "Wave loading 60 minutes, undulating intensity",
+        "Wave loading 55 minutes: squats 3-2-1, 3-2-1, 3-2-1 at 85/90/95kg, bench 3-2-1, 3-2-1 at 70/75/80kg"
+      ]
+    },
+    {
+      "type": "tempo training",
+      "count": 2,
+      "examples": [
+        "Tempo training 50 minutes, controlled speed",
+        "Tempo training 50 minutes: squats 4x6 4-0-1-0 tempo 80kg, bench 4x6 3-0-1-0 70kg, rows 4x8 3-1-1-0 55kg"
+      ]
+    },
+    {
+      "type": "crossfit",
+      "count": 2,
+      "examples": [
+        "CrossFit WOD 35 minutes: 21-15-9 reps of thrusters 40kg, pull-ups, and burpees for time",
+        "Crossfit Fran 12 minutes: 21-15-9 thrusters 43kg and pullups for time"
+      ]
+    },
+    {
+      "type": "gym session",
+      "count": 2,
+      "examples": [
+        "went to the gym",
+        "some stuff at the gym"
+      ]
+    },
+    {
+      "type": "body balance",
+      "count": 1,
+      "examples": [
+        "Body balance class 45 minutes, yoga/tai chi/pilates mix"
+      ]
+    },
+    {
+      "type": "essentrics",
+      "count": 1,
+      "examples": [
+        "Essentrics class 50 minutes, dynamic stretching and toning"
+      ]
+    },
+    {
+      "type": "gyrotonic",
+      "count": 1,
+      "examples": [
+        "Gyrotonic session 60 minutes on specialized equipment"
+      ]
+    },
+    {
+      "type": "gyrokinesis",
+      "count": 1,
+      "examples": [
+        "Gyrokinesis class 55 minutes, flowing movements"
+      ]
+    },
+    {
+      "type": "somatic movement",
+      "count": 1,
+      "examples": [
+        "Somatic exercises 35 minutes, gentle movement awareness"
+      ]
+    },
+    {
+      "type": "ultimate frisbee",
+      "count": 1,
+      "examples": [
+        "Ultimate frisbee 90 minutes, lots of running"
+      ]
+    },
+    {
+      "type": "softball",
+      "count": 1,
+      "examples": [
+        "Softball tournament 4 hours, 3 games"
+      ]
+    },
+    {
+      "type": "rugby",
+      "count": 1,
+      "examples": [
+        "Rugby match 80 minutes, brutal contact"
+      ]
+    },
+    {
+      "type": "lacrosse",
+      "count": 1,
+      "examples": [
+        "Lacrosse practice 75 minutes, conditioning and drills"
+      ]
+    },
+    {
+      "type": "field hockey",
+      "count": 1,
+      "examples": [
+        "Field hockey game 70 minutes, midfield position"
+      ]
+    },
+    {
+      "type": "water polo",
+      "count": 1,
+      "examples": [
+        "Water polo 45 minutes, treading water the whole time"
+      ]
+    },
+    {
+      "type": "dodgeball",
+      "count": 1,
+      "examples": [
+        "Dodgeball tournament 2 hours, 8 games"
+      ]
+    },
+    {
+      "type": "kickball",
+      "count": 1,
+      "examples": [
+        "Kickball game 60 minutes, office league"
+      ]
+    },
+    {
+      "type": "touch football",
+      "count": 1,
+      "examples": [
+        "Touch football 90 minutes in the park"
+      ]
+    },
+    {
+      "type": "flag football",
+      "count": 1,
+      "examples": [
+        "Flag football league game 75 minutes"
+      ]
+    },
+    {
+      "type": "netball",
+      "count": 1,
+      "examples": [
+        "Netball match 60 minutes, goal shooter"
+      ]
+    },
+    {
+      "type": "futsal",
+      "count": 1,
+      "examples": [
+        "Futsal game 40 minutes, indoor soccer on hardwood"
+      ]
+    },
+    {
+      "type": "hurling",
+      "count": 1,
+      "examples": [
+        "Hurling practice 60 minutes, Irish sport"
+      ]
+    },
+    {
+      "type": "gaelic football",
+      "count": 1,
+      "examples": [
+        "Gaelic football 70 minutes, full contact"
+      ]
+    },
+    {
+      "type": "australian football",
+      "count": 1,
+      "examples": [
+        "Australian rules football 100 minutes, huge field"
+      ]
+    },
+    {
+      "type": "cricket",
+      "count": 1,
+      "examples": [
+        "Cricket match 3 hours, bowling and batting"
+      ]
+    },
+    {
+      "type": "beach soccer",
+      "count": 1,
+      "examples": [
+        "Beach soccer 50 minutes, running in sand is tough"
+      ]
+    },
+    {
+      "type": "roller derby",
+      "count": 1,
+      "examples": [
+        "Roller derby practice 90 minutes, lots of falls"
+      ]
+    },
+    {
+      "type": "quidditch",
+      "count": 1,
+      "examples": [
+        "Quidditch league game 45 minutes, yes the Harry Potter sport"
+      ]
+    },
+    {
+      "type": "broomball",
+      "count": 1,
+      "examples": [
+        "Broomball game 60 minutes on ice without skates"
+      ]
+    },
+    {
+      "type": "spikeball",
+      "count": 1,
+      "examples": [
+        "Spikeball tournament 2 hours at the beach"
+      ]
+    },
+    {
+      "type": "cornhole",
+      "count": 1,
+      "examples": [
+        "Cornhole tournament 90 minutes, surprisingly tiring"
+      ]
+    },
+    {
+      "type": "disc golf",
+      "count": 1,
+      "examples": [
+        "Disc golf 18 holes, 2.5 hours walking"
+      ]
+    },
+    {
+      "type": "sepak takraw",
+      "count": 1,
+      "examples": [
+        "Sepak takraw 40 minutes, volleyball with feet"
+      ]
+    },
+    {
+      "type": "kabaddi",
+      "count": 1,
+      "examples": [
+        "Kabaddi match 35 minutes, traditional Indian sport"
+      ]
+    },
+    {
+      "type": "floorball",
+      "count": 1,
+      "examples": [
+        "Floorball game 55 minutes, like indoor hockey"
+      ]
+    },
+    {
+      "type": "tchoukball",
+      "count": 1,
+      "examples": [
+        "Tchoukball match 40 minutes, trampolines on walls"
+      ]
+    },
+    {
+      "type": "kin-ball",
+      "count": 1,
+      "examples": [
+        "Kin-ball game 30 minutes, giant ball sport"
+      ]
+    },
+    {
+      "type": "bossaball",
+      "count": 1,
+      "examples": [
+        "Bossaball match 45 minutes, volleyball on trampolines"
+      ]
+    },
+    {
+      "type": "korfball",
+      "count": 1,
+      "examples": [
+        "Korfball game 60 minutes, Dutch mixed sport"
+      ]
+    },
+    {
+      "type": "wallyball",
+      "count": 1,
+      "examples": [
+        "Wallyball 50 minutes, volleyball with walls in play"
+      ]
+    },
+    {
+      "type": "bocce ball",
+      "count": 1,
+      "examples": [
+        "Bocce ball 90 minutes, actually got a workout"
+      ]
+    },
+    {
+      "type": "lawn bowling",
+      "count": 1,
+      "examples": [
+        "Lawn bowling 2 hours, lots of bending"
+      ]
+    },
+    {
+      "type": "bowling",
+      "count": 1,
+      "examples": [
+        "Bowling league 2 hours, 3 games"
+      ]
+    },
+    {
+      "type": "water aerobics",
+      "count": 1,
+      "examples": [
+        "Water aerobics class 55 minutes"
+      ]
+    },
+    {
+      "type": "aqua jogging",
+      "count": 1,
+      "examples": [
+        "Aqua jogging 40 minutes in deep end"
+      ]
+    },
+    {
+      "type": "synchronized swimming",
+      "count": 1,
+      "examples": [
+        "Synchronized swimming practice 75 minutes"
+      ]
+    },
+    {
+      "type": "kayaking",
+      "count": 1,
+      "examples": [
+        "Kayaking 2 hours on the river"
+      ]
+    },
+    {
+      "type": "whitewater kayaking",
+      "count": 1,
+      "examples": [
+        "Whitewater kayaking 90 minutes, class III rapids"
+      ]
+    },
+    {
+      "type": "sea kayaking",
+      "count": 1,
+      "examples": [
+        "Sea kayaking 3 hours along the coast"
+      ]
+    },
+    {
+      "type": "canoeing",
+      "count": 1,
+      "examples": [
+        "Canoeing 2.5 hours, peaceful paddle"
+      ]
+    },
+    {
+      "type": "stand up paddleboarding",
+      "count": 1,
+      "examples": [
+        "Stand up paddleboarding 60 minutes, great core workout"
+      ]
+    },
+    {
+      "type": "SUP yoga",
+      "count": 1,
+      "examples": [
+        "SUP yoga 45 minutes on the water"
+      ]
+    },
+    {
+      "type": "sculling",
+      "count": 1,
+      "examples": [
+        "Sculling 60 minutes, single scull"
+      ]
+    },
+    {
+      "type": "dragon boat",
+      "count": 1,
+      "examples": [
+        "Dragon boat racing practice 75 minutes"
+      ]
+    },
+    {
+      "type": "surfing",
+      "count": 1,
+      "examples": [
+        "Surfing 2 hours, caught some great waves"
+      ]
+    },
+    {
+      "type": "bodyboarding",
+      "count": 1,
+      "examples": [
+        "Bodyboarding 90 minutes at the beach"
+      ]
+    },
+    {
+      "type": "kitesurfing",
+      "count": 1,
+      "examples": [
+        "Kitesurfing 60 minutes, windy conditions"
+      ]
+    },
+    {
+      "type": "windsurfing",
+      "count": 1,
+      "examples": [
+        "Windsurfing 75 minutes, challenging"
+      ]
+    },
+    {
+      "type": "wakeboarding",
+      "count": 1,
+      "examples": [
+        "Wakeboarding 45 minutes behind the boat"
+      ]
+    },
+    {
+      "type": "water skiing",
+      "count": 1,
+      "examples": [
+        "Water skiing 50 minutes, slalom course"
+      ]
+    },
+    {
+      "type": "jet skiing",
+      "count": 1,
+      "examples": [
+        "Jet skiing 40 minutes, lots of jumping waves"
+      ]
+    },
+    {
+      "type": "snorkeling",
+      "count": 1,
+      "examples": [
+        "Snorkeling 90 minutes exploring reef"
+      ]
+    },
+    {
+      "type": "scuba diving",
+      "count": 1,
+      "examples": [
+        "Scuba diving 60 minutes, 50 feet deep"
+      ]
+    },
+    {
+      "type": "freediving",
+      "count": 1,
+      "examples": [
+        "Freediving training 45 minutes, breath hold practice"
+      ]
+    },
+    {
+      "type": "rafting",
+      "count": 1,
+      "examples": [
+        "Rafting 3 hours, class IV rapids"
+      ]
+    },
+    {
+      "type": "tubing",
+      "count": 1,
+      "examples": [
+        "Tubing down the river 2 hours, lazy float"
+      ]
+    },
+    {
+      "type": "sailing",
+      "count": 1,
+      "examples": [
+        "Sailing 4 hours, crewing on a yacht"
+      ]
+    },
+    {
+      "type": "hydrofoiling",
+      "count": 1,
+      "examples": [
+        "Hydrofoiling 40 minutes, electric board"
+      ]
+    },
+    {
+      "type": "underwater hockey",
+      "count": 1,
+      "examples": [
+        "Underwater hockey 50 minutes, intense game"
+      ]
+    },
+    {
+      "type": "underwater rugby",
+      "count": 1,
+      "examples": [
+        "Underwater rugby 45 minutes"
+      ]
+    },
+    {
+      "type": "aqua cycling",
+      "count": 1,
+      "examples": [
+        "Aqua cycling 40 minutes, bike in pool"
+      ]
+    },
+    {
+      "type": "pool intervals",
+      "count": 1,
+      "examples": [
+        "Poolside interval training 35 minutes, in and out"
+      ]
+    },
+    {
+      "type": "cliff jumping",
+      "count": 1,
+      "examples": [
+        "Cliff jumping 90 minutes, swimming and climbing"
+      ]
+    },
+    {
+      "type": "spearfishing",
+      "count": 1,
+      "examples": [
+        "Spearfishing 2 hours, swimming and diving"
+      ]
+    },
+    {
+      "type": "tidal pool exploration",
+      "count": 1,
+      "examples": [
+        "Tidal pool exploration 60 minutes, lots of climbing"
+      ]
+    },
+    {
+      "type": "pool basketball",
+      "count": 1,
+      "examples": [
+        "Pool basketball 45 minutes, half court in water"
+      ]
+    },
+    {
+      "type": "pool games",
+      "count": 1,
+      "examples": [
+        "Noodle wars 30 minutes with the kids, surprisingly exhausting"
+      ]
+    },
+    {
+      "type": "deep water running",
+      "count": 1,
+      "examples": [
+        "Deep water running 35 minutes with float belt"
+      ]
+    },
+    {
+      "type": "aqua boxing",
+      "count": 1,
+      "examples": [
+        "Aqua boxing 40 minutes, underwater punches"
+      ]
+    },
+    {
+      "type": "survival swimming",
+      "count": 1,
+      "examples": [
+        "Survival swimming drills 30 minutes"
+      ]
+    },
+    {
+      "type": "downhill skiing",
+      "count": 1,
+      "examples": [
+        "Downhill skiing 3 hours at the resort, black diamond runs"
+      ]
+    },
+    {
+      "type": "cross country skiing",
+      "count": 1,
+      "examples": [
+        "Cross country skiing 90 minutes, classic technique"
+      ]
+    },
+    {
+      "type": "skate skiing",
+      "count": 1,
+      "examples": [
+        "Skate skiing 60 minutes on groomed trails"
+      ]
+    },
+    {
+      "type": "snowboarding",
+      "count": 1,
+      "examples": [
+        "Snowboarding 4 hours in the powder"
+      ]
+    },
+    {
+      "type": "backcountry skiing",
+      "count": 1,
+      "examples": [
+        "Backcountry skiing 5 hours with touring gear"
+      ]
+    },
+    {
+      "type": "ski mountaineering",
+      "count": 1,
+      "examples": [
+        "Ski mountaineering 6 hours, 3000 feet elevation gain"
+      ]
+    },
+    {
+      "type": "telemark skiing",
+      "count": 1,
+      "examples": [
+        "Telemark skiing 2.5 hours, free heel style"
+      ]
+    },
+    {
+      "type": "snowshoeing",
+      "count": 1,
+      "examples": [
+        "Snowshoeing 2 hours through the forest"
+      ]
+    },
+    {
+      "type": "ice skating",
+      "count": 1,
+      "examples": [
+        "Ice skating 90 minutes at outdoor rink"
+      ]
+    },
+    {
+      "type": "speed skating",
+      "count": 1,
+      "examples": [
+        "Speed skating 45 minutes on oval track"
+      ]
+    },
+    {
+      "type": "figure skating",
+      "count": 1,
+      "examples": [
+        "Figure skating practice 75 minutes with jumps"
+      ]
+    },
+    {
+      "type": "sledding",
+      "count": 1,
+      "examples": [
+        "Sledding with kids 90 minutes, climbing back up the hill"
+      ]
+    },
+    {
+      "type": "tobogganing",
+      "count": 1,
+      "examples": [
+        "Tobogganing 2 hours at the local hill"
+      ]
+    },
+    {
+      "type": "luge",
+      "count": 1,
+      "examples": [
+        "Luge practice 40 minutes at the track"
+      ]
+    },
+    {
+      "type": "bobsledding",
+      "count": 1,
+      "examples": [
+        "Bobsledding 30 minutes, multiple runs"
+      ]
+    },
+    {
+      "type": "skeleton",
+      "count": 1,
+      "examples": [
+        "Skeleton racing 25 minutes, head first down the track"
+      ]
+    },
+    {
+      "type": "ice climbing",
+      "count": 1,
+      "examples": [
+        "Ice climbing 3 hours on frozen waterfall"
+      ]
+    },
+    {
+      "type": "snow tubing",
+      "count": 1,
+      "examples": [
+        "Snow tubing 60 minutes, cardio from walking up"
+      ]
+    },
+    {
+      "type": "snowmobiling",
+      "count": 1,
+      "examples": [
+        "Snowmobiling 2 hours through trails"
+      ]
+    },
+    {
+      "type": "dog sledding",
+      "count": 1,
+      "examples": [
+        "Dog sledding 90 minutes, mushing in Alaska"
+      ]
+    },
+    {
+      "type": "skijoring",
+      "count": 1,
+      "examples": [
+        "Skijoring 45 minutes, pulled by my dog"
+      ]
+    },
+    {
+      "type": "fat biking",
+      "count": 1,
+      "examples": [
+        "Fat biking on snow 75 minutes, challenging terrain"
+      ]
+    },
+    {
+      "type": "snow volleyball",
+      "count": 1,
+      "examples": [
+        "Snow volleyball 60 minutes, tournament on snow"
+      ]
+    },
+    {
+      "type": "snowball fight",
+      "count": 1,
+      "examples": [
+        "Snowball fight 45 minutes, surprisingly intense"
+      ]
+    },
+    {
+      "type": "snow shoveling",
+      "count": 1,
+      "examples": [
+        "Snow shoveling 60 minutes, driveway and walkway"
+      ]
+    },
+    {
+      "type": "winter hiking",
+      "count": 1,
+      "examples": [
+        "Winter hiking 2 hours in deep snow"
+      ]
+    },
+    {
+      "type": "cold water swimming",
+      "count": 1,
+      "examples": [
+        "Polar plunge swim 5 minutes, cold water therapy"
+      ]
+    },
+    {
+      "type": "winter trail running",
+      "count": 1,
+      "examples": [
+        "Winter trail running 50 minutes with microspikes"
+      ]
+    },
+    {
+      "type": "biathlon",
+      "count": 1,
+      "examples": [
+        "Biathlon training 90 minutes, skiing and shooting"
+      ]
+    },
+    {
+      "type": "nordic combined",
+      "count": 1,
+      "examples": [
+        "Nordic combined practice 2 hours, jump and ski"
+      ]
+    },
+    {
+      "type": "ski jumping",
+      "count": 1,
+      "examples": [
+        "Ski jumping practice 60 minutes"
+      ]
+    },
+    {
+      "type": "freestyle skiing",
+      "count": 1,
+      "examples": [
+        "Freestyle skiing 2 hours in terrain park"
+      ]
+    },
+    {
+      "type": "mogul skiing",
+      "count": 1,
+      "examples": [
+        "Mogul skiing 90 minutes, bumps all day"
+      ]
+    },
+    {
+      "type": "avalanche training",
+      "count": 1,
+      "examples": [
+        "Avalanche training 4 hours, beacon practice and digging"
+      ]
+    },
+    {
+      "type": "ice fishing",
+      "count": 1,
+      "examples": [
+        "Ice fishing 3 hours, drilling holes and hauling gear"
+      ]
+    },
+    {
+      "type": "snowkiting",
+      "count": 1,
+      "examples": [
+        "Snowkiting 75 minutes, kite-powered skiing"
+      ]
+    },
+    {
+      "type": "winter camping",
+      "count": 1,
+      "examples": [
+        "Winter camping setup 90 minutes, digging and organizing"
+      ]
+    },
+    {
+      "type": "snowboard cross",
+      "count": 1,
+      "examples": [
+        "Snowboard cross training 60 minutes, racing course"
+      ]
+    },
+    {
+      "type": "halfpipe snowboarding",
+      "count": 1,
+      "examples": [
+        "Halfpipe snowboarding 45 minutes, big air"
+      ]
+    },
+    {
+      "type": "slopestyle skiing",
+      "count": 1,
+      "examples": [
+        "Slopestyle skiing 90 minutes, rails and jumps"
+      ]
+    },
+    {
+      "type": "snow golf",
+      "count": 1,
+      "examples": [
+        "Snow golf 2 hours, 9 holes with colored balls"
+      ]
+    },
+    {
+      "type": "yukigassen",
+      "count": 1,
+      "examples": [
+        "Yukigassen 40 minutes, competitive snowball fighting"
+      ]
+    },
+    {
+      "type": "splitboarding",
+      "count": 1,
+      "examples": [
+        "Splitboarding 4 hours, uphill and downhill"
+      ]
+    },
+    {
+      "type": "heliskiing",
+      "count": 1,
+      "examples": [
+        "Heliskiing 5 hours, multiple runs in backcountry"
+      ]
+    },
+    {
+      "type": "cat skiing",
+      "count": 1,
+      "examples": [
+        "Cat skiing 6 hours, snowcat access to powder"
+      ]
+    },
+    {
+      "type": "spin class",
+      "count": 1,
+      "examples": [
+        "Spin class 45 minutes, high intensity intervals"
+      ]
+    },
+    {
+      "type": "track cycling",
+      "count": 1,
+      "examples": [
+        "Track cycling 60 minutes at the velodrome"
+      ]
+    },
+    {
+      "type": "cyclocross",
+      "count": 1,
+      "examples": [
+        "Cyclocross race 50 minutes, mud and barriers"
+      ]
+    },
+    {
+      "type": "BMX",
+      "count": 1,
+      "examples": [
+        "BMX riding 40 minutes at the pump track"
+      ]
+    },
+    {
+      "type": "downhill mountain biking",
+      "count": 1,
+      "examples": [
+        "Downhill mountain biking 2 hours with lift access"
+      ]
+    },
+    {
+      "type": "enduro mountain biking",
+      "count": 1,
+      "examples": [
+        "Enduro mountain biking 4 hours, timed stages"
+      ]
+    },
+    {
+      "type": "stationary cycling",
+      "count": 1,
+      "examples": [
+        "Stationary bike 30 minutes easy recovery ride"
+      ]
+    },
+    {
+      "type": "virtual cycling",
+      "count": 1,
+      "examples": [
+        "Zwift race 55 minutes, virtual cycling competition"
+      ]
+    },
+    {
+      "type": "criterium",
+      "count": 1,
+      "examples": [
+        "Criterium race 45 minutes, fast laps downtown"
+      ]
+    },
+    {
+      "type": "recumbent cycling",
+      "count": 1,
+      "examples": [
+        "Recumbent bike 60 minutes, comfortable ride"
+      ]
+    },
+    {
+      "type": "tandem cycling",
+      "count": 1,
+      "examples": [
+        "Tandem bike ride 90 minutes with my partner"
+      ]
+    },
+    {
+      "type": "unicycling",
+      "count": 1,
+      "examples": [
+        "Unicycling practice 30 minutes, balance and core work"
+      ]
+    },
+    {
+      "type": "bike polo",
+      "count": 1,
+      "examples": [
+        "Bike polo 60 minutes, intense game"
+      ]
+    },
+    {
+      "type": "fixed gear cycling",
+      "count": 1,
+      "examples": [
+        "Fixed gear riding 75 minutes, no coasting"
+      ]
+    },
+    {
+      "type": "e-bike",
+      "count": 1,
+      "examples": [
+        "E-bike ride 90 minutes, pedal assist on"
+      ]
+    },
+    {
+      "type": "trials biking",
+      "count": 1,
+      "examples": [
+        "Trials biking 50 minutes, obstacles and balance"
+      ]
+    },
+    {
+      "type": "cargo biking",
+      "count": 1,
+      "examples": [
+        "Cargo bike hauling 60 minutes, groceries and kids"
+      ]
+    },
+    {
+      "type": "airdyne",
+      "count": 1,
+      "examples": [
+        "Airdyne bike 20 minutes, arms and legs full body"
+      ]
+    },
+    {
+      "type": "assault bike",
+      "count": 1,
+      "examples": [
+        "Assault bike intervals 15 minutes, brutal workout"
+      ]
+    },
+    {
+      "type": "bikepacking",
+      "count": 1,
+      "examples": [
+        "Bikepacking overnight 8 hours riding with gear"
+      ]
+    },
+    {
+      "type": "bike maintenance",
+      "count": 1,
+      "examples": [
+        "Bike maintenance 90 minutes, cleaned and tuned"
+      ]
+    },
+    {
+      "type": "dirt jumping",
+      "count": 1,
+      "examples": [
+        "Dirt jump session 60 minutes, hitting features"
+      ]
+    },
+    {
+      "type": "bike skills",
+      "count": 1,
+      "examples": [
+        "Bike skills practice 45 minutes, cornering and balance"
+      ]
+    },
+    {
+      "type": "night cycling",
+      "count": 1,
+      "examples": [
+        "Night ride 75 minutes with lights, spooky fun"
+      ]
+    },
+    {
+      "type": "rollers",
+      "count": 1,
+      "examples": [
+        "Rollers session 30 minutes, balance and cadence"
+      ]
+    },
+    {
+      "type": "alleycat racing",
+      "count": 1,
+      "examples": [
+        "Alleycat race 55 minutes, urban checkpoint race"
+      ]
+    },
+    {
+      "type": "handcycling",
+      "count": 1,
+      "examples": [
+        "Handcycle 60 minutes, upper body powered"
+      ]
+    },
+    {
+      "type": "zumba",
+      "count": 1,
+      "examples": [
+        "Zumba class 60 minutes, Latin dance party"
+      ]
+    },
+    {
+      "type": "hip hop dance",
+      "count": 1,
+      "examples": [
+        "Hip hop dance class 55 minutes, choreography and freestyle"
+      ]
+    },
+    {
+      "type": "ballroom dancing",
+      "count": 1,
+      "examples": [
+        "Ballroom dancing 90 minutes, waltz and tango"
+      ]
+    },
+    {
+      "type": "salsa dancing",
+      "count": 1,
+      "examples": [
+        "Salsa dancing 75 minutes at the club"
+      ]
+    },
+    {
+      "type": "contemporary dance",
+      "count": 1,
+      "examples": [
+        "Contemporary dance class 60 minutes, very expressive"
+      ]
+    },
+    {
+      "type": "ballet",
+      "count": 1,
+      "examples": [
+        "Ballet class 75 minutes, barre and center work"
+      ]
+    },
+    {
+      "type": "jazz dance",
+      "count": 1,
+      "examples": [
+        "Jazz dance 50 minutes, high energy routine"
+      ]
+    },
+    {
+      "type": "tap dancing",
+      "count": 1,
+      "examples": [
+        "Tap dancing 45 minutes, rhythm and footwork"
+      ]
+    },
+    {
+      "type": "bollywood dance",
+      "count": 1,
+      "examples": [
+        "Bollywood dance 60 minutes, colorful and fun"
+      ]
+    },
+    {
+      "type": "line dancing",
+      "count": 1,
+      "examples": [
+        "Line dancing 55 minutes, country music"
+      ]
+    },
+    {
+      "type": "belly dancing",
+      "count": 1,
+      "examples": [
+        "Belly dancing class 50 minutes, core and hips"
+      ]
+    },
+    {
+      "type": "swing dancing",
+      "count": 1,
+      "examples": [
+        "Swing dancing 90 minutes, lindy hop social"
+      ]
+    },
+    {
+      "type": "break dancing",
+      "count": 1,
+      "examples": [
+        "Break dancing practice 40 minutes, power moves"
+      ]
+    },
+    {
+      "type": "pole dancing",
+      "count": 1,
+      "examples": [
+        "Pole dancing fitness 60 minutes, strength and spins"
+      ]
+    },
+    {
+      "type": "dance cardio",
+      "count": 1,
+      "examples": [
+        "Dance cardio 45 minutes, high intensity moves"
+      ]
+    },
+    {
+      "type": "afrobeat dance",
+      "count": 1,
+      "examples": [
+        "Afrobeat dance class 55 minutes, so much energy"
+      ]
+    },
+    {
+      "type": "k-pop dance",
+      "count": 1,
+      "examples": [
+        "K-pop dance workout 50 minutes, following music videos"
+      ]
+    },
+    {
+      "type": "flamenco dancing",
+      "count": 1,
+      "examples": [
+        "Flamenco dancing 60 minutes, passionate footwork"
+      ]
+    },
+    {
+      "type": "irish step dancing",
+      "count": 1,
+      "examples": [
+        "Irish step dancing 45 minutes, rapid leg movements"
+      ]
+    },
+    {
+      "type": "reggaeton dance",
+      "count": 1,
+      "examples": [
+        "Reggaeton dance class 55 minutes, Latin vibes"
+      ]
+    },
+    {
+      "type": "bodyjam",
+      "count": 1,
+      "examples": [
+        "BodyJam class 60 minutes, mixed dance styles"
+      ]
+    },
+    {
+      "type": "jazzercise",
+      "count": 1,
+      "examples": [
+        "Jazzercise 50 minutes, classic workout"
+      ]
+    },
+    {
+      "type": "capoeira",
+      "count": 1,
+      "examples": [
+        "Capoeira class 75 minutes, Brazilian martial art dance"
+      ]
+    },
+    {
+      "type": "bachata dancing",
+      "count": 1,
+      "examples": [
+        "Bachata dancing 60 minutes, romantic partner dance"
+      ]
+    },
+    {
+      "type": "samba",
+      "count": 1,
+      "examples": [
+        "Samba class 55 minutes, carnival energy"
+      ]
+    },
+    {
+      "type": "modern dance",
+      "count": 1,
+      "examples": [
+        "Modern dance 70 minutes, creative movement"
+      ]
+    },
+    {
+      "type": "lyrical dance",
+      "count": 1,
+      "examples": [
+        "Lyrical dance 50 minutes, emotional expression"
+      ]
+    },
+    {
+      "type": "step aerobics",
+      "count": 1,
+      "examples": [
+        "Step aerobics 45 minutes, platform cardio"
+      ]
+    },
+    {
+      "type": "aerobic dance",
+      "count": 1,
+      "examples": [
+        "Aerobic dance 60 minutes, 80s throwback"
+      ]
+    },
+    {
+      "type": "bodypump",
+      "count": 1,
+      "examples": [
+        "BodyPump class 60 minutes, weights to music"
+      ]
+    },
+    {
+      "type": "bodycombat",
+      "count": 1,
+      "examples": [
+        "BodyCombat 55 minutes, martial arts inspired"
+      ]
+    },
+    {
+      "type": "bodyattack",
+      "count": 1,
+      "examples": [
+        "BodyAttack class 50 minutes, athletic cardio"
+      ]
+    },
+    {
+      "type": "bodystep",
+      "count": 1,
+      "examples": [
+        "BodyStep 60 minutes, choreographed step workout"
+      ]
+    },
+    {
+      "type": "shbam",
+      "count": 1,
+      "examples": [
+        "SH'BAM class 45 minutes, fun dance party"
+      ]
+    },
+    {
+      "type": "cardio boxing",
+      "count": 1,
+      "examples": [
+        "Cardio boxing 50 minutes, heavy bag and combos"
+      ]
+    },
+    {
+      "type": "TRX",
+      "count": 1,
+      "examples": [
+        "TRX suspension training 45 minutes, bodyweight resistance"
+      ]
+    },
+    {
+      "type": "boot camp",
+      "count": 1,
+      "examples": [
+        "Boot camp class 60 minutes, military style workout"
+      ]
+    },
+    {
+      "type": "spin and sculpt",
+      "count": 1,
+      "examples": [
+        "Spin and sculpt 75 minutes, bike plus strength"
+      ]
+    },
+    {
+      "type": "cardio sculpt",
+      "count": 1,
+      "examples": [
+        "Cardio sculpt 55 minutes, cardio and toning"
+      ]
+    },
+    {
+      "type": "yoga sculpt",
+      "count": 1,
+      "examples": [
+        "Yoga sculpt 60 minutes, yoga with light weights"
+      ]
+    },
+    {
+      "type": "core fusion",
+      "count": 1,
+      "examples": [
+        "Core fusion 45 minutes, core focused workout"
+      ]
+    },
+    {
+      "type": "insanity",
+      "count": 1,
+      "examples": [
+        "Insanity workout 40 minutes, max interval training"
+      ]
+    },
+    {
+      "type": "P90X3",
+      "count": 1,
+      "examples": [
+        "P90X3 30 minutes, total body workout"
+      ]
+    },
+    {
+      "type": "orangetheory",
+      "count": 1,
+      "examples": [
+        "OrangeTheory class 60 minutes, heart rate zones"
+      ]
+    },
+    {
+      "type": "F45",
+      "count": 1,
+      "examples": [
+        "F45 class 45 minutes, functional training"
+      ]
+    },
+    {
+      "type": "judo",
+      "count": 1,
+      "examples": [
+        "Judo class 90 minutes, throws and groundwork"
+      ]
+    },
+    {
+      "type": "kung fu",
+      "count": 1,
+      "examples": [
+        "Kung Fu class 75 minutes, traditional forms"
+      ]
+    },
+    {
+      "type": "aikido",
+      "count": 1,
+      "examples": [
+        "Aikido practice 60 minutes, flowing movements"
+      ]
+    },
+    {
+      "type": "sambo",
+      "count": 1,
+      "examples": [
+        "Sambo training 75 minutes, Russian martial art"
+      ]
+    },
+    {
+      "type": "wing chun",
+      "count": 1,
+      "examples": [
+        "Wing Chun 60 minutes, close range combat"
+      ]
+    },
+    {
+      "type": "hapkido",
+      "count": 1,
+      "examples": [
+        "Hapkido class 75 minutes, joint locks and throws"
+      ]
+    },
+    {
+      "type": "savate",
+      "count": 1,
+      "examples": [
+        "Savate 60 minutes, French kickboxing"
+      ]
+    },
+    {
+      "type": "eskrima",
+      "count": 1,
+      "examples": [
+        "Eskrima training 60 minutes, stick fighting"
+      ]
+    },
+    {
+      "type": "ninjutsu",
+      "count": 1,
+      "examples": [
+        "Ninjutsu class 75 minutes, stealth techniques"
+      ]
+    },
+    {
+      "type": "kyokushin karate",
+      "count": 1,
+      "examples": [
+        "Kyokushin karate 90 minutes, full contact training"
+      ]
+    },
+    {
+      "type": "combat sambo",
+      "count": 1,
+      "examples": [
+        "Combat Sambo 80 minutes, striking and submissions"
+      ]
+    },
+    {
+      "type": "systema",
+      "count": 1,
+      "examples": [
+        "Systema training 60 minutes, Russian martial art breathing"
+      ]
+    },
+    {
+      "type": "silat",
+      "count": 1,
+      "examples": [
+        "Silat training 70 minutes, Southeast Asian martial art"
+      ]
+    },
+    {
+      "type": "catch wrestling",
+      "count": 1,
+      "examples": [
+        "Catch wrestling 85 minutes, submission grappling"
+      ]
+    },
+    {
+      "type": "lethwei",
+      "count": 1,
+      "examples": [
+        "Lethwei 60 minutes, Burmese bareknuckle boxing"
+      ]
+    },
+    {
+      "type": "sanda",
+      "count": 1,
+      "examples": [
+        "Sanda training 75 minutes, Chinese kickboxing"
+      ]
+    },
+    {
+      "type": "kendo",
+      "count": 1,
+      "examples": [
+        "Kendo practice 60 minutes, Japanese sword fighting"
+      ]
+    },
+    {
+      "type": "iaido",
+      "count": 1,
+      "examples": [
+        "Iaido training 45 minutes, sword drawing art"
+      ]
+    },
+    {
+      "type": "HEMA",
+      "count": 1,
+      "examples": [
+        "HEMA sparring 75 minutes, historical European martial arts"
+      ]
+    },
+    {
+      "type": "fencing",
+      "count": 1,
+      "examples": [
+        "Fencing practice 60 minutes, épée and foil"
+      ]
+    },
+    {
+      "type": "shadow boxing",
+      "count": 1,
+      "examples": [
+        "Shadow boxing 20 minutes, visualization and technique"
+      ]
+    },
+    {
+      "type": "speed bag",
+      "count": 1,
+      "examples": [
+        "Speed bag training 30 minutes, rhythm and coordination"
+      ]
+    },
+    {
+      "type": "double-end bag",
+      "count": 1,
+      "examples": [
+        "Double-end bag 25 minutes, accuracy drills"
+      ]
+    },
+    {
+      "type": "no-gi grappling",
+      "count": 1,
+      "examples": [
+        "No-gi grappling 75 minutes, submission wrestling"
+      ]
+    },
+    {
+      "type": "pad work",
+      "count": 1,
+      "examples": [
+        "Pad holding 50 minutes, partner training"
+      ]
+    },
+    {
+      "type": "martial arts",
+      "count": 1,
+      "examples": [
+        "Board breaking practice 25 minutes, power training"
+      ]
+    },
+    {
+      "type": "kali",
+      "count": 1,
+      "examples": [
+        "Kali stick fighting 60 minutes, Filipino martial art"
+      ]
+    },
+    {
+      "type": "arnis",
+      "count": 1,
+      "examples": [
+        "Arnis training 55 minutes, weapon and empty hand"
+      ]
+    },
+    {
+      "type": "jeet kune do",
+      "count": 1,
+      "examples": [
+        "Jeet Kune Do 60 minutes, Bruce Lee's martial art"
+      ]
+    },
+    {
+      "type": "tang soo do",
+      "count": 1,
+      "examples": [
+        "Tang Soo Do 75 minutes, Korean martial art"
+      ]
+    },
+    {
+      "type": "rock climbing",
+      "count": 1,
+      "examples": [
+        "Rock climbing 2 hours at the gym, bouldering and top rope"
+      ]
+    },
+    {
+      "type": "hiking",
+      "count": 1,
+      "examples": [
+        "Hiking 3 hours on mountain trail, 1500 feet elevation"
+      ]
+    },
+    {
+      "type": "backpacking",
+      "count": 1,
+      "examples": [
+        "Backpacking 6 hours with 40 pound pack"
+      ]
+    },
+    {
+      "type": "rappelling",
+      "count": 1,
+      "examples": [
+        "Rappelling practice 90 minutes, multiple descents"
+      ]
+    },
+    {
+      "type": "via ferrata",
+      "count": 1,
+      "examples": [
+        "Via ferrata 4 hours, protected climbing route"
+      ]
+    },
+    {
+      "type": "scrambling",
+      "count": 1,
+      "examples": [
+        "Scrambling 2.5 hours, hands and feet climbing"
+      ]
+    },
+    {
+      "type": "mountaineering",
+      "count": 1,
+      "examples": [
+        "Mountaineering 8 hours, summit push"
+      ]
+    },
+    {
+      "type": "canyoneering",
+      "count": 1,
+      "examples": [
+        "Canyoneering 5 hours, rappelling and swimming"
+      ]
+    },
+    {
+      "type": "orienteering",
+      "count": 1,
+      "examples": [
+        "Orienteering race 90 minutes, navigation challenge"
+      ]
+    },
+    {
+      "type": "geocaching",
+      "count": 1,
+      "examples": [
+        "Geocaching hike 2 hours, found 5 caches"
+      ]
+    },
+    {
+      "type": "beach cleanup",
+      "count": 1,
+      "examples": [
+        "Beach cleanup walk 90 minutes, picking up trash"
+      ]
+    },
+    {
+      "type": "nature walk",
+      "count": 1,
+      "examples": [
+        "Nature walk 60 minutes, bird watching"
+      ]
+    },
+    {
+      "type": "foraging hike",
+      "count": 1,
+      "examples": [
+        "Foraging hike 2.5 hours, mushroom hunting"
+      ]
+    },
+    {
+      "type": "parkour",
+      "count": 1,
+      "examples": [
+        "Parkour training 60 minutes, urban environment"
+      ]
+    },
+    {
+      "type": "freerunning",
+      "count": 1,
+      "examples": [
+        "Freerunning session 45 minutes, flips and tricks"
+      ]
+    },
+    {
+      "type": "slacklining",
+      "count": 1,
+      "examples": [
+        "Slacklining 40 minutes, balance training"
+      ]
+    },
+    {
+      "type": "highlining",
+      "count": 1,
+      "examples": [
+        "Highlining 30 minutes, extreme slacklining"
+      ]
+    },
+    {
+      "type": "tree climbing",
+      "count": 1,
+      "examples": [
+        "Tree climbing 75 minutes, recreational climbing"
+      ]
+    },
+    {
+      "type": "zip lining",
+      "count": 1,
+      "examples": [
+        "Zip lining tour 2 hours, 10 lines"
+      ]
+    },
+    {
+      "type": "ropes course",
+      "count": 1,
+      "examples": [
+        "Ropes course 90 minutes, high elements"
+      ]
+    },
+    {
+      "type": "obstacle course race",
+      "count": 1,
+      "examples": [
+        "Obstacle course race 60 minutes, mud run"
+      ]
+    },
+    {
+      "type": "spartan race",
+      "count": 1,
+      "examples": [
+        "Spartan race 90 minutes, 20 obstacles"
+      ]
+    },
+    {
+      "type": "tough mudder",
+      "count": 1,
+      "examples": [
+        "Tough Mudder 3 hours, extreme obstacles"
+      ]
+    },
+    {
+      "type": "rope climbing",
+      "count": 1,
+      "examples": [
+        "Rope climbing practice 30 minutes, 15 foot rope"
+      ]
+    },
+    {
+      "type": "speed climbing",
+      "count": 1,
+      "examples": [
+        "Wall climbing drills 40 minutes, speed climbing"
+      ]
+    },
+    {
+      "type": "deep water soloing",
+      "count": 1,
+      "examples": [
+        "Deep water soloing 2 hours, climbing over water"
+      ]
+    },
+    {
+      "type": "sport climbing",
+      "count": 1,
+      "examples": [
+        "Sport climbing 3 hours, leading routes"
+      ]
+    },
+    {
+      "type": "trad climbing",
+      "count": 1,
+      "examples": [
+        "Trad climbing 4 hours, placing gear"
+      ]
+    },
+    {
+      "type": "multi-pitch climbing",
+      "count": 1,
+      "examples": [
+        "Multi-pitch climbing 6 hours, 5 pitches"
+      ]
+    },
+    {
+      "type": "bouldering",
+      "count": 1,
+      "examples": [
+        "Bouldering session 90 minutes, V5-V7 problems"
+      ]
+    },
+    {
+      "type": "campus board",
+      "count": 1,
+      "examples": [
+        "Campus board training 25 minutes, finger strength"
+      ]
+    },
+    {
+      "type": "hangboard",
+      "count": 1,
+      "examples": [
+        "Hangboard workout 30 minutes, max hangs"
+      ]
+    },
+    {
+      "type": "kilter board",
+      "count": 1,
+      "examples": [
+        "Kilter board climbing 60 minutes, overhanging"
+      ]
+    },
+    {
+      "type": "moonboard",
+      "count": 1,
+      "examples": [
+        "Moonboard problems 45 minutes, benchmark climbs"
+      ]
+    },
+    {
+      "type": "beach running",
+      "count": 1,
+      "examples": [
+        "Beach running 50 minutes in soft sand"
+      ]
+    },
+    {
+      "type": "sand dune sprints",
+      "count": 1,
+      "examples": [
+        "Sand dune sprints 30 minutes, killer workout"
+      ]
+    },
+    {
+      "type": "hill sprints",
+      "count": 1,
+      "examples": [
+        "Hill sprints 25 minutes, 10 repeats"
+      ]
+    },
+    {
+      "type": "waterfall hiking",
+      "count": 1,
+      "examples": [
+        "Waterfall hike 4 hours, swimming holes"
+      ]
+    },
+    {
+      "type": "canyon hiking",
+      "count": 1,
+      "examples": [
+        "Canyon hiking 3 hours, slot canyon exploration"
+      ]
+    },
+    {
+      "type": "desert hiking",
+      "count": 1,
+      "examples": [
+        "Desert hiking 2.5 hours in extreme heat"
+      ]
+    },
+    {
+      "type": "jungle trekking",
+      "count": 1,
+      "examples": [
+        "Jungle trekking 5 hours, humid conditions"
+      ]
+    },
+    {
+      "type": "alpine hiking",
+      "count": 1,
+      "examples": [
+        "Alpine hiking 6 hours above treeline"
+      ]
+    },
+    {
+      "type": "gorge walking",
+      "count": 1,
+      "examples": [
+        "Gorge walking 2 hours, wading through river"
+      ]
+    },
+    {
+      "type": "thru-hiking",
+      "count": 1,
+      "examples": [
+        "Thru-hiking 10 hours on the Appalachian Trail"
+      ]
+    },
+    {
+      "type": "peak bagging",
+      "count": 1,
+      "examples": [
+        "Peak bagging 7 hours, 3 summits"
+      ]
+    },
+    {
+      "type": "ridge walking",
+      "count": 1,
+      "examples": [
+        "Ridge walking 4 hours, exposed terrain"
+      ]
+    },
+    {
+      "type": "cross country running",
+      "count": 1,
+      "examples": [
+        "Cross country running 60 minutes, off-road race"
+      ]
+    },
+    {
+      "type": "functional fitness",
+      "count": 1,
+      "examples": [
+        "Functional fitness class 60 minutes, compound movements"
+      ]
+    },
+    {
+      "type": "kettlebell complex",
+      "count": 1,
+      "examples": [
+        "Kettlebell complex 40 minutes, clean/press/squat"
+      ]
+    },
+    {
+      "type": "sandbag training",
+      "count": 1,
+      "examples": [
+        "Sandbag workout 35 minutes, carries and ground-to-shoulder"
+      ]
+    },
+    {
+      "type": "tire slams",
+      "count": 1,
+      "examples": [
+        "Sledgehammer tire slams 25 minutes, alternating sides"
+      ]
+    },
+    {
+      "type": "tire flips",
+      "count": 1,
+      "examples": [
+        "Tire flips 20 minutes, 300 pound tire"
+      ]
+    },
+    {
+      "type": "battle ropes",
+      "count": 1,
+      "examples": [
+        "Battle ropes 15 minutes, HIIT intervals"
+      ]
+    },
+    {
+      "type": "sled work",
+      "count": 1,
+      "examples": [
+        "Sled push/pull 30 minutes, 180 pound sled"
+      ]
+    },
+    {
+      "type": "farmers carries",
+      "count": 1,
+      "examples": [
+        "Farmers carries 20 minutes, 100 pounds per hand"
+      ]
+    },
+    {
+      "type": "yoke walk",
+      "count": 1,
+      "examples": [
+        "Yoke walk 15 minutes, 300 pounds on back"
+      ]
+    },
+    {
+      "type": "atlas stones",
+      "count": 1,
+      "examples": [
+        "Atlas stone lifts 25 minutes, 150-200 pound stones"
+      ]
+    },
+    {
+      "type": "log press",
+      "count": 1,
+      "examples": [
+        "Log press 30 minutes, strongman training"
+      ]
+    },
+    {
+      "type": "barbell complex",
+      "count": 1,
+      "examples": [
+        "Barbell complex 35 minutes, no dropping the bar"
+      ]
+    },
+    {
+      "type": "turkish get-ups",
+      "count": 1,
+      "examples": [
+        "Turkish get-ups 20 minutes with 53 pound kettlebell"
+      ]
+    },
+    {
+      "type": "pistol squats",
+      "count": 1,
+      "examples": [
+        "Pistol squats practice 25 minutes, single leg"
+      ]
+    },
+    {
+      "type": "muscle-ups",
+      "count": 1,
+      "examples": [
+        "Muscle-up practice 30 minutes, 5 successful reps"
+      ]
+    },
+    {
+      "type": "handstand walking",
+      "count": 1,
+      "examples": [
+        "Handstand walk practice 20 minutes, 50 feet total"
+      ]
+    },
+    {
+      "type": "double unders",
+      "count": 1,
+      "examples": [
+        "Double under practice 15 minutes, working on endurance"
+      ]
+    },
+    {
+      "type": "box jump overs",
+      "count": 1,
+      "examples": [
+        "Box jump overs 20 minutes, 24 inch box"
+      ]
+    },
+    {
+      "type": "burpee box jump overs",
+      "count": 1,
+      "examples": [
+        "Burpee box jump overs 15 minutes, brutal"
+      ]
+    },
+    {
+      "type": "wall walks",
+      "count": 1,
+      "examples": [
+        "Wall walk practice 10 minutes, nose to wall"
+      ]
+    },
+    {
+      "type": "devil press",
+      "count": 1,
+      "examples": [
+        "Devil press 12 minutes, 50 pound dumbbells"
+      ]
+    },
+    {
+      "type": "man makers",
+      "count": 1,
+      "examples": [
+        "Man makers 18 minutes with 40 pound dumbbells"
+      ]
+    },
+    {
+      "type": "dumbbell snatches",
+      "count": 1,
+      "examples": [
+        "Dumbbell snatches 25 minutes, alternating arms"
+      ]
+    },
+    {
+      "type": "toes to bar",
+      "count": 1,
+      "examples": [
+        "Toes to bar practice 15 minutes, strict form"
+      ]
+    },
+    {
+      "type": "chest to bar pull-ups",
+      "count": 1,
+      "examples": [
+        "Chest to bar pull-ups 20 minutes, building volume"
+      ]
+    },
+    {
+      "type": "ring dips",
+      "count": 1,
+      "examples": [
+        "Ring dips 18 minutes, working on strength"
+      ]
+    },
+    {
+      "type": "ring rows",
+      "count": 1,
+      "examples": [
+        "Ring rows 15 minutes, horizontal pulling"
+      ]
+    },
+    {
+      "type": "GHD sit-ups",
+      "count": 1,
+      "examples": [
+        "GHD sit-ups 20 minutes, core destroyer"
+      ]
+    },
+    {
+      "type": "GHD back extensions",
+      "count": 1,
+      "examples": [
+        "GHD back extensions 15 minutes, posterior chain"
+      ]
+    },
+    {
+      "type": "bear crawls",
+      "count": 1,
+      "examples": [
+        "Bear crawls 10 minutes, forward and backward"
+      ]
+    },
+    {
+      "type": "crab walks",
+      "count": 1,
+      "examples": [
+        "Crab walks 8 minutes, tough on shoulders"
+      ]
+    },
+    {
+      "type": "broad jumps",
+      "count": 1,
+      "examples": [
+        "Broad jumps 12 minutes, explosive power"
+      ]
+    },
+    {
+      "type": "single leg RDLs",
+      "count": 1,
+      "examples": [
+        "Single leg Romanian deadlifts 20 minutes, balance and strength"
+      ]
+    },
+    {
+      "type": "bulgarian split squats",
+      "count": 1,
+      "examples": [
+        "Bulgarian split squats 25 minutes with dumbbells"
+      ]
+    },
+    {
+      "type": "overhead walking lunges",
+      "count": 1,
+      "examples": [
+        "Walking lunges 15 minutes with 45 pound plate overhead"
+      ]
+    },
+    {
+      "type": "goblet squats",
+      "count": 1,
+      "examples": [
+        "Goblet squats 20 minutes, 70 pound kettlebell"
+      ]
+    },
+    {
+      "type": "zercher squats",
+      "count": 1,
+      "examples": [
+        "Zercher squats 18 minutes, awkward but effective"
+      ]
+    },
+    {
+      "type": "assault runner",
+      "count": 1,
+      "examples": [
+        "Assault runner sprints 12 minutes, all out efforts"
+      ]
+    },
+    {
+      "type": "SkiErg",
+      "count": 1,
+      "examples": [
+        "SkiErg intervals 15 minutes, 30 on 30 off"
+      ]
+    },
+    {
+      "type": "BikeErg",
+      "count": 1,
+      "examples": [
+        "BikeErg 20 minutes, steady state cardio"
+      ]
+    },
+    {
+      "type": "platform tennis",
+      "count": 1,
+      "examples": [
+        "Platform tennis 75 minutes, paddle tennis"
+      ]
+    },
+    {
+      "type": "real tennis",
+      "count": 1,
+      "examples": [
+        "Real tennis 60 minutes, historic court game"
+      ]
+    },
+    {
+      "type": "jai alai",
+      "count": 1,
+      "examples": [
+        "Jai alai practice 45 minutes, pelota throwing"
+      ]
+    },
+    {
+      "type": "speedminton",
+      "count": 1,
+      "examples": [
+        "Speedminton 40 minutes, outdoor badminton"
+      ]
+    },
+    {
+      "type": "frontenis",
+      "count": 1,
+      "examples": [
+        "Frontenis 50 minutes, tennis with hands"
+      ]
+    },
+    {
+      "type": "beach tennis",
+      "count": 1,
+      "examples": [
+        "Beach tennis 75 minutes, sand court"
+      ]
+    },
+    {
+      "type": "soft tennis",
+      "count": 1,
+      "examples": [
+        "Soft tennis 60 minutes, Japanese variation"
+      ]
+    },
+    {
+      "type": "cardio tennis",
+      "count": 1,
+      "examples": [
+        "Cardio tennis class 60 minutes, group workout"
+      ]
+    },
+    {
+      "type": "table tennis drills",
+      "count": 1,
+      "examples": [
+        "Table tennis robot practice 45 minutes"
+      ]
+    },
+    {
+      "type": "squash fitness",
+      "count": 1,
+      "examples": [
+        "Squash fitness class 45 minutes, no ball drills"
+      ]
+    },
+    {
+      "type": "badminton drills",
+      "count": 1,
+      "examples": [
+        "Badminton smash practice 20 minutes, overhead power"
+      ]
+    },
+    {
+      "type": "mini tennis",
+      "count": 1,
+      "examples": [
+        "Mini tennis for kids 40 minutes, teaching fundamentals"
+      ]
+    },
+    {
+      "type": "touchtennis",
+      "count": 1,
+      "examples": [
+        "Touchtennis 30 minutes, mini court game"
+      ]
+    },
+    {
+      "type": "racketlon",
+      "count": 1,
+      "examples": [
+        "Racketlon 2 hours, all four racquet sports"
+      ]
+    },
+    {
+      "type": "paddle tennis",
+      "count": 1,
+      "examples": [
+        "Paddle tennis 70 minutes, doubles game"
+      ]
+    },
+    {
+      "type": "badminton conditioning",
+      "count": 1,
+      "examples": [
+        "Badminton conditioning 40 minutes, court movement"
+      ]
+    },
+    {
+      "type": "racquetball drills",
+      "count": 1,
+      "examples": [
+        "Racquetball kill shot drills 30 minutes"
+      ]
+    },
+    {
+      "type": "dog walking",
+      "count": 1,
+      "examples": [
+        "Dog walking 45 minutes, multiple stops"
+      ]
+    },
+    {
+      "type": "gardening",
+      "count": 1,
+      "examples": [
+        "Gardening 2 hours, planting and weeding"
+      ]
+    },
+    {
+      "type": "housecleaning",
+      "count": 1,
+      "examples": [
+        "Housecleaning 90 minutes, vacuuming and mopping"
+      ]
+    },
+    {
+      "type": "grocery shopping",
+      "count": 1,
+      "examples": [
+        "Grocery shopping 75 minutes, walking and carrying bags"
+      ]
+    },
+    {
+      "type": "playing with kids",
+      "count": 1,
+      "examples": [
+        "Playing with kids 60 minutes, active playtime"
+      ]
+    },
+    {
+      "type": "lawn mowing",
+      "count": 1,
+      "examples": [
+        "Mowing the lawn 50 minutes, push mower"
+      ]
+    },
+    {
+      "type": "raking leaves",
+      "count": 1,
+      "examples": [
+        "Raking leaves 40 minutes, yard work"
+      ]
+    },
+    {
+      "type": "car washing",
+      "count": 1,
+      "examples": [
+        "Washing the car 35 minutes, scrubbing and rinsing"
+      ]
+    },
+    {
+      "type": "house painting",
+      "count": 1,
+      "examples": [
+        "Painting the house 3 hours, roller work"
+      ]
+    },
+    {
+      "type": "moving furniture",
+      "count": 1,
+      "examples": [
+        "Moving furniture 60 minutes, rearranging rooms"
+      ]
+    },
+    {
+      "type": "standing desk",
+      "count": 1,
+      "examples": [
+        "Standing desk 4 hours, active standing"
+      ]
+    },
+    {
+      "type": "taking out trash",
+      "count": 1,
+      "examples": [
+        "Taking out trash 10 minutes, multiple trips"
+      ]
+    },
+    {
+      "type": "cooking",
+      "count": 1,
+      "examples": [
+        "Cooking meal prep 2 hours, standing and chopping"
+      ]
+    },
+    {
+      "type": "shopping walk",
+      "count": 1,
+      "examples": [
+        "Window shopping 90 minutes at the mall"
+      ]
+    },
+    {
+      "type": "commute walking",
+      "count": 1,
+      "examples": [
+        "Commute walking 30 minutes to train station"
+      ]
+    },
+    {
+      "type": "museum walking",
+      "count": 1,
+      "examples": [
+        "Museum visit 2.5 hours, walking galleries"
+      ]
+    },
+    {
+      "type": "amusement park walking",
+      "count": 1,
+      "examples": [
+        "Amusement park 6 hours, walking between rides"
+      ]
+    },
+    {
+      "type": "airport walking",
+      "count": 1,
+      "examples": [
+        "Airport walking 90 minutes, between terminals"
+      ]
+    },
+    {
+      "type": "chopping wood",
+      "count": 1,
+      "examples": [
+        "Chopping firewood 45 minutes, splitting logs"
+      ]
+    },
+    {
+      "type": "carrying groceries",
+      "count": 1,
+      "examples": [
+        "Carrying groceries upstairs 15 minutes, multiple bags"
+      ]
+    },
+    {
+      "type": "washing dishes",
+      "count": 1,
+      "examples": [
+        "Washing dishes by hand 30 minutes, standing"
+      ]
+    },
+    {
+      "type": "folding laundry",
+      "count": 1,
+      "examples": [
+        "Folding laundry 25 minutes, standing and reaching"
+      ]
+    },
+    {
+      "type": "sightseeing walk",
+      "count": 1,
+      "examples": [
+        "Sightseeing walk 3 hours, tourist exploring"
+      ]
+    },
+    {
+      "type": "power walking",
+      "count": 1,
+      "examples": [
+        "Power walking to work 25 minutes, brisk pace"
+      ]
+    },
+    {
+      "type": "pacing",
+      "count": 1,
+      "examples": [
+        "Pacing while on phone 40 minutes"
+      ]
+    },
+    {
+      "type": "spring cleaning",
+      "count": 1,
+      "examples": [
+        "Spring cleaning 4 hours, deep cleaning house"
+      ]
+    },
+    {
+      "type": "organizing",
+      "count": 1,
+      "examples": [
+        "Organizing closet 60 minutes, lifting and sorting"
+      ]
+    },
+    {
+      "type": "stroller pushing",
+      "count": 1,
+      "examples": [
+        "Pushing stroller 50 minutes, walking with baby"
+      ]
+    },
+    {
+      "type": "construction work",
+      "count": 1,
+      "examples": [
+        "Construction work 6 hours, manual labor"
+      ]
+    },
+    {
+      "type": "warehouse work",
+      "count": 1,
+      "examples": [
+        "Warehouse work 8 hours, lifting and moving boxes"
+      ]
+    },
+    {
+      "type": "waitressing",
+      "count": 1,
+      "examples": [
+        "Waitressing shift 5 hours, on my feet all day"
+      ]
+    },
+    {
+      "type": "retail work",
+      "count": 1,
+      "examples": [
+        "Retail work 7 hours, standing and stocking"
+      ]
+    },
+    {
+      "type": "nursing work",
+      "count": 1,
+      "examples": [
+        "Nursing shift 12 hours, constant movement"
+      ]
+    },
+    {
+      "type": "landscaping",
+      "count": 1,
+      "examples": [
+        "Landscaping 4 hours, digging and planting"
+      ]
+    },
+    {
+      "type": "bartending",
+      "count": 1,
+      "examples": [
+        "Bartending 6 hours, standing and mixing drinks"
+      ]
+    },
+    {
+      "type": "delivery work",
+      "count": 1,
+      "examples": [
+        "Delivery work 8 hours, walking and carrying packages"
+      ]
+    },
+    {
+      "type": "teaching",
+      "count": 1,
+      "examples": [
+        "Teaching on feet 5 hours, classroom standing"
+      ]
+    },
+    {
+      "type": "farm work",
+      "count": 1,
+      "examples": [
+        "Farming chores 5 hours, feeding animals and maintenance"
+      ]
+    },
+    {
+      "type": "frisbee",
+      "count": 1,
+      "examples": [
+        "Playing frisbee in park 30 minutes, casual throwing"
+      ]
+    },
+    {
+      "type": "kite flying",
+      "count": 1,
+      "examples": [
+        "Flying kite 45 minutes, running and pulling"
+      ]
+    },
+    {
+      "type": "feeding chickens",
+      "count": 1,
+      "examples": [
+        "Feeding chickens 20 minutes, bending and walking"
+      ]
+    },
+    {
+      "type": "playing catch",
+      "count": 1,
+      "examples": [
+        "Playing catch 25 minutes, baseball with kids"
+      ]
+    },
+    {
+      "type": "stretching breaks",
+      "count": 1,
+      "examples": [
+        "Light stretching breaks 30 minutes throughout day"
+      ]
+    },
+    {
+      "type": "active commute",
+      "count": 1,
+      "examples": [
+        "Active commute 40 minutes, bike and walk combo"
+      ]
+    },
+    {
+      "type": "gutter cleaning",
+      "count": 1,
+      "examples": [
+        "Cleaning gutters 60 minutes, ladder work"
+      ]
+    },
+    {
+      "type": "holiday decorating",
+      "count": 1,
+      "examples": [
+        "Decorating for holiday 2 hours, climbing and hanging"
+      ]
+    },
+    {
+      "type": "unpacking",
+      "count": 1,
+      "examples": [
+        "Unpacking boxes 90 minutes, moving into new place"
+      ]
+    },
+    {
+      "type": "loading truck",
+      "count": 1,
+      "examples": [
+        "Loading moving truck 3 hours, heavy lifting"
+      ]
+    },
+    {
+      "type": "marathon training",
+      "count": 1,
+      "examples": [
+        "Marathon training run 20 miles, long run day"
+      ]
+    },
+    {
+      "type": "half marathon training",
+      "count": 1,
+      "examples": [
+        "Half marathon training 13 miles, race pace"
+      ]
+    },
+    {
+      "type": "triathlon brick",
+      "count": 1,
+      "examples": [
+        "Triathlon brick workout 90 minutes, bike to run transition"
+      ]
+    },
+    {
+      "type": "ironman training",
+      "count": 1,
+      "examples": [
+        "Ironman training 5 hours, long course preparation"
+      ]
+    },
+    {
+      "type": "sprint triathlon",
+      "count": 1,
+      "examples": [
+        "Sprint triathlon race 75 minutes, completed"
+      ]
+    },
+    {
+      "type": "5K training",
+      "count": 1,
+      "examples": [
+        "5K race training intervals 40 minutes, speed work"
+      ]
+    },
+    {
+      "type": "10K training",
+      "count": 1,
+      "examples": [
+        "10K training tempo run 60 minutes"
+      ]
+    },
+    {
+      "type": "ultra marathon training",
+      "count": 1,
+      "examples": [
+        "Ultra marathon training 6 hours, 40 miles"
+      ]
+    },
+    {
+      "type": "calisthenics skills",
+      "count": 1,
+      "examples": [
+        "Calisthenics skills training 60 minutes, planche and lever"
+      ]
+    },
+    {
+      "type": "gymnastics strength",
+      "count": 1,
+      "examples": [
+        "Gymnastics strength training 75 minutes, rings and bars"
+      ]
+    },
+    {
+      "type": "sprint training",
+      "count": 1,
+      "examples": [
+        "Sprinting training 45 minutes, track intervals"
+      ]
+    },
+    {
+      "type": "plyometrics",
+      "count": 1,
+      "examples": [
+        "Plyometric training 40 minutes, jump work"
+      ]
+    },
+    {
+      "type": "agility training",
+      "count": 1,
+      "examples": [
+        "Agility drills 30 minutes, cone work"
+      ]
+    },
+    {
+      "type": "speed and agility",
+      "count": 1,
+      "examples": [
+        "Speed and agility training 50 minutes, SAQ work"
+      ]
+    },
+    {
+      "type": "sports performance",
+      "count": 1,
+      "examples": [
+        "Sports performance training 60 minutes, athlete development"
+      ]
+    },
+    {
+      "type": "vertical jump training",
+      "count": 1,
+      "examples": [
+        "Vertical jump training 35 minutes, explosive power"
+      ]
+    },
+    {
+      "type": "aerobic base building",
+      "count": 1,
+      "examples": [
+        "Aerobic base building 90 minutes, zone 2 cardio"
+      ]
+    },
+    {
+      "type": "VO2 max training",
+      "count": 1,
+      "examples": [
+        "VO2 max intervals 25 minutes, all out efforts"
+      ]
+    },
+    {
+      "type": "lactate threshold",
+      "count": 1,
+      "examples": [
+        "Lactate threshold training 60 minutes, tempo pace"
+      ]
+    },
+    {
+      "type": "endurance base",
+      "count": 1,
+      "examples": [
+        "Endurance base training 3 hours, low intensity"
+      ]
+    },
+    {
+      "type": "periodization training",
+      "count": 1,
+      "examples": [
+        "Periodization week 1 strength phase 75 minutes"
+      ]
+    },
+    {
+      "type": "deload training",
+      "count": 1,
+      "examples": [
+        "Deload week training 45 minutes, recovery focus"
+      ]
+    },
+    {
+      "type": "peaking phase",
+      "count": 1,
+      "examples": [
+        "Peaking phase training 60 minutes, max effort"
+      ]
+    },
+    {
+      "type": "off-season conditioning",
+      "count": 1,
+      "examples": [
+        "Off-season conditioning 90 minutes, general fitness"
+      ]
+    },
+    {
+      "type": "pre-season training",
+      "count": 1,
+      "examples": [
+        "Pre-season training 2 hours, sport specific"
+      ]
+    },
+    {
+      "type": "in-season maintenance",
+      "count": 1,
+      "examples": [
+        "In-season maintenance 50 minutes, keeping fit"
+      ]
+    },
+    {
+      "type": "competition taper",
+      "count": 1,
+      "examples": [
+        "Competition taper 30 minutes, light work"
+      ]
+    },
+    {
+      "type": "core stability",
+      "count": 1,
+      "examples": [
+        "Core stability training 40 minutes, anti-rotation work"
+      ]
+    },
+    {
+      "type": "balance training",
+      "count": 1,
+      "examples": [
+        "Balance and proprioception 30 minutes, stability work"
+      ]
+    },
+    {
+      "type": "coordination training",
+      "count": 1,
+      "examples": [
+        "Coordination drills 25 minutes, movement patterns"
+      ]
+    },
+    {
+      "type": "reaction training",
+      "count": 1,
+      "examples": [
+        "Reaction time training 20 minutes, stimulus response"
+      ]
+    },
+    {
+      "type": "metabolic conditioning",
+      "count": 1,
+      "examples": [
+        "Metabolic conditioning 30 minutes, MetCon"
+      ]
+    },
+    {
+      "type": "energy systems training",
+      "count": 1,
+      "examples": [
+        "Energy systems development 45 minutes, mixed training"
+      ]
+    },
+    {
+      "type": "movement prep",
+      "count": 1,
+      "examples": [
+        "Movement prep and activation 15 minutes, warm-up focus"
+      ]
+    },
+    {
+      "type": "neuromuscular training",
+      "count": 1,
+      "examples": [
+        "Neuromuscular training 35 minutes, nervous system work"
+      ]
+    },
+    {
+      "type": "contrast training",
+      "count": 1,
+      "examples": [
+        "Contrast training 50 minutes, heavy then explosive"
+      ]
+    },
+    {
+      "type": "complex training",
+      "count": 1,
+      "examples": [
+        "Complex training 55 minutes, strength then power"
+      ]
+    },
+    {
+      "type": "eccentric training",
+      "count": 1,
+      "examples": [
+        "Eccentric training 45 minutes, negative emphasis"
+      ]
+    },
+    {
+      "type": "isometric training",
+      "count": 1,
+      "examples": [
+        "Isometric holds 30 minutes, static strength"
+      ]
+    },
+    {
+      "type": "accommodating resistance",
+      "count": 1,
+      "examples": [
+        "Accommodating resistance 40 minutes, bands and chains"
+      ]
+    },
+    {
+      "type": "density training",
+      "count": 1,
+      "examples": [
+        "Density training 35 minutes, max work in time"
+      ]
+    },
+    {
+      "type": "time under tension",
+      "count": 1,
+      "examples": [
+        "Time under tension 55 minutes, slow reps"
+      ]
+    },
+    {
+      "type": "PAP training",
+      "count": 1,
+      "examples": [
+        "Post-activation potentiation 45 minutes, PAP protocol"
+      ]
+    },
+    {
+      "type": "foam rolling",
+      "count": 1,
+      "examples": [
+        "Foam rolling 20 minutes, full body myofascial release"
+      ]
+    },
+    {
+      "type": "massage therapy",
+      "count": 1,
+      "examples": [
+        "Massage therapy 60 minutes, sports massage"
+      ]
+    },
+    {
+      "type": "sauna",
+      "count": 1,
+      "examples": [
+        "Sauna session 30 minutes, heat therapy recovery"
+      ]
+    },
+    {
+      "type": "cold plunge",
+      "count": 1,
+      "examples": [
+        "Cold plunge 10 minutes, ice bath recovery"
+      ]
+    },
+    {
+      "type": "contrast therapy",
+      "count": 1,
+      "examples": [
+        "Contrast therapy 40 minutes, hot and cold alternating"
+      ]
+    },
+    {
+      "type": "compression therapy",
+      "count": 1,
+      "examples": [
+        "Compression boots 30 minutes, pneumatic compression"
+      ]
+    },
+    {
+      "type": "static stretching",
+      "count": 1,
+      "examples": [
+        "Static stretching 25 minutes, deep stretch holds"
+      ]
+    },
+    {
+      "type": "restorative yoga",
+      "count": 1,
+      "examples": [
+        "Restorative yoga 45 minutes, gentle poses"
+      ]
+    },
+    {
+      "type": "yin yoga",
+      "count": 1,
+      "examples": [
+        "Yin yoga 60 minutes, passive stretching"
+      ]
+    },
+    {
+      "type": "breathing exercises",
+      "count": 1,
+      "examples": [
+        "Breathing exercises 15 minutes, pranayama"
+      ]
+    },
+    {
+      "type": "recovery walk",
+      "count": 1,
+      "examples": [
+        "Gentle walking 40 minutes, recovery walk"
+      ]
+    },
+    {
+      "type": "recovery swim",
+      "count": 1,
+      "examples": [
+        "Easy swim 30 minutes, active recovery"
+      ]
+    },
+    {
+      "type": "recovery cycling",
+      "count": 1,
+      "examples": [
+        "Light cycling 35 minutes, spin recovery"
+      ]
+    },
+    {
+      "type": "fascial stretch",
+      "count": 1,
+      "examples": [
+        "Fascial stretch therapy 50 minutes, assisted stretching"
+      ]
+    },
+    {
+      "type": "acupuncture",
+      "count": 1,
+      "examples": [
+        "Acupuncture 45 minutes, recovery treatment"
+      ]
+    },
+    {
+      "type": "cupping therapy",
+      "count": 1,
+      "examples": [
+        "Cupping therapy 30 minutes, myofascial decompression"
+      ]
+    },
+    {
+      "type": "epsom salt bath",
+      "count": 1,
+      "examples": [
+        "Epsom salt bath 25 minutes, muscle recovery soak"
+      ]
+    },
+    {
+      "type": "percussion therapy",
+      "count": 1,
+      "examples": [
+        "Percussion massage gun 15 minutes, muscle release"
+      ]
+    },
+    {
+      "type": "EMS therapy",
+      "count": 1,
+      "examples": [
+        "Electric muscle stimulation 20 minutes, EMS recovery"
+      ]
+    },
+    {
+      "type": "infrared sauna",
+      "count": 1,
+      "examples": [
+        "Infrared sauna 35 minutes, deep heat therapy"
+      ]
+    },
+    {
+      "type": "cryotherapy",
+      "count": 1,
+      "examples": [
+        "Cryotherapy 3 minutes, whole body cold exposure"
+      ]
+    },
+    {
+      "type": "float therapy",
+      "count": 1,
+      "examples": [
+        "Float tank 60 minutes, sensory deprivation"
+      ]
+    },
+    {
+      "type": "lymphatic massage",
+      "count": 1,
+      "examples": [
+        "Lymphatic drainage massage 50 minutes"
+      ]
+    },
+    {
+      "type": "graston therapy",
+      "count": 1,
+      "examples": [
+        "Graston technique 30 minutes, instrument-assisted soft tissue"
+      ]
+    },
+    {
+      "type": "active recovery",
+      "count": 1,
+      "examples": [
+        "Active recovery mobility 35 minutes, light movement"
+      ]
+    },
+    {
+      "type": "yoga nidra",
+      "count": 1,
+      "examples": [
+        "Yoga nidra 40 minutes, yogic sleep meditation"
+      ]
+    },
+    {
+      "type": "guided relaxation",
+      "count": 1,
+      "examples": [
+        "Guided relaxation 20 minutes, body scan"
+      ]
+    },
+    {
+      "type": "gentle pilates",
+      "count": 1,
+      "examples": [
+        "Pilates reformer gentle 30 minutes, controlled movement"
+      ]
+    },
+    {
+      "type": "easy barre",
+      "count": 1,
+      "examples": [
+        "Barre easy 35 minutes, light ballet-inspired"
+      ]
+    },
+    {
+      "type": "aquatic therapy",
+      "count": 1,
+      "examples": [
+        "Gentle aquatic therapy 40 minutes, water exercise"
+      ]
+    },
+    {
+      "type": "PNF stretching",
+      "count": 1,
+      "examples": [
+        "PNF stretching 25 minutes, proprioceptive neuromuscular"
+      ]
+    },
+    {
+      "type": "mobility flow",
+      "count": 1,
+      "examples": [
+        "Mobility flow 30 minutes, joint health"
+      ]
+    },
+    {
+      "type": "chair yoga",
+      "count": 1,
+      "examples": [
+        "Chair yoga 35 minutes, seated practice"
+      ]
+    },
+    {
+      "type": "wall pilates",
+      "count": 1,
+      "examples": [
+        "Wall pilates 25 minutes, supported exercises"
+      ]
+    },
+    {
+      "type": "recovery yoga",
+      "count": 1,
+      "examples": [
+        "Recovery yoga 50 minutes, slow flow"
+      ]
+    },
+    {
+      "type": "hyperbaric therapy",
+      "count": 1,
+      "examples": [
+        "Hyperbaric oxygen therapy 60 minutes, HBOT"
+      ]
+    },
+    {
+      "type": "red light therapy",
+      "count": 1,
+      "examples": [
+        "Red light therapy 20 minutes, photobiomodulation"
+      ]
+    },
+    {
+      "type": "PEMF therapy",
+      "count": 1,
+      "examples": [
+        "PEMF therapy 30 minutes, pulsed electromagnetic"
+      ]
+    },
+    {
+      "type": "sound bath",
+      "count": 1,
+      "examples": [
+        "Sound bath 45 minutes, vibrational healing"
+      ]
+    },
+    {
+      "type": "reiki",
+      "count": 1,
+      "examples": [
+        "Reiki energy work 50 minutes, energy healing"
+      ]
+    },
+    {
+      "type": "contrast showers",
+      "count": 1,
+      "examples": [
+        "Contrast showers 15 minutes, hot cold alternating"
+      ]
+    },
+    {
+      "type": "grounding",
+      "count": 1,
+      "examples": [
+        "Grounding barefoot 30 minutes, earthing practice"
+      ]
+    },
+    {
+      "type": "gentle stretching",
+      "count": 1,
+      "examples": [
+        "Gentle stretching routine 20 minutes, morning flow"
+      ]
+    },
+    {
+      "type": "soft tissue work",
+      "count": 1,
+      "examples": [
+        "Soft tissue work 25 minutes, lacrosse ball release"
+      ]
+    },
+    {
+      "type": "rest day mobility",
+      "count": 1,
+      "examples": [
+        "Resting day with light mobility 15 minutes"
+      ]
+    },
+    {
+      "type": "peloton cycling",
+      "count": 1,
+      "examples": [
+        "Peloton ride 45 minutes, live class"
+      ]
+    },
+    {
+      "type": "zwift",
+      "count": 1,
+      "examples": [
+        "Zwift cycling 60 minutes, virtual race"
+      ]
+    },
+    {
+      "type": "mirror fitness",
+      "count": 1,
+      "examples": [
+        "Mirror workout 30 minutes, guided strength"
+      ]
+    },
+    {
+      "type": "tonal",
+      "count": 1,
+      "examples": [
+        "Tonal workout 40 minutes, digital weight training"
+      ]
+    },
+    {
+      "type": "apple fitness",
+      "count": 1,
+      "examples": [
+        "Apple Fitness+ HIIT 20 minutes"
+      ]
+    },
+    {
+      "type": "beat saber VR",
+      "count": 1,
+      "examples": [
+        "Beat Saber VR 35 minutes, expert level"
+      ]
+    },
+    {
+      "type": "supernatural VR",
+      "count": 1,
+      "examples": [
+        "Supernatural VR 30 minutes, boxing workout"
+      ]
+    },
+    {
+      "type": "fitxr VR",
+      "count": 1,
+      "examples": [
+        "FitXR VR boxing 25 minutes, combat workout"
+      ]
+    },
+    {
+      "type": "oculus move",
+      "count": 1,
+      "examples": [
+        "Oculus Move 40 minutes, mixed VR games"
+      ]
+    },
+    {
+      "type": "ring fit adventure",
+      "count": 1,
+      "examples": [
+        "Ring Fit Adventure 50 minutes, Nintendo Switch"
+      ]
+    },
+    {
+      "type": "pokemon go",
+      "count": 1,
+      "examples": [
+        "Pokemon GO walk 75 minutes, catching and walking"
+      ]
+    },
+    {
+      "type": "zombies run",
+      "count": 1,
+      "examples": [
+        "Zombies Run! 45 minutes, immersive running"
+      ]
+    },
+    {
+      "type": "strava run",
+      "count": 1,
+      "examples": [
+        "Strava challenge run 60 minutes, tracking"
+      ]
+    },
+    {
+      "type": "nike training club",
+      "count": 1,
+      "examples": [
+        "Nike Training Club 35 minutes, app workout"
+      ]
+    },
+    {
+      "type": "classpass spinning",
+      "count": 1,
+      "examples": [
+        "ClassPass studio 50 minutes, spinning class"
+      ]
+    },
+    {
+      "type": "hydrow rowing",
+      "count": 1,
+      "examples": [
+        "Hydrow rowing 40 minutes, live outdoor reality"
+      ]
+    },
+    {
+      "type": "tempo studio",
+      "count": 1,
+      "examples": [
+        "Tempo Studio 45 minutes, AI form coaching"
+      ]
+    },
+    {
+      "type": "echelon cycling",
+      "count": 1,
+      "examples": [
+        "Echelon bike 55 minutes, scenic ride"
+      ]
+    },
+    {
+      "type": "les mills digital",
+      "count": 1,
+      "examples": [
+        "Les Mills On Demand 30 minutes, BodyPump"
+      ]
+    },
+    {
+      "type": "beachbody digital",
+      "count": 1,
+      "examples": [
+        "Beachbody on Demand 40 minutes, P90X workout"
+      ]
+    },
+    {
+      "type": "daily burn",
+      "count": 1,
+      "examples": [
+        "Daily Burn 35 minutes, streaming workout"
+      ]
+    },
+    {
+      "type": "ifit treadmill",
+      "count": 1,
+      "examples": [
+        "iFit treadmill 50 minutes, guided workout"
+      ]
+    },
+    {
+      "type": "wahoo systm",
+      "count": 1,
+      "examples": [
+        "Wahoo SYSTM 60 minutes, structured cycling"
+      ]
+    },
+    {
+      "type": "trainerroad",
+      "count": 1,
+      "examples": [
+        "TrainerRoad workout 45 minutes, FTP intervals"
+      ]
+    },
+    {
+      "type": "rouvy",
+      "count": 1,
+      "examples": [
+        "Rouvy virtual 55 minutes, augmented reality cycling"
+      ]
+    },
+    {
+      "type": "aaptiv",
+      "count": 1,
+      "examples": [
+        "Aaptiv audio workout 30 minutes, running"
+      ]
+    },
+    {
+      "type": "fitbod",
+      "count": 1,
+      "examples": [
+        "Fitbod app workout 40 minutes, personalized strength"
+      ]
+    },
+    {
+      "type": "seven workout",
+      "count": 1,
+      "examples": [
+        "Seven app 20 minutes, 7 minute workout circuits"
+      ]
+    },
+    {
+      "type": "sworkit",
+      "count": 1,
+      "examples": [
+        "Sworkit 35 minutes, customized workout"
+      ]
+    },
+    {
+      "type": "freeletics",
+      "count": 1,
+      "examples": [
+        "Freeletics bodyweight 30 minutes, app guided"
+      ]
+    },
+    {
+      "type": "centr",
+      "count": 1,
+      "examples": [
+        "Centr app 40 minutes, Chris Hemsworth workout"
+      ]
+    },
+    {
+      "type": "sweat BBG",
+      "count": 1,
+      "examples": [
+        "Sweat app 35 minutes, Kayla Itsines BBG"
+      ]
+    },
+    {
+      "type": "asana rebel",
+      "count": 1,
+      "examples": [
+        "Asana Rebel 25 minutes, yoga fitness fusion"
+      ]
+    },
+    {
+      "type": "8fit",
+      "count": 1,
+      "examples": [
+        "8fit workout 30 minutes, HIIT and nutrition"
+      ]
+    },
+    {
+      "type": "keelo",
+      "count": 1,
+      "examples": [
+        "Keelo app 20 minutes, high intensity"
+      ]
+    },
+    {
+      "type": "gymshark training",
+      "count": 1,
+      "examples": [
+        "Gymshark app 35 minutes, athlete training"
+      ]
+    },
+    {
+      "type": "caliber strength",
+      "count": 1,
+      "examples": [
+        "Caliber strength 45 minutes, coached workout"
+      ]
+    },
+    {
+      "type": "future fitness",
+      "count": 1,
+      "examples": [
+        "Future Fitness 40 minutes, remote coaching"
+      ]
+    },
+    {
+      "type": "playstation VR sports",
+      "count": 1,
+      "examples": [
+        "Playstation VR Sports 30 minutes, boxing"
+      ]
+    },
+    {
+      "type": "switch sports",
+      "count": 1,
+      "examples": [
+        "Switch Sports 45 minutes, tennis and bowling"
+      ]
+    },
+    {
+      "type": "xbox fitness",
+      "count": 1,
+      "examples": [
+        "Xbox Fitness 25 minutes, kinect workout"
+      ]
+    },
+    {
+      "type": "just dance",
+      "count": 1,
+      "examples": [
+        "Just Dance 40 minutes, workout mode"
+      ]
+    },
+    {
+      "type": "audio punch",
+      "count": 1,
+      "examples": [
+        "Audio Punch 20 minutes, rhythm boxing"
+      ]
+    },
+    {
+      "type": "whoop recovery",
+      "count": 1,
+      "examples": [
+        "Whoop recovery protocol 15 minutes, strain tracking"
+      ]
+    },
+    {
+      "type": "oura guided",
+      "count": 1,
+      "examples": [
+        "Oura ring guided workout 30 minutes, readiness-based"
+      ]
+    },
+    {
+      "type": "garmin coach",
+      "count": 1,
+      "examples": [
+        "Garmin coach running 50 minutes, adaptive plan"
+      ]
+    },
+    {
+      "type": "polar flow",
+      "count": 1,
+      "examples": [
+        "Polar Flow workout 40 minutes, heart rate guided"
+      ]
+    },
+    {
+      "type": "prenatal yoga",
+      "count": 1,
+      "examples": [
+        "Prenatal yoga 40 minutes, pregnancy safe"
+      ]
+    },
+    {
+      "type": "postnatal exercise",
+      "count": 1,
+      "examples": [
+        "Postnatal recovery 30 minutes, postpartum exercise"
+      ]
+    },
+    {
+      "type": "senior fitness",
+      "count": 1,
+      "examples": [
+        "Senior fitness 35 minutes, older adults class"
+      ]
+    },
+    {
+      "type": "silver sneakers",
+      "count": 1,
+      "examples": [
+        "Silver Sneakers 45 minutes, mature adult program"
+      ]
+    },
+    {
+      "type": "wheelchair basketball",
+      "count": 1,
+      "examples": [
+        "Wheelchair basketball 60 minutes, adaptive sports"
+      ]
+    },
+    {
+      "type": "adaptive swimming",
+      "count": 1,
+      "examples": [
+        "Adaptive swimming 40 minutes, modified strokes"
+      ]
+    },
+    {
+      "type": "seated aerobics",
+      "count": 1,
+      "examples": [
+        "Seated aerobics 30 minutes, chair-based cardio"
+      ]
+    },
+    {
+      "type": "parkinsons boxing",
+      "count": 1,
+      "examples": [
+        "Parkinson's boxing 45 minutes, Rock Steady Boxing"
+      ]
+    },
+    {
+      "type": "MS therapy",
+      "count": 1,
+      "examples": [
+        "MS exercise therapy 30 minutes, multiple sclerosis adapted"
+      ]
+    },
+    {
+      "type": "cardiac rehab",
+      "count": 1,
+      "examples": [
+        "Cardiac rehab 40 minutes, heart disease recovery"
+      ]
+    },
+    {
+      "type": "stroke rehab",
+      "count": 1,
+      "examples": [
+        "Stroke rehabilitation 35 minutes, recovery exercises"
+      ]
+    },
+    {
+      "type": "arthritis aquatics",
+      "count": 1,
+      "examples": [
+        "Arthritis water aerobics 45 minutes, joint-friendly"
+      ]
+    },
+    {
+      "type": "osteoporosis exercise",
+      "count": 1,
+      "examples": [
+        "Osteoporosis exercise 30 minutes, bone health"
+      ]
+    },
+    {
+      "type": "cancer survivor fitness",
+      "count": 1,
+      "examples": [
+        "Cancer survivor fitness 35 minutes, oncology exercise"
+      ]
+    },
+    {
+      "type": "diabetes exercise",
+      "count": 1,
+      "examples": [
+        "Diabetes management walk 50 minutes, blood sugar control"
+      ]
+    },
+    {
+      "type": "guided running",
+      "count": 1,
+      "examples": [
+        "Blind/visually impaired running 40 minutes, guide runner"
+      ]
+    },
+    {
+      "type": "deaf fitness",
+      "count": 1,
+      "examples": [
+        "Deaf fitness class 45 minutes, visual cues"
+      ]
+    },
+    {
+      "type": "amputee training",
+      "count": 1,
+      "examples": [
+        "Amputee training 50 minutes, prosthetic adaptation"
+      ]
+    },
+    {
+      "type": "CP therapy",
+      "count": 1,
+      "examples": [
+        "Cerebral palsy therapy 30 minutes, movement therapy"
+      ]
+    },
+    {
+      "type": "SCI exercise",
+      "count": 1,
+      "examples": [
+        "Spinal cord injury exercise 40 minutes, SCI adapted"
+      ]
+    },
+    {
+      "type": "TBI rehab",
+      "count": 1,
+      "examples": [
+        "Traumatic brain injury rehab 25 minutes, TBI recovery"
+      ]
+    },
+    {
+      "type": "autism fitness",
+      "count": 1,
+      "examples": [
+        "Autism spectrum fitness 35 minutes, sensory-friendly"
+      ]
+    },
+    {
+      "type": "down syndrome exercise",
+      "count": 1,
+      "examples": [
+        "Down syndrome exercise 30 minutes, adapted movement"
+      ]
+    },
+    {
+      "type": "kids fitness",
+      "count": 1,
+      "examples": [
+        "Kids fitness 40 minutes, children's exercise class"
+      ]
+    },
+    {
+      "type": "teen training",
+      "count": 1,
+      "examples": [
+        "Teen athletic development 60 minutes, youth training"
+      ]
+    },
+    {
+      "type": "obesity management",
+      "count": 1,
+      "examples": [
+        "Obesity management 45 minutes, weight loss program"
+      ]
+    },
+    {
+      "type": "bariatric exercise",
+      "count": 1,
+      "examples": [
+        "Bariatric post-surgery 30 minutes, surgical recovery"
+      ]
+    },
+    {
+      "type": "COPD exercise",
+      "count": 1,
+      "examples": [
+        "COPD exercise 25 minutes, breathing and movement"
+      ]
+    },
+    {
+      "type": "asthma cardio",
+      "count": 1,
+      "examples": [
+        "Asthma-friendly cardio 30 minutes, controlled breathing"
+      ]
+    },
+    {
+      "type": "fibromyalgia exercise",
+      "count": 1,
+      "examples": [
+        "Fibromyalgia gentle exercise 35 minutes, pain management"
+      ]
+    },
+    {
+      "type": "CFS exercise",
+      "count": 1,
+      "examples": [
+        "Chronic fatigue syndrome 20 minutes, pacing exercise"
+      ]
+    },
+    {
+      "type": "lymphedema exercise",
+      "count": 1,
+      "examples": [
+        "Lymphedema exercise 30 minutes, swelling management"
+      ]
+    },
+    {
+      "type": "scoliosis exercise",
+      "count": 1,
+      "examples": [
+        "Scoliosis-specific exercise 40 minutes, spine alignment"
+      ]
+    },
+    {
+      "type": "hypermobility exercise",
+      "count": 1,
+      "examples": [
+        "Hypermobility exercise 35 minutes, joint stability"
+      ]
+    },
+    {
+      "type": "EDS exercise",
+      "count": 1,
+      "examples": [
+        "EDS workout 30 minutes, Ehlers-Danlos syndrome"
+      ]
+    },
+    {
+      "type": "POTS exercise",
+      "count": 1,
+      "examples": [
+        "POTS exercise 25 minutes, dysautonomia management"
+      ]
+    },
+    {
+      "type": "menopause fitness",
+      "count": 1,
+      "examples": [
+        "Menopause fitness 40 minutes, hormone health"
+      ]
+    },
+    {
+      "type": "PCOS exercise",
+      "count": 1,
+      "examples": [
+        "PCOS exercise 45 minutes, polycystic ovary syndrome"
+      ]
+    },
+    {
+      "type": "endometriosis exercise",
+      "count": 1,
+      "examples": [
+        "Endometriosis-friendly 30 minutes, low-impact"
+      ]
+    },
+    {
+      "type": "chronic pain yoga",
+      "count": 1,
+      "examples": [
+        "Chronic pain yoga 35 minutes, pain relief"
+      ]
+    },
+    {
+      "type": "low vision fitness",
+      "count": 1,
+      "examples": [
+        "Low vision fitness 40 minutes, tactile cueing"
+      ]
+    },
+    {
+      "type": "vestibular rehab",
+      "count": 1,
+      "examples": [
+        "Vestibular rehab 30 minutes, balance disorder therapy"
+      ]
+    },
+    {
+      "type": "neuropathy exercise",
+      "count": 1,
+      "examples": [
+        "Neuropathy exercise 35 minutes, nerve damage adapted"
+      ]
+    },
+    {
+      "type": "pelvic floor therapy",
+      "count": 1,
+      "examples": [
+        "Pelvic floor therapy 25 minutes, core recovery"
+      ]
+    },
+    {
+      "type": "diastasis recti",
+      "count": 1,
+      "examples": [
+        "Diastasis recti repair 30 minutes, abdominal separation"
+      ]
+    },
+    {
+      "type": "mental health exercise",
+      "count": 1,
+      "examples": [
+        "Mental health exercise 40 minutes, anxiety and depression"
+      ]
+    },
+    {
+      "type": "trauma-informed exercise",
+      "count": 1,
+      "examples": [
+        "PTSD trauma-informed 35 minutes, safe movement"
+      ]
+    },
+    {
+      "type": "wheelchair rugby",
+      "count": 1,
+      "examples": [
+        "Wheelchair rugby 60 minutes, murderball practice"
+      ]
+    },
+    {
+      "type": "para-athletics",
+      "count": 1,
+      "examples": [
+        "Para-athletics 50 minutes, paralympic training"
+      ]
+    },
+    {
+      "type": "special olympics",
+      "count": 1,
+      "examples": [
+        "Special Olympics training 45 minutes, adaptive sports"
+      ]
+    },
+    {
+      "type": "full body strength",
+      "count": 1,
+      "examples": [
+        "Full body workout 75 minutes: squats 3x10 80kg, bench press 3x8 60kg, deadlifts 3x6 100kg, overhead press 3x10 40kg, rows 3x10 50kg"
+      ]
+    },
+    {
+      "type": "upper body strength",
+      "count": 1,
+      "examples": [
+        "Upper body day 60 minutes: bench 4x8 70kg, pull-ups 4x10, dips 3x12, shoulder raises 3x15 15kg, tricep extensions 3x12 20kg, bicep curls 3x12 15kg"
+      ]
+    },
+    {
+      "type": "lower body strength",
+      "count": 1,
+      "examples": [
+        "Lower body session 70 minutes: squats 5x5 90kg, Romanian deadlifts 4x8 70kg, lunges 3x12 per leg 25kg, leg press 4x10 150kg, calf raises 4x15 60kg"
+      ]
+    },
+    {
+      "type": "push day",
+      "count": 1,
+      "examples": [
+        "Push day 65 minutes: bench 4x6 80kg, incline press 3x10 60kg, dumbbell flyes 3x12 20kg, overhead press 4x8 45kg, lateral raises 3x15 12kg, tricep dips 3x10"
+      ]
+    },
+    {
+      "type": "pull day",
+      "count": 1,
+      "examples": [
+        "Pull day 65 minutes: deadlifts 5x3 110kg, pull-ups 4x8, barbell rows 4x10 60kg, lat pulldown 3x12 55kg, face pulls 3x15 20kg, hammer curls 3x12 15kg"
+      ]
+    },
+    {
+      "type": "leg day",
+      "count": 1,
+      "examples": [
+        "Leg day 80 minutes: back squats 5x5 95kg, front squats 4x8 60kg, leg extensions 4x12 45kg, leg curls 4x12 40kg, Bulgarian split squats 3x10 20kg per leg, seated calf raises 4x20 30kg"
+      ]
+    },
+    {
+      "type": "core workout",
+      "count": 1,
+      "examples": [
+        "Core workout 30 minutes: planks 4x90sec, Russian twists 4x30 10kg, leg raises 4x15, bicycle crunches 4x40, dead bugs 4x20"
+      ]
+    },
+    {
+      "type": "chest and triceps",
+      "count": 1,
+      "examples": [
+        "Chest and triceps 55 minutes: flat bench 4x8 75kg, incline dumbbells 3x10 30kg, cable flyes 3x12 15kg, close-grip bench 3x10 50kg, overhead extensions 3x12 25kg, rope pushdowns 3x15 25kg"
+      ]
+    },
+    {
+      "type": "back and biceps",
+      "count": 1,
+      "examples": [
+        "Back and biceps 60 minutes: deadlifts 4x6 105kg, wide-grip pulldowns 4x10 50kg, cable rows 4x12 55kg, T-bar rows 3x10 40kg, barbell curls 4x10 25kg, preacher curls 3x12 15kg"
+      ]
+    },
+    {
+      "type": "shoulders and abs",
+      "count": 1,
+      "examples": [
+        "Shoulders and abs 50 minutes: military press 4x8 50kg, Arnold press 3x10 22kg, lateral raises 4x15 12kg, rear delt flyes 3x15 10kg, abs circuit 3 rounds"
+      ]
+    },
+    {
+      "type": "kettlebell workout",
+      "count": 1,
+      "examples": [
+        "Kettlebell complex 40 minutes: swings 5x20 24kg, goblet squats 4x15 24kg, Turkish get-ups 4x5 16kg per side, kettlebell presses 4x10 16kg, rows 4x12 20kg"
+      ]
+    },
+    {
+      "type": "bodyweight pyramid",
+      "count": 1,
+      "examples": [
+        "Bodyweight pyramid 35 minutes: 1-10-1 reps of pullups, pushups, squats, dips, and jump squats"
+      ]
+    },
+    {
+      "type": "dumbbell workout",
+      "count": 1,
+      "examples": [
+        "Dumbbell only workout 55 minutes: goblet squats 4x12 25kg, Romanian deadlifts 4x10 20kg per hand, chest press 4x10 25kg, rows 4x12 22kg, shoulder press 4x10 18kg, curls 3x12 12kg"
+      ]
+    },
+    {
+      "type": "superset training",
+      "count": 1,
+      "examples": [
+        "Superset workout 50 minutes: bench + rows 4x10, squats + leg curls 4x12, shoulder press + pulldowns 3x12, dips + curls 3x10"
+      ]
+    },
+    {
+      "type": "giant set",
+      "count": 1,
+      "examples": [
+        "Giant set workout 45 minutes: 4 rounds of squats, pushups, rows, lunges, overhead press - no rest between exercises"
+      ]
+    },
+    {
+      "type": "drop sets",
+      "count": 1,
+      "examples": [
+        "Drop set workout 40 minutes: bench 3 drops from 70kg to 40kg, squats 3 drops from 90kg to 50kg, lat pulldown 3 drops from 60kg to 30kg"
+      ]
+    },
+    {
+      "type": "rest-pause training",
+      "count": 1,
+      "examples": [
+        "Rest-pause training 45 minutes: bench 4 sets rest-pause 75kg, squats 4 sets rest-pause 85kg, rows 4 sets rest-pause 65kg"
+      ]
+    },
+    {
+      "type": "21s method",
+      "count": 1,
+      "examples": [
+        "21s workout 35 minutes: bicep curls 21s 15kg, leg extensions 21s 40kg, tricep extensions 21s 20kg, leg curls 21s 35kg"
+      ]
+    },
+    {
+      "type": "contrast loading",
+      "count": 1,
+      "examples": [
+        "Contrast loading 55 minutes: heavy squats 5x3 100kg followed by jump squats 5x5, heavy bench 5x3 80kg followed by plyometric pushups 5x8"
+      ]
+    },
+    {
+      "type": "german volume training",
+      "count": 1,
+      "examples": [
+        "German Volume Training 70 minutes: squats 10x10 60kg, bench 10x10 50kg, rows 10x10 45kg"
+      ]
+    },
+    {
+      "type": "FST-7",
+      "count": 1,
+      "examples": [
+        "FST-7 workout 50 minutes: chest workout ending with 7 sets of cable flyes 15 reps minimal rest"
+      ]
+    },
+    {
+      "type": "blood flow restriction",
+      "count": 1,
+      "examples": [
+        "Blood flow restriction 40 minutes: BFR squats 4x25 30kg, BFR leg extensions 3x25 20kg, BFR curls 4x25 8kg"
+      ]
+    },
+    {
+      "type": "EDT",
+      "count": 1,
+      "examples": [
+        "EDT workout 40 minutes: PR Zone 1 - pullups and dips 15 minutes, PR Zone 2 - squats and pushups 15 minutes"
+      ]
+    },
+    {
+      "type": "mechanical advantage",
+      "count": 1,
+      "examples": [
+        "Mechanical advantage sets 45 minutes: squats - full range then partials then quarter reps 3 sets 80kg, bench - wide then normal then close grip 3 sets 65kg"
+      ]
+    },
+    {
+      "type": "5x5 program",
+      "count": 1,
+      "examples": [
+        "5x5 strength program 60 minutes: squats 5x5 90kg, bench 5x5 75kg, rows 5x5 65kg, overhead press 5x5 45kg, deadlifts 5x5 100kg"
+      ]
+    },
+    {
+      "type": "pyramid training",
+      "count": 1,
+      "examples": [
+        "Pyramid sets 50 minutes: bench 12-10-8-6-8-10-12 reps ascending then descending weight from 50kg to 75kg back to 50kg"
+      ]
+    },
+    {
+      "type": "reverse pyramid",
+      "count": 1,
+      "examples": [
+        "Reverse pyramid 45 minutes: deadlifts 2-4-6-8 reps from 120kg down to 90kg, squats 4-6-8-10 from 95kg to 70kg"
+      ]
+    },
+    {
+      "type": "pre-exhaust",
+      "count": 1,
+      "examples": [
+        "Pre-exhaust training 55 minutes: leg extensions then squats, flyes then bench, pulldowns then rows"
+      ]
+    },
+    {
+      "type": "post-exhaust",
+      "count": 1,
+      "examples": [
+        "Post-exhaust training 50 minutes: squats then leg extensions, bench then flyes, rows then pulldowns"
+      ]
+    },
+    {
+      "type": "100 rep challenge",
+      "count": 1,
+      "examples": [
+        "100 rep challenge 60 minutes: 100 squats, 100 pushups, 100 situps, 100 jumping jacks completed as fast as possible"
+      ]
+    },
+    {
+      "type": "for time",
+      "count": 1,
+      "examples": [
+        "For time workout 35 minutes: 50-40-30-20-10 reps of wall balls 9kg, pullups, and situps"
+      ]
+    },
+    {
+      "type": "chipper",
+      "count": 1,
+      "examples": [
+        "Chipper workout 45 minutes: 100 squats, 75 pushups, 50 pullups, 25 burpees - chip away until done"
+      ]
+    },
+    {
+      "type": "ladder workout",
+      "count": 1,
+      "examples": [
+        "Ladder workout 30 minutes: 1-10 ladder of thrusters 30kg and pullups"
+      ]
+    },
+    {
+      "type": "death by",
+      "count": 1,
+      "examples": [
+        "Death by workout 25 minutes: minute 1 do 1 burpee, minute 2 do 2 burpees, continue until failure"
+      ]
+    },
+    {
+      "type": "buy-in buy-out",
+      "count": 1,
+      "examples": [
+        "Buy-in buy-out 40 minutes: 50 burpees buy-in, then 5 rounds of 10 squats/10 pushups/10 situps, then 50 burpees buy-out"
+      ]
+    },
+    {
+      "type": "hero WOD",
+      "count": 1,
+      "examples": [
+        "Hero WOD Murph 55 minutes: 1 mile run, 100 pullups, 200 pushups, 300 squats, 1 mile run with 20lb vest"
+      ]
+    },
+    {
+      "type": "ball game",
+      "count": 1,
+      "examples": [
+        "played ball"
+      ]
+    },
+    {
+      "type": "squats",
+      "count": 1,
+      "examples": [
+        "squats with 500kg"
+      ]
+    },
+    {
+      "type": "bench press",
+      "count": 1,
+      "examples": [
+        "bench press 0kg"
+      ]
+    },
+    {
+      "type": "rest day",
+      "count": 1,
+      "examples": [
+        "rest day"
+      ]
+    },
+    {
+      "type": "active rest",
+      "count": 1,
+      "examples": [
+        "active rest day light walk 20 minutes"
+      ]
+    },
+    {
+      "type": "cardio and strength",
+      "count": 1,
+      "examples": [
+        "mix of cardio and weights about an hour"
+      ]
+    },
+    {
+      "type": "general activity",
+      "count": 1,
+      "examples": [
+        "moved my body"
+      ]
+    },
+    {
+      "type": "cardio",
+      "count": 1,
+      "examples": [
+        "cardio"
+      ]
+    },
+    {
+      "type": "abs workout",
+      "count": 1,
+      "examples": [
+        "abs"
+      ]
+    },
+    {
+      "type": "leg workout",
+      "count": 1,
+      "examples": [
+        "legs"
+      ]
+    },
+    {
+      "type": "arms workout",
+      "count": 1,
+      "examples": [
+        "arms"
+      ]
+    }
+  ]
+}
